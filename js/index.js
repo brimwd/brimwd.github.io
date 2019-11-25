@@ -48,6 +48,7 @@ function renderPage (pageHTML) {
     // short circuit if not clicking on overlay or (X)
     if ($(el.target).attr('id') != 'dynamicLoad') { return; }
 
+    window.history.replaceState(undefined, undefined, '/index.html');
     $('body').removeClass('dynamicLoad').removeAttr('style');
     $('#dynamicLoad').fadeOut(function(){
       $('#dynamicLoad').remove();
