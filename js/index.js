@@ -24,7 +24,7 @@ function getPage (pageName, attempts) {
       renderPage(response);
 
       // Support for deep-linking
-      history.pushState(undefined, undefined, '#pageName')
+      history.pushState(undefined, undefined, '#'+pageName);
 
     },
     error: function(xhr, status, error) {
