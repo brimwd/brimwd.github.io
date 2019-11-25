@@ -26,8 +26,8 @@ html {width:100vw;overflow-x:hidden;}
 #overview h3 {color:var(--text-med);font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:7vh;text-transform:uppercase;}
 #overview h3 divider::before {content:',';}
 #overview h3 divider:last-of-type::after {content:'& ';color:var(--text);}
-#overview picture {display:none;}
-#overview picture source, #overview img {display:block;margin:0 auto;max-width:100%;}
+#overview picture {display:none;margin:0 auto;}
+#overview picture source, #overview img {max-width:100%;}
 @media screen and (min-width:375px) {
     #overview h1 {font-size:37px;line-height:inherit;}
     #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-2px;overflow-y:hidden;}
