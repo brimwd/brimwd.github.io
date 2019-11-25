@@ -100,9 +100,6 @@ body.dynamicLoad {
   left:0;
   z-index:10;
 }
-.case-study > * {
-  padding:15px;
-}
 @media screen and (min-width:670px) {
   #dynamicLoad ~ section, #dynamicLoad ~ footer {
     transition:filter 300ms;
@@ -112,9 +109,6 @@ body.dynamicLoad {
     background-color:rgba(255,255,255,0.3);
     box-shadow:0 0 140px -25px rgba(0,0,0,.6);
     padding:50px 0;
-  }
-  .case-study section {
-    background-color:var(--bg);
   }
 }
 
