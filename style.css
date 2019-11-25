@@ -3,6 +3,7 @@
   --text-med:#777;
   --text-faint:#b5b5b5;
   --text-ultra-faint:#d7d7d7;
+  --header-bg:#fffde9;
   --bg:#fff;
   --bg-faint:#f3f3f3;
 }
@@ -19,15 +20,14 @@ html {width:100vw;overflow-x:hidden;}
 }
 
 /* OVERVIEW */
-#overview {position:relative;}
+#overview {background-color:var(--header-bg);background-image:url(drawings/self-portraits/glasses.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);background-position-x:calc(100% - 30px), 0;background-position-y:calc(100% - 30px), 0;background-repeat:no-repeat,repeat;background-size:0 0,48px 48px;position:relative;}
 #overview h1 {font-size:42px;letter-spacing:3px;line-height:0.8em;}
 #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
 #overview h1 span {color:var(--text-faint);display:block;font-size:36px;font-weight:600;letter-spacing:2.4px;line-height:0.9;margin-top:19px;}
 #overview h3 {color:var(--text-med);font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:7vh;text-transform:uppercase;}
 #overview h3 divider::before {content:',';}
 #overview h3 divider:last-of-type::after {content:'& ';color:var(--text);}
-#overview picture {display:none;margin:0 auto;}
-#overview picture source, #overview img {max-width:100%;}
+#overview img {max-width:100%;}
 @media screen and (min-width:375px) {
     #overview h1 {font-size:37px;line-height:inherit;}
     #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-2px;overflow-y:hidden;}
@@ -45,17 +45,29 @@ html {width:100vw;overflow-x:hidden;}
     #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
     #overview h1 span {color:var(--text-ultra-faint);font-size:41.2px;font-weight:700;height:1em;letter-spacing:8.1px;line-height:0.5em;margin-top:-7px;padding-left:1px;}
     #overview h3 {color:var(--text-med);font-size:1em;font-weight:300;margin-top:-12px;margin-bottom:7vh;padding-left:20px;}
-    #overview picture {display:block;float:right;margin-top:-3vw;}
-    /*#overview picture source, #overview picture img {}*/
+  #overview > img {display:none;}
+  #overview {
+    background-image:url(drawings/self-portraits/working.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);
+    background-size:280px 280px,48px 48px; /* double-check this size for working drawing */
+  }
+  #overview .bio {
+    margin-right:300px;
+  }
 }
-@media screen and (min-width:800px) {
-    /*#overview picture {margin-top:-8vw;}*/
+@media screen and (min-width:940px) {
+  #overview {
+    /*background-image:url(drawings/self-portraits/glasses.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);*/
+    background-size:270px 450px,48px 48px; /* double-check this size for glasses drawing */
+  }
+  #overview .bio {
+    margin-right:300px;
+  }
 }
 @media screen and (min-width:1000px) {
     /*#overview picture {margin-top:-11vw;}*/
 }
 
-#overview bio {letter-spacing:1px;line-height:1.9em;}
+#overview .bio {letter-spacing:1px;line-height:1.9em;}
 
 #overview ul {margin-left:-15px;padding-left:0;}
 #overview li {display:inline-block;padding:0 10px;position:relative;}
@@ -68,12 +80,13 @@ html {width:100vw;overflow-x:hidden;}
 approach {display:none;}
 
 /* WORK */
+#work img {width:100%;max-width:100vw;}
 @media screen and (min-width:670px) {
     #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
     #work a {margin:2% 0;padding:15px;width:calc(48% - 30px);border:1px solid var(--text-ultra-faint);}
-    #work img {display:block;margin:0;width:100%;}
     #work h4 {margin:1em 0 0;}
     #work p {margin:.3em 0 .6em;}
+  #work img {display:block;margin:0;}
 }
 @media screen and (min-width:970px) {
     #work a {margin:2% 0;padding:15px;width:calc(31% - 30px);}
@@ -119,6 +132,7 @@ body.dynamicLoad {
   --text-med:#bbb;
   --text-faint:#aaa;
   --text-ultra-faint:#444;
+  --header-bg:#1d1d1d;
   --bg:#000;
   --bg-faint:#181818;
 }
