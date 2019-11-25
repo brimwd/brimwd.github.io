@@ -40,6 +40,17 @@ function renderPage (pageHTML) {
   // minimize nav
   // create content section
   // populate content section
-  $('body').append($('<section id="dynamicLoad">').html(pageHTML));
-  $('#dynamicLoad script.case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
+  $('body').css('top', -window.scrollY).addClass('dynamicLoad');
+  $('body').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
+  $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
+  $('#dynamicLoad').fadeIn();
+  $('#dynamicLoad, #dismissCaseStudy').on('click', function (el) {
+    // short circuit if not clicking on overlay or (X)
+    if ($(el.target).attr('id') != 'dynamicLoad') { return; }
+
+    $('body').removeClass('dynamicLoad').removeAttr('style');
+    $('#dynamicLoad').fadeOut(function(){
+      $('#dynamicLoad').remove();
+    });
+  });
 }
