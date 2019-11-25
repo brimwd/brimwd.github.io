@@ -2,6 +2,7 @@ $(document).ready(function() {
   var targetPage;
   var targetPageLoaded;
 
+
   $('a.dynamicLoad').on('click', function(event){
     // stop the link from firing
     event.preventDefault();
@@ -12,6 +13,9 @@ $(document).ready(function() {
     // will come back from the ajax call as TRUE if succeeded or FALSE if failed
     getPage(targetPage, 1);
   });
+
+  // load deep-link content
+  if (window.location.hash != '') { getPage(window.location.hash.slice(1), 1);}
 });
 
 function getPage (pageName, attempts) {
