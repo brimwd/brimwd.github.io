@@ -23,7 +23,8 @@ function getPage (pageName, attempts) {
       // renders the new content
       renderPage(response);
 
-      // TODO: Add support for deep-linking?
+      // Support for deep-linking
+      history.pushState(undefined, undefined, '#pageName')
 
     },
     error: function(xhr, status, error) {
