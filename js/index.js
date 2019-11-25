@@ -44,8 +44,8 @@ function renderPage (pageHTML) {
   // minimize nav
   // create content section
   // populate content section
-  window.prevScrollPosition = window.scrollY;
-  $('body').css('top', -window.scrollY).addClass('dynamicLoad');
+  window.prevScrollPosition = window.pageYOffset;
+  $('body').css('top', -window.pageYOffset).addClass('dynamicLoad');
   $('body').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').fadeIn();
@@ -59,7 +59,7 @@ function renderPage (pageHTML) {
 
     // reset body and remove dynamic content
     $('body').removeClass('dynamicLoad').removeAttr('style');
-    window.scrollY = window.prevScrollPosition;
+    window.scrollY(window.prevScrollPosition);
     $('#dynamicLoad').fadeOut(function(){
       $('#dynamicLoad').remove();
     });
