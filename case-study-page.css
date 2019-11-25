@@ -1,7 +1,7 @@
 body {padding:0;}
 .case-study > nav, .case-study > footer {border:none!important;box-shadow:none!important;padding:10px!important;}
 @media (min-width:650px){
-	body {padding:20px 0 50px;}
+	.case-study {margin:20px auto 50px;}
 	.case-study > nav, .case-study > footer {margin:unset;}
 }
 

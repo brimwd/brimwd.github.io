@@ -87,7 +87,6 @@ approach {display:none;}
 body.dynamicLoad {
   overflow:hidden;
   max-height:100vh;
-  padding:0;
   position:relative;
 }
 #dynamicLoad {
