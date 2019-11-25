@@ -19,14 +19,15 @@ html {width:100vw;overflow-x:hidden;}
 }
 
 /* OVERVIEW */
-#overview {padding-top:15vh;position:relative;}
+#overview {position:relative;}
 #overview h1 {font-size:42px;letter-spacing:3px;line-height:0.8em;}
 #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
 #overview h1 span {color:var(--text-faint);display:block;font-size:36px;font-weight:600;letter-spacing:2.4px;line-height:0.9;margin-top:19px;}
 #overview h3 {color:var(--text-med);font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:7vh;text-transform:uppercase;}
 #overview h3 divider::before {content:',';}
 #overview h3 divider:last-of-type::after {content:'& ';color:var(--text);}
-#overview img {display:block;height:100%;margin:0 auto;opacity:.1;position:absolute;top:0;left:0;z-index:-1;}
+#overview picture {display:none;}
+#overview picture source, #overview img {display:block;margin:0 auto;max-width:100%;}
 @media screen and (min-width:375px) {
     #overview h1 {font-size:37px;line-height:inherit;}
     #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-2px;overflow-y:hidden;}
@@ -35,22 +36,23 @@ html {width:100vw;overflow-x:hidden;}
 @media screen and (min-width:500px) {
     #overview h1 {font-size:46px;}
     #overview h1 span {font-size:39px;}
-    #overview img {left:unset;right:0;}
     /*#overview h3 divider::before {content:unset;}*/
     /*#overview h3 divider::after, #overview h3 divider:last-of-type::after {content:'• ';}*/
 }
 @media screen and (min-width:670px) {
+    #overview > img {display:none;}
     #overview h1 {font-size:60px;letter-spacing:4px;}
     #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
     #overview h1 span {color:var(--text-ultra-faint);font-size:41.2px;font-weight:700;height:1em;letter-spacing:8.1px;line-height:0.5em;margin-top:-7px;padding-left:1px;}
     #overview h3 {color:var(--text-med);font-size:1em;font-weight:300;margin-top:-12px;margin-bottom:7vh;padding-left:20px;}
-    #overview img {float:right;margin:-30px 0 0;max-width:270px;width:24vw;shape-outside:url(brian.png);height:unset;opacity:unset;position:unset;top:unset;right:unset;z-index:unset;}
+    #overview picture {display:block;float:right;margin-top:-3vw;}
+    /*#overview picture source, #overview picture img {}*/
 }
-@media screen and (min-width:768px) {
-    #overview img {margin:calc(-100px - 5vw) 0 0;}
+@media screen and (min-width:800px) {
+    /*#overview picture {margin-top:-8vw;}*/
 }
-@media screen and (min-width:970px) {
-    #overview img {margin-top:calc(-170px - 5vw);}
+@media screen and (min-width:1000px) {
+    /*#overview picture {margin-top:-11vw;}*/
 }
 
 #overview bio {letter-spacing:1px;line-height:1.9em;}
