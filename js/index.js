@@ -29,7 +29,7 @@ function getPage (pageName, attempts) {
     error: function(xhr, status, error) {
       console.log(xhr, status, error);
       if (attempts === 1) getPage(pageName, 2); // try again
-      else location.assign(targetPage+'#dynamicLoadFailed'); // failed twice - redirect to selected page
+      else location.assign(pageName+'#dynamicLoadFailed'); // failed twice - redirect to selected page
     },
     type: 'GET'
   });
