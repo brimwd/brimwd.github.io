@@ -6,7 +6,7 @@
   --bg:#fff;
   --bg-faint:#f3f3f3;
 }
-body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;max-width:1200px;text-rendering:optimizeLegibility;}
+body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;max-width:1200px;text-rendering:optimizeLegibility;transition:all 300ms;}
 h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:600;line-height:1.1em;margin-top:0;margin-bottom:0;}
 a {color:var(--text);text-decoration:none;}
 b {font-weight:700;}
@@ -83,6 +83,41 @@ approach {display:none;}
 #footer a {margin-right:20px;}
 #footer a:hover {text-decoration:underline;}
 
+/* dynamicLoad */
+body.dynamicLoad {
+  overflow:hidden;
+  max-height:100vh;
+  padding:0;
+  position:relative;
+}
+#dynamicLoad {
+  background-color:var(--bg);
+  overflow-y:auto;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:10;
+}
+.case-study > * {
+  padding:15px;
+}
+@media screen and (min-width:670px) {
+  #dynamicLoad ~ section, #dynamicLoad ~ footer {
+    transition:filter 300ms;
+    filter:blur(7px);
+  }
+  #dynamicLoad {
+    background-color:rgba(255,255,255,0.3);
+    box-shadow:0 0 140px -25px rgba(0,0,0,.6);
+    padding:50px 0;
+  }
+  .case-study section {
+    background-color:var(--bg);
+  }
+}
+
 @media (prefers-color-scheme:dark) {
 :root {
   --text:#fff;
@@ -95,7 +130,6 @@ approach {display:none;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(100%);}
 }
-
 
 /*
 
