@@ -114,3 +114,8 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 
 figure {margin:0;}
 picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
+
+@media (prefers-color-scheme:dark){
+	picture.full-width {opacity:.8;}
+	picture.full-width:hover, picture.full-width:active, picture.full-width:focus {opacity:1;}
+}
