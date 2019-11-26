@@ -85,7 +85,7 @@ html {width:100vw;overflow-x:hidden;}
 #overview a:hover {background-color:var(--text);color:var(--bg);}
 
 /* APPROACH */
-approach {display:none;}
+#approach {display:none;}
 
 /* WORK */
 #work img {width:100%;max-width:100vw;}
