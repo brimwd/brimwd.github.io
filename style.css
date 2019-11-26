@@ -1,7 +1,7 @@
 :root {
   --text:#2a2a2a;
   --text-med:#777;
-  --text-faint:#b5b5b5;
+  --text-faint:#ffdc68a8;
   --text-ultra-faint:#d7d7d7;
   --header-bg:#fffde9;
   --bg:#fff;
@@ -33,12 +33,12 @@ html {width:100vw;overflow-x:hidden;}
 #overview img {max-width:100%;}
 @media screen and (min-width:375px) {
   #overview h1 {font-size:37px;line-height:inherit;}
-  #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-2px;overflow-y:hidden;}
+  #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-3px;overflow-y:hidden;}
   #overview h3 {letter-spacing:4px;}
 }
 @media screen and (min-width:500px) {
   #overview h1 {font-size:46px;}
-  #overview h1 span {font-size:39px;}
+  #overview h1 span {font-size:39px;margin-top:-5px;}
   /*#overview h3 divider::before {content:unset;}*/
   /*#overview h3 divider::after, #overview h3 divider:last-of-type::after {content:'• ';}*/
 }
