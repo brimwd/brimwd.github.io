@@ -85,12 +85,14 @@ approach {display:none;}
 
 /* WORK */
 #work img {width:100%;max-width:100vw;}
+#work a {border:1px solid var(--text-ultra-faint);border-radius:8px;display:block;transition:all 200ms;padding:15px 30px;margin:20px 0 0;}
+#work a:hover {background-color:var(--header-bg);}
+#work h4 {margin:0 0;}
+#work p {margin:.3em 0 .6em;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
-  #work a {margin:2% 0;padding:15px;width:calc(48% - 30px);border:1px solid var(--text-ultra-faint);}
+  #work a {margin:2% 0;padding:15px;width:calc(48% - 30px);}
   #work img {display:block;margin:0;}
-  #work h4 {margin:1em 0 0;}
-  #work p {margin:.3em 0 .6em;}
 }
 @media screen and (min-width:970px) {
     #work a {margin:2% 0;padding:15px;width:calc(31% - 30px);}
