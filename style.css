@@ -63,7 +63,7 @@ html {width:100vw;overflow-x:hidden;}
   #overview h1 {font-size:60px;letter-spacing:4px;}
   #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
   #overview h1 span {color:var(--text-ultra-faint);font-size:41.2px;font-weight:700;height:1em;letter-spacing:8.1px;line-height:0.5em;margin-top:-7px;padding-left:1px;}
-  #overview h3 {color:var(--text-med);font-size:1em;font-weight:300;margin-top:-12px;margin-bottom:7vh;padding-left:20px;}
+  #overview h3 {font-size:1em;font-weight:300;margin-top:-12px;margin-bottom:7vh;padding-left:20px;}
 }
 @media screen and (min-width:1024px) {
   #overview {
