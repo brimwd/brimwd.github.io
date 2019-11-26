@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brian Donahue - UX Design with Engineering in Mind</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="author" content="Brian Donahue">
+<meta name="description" content="UX, web design, & front-end development portfolio for Brian Donahue, Product Designer based in Silicon Valley, California">
+<meta name="keywords" content="product,product design,manager,UX,UX design,UX designer,user experience,design,designer,UI,HTML,CSS,JavaScript,Illustrator,Adobe,Photoshop,freelance,contractor,developer,front-end,front end,portfolio,graphic design,graphics,web,web development,for hire,resume,jQuery,storyboarding,prototyping,research,user research,researcher,information architecture,taxonomy">
+<meta name="format-detection" content="telephone=no">
+<style>
+*, body {line-height:1.5em;font-family:sans-serif;}
+body::after {text-align:center;position:fixed;top:calc(50% - 40px);left:0;right:0;font-family:FontAwesome;font-size:300px;color:#f1f4f7;z-index:0;}.thumb::after{content:'\f087';}.cake::after{content:'\f1fd';}.lightning::after{content:'\f0e7';}.bicycle::after{content:'\f206';}.coffee::after{content:'\f0f4';}.peace::after{content:'\f25b';}.heart::after{content:'\f004';}.magic::after{content:'\f0d0';}.paw::after{content:'\f1b0';}.smile::after{content:':-)';}.music::after{content:'\266B';}
+
+nav {text-align:center;overflow:auto;position:fixed;right:0;bottom:0;left:0;background-color:white;z-index:20;padding:10px 0;white-space:nowrap;box-shadow:0 0 30px rgba(0,0,0,0.2);transition:padding-bottom 300ms;}
+nav.padded {padding-bottom:25px;}
+nav.padded ~ footer {padding-bottom:1px;}
+nav a {display:inline-block;padding:6px 9px;margin:0 2px;color:#738090;border-radius:50px;transition:all .2s;cursor:pointer;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+nav a.active {background-color:#dee4ea;color:#466686;padding:6px 14px;}
+nav span {display:none;}
+
+body > footer {text-align:center;margin-bottom:90px;color:#738090;z-index:1;position:relative;box-shadow:0 0 100px 300px rgb(255,255,255);background-color:white;}
+body > footer.qr {z-index:1000;}
+body > footer.hidden {opacity:0;}
+body > footer i {color:#d98c9e;}
+
+a.external-link::after, a.player::after {content:'\f08e';vertical-align:bottom;font-family:FontAwesome;display:inline-block;margin-left:8px;}
+a.player::after {content:'\f144';vertical-align:middle;}
+
+#container::after {display:none;}
+#container > article {margin:10px auto 40px;position:relative;display:none;background-color:white;}
+#container > .active {display:block;z-index:2;}
+@media(min-width:870px){#container > article {margin-top:30px;}}
+@media(min-width:1030px){
+	body::after {display:none;}
+	nav {padding:30px 0 0;position:static;background-color:transparent;box-shadow:0 0 0 rgba(255,255,255,0);}
+	nav a {border:1px solid transparent;margin:0 5px;padding:6px 14px;}
+	nav a.active, nav a:hover {border-color:#c3cdda;}
+	nav span {display:inline;}
+	html, body {max-width:100%;overflow-x:hidden;margin:0;}
+
+	body > footer {border-top:1px solid #c3cdda;margin-bottom:0;box-shadow:0 0 100px 100px rgb(255,255,255);}
+
+	#container {width:4500px;overflow-y:hidden;padding:0 370px 0 25px;padding-left:calc(50% - 490px);transition:margin-left .3s;position:relative;}
+	#container::after {position:absolute;top:230px;right:0;width:385px;font-size:300px;color:#f1f4f7;font-family:FontAwesome;display:block;}
+	#container > article, #container > .active {display:inline-block;vertical-align:top;margin:30px 30px 50px;}
+	#container > article::after {position:absolute;content:'';top:200px;right:-32px;bottom:15px;border-right:1px solid #dbe2ea;}
+	#container > article:last-of-type::after {display:none;}
+	#container > article:not(.active) {cursor:pointer;transition:all .2s;opacity:.4;/*-webkit-filter:grayscale(100%);filter:grayscale(100%);*/} /* Safari lags significantly with filters enabled */
+	#container > article:not(.active):hover {opacity:1;/*-webkit-filter:grayscale(0%);filter:grayscale(0%);*/} /* Safari lags significantly with filters enabled */
+	#container > article:not(.active) header {background:gray;}
+	#container > article:not(.active) h2 {color:gray;border-color:gray;}
+}
+@media(max-width:1029px){#container {margin-left:0 !important;}}
+
+/* RESUME */
+#resume {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);padding:30px 5%;border:1px solid #e2e2e2;max-width:650px;}
+#resume section {margin-bottom:2em;}
+#resume section:last-child {margin-bottom:0;}
+#resume h2 {margin-bottom:0;font-size:1.5rem;text-transform:uppercase;}
+#resume h4 {font-size:.9em;margin:0;padding-right:.5rem;color:#555;text-transform:uppercase;}
+#resume ul {margin:0;padding-left:20px;}
+@media (min-width:650px){#resume {max-width:710px;padding:8% 5% 50px;}}
+@media (min-width:710px){#resume {padding:50px;} #resume ul {padding-left:0;} contact {float:right;margin-top:-30px;text-align:right;}}
+@media (min-width:1030px){
+	#resume {padding:90px 80px 50px;}
+	#resume::before, #container > #resume:not(.active)::before {content:"Click sections to navigate " url(./images/arrow.png);padding-right:30px;position:absolute;background-color:white;box-shadow:0 0 10px rgba(255, 255, 255,1);padding:0 8px 0 10px;top:380px;right:-161px;z-index:30;transform:rotate(90deg);font-size:1.2em;color:#8f9cad;bottom:auto;left:auto;opacity:1;}
+	#container > #resume:not(.active)::before {transform:rotate(-90deg);}
+}
+#resume header {background-color:transparent !important;}
+#resume header h1 {margin:0;font-size:1.9rem;line-height:1.9rem;font-weight:normal;}
+#resume header p {margin:0;}
+#resume header span {font-size:1.2rem;line-height:1.8rem;text-decoration:none;}
+#summary p {margin:0 auto .5rem;}
+#skills ul {padding-left:0;margin-top:0;margin-bottom:1rem;}
+#skills ul:last-of-type {margin-bottom:}
+#skills li {list-style:none;display:inline-block;}
+#skills li::after {content:",";display:inline;padding-right:5px;}
+#skills li:last-of-type::after {content:none;}
+@media (min-width:650px){
+	#skills {display:grid;grid-template-columns:150px auto;grid-column-gap:10px;grid-row-gap:15px;}
+	#skills ul {margin:0;}
+}
+#experience p {margin:.3em auto 0;}
+.job-title {font-size:1rem;font-weight:normal;margin-top:1.8rem;margin-bottom:0;}
+.job-title strong {font-size:1.2rem;}
+.major {font-weight:normal;font-size:1.2rem;margin-top:.8rem;margin-bottom:0;}
+.job-title:first-of-type, .major:first-of-type {margin-top:0;}
+.job-title time {float:right;}
+.job-title + * {clear:right;}
+#experience aside {border-left:2px solid #dbe2ea;padding-left:14px;margin:12px 0;}
+@media (min-width:710px){#experience aside {margin-left:-16px;}}
+
+.company {margin:0;font-weight:normal;}
+.company a {text-decoration:none;color:inherit;transition:color 150ms;}
+.company a:hover {color:#2e9459;}
+.school {font-weight:normal;font-size:.9rem;margin:.3rem 0 .5rem;}
+.company span, .school span {font-weight:bold;}
+@media print{
+	body::after, #resume::before, nav, footer, #container > article:not(.active), #container::after {display:none !important;}
+	html, body, #container {max-width:100%;width:100%;}
+	@page, #container {padding-top:1cm;padding-right:1.5cm;padding-bottom:0;}
+	#resume {max-width:auto;box-shadow:none;padding:0;margin:0;border:none;}
+	#summary, #skills, #education {page-break-before:avoid;page-break-inside:avoid;}
+	.pagebreak {page-break-before:always !important;}
+	#extracurriculars p:last-child {margin-bottom:0;}
+}
+#mobile-qr, #inline-qr {display:none;}
+.qr #mobile-qr {align-items:center;background-color:white;display:flex;justify-content:center;position:fixed;top:0;right:0;bottom:0;left:0;}
+#mobile-qr img {max-width:90vw;}
+@media (min-width:710px) {
+	#mobile-qr, .qr #mobile-qr {display:none;}
+	#inline-qr {display:block;float:right;max-height:150px;margin-top:80px;}
+}
+
+/* CASE STUDY - GENERAL STYLES */
+.case-study {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);border:1px solid #e2e2e2;}
+.case-study > * {padding:5%;margin:0 auto;}
+.case-study > *:not(header) {padding:3% 5% 0;border-color:#e2e2e2}
+.case-study > :last-child {margin-bottom:0;padding-bottom:5%;}
+.case-study header {color:white;background-color:#40a0fc;position:relative;}
+.case-study header > * {position:relative;z-index:10;}
+.case-study header img {max-width:140px;}
+.case-study header h1 {font-size:2.2rem;margin-top:4.5rem;margin-bottom:.5rem;}
+.case-study header p {border-bottom:1px solid white;padding-bottom:1.2rem;font-size:1.4rem;margin-top:.5rem;}
+.case-study header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
+.case-study h2 {color:#0082FC;font-size:1.8em;border-bottom:1px solid #0082FC;padding-bottom:1rem;margin:0 0 1rem;clear:right;}
+.case-study h2 ~ p:first-of-type {margin-top:2rem;}
+.case-study a {text-decoration:none;cursor:pointer;}
+.case-study a[href] {color:#333;border-bottom:1px dotted #333;}
+.case-study .persona {margin:20px 0;padding:6px 0 3px 3%;border-left:6px solid #ced6de;}
+.case-study .persona h3 {margin:0;}
+.case-study .list-header {margin:0;font-weight:bold;}
+.case-study ul, .case-study ol {margin-top:0;}
+.case-study .highlight {background-color: #fffdcc;background-clip:padding-box;width:fit-content;position:relative;padding-right:5px;padding-left:3px;}
+.case-study .highlight::before, .case-study .highlight::after {position:absolute;content:'';border:12px solid transparent;}
+.case-study .highlight::before {border-top-color:#fffdcc;border-right-color:#fffdcc;border-left-width:1px;border-right-width:1px;left:-2px;}
+.case-study .highlight::after {border-bottom-color:#fffdcc;border-left-color:#fffdcc;border-left-width:1px;border-right-width:1px;right:-1px;}
+.case-study .highlight + .highlight {margin-top:3px;}
+.case-study section :last-child {margin-bottom:0;}
+
+/* GALLERY */
+.zoom.static {margin:0 auto;max-height:70vh;display:block;border:1px solid #bbb;}
+.gallery {text-align:center;margin:15px 0 0;}
+.gallery * {cursor:pointer;}
+.gallery img {width:30%;margin-right:3%;border:1px solid #cfcfcf;background-color:white;box-shadow:2px 3px 4px -2px rgba(0,0,0,0.2);}
+.gallery img:last-of-type {margin:0;}
+.gallery span {display:none;}
+.gallery + p {margin-top:1rem !important;}
+.gallery.expand img.focus {border-color:black;cursor:zoom-out;}
+@media (min-width:650px){.gallery img {max-width:28%;margin-right:2%;padding:8px;}}
+@media (min-width:850px){
+	.gallery {position:relative;width:228px;height:210px;margin:33px -17px 20px 15px;float:right;transform:rotate(2.5deg);transition:all .3s;}
+	.gallery::before, .gallery::after {content:'';position:absolute;display:inline-block;z-index:10;top:65px;right:-9px;width:52px;height:15px;border:3px solid #aaa;border-radius:60px 0 0 60px;border-right-width:0;transform:rotate(16deg);box-shadow:inset 2px 2px 3px -1px rgba(0,0,0,0.4), -1px 2px 2px -1px rgba(0,0,0,0.4);transition:all .3s, rotate .45s;transform-origin:100% 50%;}
+	.gallery::after {top:70px;right:-25px;width:16px;height:12px;border-width:3px;border-radius:0 30px 30px 0;border-left-width:0;border-bottom-color:transparent;box-shadow:inset -1px 3px 3px -2px rgba(0,0,0,0.4);transition:all .3s, rotate 1s;transform-origin:100% 100%;}
+	.gallery + p {margin-top:2rem !important;}
+	.gallery img {position:absolute;top:0;left:0;max-width:inherit;width:228px;max-height:190px;margin:0;transition:all .3s, max-width 0ms;}
+	.gallery img:nth-of-type(2) {transform:rotate(3deg);top:-6px;}
+	.gallery img:nth-of-type(3) {transform:rotate(-3deg);top:5px;left:3px;}
+	.gallery:hover img {left:-8px;}
+	.gallery:hover img:nth-of-type(2) {transform:rotate(2deg);top:-13px;left:-4px;}
+	.gallery:hover img:nth-of-type(3) {transform:rotate(-4deg);top:13px;left:0px;}
+
+	.gallery.expand {transform:rotate(0deg);width:100%;text-align:right;margin:15px 0 0;}
+	.gallery.expand + * {clear:right;}
+	.gallery.expand + p {margin-top:0 !important;}
+	.gallery.expand::before, .gallery.expand::after {top:89px;right:-41px;transform:rotate(76deg);}
+	.gallery.expand::after {top:100px;right:-38px;}
+	.gallery.expand img {padding:0;top:0;left:494px;transform:rotate(0deg) !important;box-shadow:none;display:inline-block;border:3px solid #efefef;}
+	.gallery.expand:hover img {top:0;left:494px;}
+	.gallery.expand img.static {left:0;}
+	.gallery.expand img:nth-of-type(2).static {left:247px;}
+	.gallery.expand img:nth-of-type(3).static {left:494px;}
+
+	.gallery span {position:absolute;display:block;right:0;bottom:-1.7rem;left:35px;color:#888;font-size:.8rem;transform:rotate(-2.5deg);text-align:center;transition:opacity .3s, color 100ms, background-color 100ms;}
+	.gallery span.collapse {opacity:0;transform:rotate(0deg);z-index:-1;height:0;top:77px;right:auto;bottom:auto;left:0;display:inline-block;line-height:42px;transform:rotate(-90deg);font-size:.9rem;}
+	.gallery:hover span {opacity:0;}
+	.gallery.expand span {opacity:0;height:0;}
+	.gallery.expand span.collapse {opacity:1;left:-119px;height:auto;width:196px;}
+	.gallery.expand span.collapse:hover {color:#000;}
+}
+
+@media (min-width:650px){
+	.case-study > * {padding:5%}
+	.case-study header {padding:50px 5% 10px;}
+	.case-study header br {display:none;}
+}
+@media (min-width:810px){.case-study {max-width:810px;margin:0 auto;}}
+@media (min-width:1030px){
+	.case-study {width:810px;box-shadow:none;border:none;}
+	.case-study > * {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);border:1px solid transparent;margin-bottom:2rem;min-width:650px;}
+	.case-study > *:not(header) {padding:5%;}
+	.case-study > *:not(header)::after {content:'';display:block;clear:both;}
+	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-78px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:30;padding:0 15px;}
+}
+
+/* BLUETOOTH CASE STUDY */
+#bluetooth > header {background-image:url('./images/chevrons-blue-transp.png');background-size:78px 78px;}
+#bluetooth #roles {list-style-type:none;}
+@media (max-width:429px) {
+	#roles {padding-left:0;}
+	#roles li::before {content:'';margin-right:5px;width:10px;height:10px;border:1px solid grey;display:inline-block;border-radius:10px;}
+	#roles .bootstrap::before {background-color:#ff8484;}
+	#roles .other::before {background-color:#a973ff;}
+	#roles .designers::before {background-color:#9ce8ff;}
+}
+/* BLUETOOTH VENN DIAGARAM */
+#design-dev-chart {display:none;}
+@media (min-width:430px) {
+	#bluetooth #roles {list-style-type:decimal;}
+	#design-dev-chart {display:block;position:relative;text-align:center;white-space:nowrap;}
+	#design-dev-chart a {width:240px;padding-top:100px;height:140px;vertical-align:top;display:inline-block;border-radius:300px;text-align:left;position:relative;}
+	#design-dev-chart a.focus {font-weight:bold;}
+	#design-dev-chart * {cursor:pointer;}
+	#design-dev-chart u {display:block;text-decoration:none;}
+	#design-dev-chart i {display:none;position:absolute;right:0;bottom:0;}
+	#design-dev-chart i:hover {text-decoration:underline;}
+	#design-dev-chart a.focus ~ i {display:inline-block;}
+
+	#design-dev-chart #bootstrap {background-color:rgba(255,220,240,.6);margin-right:280px;padding-left:30px;width:210px;z-index:5;border:1px solid grey;margin-top:-1px;}
+	#design-dev-chart #bootstrap:hover, #design-dev-chart #bootstrap:focus, #design-dev-chart #bootstrap.focus {background-color:#ffdcf0;border-color:red;}
+
+	#design-dev-chart #other {margin-left:-400px;background-color:transparent;overflow:hidden;padding:0;width:120px;height:240px;z-index:10;}
+	#design-dev-chart #other span {padding:100px 0 90px 40px;display:block;border-radius:300px;}
+	#design-dev-chart #other div {position:absolute;position:absolute;top:0;right:0;bottom:0;width:240px;border-radius:300px;overflow:hidden;}
+	#design-dev-chart #other div::after {content:'';position:absolute;top:0;right:-120px;bottom:0;width:240px;border-radius:300px;background-color:#eee0fd;z-index:-1}
+	#design-dev-chart #other:hover div::after, #design-dev-chart #other:focus div::after, #design-dev-chart #other.focus div::after {background-color:#dfbcf5;}
+
+	#design-dev-chart #designers {padding-top:110px;height:130px;padding-right:25px;width:95px;text-align:right;z-index:1;}
+	#design-dev-chart #designers::after {content:'';position:absolute;top:-1px;right:0;bottom:-1px;left:-120px;background-color:rgba(220,240,255,.6);border-radius:300px;z-index:-1;border:1px solid grey;}
+	#design-dev-chart #designers:hover::after, #design-dev-chart #designers:focus::after, #design-dev-chart #designers.focus::after {background-color:#dcf0ff;border-color:blue;}
+}
+@media (min-width:820px) {#design-dev-chart {float:right;width:390px;}}
+/* BLUETOOTH VENN DIAGARAM DATA */
+.design-dev-chart-data {list-style-type:none;padding-left:0;}
+.design-dev-chart-data li {position:relative;opacity:.4;}
+.design-dev-chart-data li:not(.focus) {}
+.design-dev-chart-data li.focus {opacity:1;}
+.design-dev-chart-data ::before, .design-dev-chart-data .bootstrap.other.designers::after, .design-dev-chart-data .bootstrap.other::after, .design-dev-chart-data .bootstrap.designers::after, .design-dev-chart-data .other.designers::after {vertical-align:top;margin-top:5px;margin-right:5px;width:10px;height:10px;border:1px solid grey;display:inline-block;border-radius:10px;}
+
+.design-dev-chart-data .bootstrap::before {content:'';background-color:#ff8484;margin-right:20px;}
+.design-dev-chart-data .other::before {content:'';background-color:#a973ff;margin-right:20px;}
+.design-dev-chart-data .designers::before {content:'';background-color:#9ce8ff;margin-right:20px;}
+
+.design-dev-chart-data .bootstrap.other::after, .design-dev-chart-data .bootstrap.designers::after, .design-dev-chart-data .other.designers::after, .design-dev-chart-data .all::after {content:'';position:absolute;top:0;left:15px;}
+.design-dev-chart-data .bootstrap.other::before {content:'';background-color:#ff8484;}
+.design-dev-chart-data .bootstrap.other::after {background-color:#a973ff;}
+.design-dev-chart-data .bootstrap.designers::before {content:'';background-color:#ff8484;}
+.design-dev-chart-data .bootstrap.designers::after {background-color:#9ce8ff;}
+.design-dev-chart-data .other.designers::before {content:'';background-color:#a973ff;}
+.design-dev-chart-data .other.designers::after {background-color:#9ce8ff;}
+.design-dev-chart-data .bootstrap.other.designers::before {content:'';background-color:transparent;margin-right:16px;margin-left:4px;}
+.design-dev-chart-data .bootstrap.other.designers::after {content:'';background-color:transparent;left:10px;}
+
+/* CAN-ZOOM IMAGE */
+img.can-zoom {max-width:30%;float:right;margin:1rem 0 10px 20px;transition:max-width .5s, border .3s, margin-left .3s;cursor:zoom-in;border:1px solid white;}
+img.can-zoom:hover {border-color:grey;}
+img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
+
+/* BOB BOOKS CASE STUDY */
+#game header {background-image:url(images/cadheader.gif);background-size:auto 101%;background-position:0 -3px;color:white;}
+#game header h1 {margin-top:2rem;}
+#game header img {max-width:100px;}
+#game h2 {color:#8b6a40;border-color:#8b6a40;}
+#game a.player {border:none;}
+#demo-player {position:absolute;top:0;right:0;bottom:0;left:0;background-color:rgba(0,0,0,0.8);z-index:15;padding-top:35%;display:none;margin-top:0;cursor:pointer;}
+#demo-player .container {position:absolute;bottom:0;left:0;right:0;}
+#demo-player * {text-align:center;color:white;}
+#demo-player p {font-size:36px;padding-top:120px;}
+#demo-player footer {background:none;padding:10px 0;}
+#demo-player span {z-index:7;position:absolute;top:0;left:0;right:0;}
+#demo-player img {max-width:600px;width:90%;margin:0 auto;}
+@media(max-width:500px){#demo-player p {font-size:28px;padding-top:60px;} iframe {max-height:300px;}}
+
+/* AMAZON CASE STUDY */
+#userdata > header {background-color:#f90;}
+#userdata > header h1 {margin-top:4.2rem;}
+#userdata > header p {border-color:#fff;}
+#userdata h2 {color:#232f3e;border-color:#f90;}
+
+/* PORTFOLIO */
+#portfolio {border:none;box-shadow:none;}
+#portfolio section {border:none;box-shadow:none;padding:10px;}
+#portfolio h2 {border:none;margin:0;color:#888;}
+#portfolio h2 + p {margin-top:0;}
+#portfolio.active * {filter:none;transition:filter .1s;}
+#portfolio .portfolio {display:flex;flex-flow:row wrap;align-items:flex-start;align-content:flex-start;clear:right;}
+#portfolio p {font-weight:bold;}
+#portfolio time {float:right;}
+#portfolio .portfolio img {max-width:23%;max-height:200px;margin:0 1% 20px 0;cursor:pointer;border:1px solid #ccc;}
+#portfolio .before {display:none;}
+#viewer {transition:opacity .3s;position:absolute;top:0;right:0;bottom:0;left:0;text-align:center;cursor:pointer;z-index:10;background-color:rgba(0,0,0,0.5);box-shadow:0 0 30px 7px rgba(0,0,0,0.7);border-radius:7px;border:none;padding:0;opacity:0;overflow:hidden;}
+#viewer img {display:inline-block;margin:0 auto;cursor:pointer;right:0;bottom:5vh;left:0;max-width:95%;max-height:80vh;}
+#viewer p {text-shadow:0 0 15px black, 0 0 25px black, 0 0 40px black;color:white;font-weight:normal;margin-top:5px;right:0;bottom:1.4vh;left:0;}
+.active #viewer ~ * {filter:blur(5px);}
+
+#debug {background-color:rgba(0,0,0,0.7);color:white;font-size:1.5em;display:flex;align-items:center;flex-direction:column;justify-content:center;position:fixed;top:0;right:0;bottom:0;left:0;z-index:100;}
+#debug p {margin:.3em;}
+</style>
+</head>
+<body>
+<nav><a class="active">Résumé</a><a><span>Case </span>Study<span> 1</span></a><a><span>Case </span>Study<span> 2</span></a><a><span>Case </span>Study<span> 3</span></a><a>Portfolio</a></nav>
+<div id="container">
+	<article id="resume" class="active">
+		<header>
+			<h1>Brian Donahue</h1>
+			<contact>
+				<p><span>brimwd@gmail.com</span> • <span>971-222-9892</span></p>
+				<p><span>http://brimwd.github.io</span></p>
+			</contact>
+		</header>
+		<h2>Summary</h2>
+		<section id="summary">
+			<p>I'm a "cross-functional" product designer. My core skill is UX Strategy, and I use my experience with design, research, marketing, and prototyping to improve communication and collaboration between disciplines.</p>
+			<p>My focus on 'environmental factors' and accessibility paired with my deep-understanding of data and front-end engineering empowers me to anticipate implementation challenges and manage requirements from a broader scope.</p>
+			<p>I want to improve people's lives with technology and design by automating what I can and simplifying everything else.</p>
+		</section>
+		<h2>Skills</h2>
+		<section id="skills">
+			<h4>UX &amp; Visual Design</h4>
+			<ul>
+				<li>Usability research</li><li>visual / code prototypes</li><li>workflows</li><li>site maps</li><li>drafting</li><li>information architecture</li><li>data-modeling</li><li>mockups</li><li>wireframes</li><li>visual design</li><li>illustration</li><li>icons</li><li>branding</li>
+			</ul>
+			<h4>Development &amp; Frameworks</h4>
+			<ul>
+				<li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>jQuery</li><li>Bootstrap 4</li><li>SASS</li><li>mobile-first responsive design &amp; development</li><li>responsive emails</li>
+			</ul>
+			<h4>Preferred Tools</h4>
+			<ul>
+				<li>Sketch</li><li>Flinto</li><li>Photoshop</li><li>Illustrator</li><li>Sublime Text</li><li>Balsamiq</li><li>Git</li>
+			</ul>
+			<h4>Soft Skills</h4>
+			<ul>
+				<li>Natural leader</li><li>experienced project manager</li><li>interviewing experience</li><li>executive presentations</li><li>empathy</li><li>integrity</li><li>desire to create joy</li>
+			</ul>
+		</section>
+
+		<h2>Experience</h2>
+		<section id="experience">
+			<h3 class="job-title"><strong>Sr. UX Engineer</strong> <time>3/2019 &ndash; Present</time></h3>
+			<h3 class="company">ServiceNow</h3>
+			<ul>
+				<li>I contribute UX design and strategy on site-wide projects in collaboration with UX designers, researchers, content-producers, strategists, and engineers</li>
+				<li>I evaluate designs from a technical perspective and mentor other designers in planning for edge-cases and in recognizing usability and accessibility issues</li>
+			</ul>
+			<p><strong>Environment:</strong> Sketch, InVision, jQuery, Bootstrap 4, SASS</p>
+
+			<h3 class="job-title"><strong>Founder</strong> <time>1/2017 &ndash; Present</time></h3>
+			<h3 class="company"><a href="http://scheduleux.com" class="external-link" target="_blank">ScheduleUX</a></h3>
+			<aside>
+				<p>I founded ScheduleUX to solve a simple problem: Streamline scheduling for moderated, in-person, user research.</p>
+				<p>With ScheduleUX, a researcher can create a research proposal in a few minutes (less than two if their study description is already written) and participants can sign up, reschedule, and cancel in a way that is entirely self-service.</p>
+				<p>As a researcher using ScheduleUX, the only things I need to worry about are preparing my study and showing up to my sessions.</p>
+			</aside>
+			<p><strong>Environment:</strong> Sketch, Balsamiq, jQuery, Bootstrap 4, SASS, ME-N Stack</p>
+
+			<h3 class="job-title"><strong>Sr. Product Designer</strong> - Cloud Infrastructure <time>1/2018 &ndash; 3/2019</time></h3>
+			<h3 class="company">T&#8209;Mobile</h3>
+			<ul>
+				<li>Software design (UX/UI) and development on a Cloud-architecture platform</li>
+				<li>Designed v1 including resource-gathering and data-modeling for scenarios from intake to lowest-common-denominator relationships and usage-thresholds</li>
+				<li>Created brand guidelines, wireframes, tutorials, documentation, and prototypes</li>
+			</ul>
+			<p><strong>Environment:</strong> HTML5, CSS3, Bootstrap 4, SASS, Angular, BitBucket</p>
+
+			<h3 class="job-title"><strong>Sr. Product Designer</strong> - Design System <time>7/2017 &ndash; 9/2017</time></h3>
+			<h3 class="company">Bluetooth</h3>
+			<ul>
+				<li>Led the UX Design team in conducting research and user interviews, and defining personas, use cases, and feature requirements</li>
+				<li>Designed, prototyped, and built a self-documenting style guide to coordinate brand and component design across web, applications, branding, and marketing</li>
+			</ul>
+			<p><strong>Environment:</strong> HTML5, CSS3, Bootstrap 4, SASS, jQuery, Node, Github</p>
+
+			<h3 class="job-title"><strong>UX Designer</strong> <time>3/2016 &ndash; 12/2016</time></h3>
+			<h3 class="company">Amazon</h3>
+			<ul>
+				<li>Defined design tenants around collecting user information including demographic information and personal attributes such as height, waist size, shoe size, etc.</li>
+				<li>Conducted nearly 200 user interviews as part usability and UX research to produce supporting data for design work</li>
+				<li>Designed a pattern for organizing product taxonomies to maximize discoverability</li>
+			</ul>
+			<p><strong>Environment:</strong> Sketch, Flinto, Balsamiq, Rally</p>
+
+			<h3 class="job-title pagebreak"><strong>Lead Designer &amp; Developer</strong> <time>10/2014 &ndash; 11/2015</time></h3>
+			<h3 class="company">B2D Marketing</h3>
+			<ul>
+				<li>Responsive web marketing campaigns and collateral, online store maintenance, email newsletters, logos, branding</li>
+				<li>Lead designer and developer on a team of 6, directing and delivering marketing campaigns and site maintenance for a rotating set of 5 to 7 clients</li>
+			</ul>
+			<p><strong>Environment:</strong> HTML5, CSS3, jQuery, Bootstrap 3, Drupal 6 &amp; 7, Wordpress</p>
+
+			<h3 class="job-title"><strong>Design Consultant</strong> (Designer &amp; Front End Developer) <time>12/2007 &ndash; 11/2015</time></h3>
+			<h3 class="company">Clients:</strong> Seattle PRIDE, Moving Worlds, Bob Books, Siren, University of Iowa</h3>
+			<ul>
+				<li>Mobile app designs, responsive web development, branding, marketing strategy and collateral, information architecture, user research</li>
+				<li>Developed responsive websites and email campaigns, online stores, &amp; mobile games</li>
+				<li>Designed logos, fonts, T-shirts, menus, event banners, &amp; marketing collateral</li>
+			</ul>
+			<p><strong>Environment:</strong> Adobe Illustrator, Balsamiq, HTML, CSS, jQuery, Bootstrap 3</p>
+		</section>
+
+		<img id="inline-qr" src="images/url-qrcode.png" alt="QR Code linking to this site" />
+
+		<h2>Education</h2>
+		<section id="education">
+			<h3 class="major">Graphic Design &amp; Computer Science</h3>
+			<h3 class="school"><span>University of Iowa</span> - Fall 2007, Spring 2012</h3>
+
+			<h3 class="major">Graphic Design</h3>
+			<h3 class="school"><span>Iowa Lakes Community College</span> - Fall 2010</h3>
+
+			<h3 class="major">Illustration</h3>
+			<h3 class="school"><span>Ringling School of Art &amp; Design</span> - Fall 2007</h3>
+		</section>
+		<!-- <h2>Extracurriculars</h2>
+		<section id="extracurriculars">
+			<p>Outside of work, I mentor junior designers and product managers, and I volunteer my design skills for non-profit organizations.</p>
+			<p>I'm also an avid reader, cartoonist, writer, farmer's-market enthusiast, and I build hobby websites and products.</p>
+		</section> -->
+	</article>
+
+	<article class="case-study" id="bluetooth">
+		<header>
+			<img src="images/bluetooth.svg" alt="Bluetooth Logo" />
+			<h1>Case Study: <br />UX Style Guide</h1>
+			<p>Building a self-documenting style guide for Bluetooth</p>
+			<time datetime="2017-09-30">September 30, 2017</time>
+		</header>
+		<section>
+			<h2>Overview</h2>
+			<p><strong>Role:</strong> UX Engineer - contractor - 3 months</p>
+			<p><strong>Task:</strong> Design &amp; develop a style guide that the entire company can leverage</p>
+			<p>I was contracted to improve the existing style guide tool, but there were many issues with the tool as described below. In the following sections I'll discuss a few of these issues and what steps I took to address them.</p>
+			<p>The problems, impacts, and goals were determined during a project planning phase. Many of the problems were complaints that the UX team had received but were unable to address with the existing implementation.</p>
+			<p>Although I was hired to make recommendations and to complete work on the existing tool, after conducting user interviews it quickly became apparent that the tool they had was too much work to maintain and was inadequate to meet their needs.</p>
+			<p>Through the interview process, the UX team was able to identify a number of issues surrounding the style guide and its usage, and the primary issues are documented in the next section.</p>
+		</section>
+		<section>
+			<h2>Problem &amp; Goal Statements</h2>
+			<p>The problems we felt we could address through improvements to the style guide are highlighted in yellow below. The remainder of the issues will be addressed by the UX team through policy updates and content inventories.</p>
+			<p class="list-header">Problems:</p>
+			<ul>
+				<li>Developers aren't implementing styles from the guide</li>
+				<li class="highlight">There are too many disparate styles and style sheets</li>
+				<li>There are disparate styles and UI components across platforms and tools</li>
+				<li class="highlight">The style guide provides no definition on when/why to use components</li>
+				<li class="highlight">The style guide website is not fully responsive</li>
+				<li class="highlight">The existing style guide is poorly coded</li>
+			</ul>
+			<p class="list-header">Impacts:</p>
+			<ul>
+				<li>User interfaces are inconsistently implemented and harder to maintain</li>
+				<li>Multiple style sheets decreases performance and creates confusion around which styles belong to which properties</li>
+				<li>Users of our products and tools are subject to an inconsistent, poor user experience</li>
+				<li>The style guide website is inconvenient for developers to use</li>
+				<li>The style guide website is difficult for designers to use and maintain</li>
+			</ul>
+			<p class="list-header">Goals:</p>
+			<ul>
+				<li>Improved consistency of style implementation</li>
+				<li>Develop a unified set of styles</li>
+				<li>Clearly define usage guidelines around components</li>
+				<li class="highlight">Remove obstacles to style guide usage</li>
+				<li class="highlight">Improve underlying style guide code</li>
+				<li class="highlight">Minimize maintenance effort</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Research: User Interviews</h2>
+			<p>Our initial round of interviews conducted with influential developers helped us identify some workflow issues and a general lack of awareness of the intent of the style guide. We were also able to confirm the frustrations with the guide that had been expressed by its few users prior to my start.</p>
+			<p>Reviewing our research data, I was able to identify 3 unique user personas:</p>
+			<ol id="roles">
+				<li class="bootstrap">Developers using Bootstrap</li>
+				<li class="other">Developers on other platforms</li>
+				<li class="designers">Designers, Marketing, QA, and Management</li>
+			</ol>
+			<aside id="design-dev-chart"><a id="bootstrap">Bootstrap<u>Devs</u></a><a id="other"><span>Other<u>Devs</u></span><div></div></a><a id="designers">Designers</a><i>clear</i></aside>
+			<p class="list-header">Needs:</p>
+			<ul class="design-dev-chart-data">
+				<li class="focus bootstrap other designers">Visual reference for styles</li>
+				<li class="focus bootstrap">CSS class names</li>
+				<li class="focus other designers">Element properties (full CSS)</li>
+				<li class="focus bootstrap other">(Occasionally) HTML snippets</li>
+				<li class="focus bootstrap other">Clear documentation about changes</li>
+				<li class="focus designers">Component usage guidelines</li>
+				<li class="focus designers">Pattern files</li>
+			</ul>
+			<p class="list-header">Pain Points:</p>
+			<ul class="design-dev-chart-data">
+				<li class="focus bootstrap other designers">Difficult to find style guide when needed</li>
+				<li class="focus bootstrap designers">Difficult to reference (too much code)</li>
+				<li class="focus other">Difficult to reference (not enough code)</li>
+				<li class="focus bootstrap other designers">Insufficient content (usage guidelines &amp; components)</li>
+				<li class="focus bootstrap designers">Lack of communication about style guide updates</li>
+				<li class="focus designers">Visual styles are not consistent between style guides</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Research: Prototyping</h2>
+			<div class="gallery"><img src="images/uxsg1.png" alt="Style Guide 'elements'"/><img src="images/uxsg2.png" alt="Style Guide 'components'"/><img src="images/uxsg3.png" alt="Style Guide 'utilities'"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<p>After the initial round of interviews, I created a set of low-fi mock-ups in Balsamiq based on the feedback we'd received.</p>
+			<p>Using these mock-ups, I facilitated discussions with the UX team around features and content. Together we determined which features were necessary and which could be cut.</p>
+			<p>Between discussions, I researched a number of existing 'pattern library' solutions and eventually built prototypes using the 3 platforms that seemed like they would get us closest to our defined goals. The platforms I built prototypes on were: <b>Fabricator</b>, <b>AtomicDocs</b>, and <b>Swanky Docs</b>.</p>
+		</section>
+		<section>
+			<h2>Research: Usability Study</h2>
+			<img src="images/uxsg4.png" class="can-zoom" alt="Usability Study Mock-up" />
+			<p>After reviewing the pros and cons for each platform, the UX team and I decided on moving forward with Fabricator.</p>
+			<p>Before making any major modifications to the platform, I planned a usability study to determine how well the platform met the developers' needs.</p>
+			<p>Each study session began with a brief overview of the tool, followed by an explanation of the exercise. The participant's goal was to find the corresponding code that was necessary to reproduce the mock-up I'd provided.</p>
+			<p>While the participants worked, I took notes on the ways that they interacted with the tool and asked probing questions around their intent when they got stuck.</p>
+			<p>The observations I made during the study were invaluable to improving the usability of the tool, especially because each participant seemed to have a unique approach to navigating the content.</p>
+		</section>
+		<section>
+			<h2>Conclusion</h2>
+			<div class="gallery"><img src="images/uxsg1f.png" alt="Final Product: Overview" /><img src="images/uxsg2f.png" alt="Final Product: Components" /><img src="images/uxsg3f.png" alt="Final Product: Form Builder" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<p>After discussing my study observations with the team, I proposed a few modifications to the tool including an updated information architecture, and more robust content. The UX team also requested a number of features around navigation and content labels.</p>
+			<p>While the UX Engineer on staff migrated the remaining content from the old guides, I built out and documented a robust framework for generating content and supporting future updates.</p>
+			<p>Finally, I gave a presentation to the designers, developers, and product managers describing the goals of the project, and the features of the final product.</p>
+			<p>Over the course of our research, we'd discovered that many developers were aware of discrepancies in the guides and had a mild fear of relying too heavily on the content as a result. Faith in the tool was the final piece of the puzzle to improve adoption among development teams, and I used the presentation as an opportunity to build faith by explaining how the guide content is generated in a way that significantly reduces the opportunity for errors.</p>
+			<p><a class="player" id="bluetooth-presentation">Final Presentation Deck</a></p>
+			<p><a href="http://bluetooth-ux.github.io" class="external-link" target="_blank">Bluetooth UX Style Guide</a></p>
+			<p>My final code commit was September 29, 2017.</p>
+		</section>
+	</article>
+	<article class="case-study" id="game">
+		<header>
+			<img src="images/bob.svg" alt="Bob Books Logo" />
+			<h1>Case Study: <br />Game Prototyping</h1>
+			<p>Building a Concept Game for Bob Books</p>
+			<time datetime="2017-01-20">January 20, 2017</time>
+		</header>
+		<section>
+			<h2>Overview</h2>
+			<p>Thrilled with my work on their new font, Adam, the marketing director at Bob Books asked me to make a bid for their next game development contract.</p>
+			<p>Adam asked me to create a proposal that would demonstrate other gameplay methods and generally make the games more engaging.</p>
+			<p>Over the following month I designed a variety of spelling games; wrote a script; created illustrations, sound effects, and animations; and programmed a game in Unity with my friend Michael Afrides.</p>
+		</section>
+		<section>
+			<h2>Research</h2>
+			<img src="https://lh3.googleusercontent.com/q798hsCzwv-SMnaYH9j4YabUyt8J6gtTclBiYeGYtmi6R9nwmxL3FFpgLBeKrwkI9w=h900" class="can-zoom" alt="Bob Books' original game" />
+			<p>Bob Books' existing games feature a single gameplay concept and individual spelling challenges. Each level is composed of simple line drawings and lacks any animation or color.</p>
+			<p>I believe that by telling a story with the challenges interspersed, the curiosity about story could become the compelling reason for progressing through the levels as opposed to simply completing each challenge for its own sake.</p>
+			<p><a href="https://play.google.com/store/apps/details?id=com.learningtouch.bobbooksrm1&hl=en" class="external-link" target="_blank">Click here</a> to see Bob Books' original app that we were competing against.</p>
+		</section>
+		<section>
+			<h2 id="#concept1">Gameplay Concept 1</h2>
+			<div class="gallery"><img src="images/caddog1.jpg" alt="Dog Level Concept"/><img src="images/caddog2.png" alt="Dog Level Assets"/><img src="images/caddog3.png" alt="Dog Level Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<p>To win the contract, we would need to show a better UX while also proving that we could reproduce their current gameplay modes.</p>
+			<p>The basic gameplay mode required spelling a word in left-to-right order. This is an easy task, so we spiced it up a little with some 3D animations.</p>
+			<p><a class="player" id="images/caddog.gif">Watch Gameplay (16s)</a></p>
+		</section>
+		<section>
+			<h2 id="#concept2">Gameplay Concept 2</h2>
+			<div class="gallery"><img src="images/cadcat1.jpg" alt="Cat Level Concept"/><img src="images/cadcat2.png" alt="Cat Level Assets"/><img src="images/cadcat3.png" alt="Cat Level Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<p>We also wanted to show something new and different that would still be something a young child could accomplish.</p>
+			<p>Our second gameplay mode drops "random" letters from the top of the screen. To add a little silliness and playfulness, the letters are trapped inside raindrops, which the player has to catch and drop onto sponges to wring out the water.</p>
+			<p>We also used this opportunity to create an animated 'cut-scene' - a feature the existing games don't have.</p>
+			<p><a class="player" id="images/cadcat.gif">Watch Gameplay (26s)</a></p>
+		</section>
+		<section>
+			<h2 id="#concept3">Gameplay Concept 3</h2>
+			<div class="gallery"><img src="images/cadhome1.png" alt="Game Home Screen Concept"/><img src="images/cadhome2.png" alt="Game Home Screen Assets"/><img src="images/cadhome3.png" alt="Game Home Screen Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<p>To create a sense of accomplishment, I wanted each section of our proposed game to feel like an immersive experience with hidden animations and environmental changes that reflect game progress.</p>
+			<p>We created a challenge navigation screen (this farm scene) where the rain diminishes and the cats and dogs stop 'raining' once you save them.</p>
+			<p>By the end of the demo the rain has cleared and the scene is pleasant and sunny.</p>
+			<p><a class="player" id="images/cadhome.gif">Watch Home Screen Interaction (15s)</a></p>
+		</section>
+		<section>
+			<h2 id="conclusion">Conclusion</h2>
+			<p>In the end the client decided to stick with their overseas developers who work for far less than we were willing to, so we didn't get the contract. Although it was disappointing that we weren't hired, it was a great experience creating this game from scratch on a new platform, and Michael used his experience here and at his next job to get a full-time game development role.</p>
+			<p><a href="./candd.html" class="external-link" target="_blank">Play the final demo</a> (requires free Unity Web Player plug-in)</p>
+			<p><a href="./candd-journal.pdf" class="external-link" target="_blank">Development Journal</a> (low-fis &amp; concepts - PDF)</p>
+		</section>
+	</article>
+	<article class="case-study" id="userdata">
+		<header>
+			<img src="images/amazon-white.svg" alt="Amazon.com Logo" />
+			<h1>Case Study: <br />Collecting User Data</h1>
+			<p>Learning about customers in ways that build trust</p>
+			<time datetime="2017-03-14">March 14, 2017</time>
+		</header>
+		<section>
+			<h2 id="overview">Overview</h2>
+			<p>During my time at Amazon, one of my major projects revolved around learning how to collect demographic data from customers. The research I conducted is protected under NDA, so I can't disclose any specifics, but I can share the process and general learnings.</p>
+		</section>
+		<section>
+			<h2 id="challenges">The Challenge</h2>
+			<p>Some of the obvious solutions for collecting information are to ask for the information on user sign-up, to provide a gift in exchange for the information, or requiring the information in exchange for access to certain features.</p>
+			<p>Over the course of my research, I identified 5 key challenges to collecting demographic information from customers and designed solutions to address them.</p>
+			<p>The challenges I identified are detailed below.</p>
+
+			<ol>
+			<li><a href="#coa">Cost of acquisition</a></li>
+			<li><a href="#ia">Information accuracy</a></li>
+			<li><a href="#cp">Coverage percentage</a></li>
+			<li><a href="#pct">Preserving customer trust</a></li>
+			<li><a href="#ocf">Overcoming customer fear</a></li>
+			</ol>
+
+			<h3 id="coa">Cost of Acquisition</h3>
+			<p>While many companies may see great results in acquiring information like birthdays or ages from customers in exchange for annual birthday gifts, there's actually very little those companies can do to ensure the validity of the information. Case in point, at least one man has 365 registered Starbucks cards, each with a different birthday so he gets a free drink everyday. Not only can this be a very expensive proposition for the company, but it opens a "one-way door" to giving away gifts that can be very difficult to close again.</p>
+
+			<h3 id="ia">Information Accuracy</h3>
+			<p>In a similar issue, Facebook (which has been very successful in collecting demographic data) has provided no incentive for truthful information. Even if Facebook were successful in collecting demographic data from 100% of their user base, I would argue that the data they've collected is almost worse than useless. Not only does it cost money to store all of that information, but without incentive to provide truthful answers, the data they have has such a high potential inaccuracy that any conclusions drawn would be suspect at best.</p>
+
+			<h3 id="cp">Coverage Percentage</h3>
+			<p>Another challenge is collecting enough customer data to be able to draw meaningful conclusions. Even if you're only interested in the behaviors and habits of a particular demographic, unless you collect data from the majority of your user base, it can be difficult to determine what percentage of your customers in your target demographic you've collected information from.</p>
+
+			<h3 id="pct">Preserving Customer Trust</h3>
+			<p>Customers we talked to were very comfortable with the idea of Amazon having their demographic information, but in spite of that, asking for customer information with little or no context made customers feel skeptical and wary. Essentially we found that if customers believed they had volunteered the information as in a profile, that was fine, but when we asked for it, it made them concerned about our intent.</p>
+
+			<h3 id="ocf">Overcoming Customer Fear</h3>
+			<p>Beyond concerns about our intent, customers in our studies consistently expressed concerns about being "profiled". Even believing that Amazon could provide them more interesting or relevant results, customers were afraid that we might do so by hiding results that we deemed irrelevant.</p>
+		</section>
+		<section>
+			<h2 id="solutions">The Solution</h2>
+			<p>To address cost of acquisition, we needed to provide a perceived benefit or value of some sort. This is relatively easy to do for free with digital services, but without a benefit directly related to the information collected, there's still no incentive for customers to provide truthful answers.</p>
+			<p>If we're interested in collecting customer birthdays, for example, there's very little we can do to tie a benefit to that. A solution needs to be relatively generic to appeal to a large percentage of the population, but each day of the year is so arbitrary that there's little specific value we can provide - hence the guy with a free "birthday" drink everyday at Starbucks.</p>
+			<p>So collecting a birthday is problematic because it can feel like 'sensitive' information and I would guess the majority of cases are really only interested in the year. So, instead trying to do something obvious by tackling birthdays head-on, we could instead just collect the piece we really care about -- age.</p>
+			<p>One way to get a person to volunteer their age might be to offer to show them things that other people their age are interested in. While it's true that customers could still lie about their ages, they're more likely to tell you the truth because you've tied the benefit directly to the value they hope to receive.</p>
+			<p>If you <i>really</i> need birthday for some reason, then once a customer has provided their age, you can more subtly "nudge" them to provide their birthday -- maybe even just so that their 'age' stays accurate.</p>
+		</section>
+		<section>
+			<h2>The Cold-Start Problem</h2>
+			<p>Customers feel safe providing their information when there is a clear value associated with it, so offering a tangible, directly-related benefit will always protect customer trust.</p>
+			<p>There is an additional challenge that comes up with the 'age' solution above, however, and that is what we call a "cold-start problem".</p>
+			<p>The challenge here is simple: until we've collected a substantial amount of customer data, we can't provide meaningful information to the customers.</p>
+			<p>Every business that relies on customer input faces this challenge, and there are many ways of overcoming it. It's up to each organization to determine the appropriate solution and pacing for their cold-start problem, but the general approaches come down to either focusing on a single group or grouping everyone together.</p>
+			<p>When it comes to grouping everyone, first you might show all people the same results, then later divide the customers into "Over 50" and "Under 50". When you have more data yet, divide ages by decade and so on.</p>
+		</section>
+		<section>
+			<h2>Conclusion</h2>
+			<p>Taking all of these challenges into account and addressing each with your solution can strongly benefit your collected data and help you earn trust with your customers.</p>
+			<p>Each interaction your customers have with you contributes to your cumulative relationship. Handle with care.</p>
+		</section>
+	</article>
+	<article id="portfolio" class="case-study">
+		<section>
+			<h2>Select Visual Design Work</h2>
+			<p>Logos <time>2012 - 2019</time></p>
+			<div class="portfolio">
+				<img src="images/portfolio/sux-logo.png" alt="ScheduleUX logo - 2018" />
+				<img src="images/portfolio/logo-mw2.png" alt="Moving Worlds Impact Teams - 2017" />
+				<img src="images/portfolio/logo-mw1.png" alt="Moving Worlds Institute - 2016" />
+				<img src="images/portfolio/logo-basebone.png" alt="Basebone - 2015" />
+				<img src="images/portfolio/logo-prideidol.png" alt="Pride Idol - 2014" />
+				<img src="images/portfolio/logo-jcccw.png" alt="Japanese Cultural and Community Center - 2014" />
+				<img src="images/portfolio/logo-worthen.png" alt="Worthen Creative - 2013" />
+				<img src="images/portfolio/logo-transit.jpg" alt="Transit Assembly - 2013" />
+				<img src="images/portfolio/logo-galaxy.png" alt="Galaxy - 2012" />
+			</div>
+			<p>Landing Pages<time>2015</time></p>
+			<div class="portfolio">
+				<img src="images/portfolio/landing-oldportfolio.png" alt="My old portfolio site - 2014" />
+				<img src="images/portfolio/landing-cwd.png" alt="Criminal Watchdog - 2015" />
+				<img src="images/portfolio/landing-docs.png" alt="DOCS Education Membership - 2015" />
+				<img src="images/portfolio/landing-physics.png" alt="Physics Foreceps - 2015" />
+				<img src="images/portfolio/landing-acero.png" alt="Acero Crowns - 2015" />
+			</div>
+			<p>Emails<time>2015</time></p>
+			<div class="portfolio">
+				<img class="after" src="images/portfolio/email-incisor.png" alt="Incisor Newsletter - 2015" />
+				<img class="after" src="images/portfolio/email-physics.png" alt="Physics Foreceps Course Invitation - 2015" />
+				<img class="after" src="images/portfolio/email-meddent.png" alt="MedDent Safety Newsletter - 2015" />
+			</div>
+			<p>MovingWorlds Presentation Template<time datetime="2014-10-31">Oct 2014</time></p>
+			<div class="portfolio">
+				<img src="images/portfolio/mw-b2b1.png" alt="Cover Slide" />
+				<img src="images/portfolio/mw-b2b2.png" alt="Title Slide" />
+				<img src="images/portfolio/mw-b2b3.png" alt="Content Slide" />
+			</div>
+			<p>MovingWorlds Document Template<time datetime="2014-10-31">Oct 2014</time></p>
+			<div class="portfolio">
+				<img src="images/portfolio/mw-concept.png" alt="Concept Sketch" />
+				<img src="images/portfolio/mw-doc1.png" alt="Cover Page" />
+				<img src="images/portfolio/mw-doc2.png" alt="Index Page" />
+				<img src="images/portfolio/mw-doc3.png" alt="Content Page" />
+			</div>
+			<p>Seattle Pride<time datetime="2014-07-31">July 2014</time></p>
+			<div class="portfolio">
+				<img src="images/portfolio/pride-1974posterad.png" alt="Remastered Poster Ad" />
+				<img src="images/portfolio/pride-1974poster.png" alt="1974 Remastered Poster" />
+				<img src="images/portfolio/pride-map.png" alt="Parade Map" />
+				<img src="images/portfolio/pride-sponsorsad.png" alt="Sponsors Ad" />
+				<img src="images/portfolio/pride-takei.png" alt="Parade Marshal Badge" />
+				<img src="images/portfolio/pride-badge.png" alt="ID Badge" />
+				<img src="images/portfolio/pride-announcersad.png" alt="Announcers Ad" />
+				<img src="images/portfolio/pride-idolbanner.jpg" alt="Pride Idol Banner" />
+				<img src="images/portfolio/pride-judgesbanner.png" alt="Parade Judges Banner" />
+			</div>
+			<p>Miscellaneous Print<time>2012 - 2014</time></p>
+			<div class="portfolio">
+				<img src="images/portfolio/print-oak.png" alt="Oak Restaurant Menu" />
+				<img src="images/portfolio/print-tabletop.jpg" alt="JCCCW Tabletop Display" />
+				<img src="images/portfolio/print-museum.png" alt="Nikkei Museum Signage" />
+				<img src="images/portfolio/print-bob.png" alt="BOB Books Font" />
+				<img src="images/portfolio/print-ninebit.png" alt="Nine-Bit Font" />
+			</div>
+		</section>
+	</article>
+</div>
+<footer>
+	<p>Built with <i class="fa fa-heart" title="love"></i> by Brian Donahue</p>
+	<div id="mobile-qr"><img src="images/url-qrcode.png" alt="QR Code linking to this site" /></div>
+</footer>
+<link rel="stylesheet" href="https://use.fontawesome.com/5d44595dd9.css" media="all">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$('document').ready(function(){
+	var body = $('body'),
+		container = $('#container'),
+		articles = $('#container > article'),
+		portfolio = $('#portfolio section'),
+		nav = $('nav'),
+		navLinks = $('nav a'),
+		footer = $('body > footer')
+		player = $('.player'),
+		zoomImage = $('.can-zoom'),
+		activeArticle = $(),
+		vidPlayer = $(), $div = $(), vidSrc = $(), vidPos = $(), eventTarget = $(),
+		characters = ['thumb', 'peace', 'cake', 'magic', 'lightning', 'bicycle', 'coffee', 'heart', 'paw', 'music', 'smile'], selectedCharacter = 'a';
+
+	function showPlayer ($targetVid, $vidPos, eventTarget){
+		var $div = '<div id="demo-player"><div class="container"><span><img src="" alt=""/><footer>(click anywhere to close this overlay)</footer></span><p>Loading...</p></div></div>';
+
+		$($div).prependTo($(eventTarget).parents('section')).fadeTo("slow", 1.0);
+
+		var vidPlayer = $('#demo-player');
+
+		vidPlayer.find('.container').css('bottom',$vidPos);
+		if ($targetVid === 'bluetooth-presentation') {
+			vidPlayer.find('img').after($('<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTxQqvmgk8c1hy0LxPBQ6RWURbNxQ5FqCdg9OqPxPriwsZEyLgRB470g9ABmVXygYpIxwzQZtG5S9fU/embed?start=false&loop=false&delayms=60000" frameborder="0" width="90%" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>'));
+		} else {
+			vidPlayer.find('img').attr('src',$targetVid);
+		}
+		vidPlayer.on('click',function(){
+			this.remove();
+		});
+	}
+	function adjustPageHeight(element) {
+		// clear all timeouts
+		var id = window.setTimeout(function() {}, 0);
+		while (id--) {window.clearTimeout(id);}
+
+		if (nav.css('position') === "fixed") {
+			container.css('height','auto');
+			return;
+		}
+		container.css('height', $(element).outerHeight(true) + 'px');
+	}
+	function toggleInactiveArticles() {
+		if (nav.css('position') === "fixed"){
+			container.find('article:not(.active)').css('display','none');
+		} else {
+			container.find('article:not(.active)').attr('style','');
+		}
+	}
+	function refreshBgIcon() {
+		if (typeof selectedCharacter === 'number'){
+			if (selectedCharacter < characters.length-1) {selectedCharacter++;}
+			else {selectedCharacter = 0;}
+		}
+		else {selectedCharacter = Math.floor(Math.random() * characters.length);}
+
+		body.removeClass().addClass(characters[selectedCharacter]);
+		container.removeClass().addClass(characters[selectedCharacter]);
+	}
+	function loadDeepLink () {
+		if (document.location.hash) {
+			nav.css('display','block');
+			if (document.location.hash === '#debug') {
+				$('body').prepend($('<div id="debug" />')
+					.append($('<p />').text('screen width: '+window.screen.width))
+					.append($('<p />').text('screen height: '+window.screen.height))
+					.append($('<p />').text('innerWidth: '+window.innerWidth))
+					.append($('<p />').text('innerHeight: '+window.innerHeight))
+					.append($('<p />').text('outerWidth: '+window.outerWidth))
+					.append($('<p />').text('outerHeight: '+window.outerHeight))
+				);
+			} else {
+				document.getElementById(document.location.hash.slice(9)).click();
+			}
+		}
+		else { adjustPageHeight($('#resume')); }
+	}
+
+	/* LISTENERS */
+	navLinks.on('click',function(){
+		var clickedLink = $(this);
+
+		if ($(articles[clickedLink.index()]).hasClass('active')) {return;}
+
+		if (clickedLink.parent('nav').css('position') === "fixed") {
+			refreshBgIcon();
+
+			footer.addClass('hidden');
+
+			container.find('.active').fadeOut(function(){
+				articles[clickedLink.index()].click();
+				$('.active').fadeIn();
+				footer.removeClass('hidden');
+			});
+		}
+		articles[clickedLink.index()].click();
+	});
+
+	$('body > footer').on('click', function(){
+		if (window.innerWidth >= 710) {
+			$(this).removeClass('qr');
+			return;
+		}
+		$(this).toggleClass('qr');
+	})
+
+	function toggleNavPad () {
+		if ((window.screen.width === 375  && window.screen.height === 812)  // iPhone X portrait
+		 || (window.screen.width === 414  && window.screen.height === 896)  // iPhone Xs Max portrait
+		 || (window.screen.width === 834 && window.screen.height === 1194)  // iPad Pro 11" portrait
+		 || (window.screen.width === 1024 && window.screen.height === 1366) // iPad Pro 12.9" portrait
+		 ){
+		   // special code for avoiding bottom bar on iOS
+		   $('nav').addClass('padded');
+		} else {
+		   $('nav').removeClass('padded');
+		}
+	};
+	toggleNavPad();
+
+	$(window).on('resize', function(event) {
+		$('body > footer').removeClass('qr');
+		toggleInactiveArticles();
+		toggleNavPad();
+		adjustPageHeight(container.find('.active'));
+	});
+
+	zoomImage.on('click',function(){
+		if($(this).parent().hasClass('three-images')) {
+			$(this).prependTo($(this).parent());
+			$(this).siblings().removeClass('zoom');
+		}
+		$(this).toggleClass('zoom');
+
+		activeArticle = $(this).parents('.case-study');
+		window.setTimeout(function(){
+			adjustPageHeight(activeArticle);
+		}, 500);
+	});
+
+	//Video/Animation Overlay
+	player.on('click', function(event){
+		eventTarget = $(event.target);
+		vidSrc = $(this).attr('id');
+		vidPos = $(document).height() - $(this).parent().offset().top + 50;
+
+		showPlayer(vidSrc, vidPos, eventTarget);
+	});
+
+	// PORTFOLIO VIEWER
+	$('#portfolio').on('click',function(e){
+		if (! $(this).hasClass('active')) {return;}
+
+		if (e.target.tagName === "IMG" && $(e.target).parent().hasClass('portfolio')) {
+			var marginTop = window.scrollY > (98 + (window.innerHeight * .05)) ? 'calc('+(window.scrollY - $('#portfolio')[0].offsetTop - $('#container')[0].offsetTop) +'px + 5vh)' : '5vh';
+			var position = 'static';
+			if ($(e.target).parent()[0] === $('#portfolio .portfolio:last-child')[0]) {
+				marginTop = 0;
+				position = 'absolute';
+			}
+
+			$('#portfolio section').prepend($('<div id="viewer">').append($(e.target).clone().css({'margin-top':marginTop,'position':position})).append($('<p />').text($(e.target).attr('alt')).css('position',position)));
+			$('#portfolio').find('#viewer').css('opacity','1');
+		} else if ($(e.target).attr('id') === "viewer" || $(e.target).parent().attr('id') === "viewer") {
+			$('#portfolio').find('#viewer').remove();
+		}
+	});
+
+	//end Video/Animation Overlay
+	articles.on('click', function(event) {
+		//skip this whole click function if the clicked article is '.active'
+		if ($(this).hasClass('active')) {return;}
+
+		//update hash
+		var newHash = this === $(this).parent().children(':first-child')[0] ? '' : "section-"+$(this).attr('id');
+		if (history.replaceState && typeof(history.replaceState) === "function") {
+		if (this === $(this).parent().children(':first-child')[0]) { window.history.replaceState("object or string", "Title", 'index.html'); }
+			else { window.history.replaceState("object or string", "Title", "#" + newHash); }
+		} else {
+			document.location.hash = newHash;
+		}
+
+		//update new article and corresponding link to have 'active' class
+		$('.active').removeClass('active');
+		$(this).addClass('active');
+		$(navLinks[$('.active').index()]).addClass('active');
+
+		//change the icon if the last article is selected
+		if ($(this).index() === articles.length-1) {refreshBgIcon();}
+
+		$(this).parents('div').css('margin-left', $(this).index() * -875 + 'px');
+		$('html, body').stop().animate({scrollTop:0});
+		adjustPageHeight(this);
+
+		$('#viewer').remove();
+	});
+
+	/* Start Page */
+	loadDeepLink();
+	toggleInactiveArticles();
+	refreshBgIcon();
+
+	var chart = $('#design-dev-chart'),
+		data = $('.design-dev-chart-data');;
+
+	chart.on('click','a',function(){
+		//toggle highlight on chart
+		chart.children().removeClass('focus');
+		$(this).addClass('focus');
+		//toggle highlight on needs/pain points
+		data.find('li').removeClass('focus');
+		data.find('.'+$(this).attr('id')).addClass('focus');
+	});
+	chart.on('click','i',function(){
+		chart.children().removeClass('focus');
+		data.find('li').addClass('focus');
+	});
+
+	$('.case-study').on('click','.gallery',function(e){
+		if ($(this).css('position') === "static" || $(this).hasClass('expand')) {
+			// Expanded either because the window is small or the gallery has been clicked
+			var galleryImages = $(this).children('img');
+			if ($(e.target).hasClass('collapse')) {
+				$(this).removeClass('expand');
+				galleryImages.removeClass('static focus');
+				$(this).parent('section').find('.static.zoom').slideUp(function(){$(this).remove()});
+				window.setTimeout(function(){
+					adjustPageHeight(galleryImages.parents('article'));
+				}, 500);
+				return;
+			}
+			if (e.target.tagName === "IMG") {
+				if ($(e.target).hasClass('focus')){
+					removeGalleryZoomImage(this);
+				} else {
+					removeGalleryZoomImage(this);
+					$(e.target).addClass('focus static');
+					var zoom = $(e.target).clone().css('display','none').addClass('zoom');
+					$(this).before(zoom);
+					zoom.slideDown();
+				}
+				window.setTimeout(function(){
+					adjustPageHeight(galleryImages.parents('article'));
+				}, 500);
+			}
+			// Creates consistency between mobile and desktop views
+			// Normalizes for window resizing
+			$(this).addClass('expand');
+			galleryImages.addClass('static');
+
+			function removeGalleryZoomImage (gallery) {
+				$(gallery).children('img').removeClass('focus');
+				$(gallery).parent().find('img.static.zoom').slideUp(function(){
+					$(this).remove();
+				});
+			}
+		} else {
+			// At least 850px and NOT expanded
+			$(this).addClass('expand');
+			var gallery = $(this).children('img');
+			for(var i = gallery.length-1; i >= 0; i--) {
+				window.setTimeout(function(i){
+					return function() {
+						$(gallery[i]).addClass('static');
+					};
+				}(i), 400*(1/(i+2)));
+			}
+			window.setTimeout(function(){
+				adjustPageHeight(gallery.parents('article'));
+			}, 300);
+		}
+	});
+	$('.case-study').on('click','.static.zoom',function(){
+		$(this).siblings('.gallery.expand').find('.focus').click();
+	});
+});
+</script>
+</body>
+</html>
