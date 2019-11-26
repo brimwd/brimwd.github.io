@@ -6,7 +6,10 @@
   --header-bg:#fffde9;
   --bg:#fff;
   --bg-faint:#f3f3f3;
+  --selection:#f7cb4577;
 }
+::-moz-selection {background-color:var(--selection);}
+::selection {background-color:var(--selection);}
 body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;max-width:1200px;text-rendering:optimizeLegibility;}
 h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:600;line-height:1.1em;margin-top:0;margin-bottom:0;}
 a {color:var(--text);text-decoration:none;}
@@ -142,6 +145,7 @@ body.dynamicLoad {
   --header-bg:#1d1d1d;
   --bg:#000;
   --bg-faint:#181818;
+  --selection:#fffcdb42;
 }
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(100%);}
