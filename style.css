@@ -89,12 +89,16 @@ html {width:100vw;overflow-x:hidden;}
 
 /* WORK */
 #work img {margin-right:17px;max-height:100px;max-width:30%;}
-#work a {align-items:flex-start;border:1px solid var(--text-ultra-faint);border-radius:8px;display:flex;transition:all 200ms;padding:15px 20px;margin:20px 0 0;}
+#work a {align-items:flex-start;border:1px solid var(--text-ultra-faint);border-radius:8px;display:flex;padding:15px 20px;position:relative;margin:20px 0 0;transition:all 200ms;}
 #work a:hover {background-color:var(--header-bg);}
 #work h4 {margin:0 0;}
 #work p {margin:.3em 0 .6em;}
 #work ul {margin-bottom:0;padding:0;}
 #work li {background:var(--text-faint);border-radius:4px;display:block;float:left;font-size:0.8em;list-style:none;margin:2px;padding:4px 7px;}
+
+.case-study.unfinished::before {content:'New! ( almost finished )';background-color:var(--text-faint);display:block;padding:10px 15px;position:absolute;top:0;right:0;left:0;}
+.case-study.unfinished div, .case-study.unfinished img {margin-top:40px;}
+.case-study img[src=""] {display:none;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
   #work a {margin:2% 0;padding:15px;width:calc(48% - 30px);}
