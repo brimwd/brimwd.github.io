@@ -47,6 +47,7 @@ html {width:100vw;overflow-x:hidden;}
     background-position-x:calc(100% - 30px), 0;background-position-y:calc(100% - 30px), 0;
   }
   #overview .bio {margin-right:255px;}
+}
 @media screen and (min-width:780px) {
   #overview {
     background-size:auto calc(100% - 60px),48px 48px; /* double-check this size for glasses drawing */
