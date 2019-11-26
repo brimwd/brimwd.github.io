@@ -88,18 +88,20 @@ html {width:100vw;overflow-x:hidden;}
 #approach {display:none;}
 
 /* WORK */
-#work img {width:100%;max-width:100vw;}
-#work a {border:1px solid var(--text-ultra-faint);border-radius:8px;display:block;transition:all 200ms;padding:15px 30px;margin:20px 0 0;}
+#work img {margin-right:17px;max-height:100px;max-width:30%;}
+#work a {align-items:flex-start;border:1px solid var(--text-ultra-faint);border-radius:8px;display:flex;transition:all 200ms;padding:15px 20px;margin:20px 0 0;}
 #work a:hover {background-color:var(--header-bg);}
 #work h4 {margin:0 0;}
 #work p {margin:.3em 0 .6em;}
+#work ul {margin-bottom:0;padding:0;}
+#work li {background:var(--text-faint);border-radius:4px;display:block;float:left;font-size:0.8em;list-style:none;margin:2px;padding:4px 7px;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
   #work a {margin:2% 0;padding:15px;width:calc(48% - 30px);}
-  #work img {display:block;margin:0;}
+  /*#work img {}*/
 }
 @media screen and (min-width:970px) {
-    #work a {margin:2% 0;padding:15px;width:calc(31% - 30px);}
+  #work a {margin:2% 0;padding:15px;width:calc(31% - 30px);}
 }
 
 /* FOOTER */
@@ -140,7 +142,7 @@ body.dynamicLoad {
 :root {
   --text:#fff;
   --text-med:#bbb;
-  --text-faint:#aaa;
+  --text-faint:#8f8e838f;
   --text-ultra-faint:#444;
   --header-bg:#1d1d1d;
   --bg:#000;
