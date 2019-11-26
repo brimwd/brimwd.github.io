@@ -92,9 +92,9 @@ html {width:100vw;overflow-x:hidden;}
 #approach {display:none;}
 
 /* WORK */
-#work img {margin-right:17px;max-height:100px;max-width:30%;}
 #work a {align-items:flex-start;border:1px solid var(--text-ultra-faint);border-radius:8px;display:flex;padding:15px 20px;position:relative;margin:20px 0 0;transition:all 200ms;}
 #work a:hover {background-color:var(--header-bg);}
+#work img {margin-right:17px;max-height:100px;max-width:30%;}
 #work h4 {margin:0 0;}
 #work p {margin:.3em 0 .6em;}
 #work ul {margin-bottom:0;padding:0;}
