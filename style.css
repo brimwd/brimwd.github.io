@@ -81,7 +81,7 @@ html {width:100vw;overflow-x:hidden;}
 #overview li {display:inline-block;padding:0 10px;position:relative;}
 #overview li::before {content:'|';position:absolute;left:-5px;}
 #overview li:first-of-type::before {content:unset;}
-#overview a {border-radius:2px;color:var(--text);display:inline-block;letter-spacing:1px;padding:2px 5px;position:relative;}
+#overview a {border-radius:4px;color:var(--text);display:inline-block;letter-spacing:1px;padding:2px 5px;position:relative;}
 #overview a:hover {background-color:var(--text);color:var(--bg);}
 
 /* APPROACH */
