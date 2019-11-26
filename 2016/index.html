@@ -64,7 +64,7 @@ a.player::after {content:'\f144';vertical-align:middle;}
 @media (min-width:710px){#resume {padding:50px;} #resume ul {padding-left:0;} contact {float:right;margin-top:-30px;text-align:right;}}
 @media (min-width:1030px){
 	#resume {padding:90px 80px 50px;}
-	#resume::before, #container > #resume:not(.active)::before {content:"Click sections to navigate " url(./images/arrow.png);padding-right:30px;position:absolute;background-color:white;box-shadow:0 0 10px rgba(255, 255, 255,1);padding:0 8px 0 10px;top:380px;right:-161px;z-index:30;transform:rotate(90deg);font-size:1.2em;color:#8f9cad;bottom:auto;left:auto;opacity:1;}
+	#resume::before, #container > #resume:not(.active)::before {content:"Click sections to navigate " url(../images/arrow.png);padding-right:30px;position:absolute;background-color:white;box-shadow:0 0 10px rgba(255, 255, 255,1);padding:0 8px 0 10px;top:380px;right:-161px;z-index:30;transform:rotate(90deg);font-size:1.2em;color:#8f9cad;bottom:auto;left:auto;opacity:1;}
 	#container > #resume:not(.active)::before {transform:rotate(-90deg);}
 }
 #resume header {background-color:transparent !important;}
@@ -195,7 +195,7 @@ a.player::after {content:'\f144';vertical-align:middle;}
 }
 
 /* BLUETOOTH CASE STUDY */
-#bluetooth > header {background-image:url('./images/chevrons-blue-transp.png');background-size:78px 78px;}
+#bluetooth > header {background-image:url('../images/chevrons-blue-transp.png');background-size:78px 78px;}
 #bluetooth #roles {list-style-type:none;}
 @media (max-width:429px) {
 	#roles {padding-left:0;}
@@ -398,7 +398,7 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 			<p><strong>Environment:</strong> Adobe Illustrator, Balsamiq, HTML, CSS, jQuery, Bootstrap 3</p>
 		</section>
 
-		<img id="inline-qr" src="images/url-qrcode.png" alt="QR Code linking to this site" />
+		<img id="inline-qr" src="../images/url-qrcode.png" alt="QR Code linking to this site" />
 
 		<h2>Education</h2>
 		<section id="education">
@@ -420,7 +420,7 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 
 	<article class="case-study" id="bluetooth">
 		<header>
-			<img src="images/bluetooth.svg" alt="Bluetooth Logo" />
+			<img src="../images/bluetooth/bluetooth.svg" alt="Bluetooth Logo" />
 			<h1>Case Study: <br />UX Style Guide</h1>
 			<p>Building a self-documenting style guide for Bluetooth</p>
 			<time datetime="2017-09-30">September 30, 2017</time>
@@ -496,14 +496,14 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 		</section>
 		<section>
 			<h2>Research: Prototyping</h2>
-			<div class="gallery"><img src="images/uxsg1.png" alt="Style Guide 'elements'"/><img src="images/uxsg2.png" alt="Style Guide 'components'"/><img src="images/uxsg3.png" alt="Style Guide 'utilities'"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<div class="gallery"><img src="../images/bluetooth/uxsg1.png" alt="Style Guide 'elements'"/><img src="../images/bluetooth/uxsg2.png" alt="Style Guide 'components'"/><img src="../images/bluetooth/uxsg3.png" alt="Style Guide 'utilities'"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 			<p>After the initial round of interviews, I created a set of low-fi mock-ups in Balsamiq based on the feedback we'd received.</p>
 			<p>Using these mock-ups, I facilitated discussions with the UX team around features and content. Together we determined which features were necessary and which could be cut.</p>
 			<p>Between discussions, I researched a number of existing 'pattern library' solutions and eventually built prototypes using the 3 platforms that seemed like they would get us closest to our defined goals. The platforms I built prototypes on were: <b>Fabricator</b>, <b>AtomicDocs</b>, and <b>Swanky Docs</b>.</p>
 		</section>
 		<section>
 			<h2>Research: Usability Study</h2>
-			<img src="images/uxsg4.png" class="can-zoom" alt="Usability Study Mock-up" />
+			<img src="../images/bluetooth/uxsg4.png" class="can-zoom" alt="Usability Study Mock-up" />
 			<p>After reviewing the pros and cons for each platform, the UX team and I decided on moving forward with Fabricator.</p>
 			<p>Before making any major modifications to the platform, I planned a usability study to determine how well the platform met the developers' needs.</p>
 			<p>Each study session began with a brief overview of the tool, followed by an explanation of the exercise. The participant's goal was to find the corresponding code that was necessary to reproduce the mock-up I'd provided.</p>
@@ -512,7 +512,7 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 		</section>
 		<section>
 			<h2>Conclusion</h2>
-			<div class="gallery"><img src="images/uxsg1f.png" alt="Final Product: Overview" /><img src="images/uxsg2f.png" alt="Final Product: Components" /><img src="images/uxsg3f.png" alt="Final Product: Form Builder" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<div class="gallery"><img src="../images/bluetooth/uxsg1f.png" alt="Final Product: Overview" /><img src="../images/bluetooth/uxsg2f.png" alt="Final Product: Components" /><img src="../images/bluetooth/uxsg3f.png" alt="Final Product: Form Builder" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 			<p>After discussing my study observations with the team, I proposed a few modifications to the tool including an updated information architecture, and more robust content. The UX team also requested a number of features around navigation and content labels.</p>
 			<p>While the UX Engineer on staff migrated the remaining content from the old guides, I built out and documented a robust framework for generating content and supporting future updates.</p>
 			<p>Finally, I gave a presentation to the designers, developers, and product managers describing the goals of the project, and the features of the final product.</p>
@@ -524,7 +524,7 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 	</article>
 	<article class="case-study" id="game">
 		<header>
-			<img src="images/bob.svg" alt="Bob Books Logo" />
+			<img src="../images/bob-books/bob.svg" alt="Bob Books Logo" />
 			<h1>Case Study: <br />Game Prototyping</h1>
 			<p>Building a Concept Game for Bob Books</p>
 			<time datetime="2017-01-20">January 20, 2017</time>
@@ -544,37 +544,37 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 		</section>
 		<section>
 			<h2 id="#concept1">Gameplay Concept 1</h2>
-			<div class="gallery"><img src="images/caddog1.jpg" alt="Dog Level Concept"/><img src="images/caddog2.png" alt="Dog Level Assets"/><img src="images/caddog3.png" alt="Dog Level Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<div class="gallery"><img src="../images/bob-books/caddog1.jpg" alt="Dog Level Concept"/><img src="../images/bob-books/caddog2.png" alt="Dog Level Assets"/><img src="../images/bob-books/caddog3.png" alt="Dog Level Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 			<p>To win the contract, we would need to show a better UX while also proving that we could reproduce their current gameplay modes.</p>
 			<p>The basic gameplay mode required spelling a word in left-to-right order. This is an easy task, so we spiced it up a little with some 3D animations.</p>
-			<p><a class="player" id="images/caddog.gif">Watch Gameplay (16s)</a></p>
+			<p><a class="player" id="../images/bob-books/caddog.gif">Watch Gameplay (16s)</a></p>
 		</section>
 		<section>
 			<h2 id="#concept2">Gameplay Concept 2</h2>
-			<div class="gallery"><img src="images/cadcat1.jpg" alt="Cat Level Concept"/><img src="images/cadcat2.png" alt="Cat Level Assets"/><img src="images/cadcat3.png" alt="Cat Level Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<div class="gallery"><img src="../images/bob-books/cadcat1.jpg" alt="Cat Level Concept"/><img src="../images/bob-books/cadcat2.png" alt="Cat Level Assets"/><img src="../images/bob-books/cadcat3.png" alt="Cat Level Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 			<p>We also wanted to show something new and different that would still be something a young child could accomplish.</p>
 			<p>Our second gameplay mode drops "random" letters from the top of the screen. To add a little silliness and playfulness, the letters are trapped inside raindrops, which the player has to catch and drop onto sponges to wring out the water.</p>
 			<p>We also used this opportunity to create an animated 'cut-scene' - a feature the existing games don't have.</p>
-			<p><a class="player" id="images/cadcat.gif">Watch Gameplay (26s)</a></p>
+			<p><a class="player" id="../images/bob-books/cadcat.gif">Watch Gameplay (26s)</a></p>
 		</section>
 		<section>
 			<h2 id="#concept3">Gameplay Concept 3</h2>
-			<div class="gallery"><img src="images/cadhome1.png" alt="Game Home Screen Concept"/><img src="images/cadhome2.png" alt="Game Home Screen Assets"/><img src="images/cadhome3.png" alt="Game Home Screen Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+			<div class="gallery"><img src="../images/bob-books/cadhome1.png" alt="Game Home Screen Concept"/><img src="../images/bob-books/cadhome2.png" alt="Game Home Screen Assets"/><img src="../images/bob-books/cadhome3.png" alt="Game Home Screen Final"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 			<p>To create a sense of accomplishment, I wanted each section of our proposed game to feel like an immersive experience with hidden animations and environmental changes that reflect game progress.</p>
 			<p>We created a challenge navigation screen (this farm scene) where the rain diminishes and the cats and dogs stop 'raining' once you save them.</p>
 			<p>By the end of the demo the rain has cleared and the scene is pleasant and sunny.</p>
-			<p><a class="player" id="images/cadhome.gif">Watch Home Screen Interaction (15s)</a></p>
+			<p><a class="player" id="../images/bob-books/cadhome.gif">Watch Home Screen Interaction (15s)</a></p>
 		</section>
 		<section>
 			<h2 id="conclusion">Conclusion</h2>
 			<p>In the end the client decided to stick with their overseas developers who work for far less than we were willing to, so we didn't get the contract. Although it was disappointing that we weren't hired, it was a great experience creating this game from scratch on a new platform, and Michael used his experience here and at his next job to get a full-time game development role.</p>
-			<p><a href="./candd.html" class="external-link" target="_blank">Play the final demo</a> (requires free Unity Web Player plug-in)</p>
-			<p><a href="./candd-journal.pdf" class="external-link" target="_blank">Development Journal</a> (low-fis &amp; concepts - PDF)</p>
+			<p><a href="../candd.html" class="external-link" target="_blank">Play the final demo</a> (requires free Unity Web Player plug-in)</p>
+			<p><a href="../candd-journal.pdf" class="external-link" target="_blank">Development Journal</a> (low-fis &amp; concepts - PDF)</p>
 		</section>
 	</article>
 	<article class="case-study" id="userdata">
 		<header>
-			<img src="images/amazon-white.svg" alt="Amazon.com Logo" />
+			<img src="../images/amazon-white.svg" alt="Amazon.com Logo" />
 			<h1>Case Study: <br />Collecting User Data</h1>
 			<p>Learning about customers in ways that build trust</p>
 			<time datetime="2017-03-14">March 14, 2017</time>
@@ -639,69 +639,69 @@ img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 			<h2>Select Visual Design Work</h2>
 			<p>Logos <time>2012 - 2019</time></p>
 			<div class="portfolio">
-				<img src="images/portfolio/sux-logo.png" alt="ScheduleUX logo - 2018" />
-				<img src="images/portfolio/logo-mw2.png" alt="Moving Worlds Impact Teams - 2017" />
-				<img src="images/portfolio/logo-mw1.png" alt="Moving Worlds Institute - 2016" />
-				<img src="images/portfolio/logo-basebone.png" alt="Basebone - 2015" />
-				<img src="images/portfolio/logo-prideidol.png" alt="Pride Idol - 2014" />
-				<img src="images/portfolio/logo-jcccw.png" alt="Japanese Cultural and Community Center - 2014" />
-				<img src="images/portfolio/logo-worthen.png" alt="Worthen Creative - 2013" />
-				<img src="images/portfolio/logo-transit.jpg" alt="Transit Assembly - 2013" />
-				<img src="images/portfolio/logo-galaxy.png" alt="Galaxy - 2012" />
+				<img src="../images/portfolio/sux-logo.png" alt="ScheduleUX logo - 2018" />
+				<img src="../images/portfolio/logo-mw2.png" alt="Moving Worlds Impact Teams - 2017" />
+				<img src="../images/portfolio/logo-mw1.png" alt="Moving Worlds Institute - 2016" />
+				<img src="../images/portfolio/logo-basebone.png" alt="Basebone - 2015" />
+				<img src="../images/portfolio/logo-prideidol.png" alt="Pride Idol - 2014" />
+				<img src="../images/portfolio/logo-jcccw.png" alt="Japanese Cultural and Community Center - 2014" />
+				<img src="../images/portfolio/logo-worthen.png" alt="Worthen Creative - 2013" />
+				<img src="../images/portfolio/logo-transit.jpg" alt="Transit Assembly - 2013" />
+				<img src="../images/portfolio/logo-galaxy.png" alt="Galaxy - 2012" />
 			</div>
 			<p>Landing Pages<time>2015</time></p>
 			<div class="portfolio">
-				<img src="images/portfolio/landing-oldportfolio.png" alt="My old portfolio site - 2014" />
-				<img src="images/portfolio/landing-cwd.png" alt="Criminal Watchdog - 2015" />
-				<img src="images/portfolio/landing-docs.png" alt="DOCS Education Membership - 2015" />
-				<img src="images/portfolio/landing-physics.png" alt="Physics Foreceps - 2015" />
-				<img src="images/portfolio/landing-acero.png" alt="Acero Crowns - 2015" />
+				<img src="../images/portfolio/landing-oldportfolio.png" alt="My old portfolio site - 2014" />
+				<img src="../images/portfolio/landing-cwd.png" alt="Criminal Watchdog - 2015" />
+				<img src="../images/portfolio/landing-docs.png" alt="DOCS Education Membership - 2015" />
+				<img src="../images/portfolio/landing-physics.png" alt="Physics Foreceps - 2015" />
+				<img src="../images/portfolio/landing-acero.png" alt="Acero Crowns - 2015" />
 			</div>
 			<p>Emails<time>2015</time></p>
 			<div class="portfolio">
-				<img class="after" src="images/portfolio/email-incisor.png" alt="Incisor Newsletter - 2015" />
-				<img class="after" src="images/portfolio/email-physics.png" alt="Physics Foreceps Course Invitation - 2015" />
-				<img class="after" src="images/portfolio/email-meddent.png" alt="MedDent Safety Newsletter - 2015" />
+				<img class="after" src="../images/portfolio/email-incisor.png" alt="Incisor Newsletter - 2015" />
+				<img class="after" src="../images/portfolio/email-physics.png" alt="Physics Foreceps Course Invitation - 2015" />
+				<img class="after" src="../images/portfolio/email-meddent.png" alt="MedDent Safety Newsletter - 2015" />
 			</div>
 			<p>MovingWorlds Presentation Template<time datetime="2014-10-31">Oct 2014</time></p>
 			<div class="portfolio">
-				<img src="images/portfolio/mw-b2b1.png" alt="Cover Slide" />
-				<img src="images/portfolio/mw-b2b2.png" alt="Title Slide" />
-				<img src="images/portfolio/mw-b2b3.png" alt="Content Slide" />
+				<img src="../images/portfolio/mw-b2b1.png" alt="Cover Slide" />
+				<img src="../images/portfolio/mw-b2b2.png" alt="Title Slide" />
+				<img src="../images/portfolio/mw-b2b3.png" alt="Content Slide" />
 			</div>
 			<p>MovingWorlds Document Template<time datetime="2014-10-31">Oct 2014</time></p>
 			<div class="portfolio">
-				<img src="images/portfolio/mw-concept.png" alt="Concept Sketch" />
-				<img src="images/portfolio/mw-doc1.png" alt="Cover Page" />
-				<img src="images/portfolio/mw-doc2.png" alt="Index Page" />
-				<img src="images/portfolio/mw-doc3.png" alt="Content Page" />
+				<img src="../images/portfolio/mw-concept.png" alt="Concept Sketch" />
+				<img src="../images/portfolio/mw-doc1.png" alt="Cover Page" />
+				<img src="../images/portfolio/mw-doc2.png" alt="Index Page" />
+				<img src="../images/portfolio/mw-doc3.png" alt="Content Page" />
 			</div>
 			<p>Seattle Pride<time datetime="2014-07-31">July 2014</time></p>
 			<div class="portfolio">
-				<img src="images/portfolio/pride-1974posterad.png" alt="Remastered Poster Ad" />
-				<img src="images/portfolio/pride-1974poster.png" alt="1974 Remastered Poster" />
-				<img src="images/portfolio/pride-map.png" alt="Parade Map" />
-				<img src="images/portfolio/pride-sponsorsad.png" alt="Sponsors Ad" />
-				<img src="images/portfolio/pride-takei.png" alt="Parade Marshal Badge" />
-				<img src="images/portfolio/pride-badge.png" alt="ID Badge" />
-				<img src="images/portfolio/pride-announcersad.png" alt="Announcers Ad" />
-				<img src="images/portfolio/pride-idolbanner.jpg" alt="Pride Idol Banner" />
-				<img src="images/portfolio/pride-judgesbanner.png" alt="Parade Judges Banner" />
+				<img src="../images/portfolio/pride-1974posterad.png" alt="Remastered Poster Ad" />
+				<img src="../images/portfolio/pride-1974poster.png" alt="1974 Remastered Poster" />
+				<img src="../images/portfolio/pride-map.png" alt="Parade Map" />
+				<img src="../images/portfolio/pride-sponsorsad.png" alt="Sponsors Ad" />
+				<img src="../images/portfolio/pride-takei.png" alt="Parade Marshal Badge" />
+				<img src="../images/portfolio/pride-badge.png" alt="ID Badge" />
+				<img src="../images/portfolio/pride-announcersad.png" alt="Announcers Ad" />
+				<img src="../images/portfolio/pride-idolbanner.jpg" alt="Pride Idol Banner" />
+				<img src="../images/portfolio/pride-judgesbanner.png" alt="Parade Judges Banner" />
 			</div>
 			<p>Miscellaneous Print<time>2012 - 2014</time></p>
 			<div class="portfolio">
-				<img src="images/portfolio/print-oak.png" alt="Oak Restaurant Menu" />
-				<img src="images/portfolio/print-tabletop.jpg" alt="JCCCW Tabletop Display" />
-				<img src="images/portfolio/print-museum.png" alt="Nikkei Museum Signage" />
-				<img src="images/portfolio/print-bob.png" alt="BOB Books Font" />
-				<img src="images/portfolio/print-ninebit.png" alt="Nine-Bit Font" />
+				<img src="../images/portfolio/print-oak.png" alt="Oak Restaurant Menu" />
+				<img src="../images/portfolio/print-tabletop.jpg" alt="JCCCW Tabletop Display" />
+				<img src="../images/portfolio/print-museum.png" alt="Nikkei Museum Signage" />
+				<img src="../images/bob-books/print-bob.png" alt="BOB Books Font" />
+				<img src="../images/portfolio/print-ninebit.png" alt="Nine-Bit Font" />
 			</div>
 		</section>
 	</article>
 </div>
 <footer>
 	<p>Built with <i class="fa fa-heart" title="love"></i> by Brian Donahue</p>
-	<div id="mobile-qr"><img src="images/url-qrcode.png" alt="QR Code linking to this site" /></div>
+	<div id="mobile-qr"><img src="../images/url-qrcode.png" alt="QR Code linking to this site" /></div>
 </footer>
 <link rel="stylesheet" href="https://use.fontawesome.com/5d44595dd9.css" media="all">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
