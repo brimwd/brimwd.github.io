@@ -1,6 +1,6 @@
 :root {
   --text:#2a2a2a;
-  --text-med:#777;
+  --text-med:#bbb;
   --text-faint:#ffdc68a8;
   --text-ultra-faint:#d7d7d7;
   --header-bg:#fffde9;
@@ -26,8 +26,8 @@ html {width:100vw;overflow-x:hidden;}
 #overview {background-color:var(--header-bg);background-image:url(drawings/self-portraits/working.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);background-position-x:calc(100% - 30px), 0;background-position-y:calc(100% - 100px), 0;background-repeat:no-repeat,repeat;background-size:0 0,48px 48px;position:relative;}
 #overview h1 {font-size:42px;letter-spacing:3px;line-height:0.8em;}
 #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
-#overview h1 span {color:var(--text-faint);display:block;font-size:36px;font-weight:600;letter-spacing:2.4px;line-height:0.9;margin-top:19px;}
-#overview h3 {color:var(--text-med);font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:7vh;text-transform:uppercase;}
+#overview h1 span {color:var(--text-med);display:block;font-size:36px;font-weight:600;letter-spacing:2.4px;line-height:0.9;margin-top:19px;}
+#overview h3 {color:var(--text);font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:7vh;text-transform:uppercase;}
 #overview h3 divider::before {content:',';}
 #overview h3 divider:last-of-type::after {content:'& ';color:var(--text);}
 #overview img {max-width:100%;}
