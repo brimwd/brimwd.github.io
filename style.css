@@ -67,12 +67,17 @@ html {width:100vw;overflow-x:hidden;}
 }
 @media screen and (min-width:1024px) {
   #overview {
+    background-image:url(drawings/self-portraits/guitar.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);
+    /*background-size:400px 400px,48px 48px; /* double-check this size for guitar drawing */ */
+  }
+  #overview .bio {margin-right:405px;}
+}
+@media screen and (min-width:1350px) {
+  #overview {
     background-image:url(drawings/self-portraits/working.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);
     /*background-size:400px 400px,48px 48px; /* double-check this size for working drawing */ */
   }
   #overview .bio {margin-right:385px;}
-}
-@media screen and (min-width:1000px) {
 }
 
 #overview .bio {letter-spacing:1px;line-height:1.9em;}
