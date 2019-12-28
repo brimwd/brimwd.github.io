@@ -13,21 +13,27 @@
 </script>
 <script class="case-study-page" type="text/javascript" src="/js/case-study-page.js"></script>
 <script type="text/javascript" src="/js/case-study.js"></script>
+<style>
+.presentation {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);}
+.presentation > * {box-shadow:unset;margin-bottom:0;}
+.presentation header::after {content:'Presentation';left:-82px;}
+.presentation description {display:block;}
+</style>
 </head>
 <body>
-<article class="presentation">
+<article class="case-study presentation">
 <header>
 	<img src="/images/web-foundations.png" alt="Amazon.com Logo" />
 	<h1>Web Foundations</h1>
 	<p>A crash course in Systems-Design</p>
 	<time datetime="2017-03-14">December 26, 2019</time>
-	<description>
-		<h2>Presentation Overview</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi.</p>
-	</description>
 </header>
+<description>
+	<h2>Presentation Overview</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi.</p>
+</description>
 </article>
 </body>
 </html>
