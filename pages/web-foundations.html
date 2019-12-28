@@ -17,10 +17,14 @@
 .presentation {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);}
 .presentation > * {box-shadow:unset;margin-bottom:0;}
 .presentation header {background-color:var(--text-faint);color:black;}
+.presentation header img {margin-left:-20px;max-width:320px;}
+.presentation header h1 {margin-top:0.5rem;}
 .presentation header p {border-bottom-color:var(--text);}
 .presentation header::after {content:'Presentation';left:-82px;}
 .presentation description {display:block;}
 .presentation description h2 {color:#F95959;border-bottom-color:var(--text);}
+.presentation description strike {display:inline-block;text-decoration:unset;position:relative;}
+.presentation description strike::before {content:'';border:1px solid #F95959;display:inline-block;transform:rotate(-18deg);position:absolute;top:50%;right:-3px;left:-3px;}
 .presentation description a[href] {background-color:#F95959;border:unset;border-radius:6px;color:white;font-weight:bold;display:inline-block;margin-top:10px;padding:8px 14px;}
 .presentation strong {font-family:monospace;}
 </style>
@@ -36,7 +40,7 @@
 <description>
 	<h2>Presentation Overview</h2>
 	<p>I created this presentation to facilitate teaching the fundamentals of HTML, CSS, & JavaScript.</p>
-	<p>Highlights include <strong>content 'nesting'</strong>, understanding <strong>overflow</strong>, <strong>bulletproof design</strong>, and the <strong><strike>box</strike> Walrus Model</strong>.</p>
+	<p>Highlights include <strong>content</strong> <strong>'nesting'</strong>, understanding <strong>overflow</strong>, <strong>bulletproof</strong> <strong>design</strong>, and the<strong> <strike>box</strike> Walrus</strong> <strong>Model</strong>.</p>
 	<a href="https://docs.google.com/presentation/d/1-ViWU50qBTkulkSbByVZyHs_B2mj29IJLaBvZPftF3k/edit?usp=sharing">Launch Presentation</a>
 </description>
 </article>
