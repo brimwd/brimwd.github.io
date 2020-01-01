@@ -52,7 +52,7 @@ function renderPage (pageHTML) {
   $('#dynamicLoad').fadeIn();
   $('#dynamicLoad').on('click', function (el) {
     // short circuit if not clicking on overlay or (X)
-    if ($(el.target).attr('id') != 'dynamicLoad' || $(el.target).attr('id') != 'dismiss' ) { return; }
+    if ($(el.target).attr('id') != 'dynamicLoad' || $(el.target).attr('id') != 'dismiss' || $(el.target).parent().attr('id') != 'dismiss' ) { return; }
 
     // remove history state
     window.history.replaceState(undefined, undefined, '/index.html');
