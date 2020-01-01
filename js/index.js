@@ -48,7 +48,7 @@ function renderPage (pageHTML) {
   $('body').css('top', -window.pageYOffset).addClass('dynamicLoad');
   $('body').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
-  $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>')));
+  $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
   $('#dynamicLoad').fadeIn();
   $('#dynamicLoad, #dismissCaseStudy').on('click', function (el) {
     // short circuit if not clicking on overlay or (X)
