@@ -20,8 +20,7 @@ body {padding:0;}
 .case-study header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
 .case-study h2 {color:#0082FC;font-size:1.8em;border-bottom:1px solid #0082FC;padding-bottom:1rem;margin:0 0 1rem;clear:right;}
 .case-study h2 ~ p:first-of-type {margin-top:2rem;}
-.case-study a {text-decoration:none;cursor:pointer;}
-.case-study a[href] {color:#333;border-bottom:1px dotted #333;}
+.case-study a {text-decoration:none;cursor:pointer;color:#333;border-bottom:1px dotted #333;}
 .case-study .persona {margin:20px 0;padding:6px 0 3px 3%;border-left:6px solid #ced6de;}
 .case-study .persona h3 {margin:0;}
 .case-study .list-header {margin:0;font-weight:bold;}
