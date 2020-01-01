@@ -91,7 +91,7 @@ figure.big-stat {text-align:center;}
 
 @media (prefers-color-scheme:dark){
 	.case-study header {background-color:#134b82;}
-	.case-study a[href] {color:#3fabff;border-bottom-color:#3fabff;}
+	.case-study a {color:#3fabff;border-bottom-color:#3fabff;}
 	.case-study .highlight {background-color:#5e5a00;}
 	.case-study .highlight::before {border-top-color:#5e5a00;border-right-color:#5e5a00;}
 	.case-study .highlight::after {border-bottom-color:#5e5a00;border-left-color:#5e5a00;}
@@ -106,13 +106,13 @@ img.can-zoom {max-width:30%;float:right;margin:1rem 0 10px 20px;transition:max-w
 img.can-zoom:hover {border-color:grey;}
 img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 
-.case-study > footer a[href] {border:none;vertical-align:middle;display:inline-block;}
+.case-study > footer a {border:none;vertical-align:middle;display:inline-block;}
 .fa-linkedin:hover {color:#3177B0;}
 .fa-mailbox:hover {color:#db0029;}
 .fa-sms:hover {color:#54B852;}
 
 @media (prefers-color-scheme:dark){
-	.case-study > footer a[href] {color:#777;}
+	.case-study > footer a {color:#777;}
 }
 
 figure {margin:0;}
