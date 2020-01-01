@@ -1,7 +1,7 @@
 body {padding:0;}
 .case-study > nav, .case-study > footer {border:none!important;box-shadow:none!important;padding:10px!important;}
-	.case-study {margin:20px auto 50px;}
 @media (min-width:var(--mobile)){
+	.case-study {margin:0 auto;}
 	.case-study > nav, .case-study > footer {margin:unset;}
 }
 
@@ -121,5 +121,18 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 	picture.full-width {opacity:.8;}
 	picture.full-width:hover, picture.full-width:active, picture.full-width:focus {opacity:1;}
 }
+
+/* PRESENTATION STYLES */
+.presentation {padding-bottom:50px;}
+.presentation ~ * {display:none;}
+.presentation > * {box-shadow:unset;margin-bottom:0;}
+.presentation header {background-color:var(--header-bg);background-image:radial-gradient(circle,#77777755 4.5%,#9f9f9f00 4.5%,#9f9f9f00 100%);background-size:25px 25px;color:black;padding-top:40px;}
+.presentation header p {border-bottom-color:var(--text);}
+.presentation header img {max-width:320px;}
+.presentation header::after {content:'Presentation';left:-82px;}
+.presentation description {display:block;}
+.presentation h2 {border-bottom-color:var(--text);}
 @media (min-width:var(--mobile)){
+	.presentation {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);padding-bottom:unset;}
+	.presentation ~ * {display:block;}
 }
