@@ -10,8 +10,8 @@ body {padding:0;}
 .case-study > footer {margin:50px 0 20px;text-align:center;}
 /* CASE STUDY - GENERAL STYLES */
 .case-study > * {background-color:var(--bg);padding:5%;margin:0 auto;}
-.case-study > *:not(header) {padding:3% 5% 0;border-color:#e2e2e2}
-.case-study > :last-child {margin-bottom:0;padding-bottom:5%;}
+.case-study > *:not(header) {padding:3% 5% 5%;border-color:#e2e2e2}
+.case-study > :last-child {margin-bottom:0;}
 .case-study header {color:white;background-color:#40a0fc;position:relative;}
 .case-study header > * {position:relative;z-index:10;}
 .case-study header img {max-width:140px;}
