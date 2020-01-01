@@ -8,7 +8,6 @@
   --bg:#fff;
   --bg-faint:#f3f3f3;
   --selection:#f7cb4577;
-  --tablet-bp:670px;
 }
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
