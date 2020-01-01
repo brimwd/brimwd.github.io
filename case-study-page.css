@@ -1,6 +1,6 @@
 body {padding:0;}
 .case-study > nav, .case-study > footer {border:none!important;box-shadow:none!important;padding:10px!important;}
-@media (min-width:var(--mobile)){
+@media (min-width:var(--tablet-bp)){
 	.case-study {margin:0 auto;}
 	.case-study > nav, .case-study > footer {margin:unset;}
 }
@@ -43,7 +43,7 @@ figure.big-stat {text-align:center;}
 .gallery span {display:none;}
 .gallery + p {margin-top:1rem !important;}
 .gallery.expand img.focus {border-color:black;cursor:zoom-out;}
-@media (min-width:var(--mobile)){.gallery img {max-width:28%;margin-right:2%;padding:8px;}}
+@media (min-width:var(--tablet-bp)){.gallery img {max-width:28%;margin-right:2%;padding:8px;}}
 @media (min-width:850px){
 	.gallery {position:relative;width:228px;height:210px;margin:33px -17px 20px 15px;float:right;transform:rotate(2.5deg);transition:all .3s;}
 	.gallery::before, .gallery::after {content:'';position:absolute;display:inline-block;z-index:10;top:65px;right:-9px;width:52px;height:15px;border:3px solid #aaa;border-radius:60px 0 0 60px;border-right-width:0;transform:rotate(16deg);box-shadow:inset 2px 2px 3px -1px rgba(0,0,0,0.4), -1px 2px 2px -1px rgba(0,0,0,0.4);transition:all .3s, rotate .45s;transform-origin:100% 50%;}
@@ -75,7 +75,7 @@ figure.big-stat {text-align:center;}
 	.gallery.expand span.collapse:hover {color:#000;}
 }
 
-@media (min-width:var(--mobile)){
+@media (min-width:var(--tablet-bp)){
 	.case-study > *, .case-study > *:not(header) {padding:5%;}
 	.case-study header {padding:50px 5% 10px;}
 	.case-study header br {display:none;}
@@ -132,7 +132,7 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 .presentation header::after {content:'Presentation';left:-82px;}
 .presentation description {display:block;}
 .presentation h2 {border-bottom-color:var(--text);}
-@media (min-width:var(--mobile)){
+@media (min-width:var(--tablet-bp)){
 	.presentation {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);padding-bottom:unset;}
 	.presentation ~ * {display:block;}
 }

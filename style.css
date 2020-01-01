@@ -8,7 +8,7 @@
   --bg:#fff;
   --bg-faint:#f3f3f3;
   --selection:#f7cb4577;
-  --mobile:670px;
+  --tablet-bp:670px;
 }
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
@@ -118,9 +118,6 @@ html {width:100vw;overflow-x:hidden;}
 }
 @media screen and (min-width:970px) {
   #work a {margin:2% 0;padding:15px;width:calc(31% - 30px);}
-}
-@media (min-width:var(--mobile)){
-
 }
 
 /* FOOTER */
