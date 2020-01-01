@@ -138,7 +138,7 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
   right:8px;
   bottom:8px;
 }
-#dismiss::before {content:'';display:inline-block;font-family:FontAwesome5Pro;transition:opacity 250ms;position:absolute;top:0;right:0;bottom:0;left:0;line-height:36px;}
+#dismiss::before {content:'f00d';display:inline-block;font-family:'Font Awesome 5 Pro';transition:opacity 250ms;position:absolute;top:0;right:0;bottom:0;left:0;line-height:36px;}
 #dismiss span {display:inline-block;opacity:0;overflow:hidden;transition:width 250ms;width:0;}
 #dismiss.bottom {
 	width:100%;
