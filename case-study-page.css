@@ -123,6 +123,34 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 	picture.full-width:hover, picture.full-width:active, picture.full-width:focus {opacity:1;}
 }
 
+/* dismiss case study */
+#dismiss {
+  background-color:#5C7BB0;
+  border-radius:60px;
+  color:white;
+  display:inline-block;
+  font-weight:bold;
+  padding:8px 6px;
+  text-align:center;
+  transition:all 250ms;
+  width:36px;
+  position:fixed;
+  right:8px;
+  bottom:8px;
+}
+#dismiss::before {content:'';display:inline-block;font-family:FontAwesome5Pro;transition:opacity 250ms;position:absolute;top:0;right:0;bottom:0;left:0;line-height:36px;}
+#dismiss span {display:inline-block;opacity:0;overflow:hidden;transition:width 250ms;width:0;}
+#dismiss.bottom {
+	width:100%;
+	right:0;
+	bottom:0;
+}
+#dismiss.bottom::before {opacity:0;width:0;}
+#dismiss.bottom span {width:100%;opacity:1;}
+@media (min-width:var(--tablet-bp)){
+	#dismiss {display:none;}
+}
+
 /* PRESENTATION STYLES */
 
 .presentation ~ * {display:none;}
