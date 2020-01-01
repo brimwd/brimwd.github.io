@@ -23,6 +23,7 @@ html {width:100vw;overflow-x:hidden;}
   .row::before, .row::after {content:'';background-color:inherit;position:absolute;top:0;bottom:0;width:calc(50vw - 600px);right:100%;}
   .row::after {right:unset;left:100%;}
 }
+.btn {border:unset;border-radius:6px;font-weight:bold;display:inline-block;margin-top:10px;padding:8px 14px;}
 
 /* OVERVIEW */
 #overview {background-color:var(--header-bg);background-image:url(drawings/self-portraits/working.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);background-position-x:calc(100% - 30px), 0;background-position-y:calc(100% - 100px), 0;background-repeat:no-repeat,repeat;background-size:0 0,48px 48px;position:relative;}
