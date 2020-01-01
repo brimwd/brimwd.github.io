@@ -50,9 +50,9 @@ function renderPage (pageHTML) {
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
   $('#dynamicLoad').fadeIn();
-  $('#dynamicLoad, #dismiss').on('click', function (el) {
+  $('#dynamicLoad').on('click', function (el) {
     // short circuit if not clicking on overlay or (X)
-    if ($(el.target).attr('id') != 'dynamicLoad') { return; }
+    if ($(el.target).attr('id') != 'dynamicLoad' || $(el.target).attr('id') != 'dismiss' ) { return; }
 
     // remove history state
     window.history.replaceState(undefined, undefined, '/index.html');
