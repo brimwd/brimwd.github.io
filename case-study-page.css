@@ -141,6 +141,7 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 #dismiss::before {content:'\f00d';display:inline-block;font-family:'Font Awesome 5 Pro';line-height:28px;transition:opacity 250ms;position:absolute;top:0;right:0;bottom:0;left:0;}
 #dismiss span {display:inline-block;line-height:28px;opacity:0;overflow:hidden;transition:width 250ms;white-space:nowrap;width:0;}
 #dismiss.bottom, #dismiss:hover {
+	padding:12px 6px;
 	width:100%;
 	right:0;
 	bottom:0;
