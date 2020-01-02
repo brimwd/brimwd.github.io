@@ -9,11 +9,13 @@
 .case-study > header h1 {margin-top:4.2rem;}
 .case-study > header p {border-color:#fff;}
 .case-study h2 {color:#232f3e;border-color:#f90;}
+.case-study .btn {background-color:#165390;color:var(--bg);}
 
 @media (prefers-color-scheme:dark){
 	.case-study header {background-color:#0a2a56;}
 	.case-study a[href] {color:#3fabff;border-bottom-color:#3fabff;}
 	.case-study h2 {color:#f90;border-color:#f90;}
+	.case-study .btn {background-color:#f90;}
 }
 @media (prefers-color-scheme:dark) and (min-width:850px){
 	.case-study > * {box-shadow:0 3px 15px -3px rgba(0,130,252,0.6);;}
@@ -32,13 +34,19 @@
 <script type="text/javascript" src="/js/case-study.js"></script>
 </head>
 <body>
-<article class="case-study">
+<article class="case-study presentation">
 <header>
 	<img src="/images/amazon-white.svg" alt="Amazon.com Logo" />
 	<h1>Case Study: <br />Amazon &lsquo;Instant Fulfillment&rsquo;</h1>
 	<p>Solving for find-ability and discoverability in Amazon&rsquo;s &ldquo;Instant Fulfillment&rdquo; Browse Taxonomy</p>
 	<time datetime="2019-08-14">08, 14, 2019</time>
 </header>
+<section class="overview">
+	<h2>Overview</h2>
+	<p>Customers visiting an Amazon &lsquo;Campus Pickup Point&rsquo; are idle for a short time awaiting their package. While my team pursued an opportunity to increase sales, I found room to improve our approach.</p>
+	<a href="https://docs.google.com/presentation/d/1GUwSw9SsWucSv-ieRbMAitk4qC8x17OjVYdxHeiNuWA/edit?usp=sharing" class="btn">Launch Presentation</a>
+</section>
+<!--
 <blockquote class="alt-bg">
 	<p>Most sites have miserable information architectures that mirror the way the company internally thinks about the content and not the way users think about the content. Predictably, users ignore such unhelpful structure.</p>
 	<footer><span title="author">Jakob Nielsen</span>, <time datetime="2000-01-08">January 8, 2000</time><cite><a href="https://www.nngroup.com/articles/is-navigation-useful/" target="_blank">&ldquo;Is Navigation Useful&rdquo;</a></cite></footer>
@@ -268,7 +276,7 @@
 	<figcaption>
 		<p>Turns out there are some problems UX can&rsquo;t solve.</p>
 	</figcaption>
-</figure>
+</figure> -->
 </article>
 </body>
 </html>
