@@ -107,9 +107,9 @@ html {width:100vw;overflow-x:hidden;}
 #work ul {margin-bottom:0;padding:0;}
 #work li {background:var(--text-faint-alpha);border-radius:4px;display:block;float:left;font-size:0.8em;list-style:none;margin:2px;padding:4px 7px;}
 
-.case-study.unfinished::before {content:'New! ( almost finished )';background-color:var(--text-faint-alpha);border-radius:7px 7px 0 0;display:block;padding:10px 15px;position:absolute;top:0;right:0;left:0;}
-.case-study.unfinished div, .case-study.unfinished img {margin-top:40px;}
-.case-study img[src=""] {display:none;}
+.caseStudyLink.unfinished::before {content:'New! ( almost finished )';background-color:var(--text-faint-alpha);border-radius:7px 7px 0 0;display:block;padding:10px 15px;position:absolute;top:0;right:0;left:0;}
+.caseStudyLink.unfinished div, .caseStudyLink.unfinished img {margin-top:40px;}
+.caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
   #work a {margin:2% 0;padding:15px;width:calc(48% - 30px);}
