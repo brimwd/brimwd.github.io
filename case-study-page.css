@@ -18,7 +18,6 @@ body {padding:0;}
 .case-study header h1 {font-size:2.2rem;margin-top:4.5rem;margin-bottom:.5rem;}
 .case-study header p {border-bottom:1px solid white;padding-bottom:1.2rem;font-size:1.4rem;margin-top:.5rem;}
 .case-study header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
-.case-study header + .overview {margin-top:-2rem;position:relative;}
 .case-study h2 {color:#0082FC;font-size:1.8em;border-bottom:1px solid #0082FC;padding-bottom:1rem;margin:0 0 1rem;clear:right;}
 .case-study h2 ~ p:first-of-type {margin-top:2rem;}
 .case-study a {text-decoration:none;cursor:pointer;color:#333;border-bottom:1px dotted #333;}
@@ -87,6 +86,7 @@ figure.big-stat {text-align:center;}
 	.case-study > * {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);border:1px solid transparent;margin-bottom:2rem;min-width:670px;}
 	.case-study > *:not(header)::after {content:'';display:block;clear:both;}
 	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-78px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:30;padding:0 15px;}
+	.case-study header + .overview {margin-top:-2rem;position:relative;}
 }
 
 @media (prefers-color-scheme:dark){
