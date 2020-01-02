@@ -26,6 +26,7 @@ html {width:100vw;overflow-x:hidden;}
 
 /* OVERVIEW */
 #overview {background-color:var(--header-bg);background-image:url(drawings/self-portraits/working.png),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);background-position-x:calc(100% - 30px), 0;background-position-y:calc(100% - 100px), 0;background-repeat:no-repeat,repeat;background-size:0 0,48px 48px;position:relative;}
+#overview {background:inherit;background-image:url('images/transparent.gif'),radial-gradient(circle,#77777744 3%,#9f9f9f00 4%,#9f9f9f00 100%);}
 #overview h1 {font-size:42px;letter-spacing:3px;line-height:0.8em;}
 #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
 #overview h1 span {color:var(--text-med);display:block;font-size:36px;font-weight:600;letter-spacing:2.4px;line-height:0.9;margin-top:19px;}
@@ -60,8 +61,6 @@ html {width:100vw;overflow-x:hidden;}
   #overview .bio {margin-right:255px;}
 }
 @media screen and (min-width:830px) {
-  #overview {
-  }
   #overview h1 {font-size:60px;letter-spacing:4px;}
   #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
   #overview h1 span {color:var(--text-ultra-faint);font-size:41.2px;font-weight:700;height:1em;letter-spacing:8.1px;line-height:0.5em;margin-top:-7px;padding-left:1px;}
@@ -127,7 +126,8 @@ html {width:100vw;overflow-x:hidden;}
 
 /* dynamicLoad */
 body.dynamicLoad {
-  overflow:hidden;
+  overflow-y:hidden;
+  overflow-x:visible;
   max-height:100vh;
   position:relative;
 }
