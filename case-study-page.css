@@ -140,7 +140,7 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 /* PRESENTATION STYLES */
 
 .presentation ~ * {display:none;}
-.presentation > * {box-shadow:unset;margin-bottom:0;}
+.presentation > * {box-shadow:unset;margin-bottom:0;border:unset;}
 .presentation header {background-color:var(--header-bg);background-image:radial-gradient(circle,#77777755 4.5%,#9f9f9f00 4.5%,#9f9f9f00 100%);background-size:25px 25px;color:black;padding-top:40px;}
 .presentation header p {border-bottom-color:var(--text);}
 .presentation header img {max-width:320px;}
