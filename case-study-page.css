@@ -146,6 +146,7 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 .presentation header p {border-bottom-color:var(--text);}
 .presentation header img {max-width:320px;}
 .presentation header::after {content:'Presentation';left:-82px;}
+.presentation header + .overview {margin-top:unset;position:relative;}
 .presentation description {display:block;}
 .presentation h2 {border-bottom-color:var(--text);}
 @media (min-width:670px){
