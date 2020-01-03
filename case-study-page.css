@@ -91,7 +91,7 @@ figure.big-stat {text-align:center;}
 
 @media (prefers-color-scheme:dark){
 	.case-study header {background-color:#134b82;}
-	.case-study a {color:#3fabff;border-bottom-color:#3fabff;}
+	.case-study a[href]:not(.btn) {color:#3fabff;border-bottom-color:#3fabff;}
 	.case-study .highlight {background-color:#5e5a00;}
 	.case-study .highlight::before {border-top-color:#5e5a00;border-right-color:#5e5a00;}
 	.case-study .highlight::after {border-bottom-color:#5e5a00;border-left-color:#5e5a00;}
