@@ -128,7 +128,6 @@ body a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;
 body.dynamicLoad {
   overflow-y:hidden;
   overflow-x:visible;
-  max-height:100vh;
   position:relative;
 }
 #dynamicLoad {

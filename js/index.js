@@ -45,7 +45,7 @@ function renderPage (pageHTML) {
   // create content section
   // populate content section
   window.prevScrollPosition = window.pageYOffset;
-  $('body').css('top', -window.pageYOffset).addClass('dynamicLoad');
+  $('body').css({'top': -window.pageYOffset, 'height': 'calc(100vh ' + window.pageYOffset + ')'}).addClass('dynamicLoad');
   $('body').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
