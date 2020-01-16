@@ -23,14 +23,14 @@ header {background-image:url('/images/bluetooth/chevrons-blue-transp.png');backg
 	#design-dev-chart a.focus {font-weight:bold;}
 	#design-dev-chart * {cursor:pointer;}
 	#design-dev-chart u {display:block;text-decoration:none;}
-	#design-dev-chart i {display:none;position:absolute;right:0;bottom:0;z-index:10;}
+	#design-dev-chart i {display:none;position:absolute;right:0;bottom:0;z-index:8;}
 	#design-dev-chart i:hover {text-decoration:underline;}
 	#design-dev-chart a.focus ~ i {display:inline-block;}
 
 	#design-dev-chart #bootstrap {background-color:rgba(255,220,240,.6);margin-right:280px;padding-left:30px;width:210px;z-index:5;border:1px solid grey;margin-top:-1px;}
 	#design-dev-chart #bootstrap:hover, #design-dev-chart #bootstrap:focus, #design-dev-chart #bootstrap.focus {background-color:#ffdcf0;border-color:red;}
 
-	#design-dev-chart #other {margin-left:-400px;background-color:transparent;overflow:hidden;padding:0;width:120px;height:240px;z-index:10;}
+	#design-dev-chart #other {margin-left:-400px;background-color:transparent;overflow:hidden;padding:0;width:120px;height:240px;z-index:8;}
 	#design-dev-chart #other span {padding:100px 0 90px 40px;display:block;border-radius:300px;}
 	#design-dev-chart #other div {position:absolute;position:absolute;top:0;right:0;bottom:0;width:240px;border-radius:300px;overflow:hidden;}
 	#design-dev-chart #other div::after {content:'';position:absolute;top:0;right:-120px;bottom:0;width:240px;border-radius:300px;background-color:#eee0fd;z-index:-1}
@@ -123,11 +123,11 @@ $(document).ready(function() {
 	<p class="list-header">Problems:</p>
 	<ul>
 		<li>Developers aren't implementing styles from the guide</li>
-		<li class="highlight">There are too many disparate styles and style sheets</li>
+		<li><span class="highlight">There are too many disparate styles and style sheets</span></li>
 		<li>There are disparate styles and UI components across platforms and tools</li>
-		<li class="highlight">The style guide provides no definition on when/why to use components</li>
-		<li class="highlight">The style guide website is not fully responsive</li>
-		<li class="highlight">The existing style guide is poorly coded</li>
+		<li><span class="highlight">The style guide provides no definition on when/why to use components</span></li>
+		<li><span class="highlight">The style guide website is not fully responsive</span></li>
+		<li><span class="highlight">The existing style guide is poorly coded</span></li>
 	</ul>
 	<p class="list-header">Impacts:</p>
 	<ul>
@@ -142,9 +142,9 @@ $(document).ready(function() {
 		<li>Improved consistency of style implementation</li>
 		<li>Develop a unified set of styles</li>
 		<li>Clearly define usage guidelines around components</li>
-		<li class="highlight">Remove obstacles to style guide usage</li>
-		<li class="highlight">Improve underlying style guide code</li>
-		<li class="highlight">Minimize maintenance effort</li>
+		<li><span class="highlight">Remove obstacles to style guide usage</span></li>
+		<li><span class="highlight">Improve underlying style guide code</span></li>
+		<li><span class="highlight">Minimize maintenance effort</span></li>
 	</ul>
 </section>
 <section>
