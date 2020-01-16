@@ -61,8 +61,8 @@ function renderPage (pageHTML) {
     window.location.hash = '';
 
     // reset body and remove dynamic content
-    $('body').removeAttr('style, class');
     window.scrollTo(0, window.prevScrollPosition);
+    $('body').removeAttr('style class');
     $('#dynamicLoad').fadeOut(function(){
       $('#dynamicLoad').remove();
       $('body').off('touchmove', function(e) {e.preventDefault();});
