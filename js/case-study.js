@@ -1,15 +1,6 @@
 $('document').ready(function(){
-	var body = $('body'),
-		container = $('#container'),
-		articles = $('#container > article'),
-		portfolio = $('#portfolio section'),
-		nav = $('nav'),
-		navLinks = $('nav a'),
-		footer = $('body > footer'),
-		player = $('.player'),
-		zoomImage = $('.can-zoom'),
-		activeArticle = $(),
-		vidPlayer = $(), $div = $(), vidSrc = $(), vidPos = $(), eventTarget = $();
+	var player = $('.player'),
+		zoomImage = $('.can-zoom');
 
 	zoomImage.on('click',function(){
 		if($(this).parent().hasClass('three-images')) {
