@@ -47,6 +47,7 @@ function renderPage (pageHTML) {
   window.prevScrollPosition = window.pageYOffset;
   $('body').attr('style', ('margin-top:' + -window.pageYOffset + 'px;max-height:calc(100vh + ' + window.pageYOffset + 'px)')).addClass('dynamicLoad');
   $('body').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
+  $('body').on('touchmove', function(e) {e.preventDefault();});
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
   $('#dynamicLoad').fadeIn();
@@ -54,6 +55,7 @@ function renderPage (pageHTML) {
     // short circuit if not clicking on overlay or (X)
     if ($(el.target).attr('id') != 'dynamicLoad' && $(el.target).attr('id') != 'dismiss' && $(el.target).parent().attr('id') != 'dismiss' ) { return; }
 
+    // TODO: Fix this
     // remove history state
     window.history.replaceState(undefined, undefined, '/index.html');
     window.location.hash = '';
@@ -63,6 +65,7 @@ function renderPage (pageHTML) {
     window.scrollTo(0, window.prevScrollPosition);
     $('#dynamicLoad').fadeOut(function(){
       $('#dynamicLoad').remove();
+      $('body').off('touchmove', function(e) {e.preventDefault();});
     });
   });
 }
