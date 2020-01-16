@@ -11,14 +11,14 @@ $(document).ready(function() {
     targetPage = $(event.target).closest('a').attr('href');
 
     // will come back from the ajax call as TRUE if succeeded or FALSE if failed
-    getPage(targetPage, 1);
+    getPage(targetPage, $(this).attr('title'), 1);
   });
 
   // load deep-link content
   if (window.location.hash != '') { getPage(window.location.hash.slice(1), 1);}
 });
 
-function getPage (pageName, attempts) {
+function getPage (pageName, title, attempts) {
   // retrieve page from server
   $.ajax({
     url: pageName,
@@ -28,7 +28,7 @@ function getPage (pageName, attempts) {
       renderPage(response);
 
       // Support for deep-linking
-      history.pushState(undefined, undefined, '#'+pageName);
+      history.pushState(undefined, title, '#'+pageName);
 
     },
     error: function(xhr, status, error) {
@@ -61,8 +61,8 @@ function renderPage (pageHTML) {
     window.location.hash = '';
 
     // reset body and remove dynamic content
-    window.scrollTo(0, window.prevScrollPosition);
     $('body').removeAttr('style class');
+    window.scrollTo(10, window.prevScrollPosition);
     $('#dynamicLoad').fadeOut(function(){
       $('#dynamicLoad').remove();
       $('body').off('touchmove', function(e) {e.preventDefault();});
