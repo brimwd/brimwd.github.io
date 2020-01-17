@@ -124,7 +124,7 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 }
 
 /* dismiss case study */
-#dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;}
+#dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;z-index:50;}
 #dismiss.bottom, #dismiss:hover {border-radius:0;padding:4px 6px;width:calc(100% - 12px);right:0;bottom:0;}
 #dismiss:hover {background-color:#144567;cursor:pointer;}
 
