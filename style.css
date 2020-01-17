@@ -64,7 +64,7 @@ body a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;
 @media screen and (min-width:830px) {
   #overview h1 {font-size:60px;letter-spacing:4px;}
   #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
-  #overview h1 span {color:var(--text-ultra-faint);font-size:41.2px;font-weight:700;height:1em;letter-spacing:8.1px;line-height:0.5em;margin-top:-7px;padding-left:1px;}
+  #overview h1 span {color:var(--text-ultra-faint);font-size:41.2px;font-weight:700;height:1em;letter-spacing:8.1px;line-height:0.5em;margin-top:-7px;padding-left:2px;}
   #overview h3 {font-size:1em;font-weight:300;margin-top:-12px;margin-bottom:7vh;padding-left:20px;}
 }
 @media screen and (min-width:1024px) {
