@@ -28,7 +28,7 @@ function getPage (pageName, title, attempts) {
       renderPage(response);
 
       // Support for deep-linking
-      history.pushState(undefined, title, '#'+pageName);
+      history.pushState(undefined, 'Brian Donahue\'s '+title, '#'+pageName);
 
     },
     error: function(xhr, status, error) {
