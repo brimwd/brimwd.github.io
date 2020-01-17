@@ -134,7 +134,8 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 @media (min-width:860px){
 	#dismiss {right:calc(50% - 405px - 24px);}
 	.presentation + #dismiss {position:relative;bottom:56px;right:calc(-1 * (50vw + 405px - 24px));}
-	.presentation + #dismiss:hover {right:0;}
+	.presentation + #dismiss:hover {right:calc(-1 * (50vw - 405px));width:798px;}
+	.presentation + #dismiss:hover::after {content:'';position:absolute;width:24px;top:0;right:-24px;bottom:0;}
 }
 /* PRESENTATION STYLES */
 
