@@ -132,9 +132,10 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 #dismiss.bottom span, #dismiss:hover span {width:100%;opacity:1;}
 
 @media (min-width:860px){
-	#dismiss {right:calc(50% - 405px -24px);}
+	#dismiss {right:calc(50% - 405px - 24px);}
+	.presentation + #dismiss {position:relative;bottom:56px;right:calc(-1 * (50vw + 405px - 24px));}
+	.presentation + #dismiss:hover {right:0;}
 }
-
 /* PRESENTATION STYLES */
 
 .presentation ~ * {display:none;}
