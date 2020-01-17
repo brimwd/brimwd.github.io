@@ -70,6 +70,18 @@ function renderPage (pageHTML) {
   });
 }
 
+var resize;
+
+$('body').on('resize', function(){
+  clearTimeout(resize);
+
+  resize = setTimeout(function(){
+    if ($(this).hasClass('dynamicLoad')) {
+      adjustOffset();
+    }
+  }, 50);
+});
+
 function adjustOffset() {
   if (window.innerWidth >= 860) {
     window.prevScrollPosition = window.pageYOffset;
