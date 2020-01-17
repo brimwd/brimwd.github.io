@@ -51,6 +51,7 @@ function renderPage (pageHTML) {
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
   $('#dynamicLoad').fadeIn();
+    window.scrollTo(10, 0);
   $('#dynamicLoad').on('click', function (el) {
     // short circuit if not clicking on overlay or (X)
     if ($(el.target).attr('id') != 'dynamicLoad' && $(el.target).attr('id') != 'dismiss' && $(el.target).parent().attr('id') != 'dismiss' ) { return; }
