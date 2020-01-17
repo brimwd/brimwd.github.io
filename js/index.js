@@ -44,9 +44,9 @@ function renderPage (pageHTML) {
   // minimize nav
   // create content section
   // populate content section
-  window.prevScrollPosition = window.pageYOffset;
-  $('body').attr('style', ('margin-top:' + -window.pageYOffset + 'px;max-height:calc(100vh + ' + window.pageYOffset + 'px)')).addClass('dynamicLoad');
-  $('body').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
+  adjustOffset();
+
+  $('body').addClass('dynamicLoad').end().prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
   $('body').on('touchmove', function(e) {e.preventDefault();});
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
@@ -68,4 +68,13 @@ function renderPage (pageHTML) {
       $('body').off('touchmove', function(e) {e.preventDefault();});
     });
   });
+}
+
+function adjustOffset() {
+  if (window.innerWidth >= 860) {
+    window.prevScrollPosition = window.pageYOffset;
+    $('body').attr('style', ('margin-top:' + -window.pageYOffset + 'px;max-height:calc(100vh + ' + window.pageYOffset + 'px)'));
+  } else {
+    $('body').removeAttr('style');
+  }
 }
