@@ -46,7 +46,7 @@ function renderPage (pageHTML) {
   // populate content section
   adjustOffset();
 
-  $('body').addClass('dynamicLoad').end().prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
+  $('body').addClass('dynamicLoad').prepend($('<section id="dynamicLoad" style="display:none;">').html(pageHTML));
   $('body').on('touchmove', function(e) {e.preventDefault();});
   $('#dynamicLoad script#case-study-page, #dynamicLoad title, #dynamicLoad meta').remove();
   $('#dynamicLoad').append($('<a id="dismiss"><span>Close Case Study</span></a>'));
