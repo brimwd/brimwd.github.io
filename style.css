@@ -131,17 +131,11 @@ body.dynamicLoad {
   right:0;
   bottom:0;
   left:0;
+  z-index:10;
 }
 @media screen and (max-width:1200px) {body.dynamicLoad {overflow:hidden;}}
 #dynamicLoad {
   background-color:var(--bg);
-  overflow-y:auto;
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index:10;
 }
 @media screen and (min-width:860px) {
   #dynamicLoad ~ section, #dynamicLoad ~ footer {
@@ -151,11 +145,8 @@ body.dynamicLoad {
   #dynamicLoad {
     background-color:rgba(255,255,255,0.3);
     box-shadow:0 0 140px -25px rgba(0,0,0,.6);
-    padding:1px 0;
-    min-height:calc(100vh - 50px);
+    padding:0 0 50px;
   }
-  #dynamicLoad > :first-child {margin-top:49px;}
-  #dynamicLoad > :last-child {margin-bottom:49px;}
 }
 
 @media (prefers-color-scheme:dark) {
