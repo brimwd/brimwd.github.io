@@ -125,19 +125,17 @@ body a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;
 #footer a:hover {text-decoration:underline;}
 
 /* dynamicLoad */
-body.dynamicLoad {
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  z-index:10;
-}
-@media screen and (max-width:1200px) {body.dynamicLoad {overflow:hidden;}}
-#dynamicLoad {
-  background-color:var(--bg);
-}
+@media screen and (max-width:859px) {#dynamicLoad ~ * {display:none;}}
 @media screen and (min-width:860px) {
+  body.dynamicLoad {
+    overflow:hidden;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:10;
+  }
   #dynamicLoad ~ section, #dynamicLoad ~ footer {
     transition:filter 300ms;
     filter:blur(7px);
@@ -145,8 +143,13 @@ body.dynamicLoad {
   #dynamicLoad {
     background-color:rgba(255,255,255,0.3);
     box-shadow:0 0 140px -25px rgba(0,0,0,.6);
+    max-height:100vh;
+    overflow-y:auto;
     padding:0 0 50px;
   }
+}
+@media screen and (min-width:1200px) {
+  body.dynamicLoad {overflow:unset;}
 }
 
 @media (prefers-color-scheme:dark) {
