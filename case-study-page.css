@@ -92,7 +92,7 @@ figure.big-stat {text-align:center;}
 /* CAN-ZOOM IMAGE */
 img.can-zoom {max-width:30%;float:right;margin:1rem 0 10px 20px;transition:max-width .5s, border .3s, margin-left .3s;cursor:zoom-in;border:1px solid white;}
 img.can-zoom:hover {border-color:grey;}
-img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
+img.zoom {max-width:100%;width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 
 .case-study > footer a {border:none;vertical-align:middle;display:inline-block;}
 .fa-linkedin:hover {color:#3177B0;}
