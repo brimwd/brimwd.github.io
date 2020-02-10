@@ -5,16 +5,21 @@
 <link rel="stylesheet" type="text/css" href="/case-study-page.css">
 <style type="text/css">
 /* TMO CASE STUDY */
-.case-study > header {background-color:#fff;background-image:url('images/tmo/topography.png');}
+.case-study > header {background-image:url('/images/tmo/topography.png');}
 .case-study > header h1 {margin-top:4.2rem;}
 .case-study > header p {border-color:var(--text);}
 .case-study h2 {border-color:var(--text);}
 .case-study > * {box-shadow:0 3px 15px -3px #66666690;}
 
 @media (prefers-color-scheme:dark){
-	.case-study header {}
+	.case-study header {background-color:#e2e2e2;color:var(--bg);}
 	.case-study a[href] {color:#E20074;border-bottom-color:#E20074;}
 	.case-study h2 {color:#E20074;border-color:#E20074;}
+}
+@supports (background-blend-mode:difference) {
+	@media (prefers-color-scheme:dark) {
+		.case-study header {background-blend-mode:difference;color:var(--text;)}
+	}
 }
 @media (prefers-color-scheme:dark) and (min-width:850px){
 	.case-study > *:not(header) {border-color:#E20074;}
