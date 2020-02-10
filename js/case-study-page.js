@@ -3,7 +3,6 @@ function configureSinglePage() {
 		.prepend($('<link rel="stylesheet" type="text/css" href="../style.css">'))
 		.prepend($('<link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700&display=swap" rel="stylesheet">'))
 		.prepend($('<link rel="stylesheet" href="../fontawesome/css/all.css" media="all">'))
-		.prepend($('<link rel="stylesheet" type="text/css" href="../case-study-page.css">'))
 		.prepend($('<meta charset="UTF-8">'))
 		.prepend($('<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">'))
 		.prepend($('<meta name="author" content="Brian Donahue">'))
