@@ -5,7 +5,9 @@
 <link rel="stylesheet" type="text/css" href="/case-study-page.css">
 <style type="text/css">
 /* BLUETOOTH CASE STUDY */
-header {background-image:url('/images/bluetooth/chevrons-blue-transp.png');background-size:78px 78px;}
+header {background-color:#40a0fc;background-image:url('/images/bluetooth/chevrons-blue-transp.png');background-size:78px 78px;color:white;}
+.case-study h2 {border-bottom-color:#0082FC;color:#0082FC;}
+.case-study a[href]:not(.btn) {border-bottom-color:#333;color:#333;}
 #roles {padding-left:1em;}
 @media (max-width:429px) {
 	#roles {padding-left:0;}
@@ -42,6 +44,8 @@ header {background-image:url('/images/bluetooth/chevrons-blue-transp.png');backg
 }
 
 @media (prefers-color-scheme:dark){
+	.case-study header {background-color:#134b82;}
+	.case-study a[href]:not(.btn) {color:#3fabff;border-bottom-color:#3fabff;}
 	#design-dev-chart #bootstrap {background-color:rgba(255,220,240,.2);}
 	#design-dev-chart #bootstrap:hover, #design-dev-chart #bootstrap:focus, #design-dev-chart #bootstrap.focus {background-color:rgba(255,220,240,.45);}
 	#design-dev-chart #other div::after {background-color:rgba(238, 224, 253,.2);}
