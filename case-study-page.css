@@ -150,6 +150,9 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 .presentation header + .overview {margin-top:unset;position:relative;}
 .presentation description {display:block;}
 .presentation h2 {border-bottom-color:var(--text);}
+.presentation slideCount {color:var(--text-med);display:inline-block;margin-left:10px;}
+.presentation slideCount::before {content:'(';}
+.presentation slideCount::after {content:' slides)';}
 @media (min-width:670px){
 	.presentation {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);}
 	.presentation ~ * {display:block;}
