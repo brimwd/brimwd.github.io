@@ -13,13 +13,9 @@
 
 @media (prefers-color-scheme:dark){
 	.case-study header {background-color:#e2e2e2;color:var(--bg);}
+	@supports (background-blend-mode: difference) {.case-study header {background-blend-mode:difference;color:var(--text);}}
 	.case-study a[href] {color:#E20074;border-bottom-color:#E20074;}
 	.case-study h2 {color:#E20074;border-color:#E20074;}
-}
-@supports (background-blend-mode:difference) {
-	@media (prefers-color-scheme:dark) {
-		.case-study header {background-blend-mode:difference;color:var(--text;)}
-	}
 }
 @media (prefers-color-scheme:dark) and (min-width:850px){
 	.case-study > *:not(header) {border-color:#E20074;}
