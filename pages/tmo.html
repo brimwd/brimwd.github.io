@@ -4,6 +4,9 @@
 <meta property='og:image' content='/images/tmo/tmo-preview.png'/>
 <link rel="stylesheet" type="text/css" href="/case-study-page.css">
 <style type="text/css">
+@root {
+	--brand:#E20074;
+}
 /* TMO CASE STUDY */
 .case-study > header {background-image:url('/images/tmo/topography.png');}
 .case-study header img {max-width:100px;}
@@ -11,15 +14,16 @@
 .case-study > header p {border-color:var(--text);}
 .case-study h2 {border-color:var(--text);}
 .case-study > * {box-shadow:0 3px 15px -3px #66666690;}
+.what-is .hidden {display:none;background-color:var(--bg);border:1px solid var(--brand);padding:1em;position:absolute;bottom:1.2em;}
+.what-is:hover .hidden, .what-is:focus .hidden, .what-is:active .hidden {display:inline-block;}
 
 @media (prefers-color-scheme:dark){
-	.case-study header {background-color:#e2e2e2;color:var(--bg);}
-	@supports (background-blend-mode: difference) {.case-study header {background-color:#ccc;background-blend-mode:difference;color:var(--text);}}
-	.case-study a[href] {color:#E20074;border-bottom-color:#E20074;}
-	.case-study h2 {color:#E20074;border-color:#E20074;}
+	.case-study header {background-image:url('/images/tmo/topography-dark.png');}
+	.case-study a[href] {color:var(--brand);border-bottom-color:var(--brand);}
+	.case-study h2 {color:var(--brand);border-color:var(--brand);}
 }
 @media (prefers-color-scheme:dark) and (min-width:850px){
-	.case-study > *:not(header) {border-color:#E20074;}
+	.case-study > *:not(header) {border-color:var(--brand);}
 }
 </style>
 <script class="case-study-page" type="text/javascript">
@@ -38,7 +42,7 @@
 <header>
 	<img src="/images/icon-conducktor.png" alt="'Conducktor' Logo" />
 	<h1>Case Study: <br />T&#8209;Mobile Cloud</h1>
-	<p>Infrastructure-as-a-Service for everyone</p>
+	<p>Platform-as-a-Service for everyone</p>
 	<time datetime="2019-02-09">February 9, 2019</time>
 </header>
 <section class="overview">
@@ -48,7 +52,7 @@
 <section>
 	<h2>Starting From Scratch</h2>
 	<img class="can-zoom" src="/images/tmo/architecture.png" alt="Conducktor architecture diagram"/>
-	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Infrastructure-as-a-Service (IaaS) platform.</p>
+	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Platform-as-a-Service (PaaS) platform. <a class="what-is"><div class="hidden"><img src="/images/tmo/saas-vs-paas-vs-iaas.png" alt="PaaS manages everything about your deployment environment from your runtime to your servers and your networking" /></div>What is PaaS?</a></p>
 	<p>My job was to collaborate with the Architect and the Product Manager to define the road-map and project scope for multiple releases, draft the various data models and relationships necessary to support the platform, define the personas, define the workflows, manage the interface development, and finally to design and support development of the UI.</p>
 </section>
 <section>
