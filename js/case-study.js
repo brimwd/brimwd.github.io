@@ -70,6 +70,16 @@ $('document').ready(function(){
 		$(this).siblings('.gallery.expand').find('.focus').click();
 	});
 
+	$('.what-is').on('click', function(){
+		if ($(this).hasClass('open')) {
+			$(this).removeClass('open');
+			$(this).next('.def').slideUp();
+		} else {
+			$(this).addClass('open');
+			$(this).next('.def').slideDown();
+		}
+	});
+
   /* configure independent case study page */
 	if (window.location.pathname.includes('pages')) { configureSinglePage(); }
 });

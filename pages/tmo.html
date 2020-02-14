@@ -15,10 +15,11 @@
 .case-study > header p {border-color:var(--text);}
 .case-study h2 {border-color:var(--text);}
 .case-study > * {box-shadow:0 3px 15px -3px #66666690;}
-.what-is {display:inline-block;position:relative;}
-.what-is::after {content:'\f0d7';font-family:'Font Awesome 5 Pro';font-weight:bolder;}
+.what-is {cursor:pointer;display:inline-block;position:relative;}
+.what-is::after {content:'\f0d7';font-family:'Font Awesome 5 Pro';font-weight:900;margin-left:5px;}
 .what-is.open::after {content:'\f0d8';}
-.def {display:none;padding:1em;position:relative;}
+.def {display:block;padding:1em;position:relative;}
+.def.hidden {display:none;}
 .def::before {background-color:var(--text);opacity:.15;content:'';position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1;}
 
 @media (prefers-color-scheme:dark){
@@ -56,7 +57,7 @@
 <section>
 	<h2>Starting From Scratch</h2>
 	<img class="can-zoom" src="/images/tmo/architecture.png" alt="Conducktor architecture diagram"/>
-	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Platform-as-a-Service (PaaS) platform. <a class="what-is" onClick="(function(){if($(this).hasClass('open')) {$(this).removeClass('open'); $(this).next('.def').slideUp();} else {$(this).addClass('open'); $(this).next('.def').slideDown();} })();">What is PaaS?</a><div class="def hidden"><img src="/images/tmo/saas-vs-paas-vs-iaas.png" alt="PaaS manages everything about your deployment environment from your runtime to your servers and your networking" /></div></p>
+	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Platform-as-a-Service (PaaS) platform. <a class="what-is">What is PaaS?</a><span class="def hidden"><img src="/images/tmo/saas-vs-paas-vs-iaas.png" alt="PaaS manages everything about your deployment environment from your runtime to your servers and your networking" /></span></p>
 	<p>My job was to collaborate with the Architect and the Product Manager to define the road-map and project scope for multiple releases, draft the various data models and relationships necessary to support the platform, define the personas, define the workflows, manage the interface development, and finally to design and support development of the UI.</p>
 </section>
 <section>
