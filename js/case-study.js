@@ -73,10 +73,10 @@ $('document').ready(function(){
 	$('.what-is').on('click', function(){
 		if ($(this).hasClass('open')) {
 			$(this).removeClass('open');
-			$(this).next('.def').slideUp();
+			$(this).next('.def').slideUp('fast');
 		} else {
 			$(this).addClass('open');
-			$(this).next('.def').slideDown();
+			$(this).next('.def').slideDown('fast');
 		}
 	});
 
