@@ -14,8 +14,9 @@
 .case-study > header p {border-color:var(--text);}
 .case-study h2 {border-color:var(--text);}
 .case-study > * {box-shadow:0 3px 15px -3px #66666690;}
-.what-is .hidden {display:none;background-color:var(--bg);border:1px solid var(--brand);padding:1em;position:absolute;bottom:1.2em;}
-.what-is:hover .hidden, .what-is:focus .hidden, .what-is:active .hidden {display:inline-block;}
+.case-study .what-is > .hidden {display:none;background-color:var(--bg);border:1px solid var(--brand);padding:1em;position:absolute;bottom:1.2em;}
+.case-study .what-is:hover > .hidden, .case-study .what-is:focus > .hidden, .case-study .what-is:active > .hidden {display:inline-block;}
+img {max-width:100%!important;}
 
 @media (prefers-color-scheme:dark){
 	.case-study header {background-image:url('/images/tmo/topography-dark.png');}
