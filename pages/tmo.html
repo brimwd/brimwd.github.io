@@ -14,9 +14,9 @@
 .case-study > header p {border-color:var(--text);}
 .case-study h2 {border-color:var(--text);}
 .case-study > * {box-shadow:0 3px 15px -3px #66666690;}
-.case-study .what-is > .hidden {display:none;background-color:var(--bg);border:1px solid var(--brand);padding:1em;position:absolute;bottom:1.2em;}
-.case-study .what-is:hover > .hidden, .case-study .what-is:focus > .hidden, .case-study .what-is:active > .hidden {display:inline-block;}
-img {max-width:100%!important;}
+/* .what-is {display:inline-block;position:relative;}
+.what-is > .hidden {display:none;background-color:var(--bg);border:1px solid var(--brand);padding:1em;position:absolute;bottom:1.2em;}
+.what-is:hover > .hidden, .what-is:focus > .hidden, .what-is:active > .hidden {display:inline-block;} */
 
 @media (prefers-color-scheme:dark){
 	.case-study header {background-image:url('/images/tmo/topography-dark.png');}
@@ -53,7 +53,7 @@ img {max-width:100%!important;}
 <section>
 	<h2>Starting From Scratch</h2>
 	<img class="can-zoom" src="/images/tmo/architecture.png" alt="Conducktor architecture diagram"/>
-	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Platform-as-a-Service (PaaS) platform. <a class="what-is"><div class="hidden"><img src="/images/tmo/saas-vs-paas-vs-iaas.png" alt="PaaS manages everything about your deployment environment from your runtime to your servers and your networking" /></div>What is PaaS?</a></p>
+	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Platform-as-a-Service (PaaS) platform.<!--  <a class="what-is"><span class="hidden"><img src="/images/tmo/saas-vs-paas-vs-iaas.png" alt="PaaS manages everything about your deployment environment from your runtime to your servers and your networking" /></span>What is PaaS?</a> --></p>
 	<p>My job was to collaborate with the Architect and the Product Manager to define the road-map and project scope for multiple releases, draft the various data models and relationships necessary to support the platform, define the personas, define the workflows, manage the interface development, and finally to design and support development of the UI.</p>
 </section>
 <section>
