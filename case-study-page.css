@@ -1,5 +1,5 @@
 body {padding:0;}
-.case-study, .presentation {padding-bottom:50px;}
+.case-study, .presentation {padding-bottom:50px;position:relative;}
 .case-study > nav, .case-study > footer {border:none!important;box-shadow:none!important;padding:10px!important;}
 @media (min-width:670px){
 	.case-study, .presentation {margin:0 auto;padding-bottom:unset;}

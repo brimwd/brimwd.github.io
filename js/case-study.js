@@ -87,7 +87,7 @@ $('document').ready(function(){
 function showPlayer ($targetVid, $vidPos, eventTarget){
 	var $div = '<div id="demo-player"><div class="container"><span><img src="" alt=""/><footer>(click anywhere to close this overlay)</footer></span><p>Loading...</p></div></div>';
 
-	$($div).prependTo($(eventTarget).parents('section')).fadeTo("slow", 1.0);
+	$($div).prependTo($(eventTarget).parents('.case-study')).fadeTo("slow", 1.0);
 
 	var vidPlayer = $('#demo-player');
 
@@ -98,6 +98,6 @@ function showPlayer ($targetVid, $vidPos, eventTarget){
 		vidPlayer.find('img').attr('src',$targetVid);
 	}
 	vidPlayer.on('click',function(){
-		this.remove();
+		vidPlayer.remove();
 	});
 }
