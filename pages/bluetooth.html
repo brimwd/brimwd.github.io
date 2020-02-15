@@ -5,16 +5,23 @@
 <link rel="stylesheet" type="text/css" href="/case-study-page.css">
 <style type="text/css">
 /* BLUETOOTH CASE STUDY */
-header {background-color:#40a0fc;background-image:url('/images/bluetooth/chevrons-blue-transp.png');background-size:78px 78px;color:white;}
-.case-study h2 {border-bottom-color:#0082FC;color:#0082FC;}
+:root{
+	--brand:#0082FC;
+
+	--designers:#9ce8ff;
+	--bootstrap:#ff8484;
+	--other:#a973ff;
+}
+.case-study header {background-color:#40a0fc;background-image:url('/images/bluetooth/chevrons-blue-transp.png');background-size:78px 78px;color:white;}
+.case-study h2 {border-bottom-color:var(--brand);color:var(--brand);}
 .case-study a[href]:not(.btn) {border-bottom-color:#333;color:#333;}
 #roles {padding-left:1em;}
 @media (max-width:429px) {
 	#roles {padding-left:0;}
 	#roles li::before {content:'';margin-right:5px;width:10px;height:10px;border:1px solid grey;display:inline-block;border-radius:10px;}
-	#roles .bootstrap::before {background-color:#ff8484;}
-	#roles .other::before {background-color:#a973ff;}
-	#roles .designers::before {background-color:#9ce8ff;}
+	#roles .bootstrap::before {background-color:var(--bootstrap);}
+	#roles .other::before {background-color:var(--other);}
+	#roles .designers::before {background-color:var(--designers);}
 }
 /* BLUETOOTH VENN DIAGARAM */
 #design-dev-chart {display:none;}
@@ -60,17 +67,17 @@ header {background-color:#40a0fc;background-image:url('/images/bluetooth/chevron
 .design-dev-chart-data li.focus {opacity:1;}
 .design-dev-chart-data ::before, .design-dev-chart-data .bootstrap.other.designers::after, .design-dev-chart-data .bootstrap.other::after, .design-dev-chart-data .bootstrap.designers::after, .design-dev-chart-data .other.designers::after {vertical-align:top;margin-top:5px;margin-right:5px;width:10px;height:10px;border:1px solid grey;display:inline-block;border-radius:10px;}
 
-.design-dev-chart-data .bootstrap::before {content:'';background-color:#ff8484;margin-right:20px;}
-.design-dev-chart-data .other::before {content:'';background-color:#a973ff;margin-right:20px;}
-.design-dev-chart-data .designers::before {content:'';background-color:#9ce8ff;margin-right:20px;}
+.design-dev-chart-data .bootstrap::before {content:'';background-color:var(--bootstrap);margin-right:20px;}
+.design-dev-chart-data .other::before {content:'';background-color:var(--other);margin-right:20px;}
+.design-dev-chart-data .designers::before {content:'';background-color:var(--designers);margin-right:20px;}
 
 .design-dev-chart-data .bootstrap.other::after, .design-dev-chart-data .bootstrap.designers::after, .design-dev-chart-data .other.designers::after, .design-dev-chart-data .all::after {content:'';position:absolute;top:0;left:15px;}
-.design-dev-chart-data .bootstrap.other::before {content:'';background-color:#ff8484;}
-.design-dev-chart-data .bootstrap.other::after {background-color:#a973ff;}
-.design-dev-chart-data .bootstrap.designers::before {content:'';background-color:#ff8484;}
-.design-dev-chart-data .bootstrap.designers::after {background-color:#9ce8ff;}
-.design-dev-chart-data .other.designers::before {content:'';background-color:#a973ff;}
-.design-dev-chart-data .other.designers::after {background-color:#9ce8ff;}
+.design-dev-chart-data .bootstrap.other::before {content:'';background-color:var(--bootstrap);}
+.design-dev-chart-data .bootstrap.other::after {background-color:var(--other);}
+.design-dev-chart-data .bootstrap.designers::before {content:'';background-color:var(--bootstrap);}
+.design-dev-chart-data .bootstrap.designers::after {background-color:var(--designers);}
+.design-dev-chart-data .other.designers::before {content:'';background-color:var(--other);}
+.design-dev-chart-data .other.designers::after {background-color:var(--designers);}
 .design-dev-chart-data .bootstrap.other.designers::before {content:'';background-color:transparent;margin-right:16px;margin-left:4px;}
 .design-dev-chart-data .bootstrap.other.designers::after {content:'';background-color:transparent;left:10px;}
 </style>
