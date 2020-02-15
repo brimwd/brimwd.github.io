@@ -53,7 +53,7 @@
 	<img class="can-zoom" src="/images/tmo/architecture.png" alt="Conducktor architecture diagram"/>
 	<p>I joined T&#8209;Mobile in January of 2018, shortly after the architect completed development of a 'Proof of Concept' for their proposed Platform-as-a-Service (PaaS) platform.</p>
 	<a class="what-is">What is PaaS?</a>
-	<p class="def hidden">PaaS allows you to install and run software without having without having to manage any of the details like networking, runtime, operating-system, servers, storage, networking, etc. A nice analogy is the idea of running an app on your phone; PaaS is like your phone operating system in that the phone takes care of power-management, multitasking, etc so that the developers can just focus on building their apps.</p>
+	<p class="def hidden">PaaS allows you to install and run software without having to manage any of the details like networking, runtime, operating-system, servers, storage, networking, etc. A nice analogy is the idea of running an app on your phone; PaaS is like your phone operating system in that the phone takes care of power-management, multitasking, etc so that the developers can just focus on building their apps.</p>
 	<p>My job was to collaborate with the Architect and the Product Manager to define the road-map and project scope for multiple releases, draft the various data models and relationships necessary to support the platform, define the personas, define the workflows, manage the interface development, and finally to design and support development of the UI.</p>
 </section>
 <section>
@@ -61,28 +61,48 @@
 	<div class="gallery"><img src="/images/tmo/requirements-core-ui.png" alt="UI requirements"/><img src="/images/tmo/data-entitlements.png" alt="environmental entitlements"/><img src="/images/tmo/personas.png" alt="personas and permissions"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 	<p>Before I could build an interface for our product, I needed to determine what tasks our users would need to complete (fundamentally what our system was supposed to do), and after that, which options or configurations we'd need to support to deliver the corresponding features.</p>
 	<p>Because our product was intended for Enterprise-deployment, we needed to support a generic, extensible data model (so other companies building on our platform could define their own 'staging' requirements) and we needed to figure out what data our own team needed in order to approve and promote customer applications from Proof-of-Concept (PoC) to Production.</p>
-	<p>Finally, because this is a 'managed' system (with platform administrators, multiple levels of permissions within customer roles, and internal-audit reviewers), I partnered with the architect, stakeholders, and our administrative team to define who our users were and what access they'd need.</p>
+	<p>Finally, because this is a 'managed' system with several different types of users, I interviewed our architect, stakeholders, and the customer-administration team to define our personas and determine what access each persona would need.</p>
 </section>
 <section>
 	<h2>Proof of Concept</h2>
 	<img class="can-zoom" src="/images/tmo/ui-concept.png" alt="Proof of Concept UI wireframe"/>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>From engaging with users and assessing the challenge I was given when I was hired ("make deploying to the cloud feel easy"), I knew we would need a graphical UI to support feature discovery, and to make it easier to include (and find) tutorials, tool-tips, helper text, input-constraints, and other user-friendly features.</p>
+	<p>When it came to actually delivering a web-interface, I was frustrated to discover that <em>nobody</em> on the team wanted a UI. Our architect often said "I know our users and they want a CLI" (CLI stands for Command-Line-Interface - basically "MS Dos" or the "Terminal" application on your computer), and our engineers agreed.</p>
+	<a class="what-is">See an example of a CLI</a>
+	<p class="def hidden"><img src="/images/tmo/CLI.gif" alt="An animated example of a CLI"/><em>Example: Using a CLI to purchase a web-domain (~15s)</em></p>
+	<p>In my experience, CLIs can be exceptionally difficult to use because you need to remember all of the commands (or individually look up each one). Additionally, rather than simply clicking on a few familiar icons to complete a task, a CLI requires you to type in every command -- and to enter them in the correct sequence. Finally, a CLI is limited to showing a single piece of data at a time; forget alerts, real-time updates, and multi-tasking -- you need to manually type in requests for each inquiry. <em>Talk about "unfriendly"</em></p>
+	<p>I knew I couldn't win them over up-front, but I realized that if the CLI and Platform teams developed features independently, there would be a chance that redundant work would be completed or worse, the two could fall out of sync. As a remedy, I suggested that the CLI should merely "wrap the API" (meaning that all of the functions would be built directly into the Platform, and the CLI would simply be the interface for accessing that functionality).</p>
+	<p>The engineers agreed to this approach, and "to facilitate our discussions" I began presenting low-fidelity UI wireframes in conversations about features, sequencing, and permissions.</p>
 </section>
 <section>
 	<h2>UI Development</h2>
-	<div class="gallery"><img src="/images/tmo/ui-desktop.png" alt="desktop interface"/><img src="/images/tmo/ui-desktop-menu-open.png" alt="system navigation"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<div class="gallery"><img src="/images/tmo/ui-v1-wireframe-services.png" alt="services-list wireframe"/><img src="/images/tmo/ui-v1-wireframe-service-details.png" alt="service-details wireframe"/><img src="/images/tmo/ui-v1-wireframe-new-service.png" alt="create-service wireframe"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+	<p>As the Platform neared the version-1 milestone, we started a 'pilot program' to formally invite customers (other internal teams at T&#8209;Mobile) to use our platform. From the few customers who tried our Platform, we got a lot of complaints about the CLI and requests for a simple web-UI.</p>
+	<p>Fortunately, we had a complete set of UI wireframes that were fully-vetted, feature complete, and ready to build. <emoji>🎉</emoji></p>
+	<p>Our UI development was also dramatically accelerated by the fact that all of the core-functionality was built into the platform. That meant that in order to make our UI functional, we could simply "wrap the API" using the same techniques as the CLI.</p>
+	<a href="/images/tmo/ui-v1-wireframes.pdf" target="_blank">See the complete v1 wireframes</a>
+</section>
+<section>
+	<h2>UI v2</h2>
+	<div class="gallery"><img src="/images/tmo/ui-desktop.png" alt="desktop interface"/><img src="/images/tmo/ui-desktop-menu-open.png" alt="system navigation"/><img src="/images/tmo/ui-manage-apps.png" alt="manage applications screen"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+	<p>So our UI worked and was running within a month, but it was abysmally ugly and that took a toll on usability.</p>
+	<p>While the UI Developer and I built the first version of the interface, the Platform team had continued development on the Platform and updated the roadmap to include new 'alerts' and 'telemetry' features.</p>
+	<p>This gallery includes hi-fi designs for a prettier, more-streamlined web-experience.</p>
 </section>
 <section>
 	<h2>Manage Anywhere</h2>
 	<div class="gallery"><img src="/images/tmo/ui-mobile.png" alt="mobile interface"/><img src="/images/tmo/ui-tablet.png" alt="tablet interface"/><img src="/images/tmo/ui-desktop-hd.png" alt="HD desktop interface"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	<p>During the first weeks after the UI launch, I noticed many of the Platform Devs squeezing the UI window down to its smallest size and toggling back-and-forth between the UI and their other work.</p>
+	<p>Although I received push-back from the architect about supporting a 'responsive' design, I received my manager's blessing to partner with the UI Developer to optimize our UI to work on mobile devices (in case our customers needed to check their applications on the go) and especially for the 500px breakpoint (the narrowest size on Google's Chrome browser - our users' preferred browser).</p>
 </section>
 <section>
 	<h2>Project Impact</h2>
-	<p>New User On-boarding time was reduced from 2 months to 1 day. (~97% reduction)</p>
-	<p>Additionally, through the development of more accurate, concise, and usable documentation and intake "wizard", support requests were reduced from 2-4 hours per step down to a single 1-hour review session prior to publishing.</p>
+	<p>By focusing on user needs, including those of the engineers developing the Platform, our UI received wide-adoption throughout the company. We also enjoyed some remarkable metrics, including a reduction in 'New User On-boarding' time from <strong>2 months</strong> to <strong>1 day</strong>. (a ~97% reduction)</p>
+	<p>Through the development of more-accurate, concise, and usable documentation and the development of an intake-"wizard", support requests were reduced from a series of <strong>eight or more contacts</strong> requiring <strong>2-4 hours per step</strong> down to <strong>a single 1-hour review session</strong> with each customer prior to publishing a new application.</p>
 	<p>Having a responsive interface that could be used side-by-side while working also accelerated development and improved incident-response times for the core-platform team, and improved architecture-and-design documentation demystified the API and extensibility-configurations for developers of 'add-ons'.</p>
+	<p>Support for <strong>14,000 APIs</strong>, <strong>50 applications</strong>, fielding <strong>500 million API requests per day</strong>, and <stong>saving $50+ million per year</stong> on hosting and infrastructure.</p>
+	<p>For all of our accomplishments, the impact I'm personally most-proud of was hearing the Platform Dev Lead (who'd been my harshest critic) asking to have additional features in the UI because <em>he</em> wanted them. <emoji>🙌</emoji></p>
+	<p>If you're interested in hearing more about this project, there's <a href="https://www.youtube.com/watch?v=SFMZcft4ahY" target="_blank">a video of my manager speaking about the capability we built</a> on YouTube.</p>
 </section>
 </article>
 </body>

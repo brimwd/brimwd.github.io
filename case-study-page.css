@@ -144,3 +144,4 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 .what-is.open::after {content:'\f0d8';}
 .def {display:block;padding-left:1em;border-left:3px solid var(--text-med);border-left-color:var(--brand);}
 .def.hidden {display:none;}
+.def img {max-width:100%;}
