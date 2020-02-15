@@ -113,8 +113,17 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 }
 
 /* DEMO-PLAYER STYLES */
-a.player {border:none;}
+a.player {border:none;cursor:pointer;}
 a.player::after {content:'\f144';display:inline-block;font-family:'Font Awesome 5 Pro';font-weight:900;margin-left:5px;}
+#demo-player {background-color:rgba(0,0,0,0.75);cursor:pointer;display:none;padding:0;margin:0;position:fixed;top:0;right:0;bottom:0;left:0;z-index:55;}
+#demo-player .container {display:flex;flex-flow:column;height:80vh;justify-content:center;}
+#demo-player * {color:white;text-align:center;}
+#demo-player p {font-size:36px;position:absolute;top:40vh;right:0;left:0;}
+#demo-player footer {background:none;padding:10px 0;}
+#demo-player span {z-index:7;min-height:10vh;}
+#demo-player img {max-width:600px;width:90%;margin:0 auto;}
+@media(max-width:500px){#demo-player p {font-size:28px;padding-top:60px;} iframe {max-height:300px;}}
+
 
 /* DISMISS CASE STUDY */
 #dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;z-index:50;}
@@ -136,11 +145,13 @@ a.player::after {content:'\f144';display:inline-block;font-family:'Font Awesome 
 	.presentation + #dismiss:hover {right:calc(-1 * (50vw - 405px));}
 }
 
+
 /* PRESENTATION STYLES */
 .presentation header::after {content:'Presentation';left:-82px;}
 .presentation slideCount {color:var(--text-med);display:inline-block;margin-left:10px;}
 .presentation slideCount::before {content:'(';}
 .presentation slideCount::after {content:' slides)';}
+
 
 /* WHAT-IS STYLES */
 .what-is {cursor:pointer;display:inline-block;position:relative;}
