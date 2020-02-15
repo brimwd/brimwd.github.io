@@ -112,7 +112,11 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 	picture.full-width:hover, picture.full-width:active, picture.full-width:focus {opacity:1;}
 }
 
-/* dismiss case study */
+/* DEMO-PLAYER STYLES */
+a.player {border:none;}
+a.player::after {content:'\f144';display:inline-block;font-family:'Font Awesome 5 Pro';font-weight:900;margin-left:5px;}
+
+/* DISMISS CASE STUDY */
 #dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;z-index:50;}
 #dismiss.bottom, #dismiss:hover {border-radius:0;padding:4px 6px;width:calc(100% - 12px);right:0;bottom:0;}
 #dismiss:hover {background-color:#144567;cursor:pointer;}
@@ -131,8 +135,8 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 	.presentation + #dismiss {position:relative;bottom:56px;right:calc(-1 * (50vw + 405px - 24px));}
 	.presentation + #dismiss:hover {right:calc(-1 * (50vw - 405px));}
 }
-/* PRESENTATION STYLES */
 
+/* PRESENTATION STYLES */
 .presentation header::after {content:'Presentation';left:-82px;}
 .presentation slideCount {color:var(--text-med);display:inline-block;margin-left:10px;}
 .presentation slideCount::before {content:'(';}
