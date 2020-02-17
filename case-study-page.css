@@ -128,7 +128,8 @@ a.player::after {content:'\f144';display:inline-block;font-family:'Font Awesome 
 /* DISMISS CASE STUDY */
 #dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;z-index:50;}
 #dismiss.bottom, #dismiss:hover {border-radius:0;padding:4px 6px;width:calc(100% - 12px);right:0;bottom:0;}
-#dismiss:hover {background-color:#144567;cursor:pointer;}
+#dismiss:hover {cursor:pointer;}
+@media (prefers-color-scheme:dark){#dismiss {background-color:var(--text);color:var(--bg);}}
 
 #dismiss::before {content:'\f00d';display:inline-block;font-family:'Font Awesome 5 Pro';font-size:28px;font-weight:300;line-height:48px;transition:opacity 250ms;flex-grow:1;text-align:center;}
 #dismiss.bottom::before, #dismiss:hover::before {opacity:0;width:0;}
