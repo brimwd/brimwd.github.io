@@ -65,32 +65,32 @@ u {text-decoration:none!important;display:inline-block;}
 	<h2>Building Relationships</h2>
 	<div class="gallery"><img src="/images/tmo/requirements-core-ui.png" alt="UI requirements"/><img src="/images/tmo/data-entitlements.png" alt="environmental entitlements"/><img src="/images/tmo/personas.png" alt="personas and permissions"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 	<p>Before I could build an interface for our product, I needed to determine what tasks our users needed to complete (fundamentally what our system was supposed to do), and after that, which options or configurations we'd need to support.</p>
-	<p>Because our product was intended for Enterprise-deployment, we needed to support a generic, extensible data model (so other companies building on our platform could define their own 'staging' requirements) and we needed to figure out what data our own team needed in order to approve and promote customer applications from Proof-of-Concept (PoC) to Production.</p>
+	<p>Because our product was intended for Enterprise-deployment, we needed to support a generic, extensible data model so other companies building on our platform could define their own 'staging' requirements. We also needed to figure out what data our own team needed in order to approve and promote customer applications from Proof-of-Concept (PoC) to Production.</p>
 	<p>Finally, because this is a 'managed' system with several different types of users, I interviewed our architect, stakeholders, and the customer-administration team to define our personas and determine what access each persona would need.</p>
 </section>
 <section>
 	<h2>Proof of Concept</h2>
 	<img class="can-zoom" src="/images/tmo/ui-concept.png" alt="Proof of Concept UI wireframe"/>
-	<p>From engaging with users and assessing the challenge I was given when I was hired ("make deploying to the cloud feel easy"), I knew we would need a graphical UI to support feature discovery, and to make it easier to include (and find) tutorials, tool-tips, helper text, input-constraints, and other user-friendly features.</p>
+	<p>From engaging with users and assessing the challenge I was given when I was hired ("make deploying to the cloud feel easy"), I knew we would need a graphical UI that supported tutorials, tool-tips, helper text, input-constraints, and other user-friendly features.</p>
 	<p>When it came to actually delivering a web-interface, I was frustrated to discover that <em>nobody</em> on the team wanted a UI. Our architect often said "I know our users and they want a CLI" (CLI stands for Command-Line-Interface - basically "MS Dos" or the "Terminal" application on your computer), and our engineers agreed.</p>
 	<a class="what-is">See an example of a CLI</a>
 	<p class="def hidden"><img src="/images/tmo/CLI.gif" alt="An animated example of a CLI" style="width:100%;display:block;"/><em>Example: Using a CLI to purchase a web-domain</em> (~15s)</p>
 	<p>In my experience, CLIs can be exceptionally difficult to use because you need to remember all of the commands (or individually look up each one). Additionally, rather than simply clicking on a few familiar icons to complete a task, a CLI requires you to type in every command -- and to enter them in the correct sequence. Finally, a CLI is limited to showing a single piece of data at a time; forget alerts, real-time updates, and multi-tasking -- you need to manually type in requests for each inquiry. <em>Talk about "unfriendly".</em></p>
-	<p>I knew I couldn't win them over up-front, but I realized that if the CLI and Platform teams developed features independently, there would be a chance that redundant work would be completed or worse, the two could fall out of sync. As a remedy, I suggested that the CLI should merely "wrap the API" (meaning that all of the functions would be built directly into the Platform, and the CLI would simply be the interface for accessing that functionality).</p>
+	<p>I knew I couldn't win them over up-front, but realized that if the CLI and Platform teams developed features independently, redundant work might occur or worse, the two could fall out of sync. As a remedy, I suggested that the CLI should merely "wrap the API" (meaning that all of the functions would be built directly into the Platform, and the CLI would simply be the interface for accessing that functionality).</p>
 	<p>The engineers agreed to this approach, and "to facilitate our discussions" I began presenting low-fidelity UI wireframes in conversations about features, sequencing, and permissions.</p>
 </section>
 <section>
 	<h2>UI Development</h2>
 	<div class="gallery"><img src="/images/tmo/ui-v1-wireframe-services.png" alt="services-list wireframe"/><img src="/images/tmo/ui-v1-wireframe-service-details.png" alt="service-details wireframe"/><img src="/images/tmo/ui-v1-wireframe-new-service.png" alt="create-service wireframe"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
-	<p>As the Platform neared the version-1 milestone, we started a 'pilot program' to formally invite customers (other internal teams at <u>T-Mobile</u>) to use our platform. From the few customers who tried our Platform, we got a lot of complaints about the CLI and requests for a simple web-UI.</p>
+	<p>As the Platform neared the version-1 milestone, we started a 'pilot program' to formally invite customers (other internal teams at <u>T-Mobile</u>) to use our platform. From the pilot, we received a lot of complaints about the CLI and requests for a simple web-UI.</p>
 	<p>Fortunately, we had a complete set of UI wireframes that were fully-vetted, feature complete, and ready to build. <emoji>🎉</emoji></p>
-	<p>Our UI development was also dramatically accelerated by the fact that all of the core-functionality was built into the platform. That meant that in order to make our UI functional, we could simply "wrap the API" using the same techniques as the CLI.</p>
+	<p>Our UI development was also dramatically accelerated by the fact that all of the core-functionality was already built into the platform. That meant that in order to make our UI functional, we could simply "wrap the API" using the same techniques as the CLI.</p>
 	<a href="/images/tmo/ui-v1-wireframes.pdf" class="btn" target="_blank">See the v1.0 wireframes</a>
 </section>
 <section>
 	<h2>UI v2</h2>
 	<div class="gallery"><img src="/images/tmo/ui-desktop.png" alt="desktop interface"/><img src="/images/tmo/ui-desktop-menu-open.png" alt="system navigation"/><img src="/images/tmo/ui-manage-apps.png" alt="manage applications screen"/><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
-	<p>So our UI worked and was running within a month, but it was abysmally ugly and that took a toll on usability.</p>
+	<p>So our UI worked and was running within a month. However it was abysmally ugly, which took a toll on usability.</p>
 	<p>While the UI Developer and I built the first version of the interface, the Platform team had continued development on the Platform and updated the roadmap to include new 'alerts' and 'telemetry' features.</p>
 	<p>This gallery includes hi-fi designs for a prettier, more-streamlined web-experience.</p>
 </section>
@@ -106,7 +106,7 @@ u {text-decoration:none!important;display:inline-block;}
 	<p>Through the development of more-accurate, concise, and usable documentation and the development of an intake-"wizard", support requests were reduced from a series of <strong>eight or more contacts</strong> requiring <strong>2-4 hours per step</strong> down to <strong>a single 1-hour review session</strong> with each customer prior to publishing a new application.</p>
 	<p>Having a responsive interface that could be used side-by-side while working also accelerated development and improved incident-response times for the core-platform team, and improved architecture-and-design documentation demystified the API and extensibility-configurations for developers of 'add-ons'.</p>
 	<p>Support for <strong>14,000 APIs</strong>, <strong>50 applications</strong>, fielding <strong>1 billion API requests per day</strong>, and <strong>saving $50+ million per year</strong> on hosting and infrastructure.</p>
-	<p>For all of our accomplishments, the impact I'm personally most-proud of was hearing the Platform Dev Lead (who'd been my harshest critic) asking to have additional features in the UI because <em>he</em> wanted them. <emoji>🙌</emoji></p>
+	<p>For all of our accomplishments, the impact I'm personally most-proud of was hearing the Platform Dev Lead (who originally didn’t see the need for a UI) asking for additional features in the graphical UI. <emoji>🙌</emoji></p>
 	<p><a href="/images/tmo/ui-v1.1.17-wireframes.pdf" class="btn" target="_blank">See the v1.1.17 wireframes</a> (final version)</p>
 	<p>If you're interested in hearing more about this project, there's <a href="https://www.youtube.com/watch?v=SFMZcft4ahY" target="_blank">a video of my manager speaking about the capability we built</a> on YouTube.</p>
 </section>
