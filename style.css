@@ -172,7 +172,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   --selection:#fffcdb42;
 }
 b {font-size:1.15em;line-height:1em;}
-img.invert {filter:invert(100%);}
+img.invert {filter:invert(1) hue-rotate(180deg);}
 }
 
 /*
