@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bluetooth - Maintenance Mode</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta charset="UTF-8">
+<style>
+*, body {line-height:1.5em;font-family:sans-serif;}
+
+#container > article {margin:10px auto 40px;position:relative;background-color:white;text-align:center;}
+#container > .active {z-index:2;}
+@media(min-width:870px){#container > article {margin-top:30px;}}
+@media(min-width:1030px){
+	html, body {max-width:100%;overflow-x:hidden;margin:0;}
+}
+
+/* CASE STUDY - GENERAL STYLES */
+.block {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);border:1px solid #e2e2e2;}
+.block > * {padding:5%;margin:0 auto;}
+.block > *:not(header) {padding:3% 5% 0;border-color:#e2e2e2}
+.block header {color:white;background-color:#40a0fc;position:relative;}
+.block header > * {position:relative;z-index:10;}
+.block header img {max-width:170px;}
+.block header h1 {font-size:2.2rem;margin-top:1.5rem;margin-bottom:.5rem;}
+.block header p {border-bottom:1px solid white;padding-bottom:1.2rem;font-size:1.4rem;margin-top:.5rem;}
+.block header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
+@media (min-width:650px){
+	.block > * {padding:5%}
+	.block header {padding:50px 5% 10px;}
+}
+@media (min-width:810px){.block {max-width:810px;margin:0 auto;}}
+@media (min-width:1030px){
+	.block {width:810px;border:none;}
+	.block > * {border:1px solid transparent;min-width:650px;}
+	.block > *:not(header) {padding:5%;}
+}
+#bluetooth > header {background-image:url('images/chevrons-blue-transp.png');background-size:78px 78px;}
+footer {text-align:center;font-size:.9rem;color:#666;}
+</style>
+</head>
+<body>
+<div id="container">
+	<article class="block" id="bluetooth">
+		<header>
+			<img src="images/Bluetoothlogo_white.png" alt="" />
+			<h1>Bluetooth.com is not available at this time</h1>
+			<p></p>
+			<time datetime="2017-09-7">September 7, 2017</time>
+		</header>
+		<section>
+			<p>We are currently undergoing systems maintenance.</p>
+			<p>We apologize for this inconvenience.</p>
+		</section>
+	</article>
+	<footer>
+		<p>&copy; Bluetooth SIG 2017 &mdash; all rights reserved</p>
+	</footer>
+</div>
+</body>
+</html>
