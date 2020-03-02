@@ -100,22 +100,68 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #approach {display:none;}
 
 /* WORK */
-#work a {align-items:flex-start;border:1px solid var(--text-ultra-faint);border-radius:8px;display:flex;padding:15px 20px;position:relative;margin:20px 0 0;transition:all 200ms;}
-#work a:hover {background-color:var(--header-bg);}
-#work img {margin-right:17px;max-height:100px;max-width:30%;}
-#work h4 {margin:0 0;}
+#work {}
+#work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 150ms;}
+#work h4 {margin:-20px 0 0;}
 #work p {margin:.3em 0 .6em;}
 
-.unfinished::before {content:'Coming soon!';background-color:var(--text-faint-alpha);border-radius:7px 7px 0 0;display:block;padding:10px 10px;position:absolute;top:0;right:0;left:0;}
+#work a {
+  align-items:center;
+  background:no-repeat center;
+  background-size:100% 100%;
+  border-radius:8px;
+  box-shadow:0 0 13px -4px var(--text-med);
+  display:flex;
+  flex-flow:column;
+  font-weight:600;
+  justify-content:space-evenly;
+  letter-spacing:.1px;
+  padding:15px;
+  margin:20px 0 0;
+  min-height:160px;
+  position:relative;
+  overflow:hidden;
+  text-align:center;
+  transition:all 250ms, background-size 180ms, transform 160ms;
+}
+#work a:hover {box-shadow:0 10px 30px var(--text-med);transform:scale(1.05);}
+#work a:hover img {max-height:108px;max-width:86%;}
+
+#work .amazon {
+  background-color:#F29D39;
+  color:white;
+}
+#work .bluetooth {
+  background:url(images/bluetooth/chevrons-blue-transp.png) repeat center;
+  background-color:#40a0fc;
+  background-size:100px 100px;
+  color:white;
+}
+#work .bluetooth:hover {
+  background-size:78px 78px;
+}
+#work .bob {
+  background:url(images/bob-books/bob-bg.jpg) no-repeat center;
+  background-size:cover;
+  color:#4f5354;
+}
+#work .bob h4 {margin-top:-10px;}
+
+#work .loveEarwax {background-color:#1b1b1b;color:white;}
+#work .loveEarwax div {position:relative;}
+#work .loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
+#work .loveEarwax:hover img:last-child {opacity:1;}
+
+/*.unfinished::before {content:'Coming soon!';background-color:var(--text-faint-alpha);border-radius:7px 7px 0 0;display:block;padding:10px 10px;position:absolute;top:0;right:0;left:0;}*/
 .unfinished div, .unfinished img {margin-top:40px;}
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
-  #work a {align-items:center;display:flex;justify-content:center;margin:2% 0;padding:15px;width:calc(48% - 30px);}
+  #work a {margin:2% 0;width:calc(48% - 30px);}
   /*#work img {}*/
 }
 @media screen and (min-width:970px) {
-  #work a {margin:2% 0;padding:15px;width:calc(31% - 30px);}
+  #work a {/*padding:15px;*/width:calc(31% - 30px);}
 }
 
 /* FOOTER */
