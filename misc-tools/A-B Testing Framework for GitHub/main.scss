@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+// Import sass partials - KEEP IN THIS ORDER
+@import "resources/breakpoints";
+@import "resources/fonts";
+@import "resources/typography";
+@import "resources/colors";
+
+
+// Begin css here
+body, html {margin:0;padding:0;}
+
+#version-picker {
+  align-items:center;
+  background-color:white;
+  border-bottom:1px solid #b2bbd9;
+  margin-bottom:15px;
+  padding:4px 0 6px;
+
+  a {
+    border:1px solid transparent;
+    border-radius:30px;
+    cursor:pointer;
+    display:inline-block;
+    margin-left:12px;
+    padding:5px 0;
+    text-align:center;
+    width:32px;
+
+    &:hover {border-color:#b2bbd9;}
+    &.active-version {background-color:#eef0f6;}
+  }
+}
+
+@media #{$breakpoint-md} {
+
+}
+
+@media #{$breakpoint-lg} {
+
+}
+
+@media #{$breakpoint-xl} {
+
+}

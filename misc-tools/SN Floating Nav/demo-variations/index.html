@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="googlebot" content="none">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigation Prototype - D</title>
+  <link rel="stylesheet" href="../resources/bootstrap-grid.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../resources/fa/css/all.css">
+  <link rel="stylesheet" href="main.css">
+
+</head>
+<body class="text-gable-green">
+<!-- Begin html here -->
+  <picture id="nav" class="no-click">
+    <source srcset="images/nav-desktop.png" media="(min-width: 1000px)">
+    <source srcset="images/nav-tablet.png" media="(min-width: 750px)">
+    <img src="images/nav-mobile.png" />
+  </picture>
+<!-- <h1 id="prototype-name">Speed Dial</h1> -->
+
+  <div id="dg-cta">
+    <a>
+      <img src="images/contact.png" alt="contact link" />
+    </a>
+    <a id="demo-trigger">
+      <img src="images/demo.png" alt="demo link" />
+    </a>
+  </div>
+
+  <aside>
+    <div class="container-fluid">
+      <row class="row">
+        <div class="col-12 col-md-6">
+          <img src="images/form-sidebar.png" alt="promo content" />
+        </div>
+        <div id="form" class="col-12 col-md-6"><!-- begin form -->
+          <p class="small"><a href>Sign in to Existing Account</a></p>
+          <p class="bold small">All Form Fields Are Required</p>
+          <form autocomplete="off">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First Name" autocomplete="off">
+                <label>First Name</label>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last Name" autocomplete="off">
+                <label>Last Name</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" id="email" placeholder="Business E-Mail" autocomplete="off">
+              <label>Business E-Mail</label>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Company" autocomplete="off">
+                <label>Company</label>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Business Phone" autocomplete="off">
+                <label>Business Phone</label>
+              </div>
+            </div>
+            <div class="form-group select">
+              <select class="form-control">
+                <option>-- Job Level --</option>
+                <option>Individual Contributor</option>
+                <option>Developer/Engineer</option>
+                <option>Architect</option>
+                <option>System Administrator</option>
+                <option>Manager/Sr</option>
+                <option>Director/Sr</option>
+                <option>Vice President/SVP</option>
+                <option disabled>C-Level</option>
+                <option disabled>Press Analyst/Media</option>
+              </select>
+            </div>
+            <div class="form-group select">
+              <select class="form-control" id="department">
+                <option>-- Department --</option>
+                <option for="Cloud">Cloud Operations</option>
+                <option for="Customer">Customer Service/Support</option>
+                <option for="Facilities">Facilities</option>
+                <option for="Field">Field Service</option>
+                <option for="Finance">Finance/Accounting</option>
+                <option for="GRC">Governance, Risk and Compliance</option>
+                <option for="HR">HR</option>
+                <option for="IT">IT</option>
+                <option for="Legal">Legal</option>
+                <option for="Manufacturing">Manufacturing</option>
+                <option for="Marketing">Marketing</option>
+                <option for="Operations">Operations/Engineering/R&amp;D</option>
+                <option for="Sales">Sales</option>
+                <option for="Shared">Shared Services</option>
+                <option for="Security">Security</option>
+              </select>
+            </div>
+            <div class="form-group select">
+              <select class="form-control" id="jobs">
+                <option>-- Job Function --</option>
+                <optgroup id="Cloud">
+                  <option>Cloud Operations</option>
+                </optgroup>
+                <optgroup id="Customer">
+                  <option>Customer Experience Strategy</option>
+                  <option>Customer Service Delivery/Management</option>
+                  <option>Customer Service Operations</option>
+                  <option>Customer Service Technology/Infrastructure</option>
+                  <option>Service/Support - Other</option>
+                </optgroup>
+                <optgroup id="Facilities">
+                  <option>Business Technology Services</option>
+                  <option>Facilities Service Delivery/Management</option>
+                  <option>Facilities Operations</option>
+                  <option>Facilities - Other</option>
+                </optgroup>
+                <optgroup id="Field">
+                  <option>Field Service Delivery/Management</option>
+                  <option>Field Service Technology/Infrastructure</option>
+                  <option>Field Service - Other</option>
+                </optgroup>
+                <optgroup id="Finance">
+                  <option>Accounting Shared Services</option>
+                  <option>Finance Projects/Operations</option>
+                  <option>Financial Services Center</option>
+                  <option>T&amp;E/Credit Card Shared Services</option>
+                  <option>Finance - Other</option>
+                </optgroup>
+                <optgroup id="GRC">
+                  <option>Audit</option>
+                  <option>Compliance</option>
+                  <option>Information Assurance</option>
+                  <option>Privacy</option>
+                  <option>Risk Management</option>
+                  <option>Vendor Risk</option>
+                  <option>GRC - Other</option>
+                </optgroup>
+                <optgroup id="HR">
+                  <option>HR Business &amp; Strategy</option>
+                  <option>HRIS/Global HRIS</option>
+                  <option>HR Operations</option>
+                  <option>HR Service Delivery/Management</option>
+                  <option>Payroll/Compensation Benefits</option>
+                  <option>Talent Management/Recruiting</option>
+                  <option>HR - Other</option>
+                </optgroup>
+                <optgroup id="IT">
+                  <option>Application and Software Development</option>
+                  <option>Architecture</option>
+                  <option>Datacenter Operations</option>
+                  <option>DevOps</option>
+                  <option>IT Business Applications</option>
+                  <option>IT Business Management</option>
+                  <option>IT Finance</option>
+                  <option>IT Infrastructure</option>
+                  <option>IT Operations Management</option>
+                  <option>IT Service Management/Service Delivery</option>
+                  <option>IT Strategy</option>
+                  <option>Procurement</option>
+                  <option>Project Management Office/PMO</option>
+                  <option>Security</option>
+                  <option>Service Desk/Help Desk</option>
+                  <option>Software Asset Management</option>
+                  <option>Vendor Management</option>
+                  <option>IT - Other</option>
+                </optgroup>
+                <optgroup id="Legal">
+                  <option>Legal Operations</option>
+                  <option>Legal - Other</option>
+                </optgroup>
+                <optgroup id="Manufacturing">
+                  <option>Operations</option>
+                  <option>Production Manager</option>
+                  <option>Engineer</option>
+                  <option>Technician</option>
+                  <option>Analyst</option>
+                  <option>Manufacturing - Other</option>
+                </optgroup>
+                <optgroup id="Marketing">
+                  <option>Marketing Operations</option>
+                  <option>Marketing Technology/Infrastructure</option>
+                  <option>Marketing - Other</option>
+                </optgroup>
+                <optgroup id="Operations">
+                  <option>Application and Software Development</option>
+                  <option>Architecture</option>
+                  <option>Product Management</option>
+                  <option>Quality Assurance</option>
+                  <option>Product Support</option>
+                  <option>Product Operations</option>
+                  <option>Program Management</option>
+                  <option>Project Management</option>
+                  <option>Op/Engineering/R&amp;D - Other</option>
+                </optgroup>
+                <optgroup id="Sales">
+                  <option>Sales Operations</option>
+                  <option>Sales - Other</option>
+                </optgroup>
+                <optgroup id="Shared">
+                  <option>Line of Business IT</option>
+                  <option>Line of Business Operations</option>
+                  <option>Line of Business Systems</option>
+                  <option>Line of Business Service Enablement</option>
+                  <option>Shared Services Operations</option>
+                  <option>Shared Services - Other</option>
+                </optgroup>
+                <optgroup id="Security">
+                  <option>Incident Response</option>
+                  <option>Vulnerability</option>
+                  <option>SOC</option>
+                  <option>Security Architect</option>
+                  <option>Security - Other</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="col select">
+                <select class="form-control">
+                  <option>-- Country --</option>
+                  <option>US - United States</option>
+                  <option>GB - United Kingdom</option>
+                  <option>JP - Japan</option>
+                  <option>FR - France</option>
+                  <option>DE - Germany</option>
+                  <option>AF - Afghanistan</option>
+                  <option>AL - Albania</option>
+                  <option>DZ - Algeria</option>
+                  <option>AS - American Samoa</option>
+                  <option>AD - Andorra</option>
+                  <option>AO - Angola</option>
+                  <option>AI - Anguilla</option>
+                  <option>AQ - Antarctica</option>
+                  <option>AG - Antigua and Barbuda</option>
+                  <option>AR - Argentina</option>
+                  <option>AM - Armenia</option>
+                  <option>AW - Aruba</option>
+                  <option>AU - Australia</option>
+                  <option>AT - Austria</option>
+                  <option>AZ - Azerbaijan</option>
+                  <option>BS - Bahamas</option>
+                  <option>BH - Bahrain</option>
+                  <option>BD - Bangladesh</option>
+                  <option>BB - Barbados</option>
+                  <option>BY - Belarus</option>
+                  <option>BE - Belgium</option>
+                  <option>BZ - Belize</option>
+                  <option>BJ - Benin</option>
+                  <option>BM - Bermuda</option>
+                  <option>BT - Bhutan</option>
+                  <option>BO - Bolivia</option>
+                  <option>BA - Bosnia-Herzegovina</option>
+                  <option>BW - Botswana</option>
+                  <option>BR - Brazil</option>
+                  <option>IO - British Indian Ocean Territory</option>
+                  <option>VG - British Virgin Islands</option>
+                  <option>BN - Brunei</option>
+                  <option>BG - Bulgaria</option>
+                  <option>BF - Burkina Faso</option>
+                  <option>BI - Burundi</option>
+                  <option>KH - Cambodia</option>
+                  <option>CM - Cameroon</option>
+                  <option>CA - Canada</option>
+                  <option>CV - Cape Verde</option>
+                  <option>KY - Cayman Islands</option>
+                  <option>CF - Central African Republic</option>
+                  <option>TD - Chad</option>
+                  <option>CL - Chile</option>
+                  <option>CN - China</option>
+                  <option>CX - Christmas Island</option>
+                  <option>CC - Cocos Islands</option>
+                  <option>CO - Colombia</option>
+                  <option>KM - Comoros</option>
+                  <option>CG - Congo</option>
+                  <option>CK - Cook Islands</option>
+                  <option>CR - Costa Rica</option>
+                  <option>CI - Cote d'Ivoire</option>
+                  <option>HR - Croatia</option>
+                  <option>CW - Curacao</option>
+                  <option>CY - Cyprus</option>
+                  <option>CZ - Czech Republic</option>
+                  <option>CD - Democratic Republic of the Congo</option>
+                  <option>DK - Denmark</option>
+                  <option>DJ - Djibouti</option>
+                  <option>DM - Dominica</option>
+                  <option>DO - Dominican Republic</option>
+                  <option>TL - East Timor</option>
+                  <option>EC - Ecuador</option>
+                  <option>EG - Egypt</option>
+                  <option>SV - El Salvador</option>
+                  <option>GQ - Equatorial Guinea</option>
+                  <option>ER - Eritrea</option>
+                  <option>EE - Estonia</option>
+                  <option>ET - Ethiopia</option>
+                  <option>FK - Falkland Islands</option>
+                  <option>FO - Faroe Islands</option>
+                  <option>FM - Federated States Of Micronesia</option>
+                  <option>FJ - Fiji</option>
+                  <option>FI - Finland</option>
+                  <option>GF - French Guiana</option>
+                  <option>PF - French Polynesia</option>
+                  <option>GA - Gabon</option>
+                  <option>GM - Gambia</option>
+                  <option>GE - Georgia</option>
+                  <option>GH - Ghana</option>
+                  <option>GI - Gibraltar</option>
+                  <option>GR - Greece</option>
+                  <option>GL - Greenland</option>
+                  <option>GD - Grenada</option>
+                  <option>GU - Guam</option>
+                  <option>GT - Guatemala</option>
+                  <option>GG - Guernsey</option>
+                  <option>GN - Guinea</option>
+                  <option>GW - Guinea-Bissau</option>
+                  <option>GY - Guyana</option>
+                  <option>HT - Haiti</option>
+                  <option>HN - Honduras</option>
+                  <option>HK - Hong Kong</option>
+                  <option>HU - Hungary</option>
+                  <option>IS - Iceland</option>
+                  <option>IN - India</option>
+                  <option>ID - Indonesia</option>
+                  <option>IQ - Iraq</option>
+                  <option>IE - Ireland</option>
+                  <option>IM - Isle of Man</option>
+                  <option>IL - Israel</option>
+                  <option>IT - Italy</option>
+                  <option>JM - Jamaica</option>
+                  <option>JE - Jersey</option>
+                  <option>JO - Jordan</option>
+                  <option>KZ - Kazakhstan</option>
+                  <option>KE - Kenya</option>
+                  <option>KI - Kiribati</option>
+                  <option>XK - Kosovo</option>
+                  <option>KW - Kuwait</option>
+                  <option>KG - Kyrgyzstan</option>
+                  <option>LA - Laos</option>
+                  <option>LV - Latvia</option>
+                  <option>LB - Lebanon</option>
+                  <option>LS - Lesotho</option>
+                  <option>LR - Liberia</option>
+                  <option>LY - Libya</option>
+                  <option>LI - Liechtenstein</option>
+                  <option>LT - Lithuania</option>
+                  <option>LU - Luxembourg</option>
+                  <option>MO - Macau</option>
+                  <option>MK - Macedonia, Former Yugoslav Rep.</option>
+                  <option>MG - Madagascar</option>
+                  <option>MW - Malawi</option>
+                  <option>MY - Malaysia</option>
+                  <option>MV - Maldives</option>
+                  <option>ML - Mali</option>
+                  <option>MT - Malta</option>
+                  <option>MH - Marshall Islands</option>
+                  <option>MQ - Martinique</option>
+                  <option>MR - Mauritania</option>
+                  <option>MU - Mauritius</option>
+                  <option>YT - Mayotte</option>
+                  <option>MX - Mexico</option>
+                  <option>MD - Moldova</option>
+                  <option>MC - Monaco</option>
+                  <option>MN - Mongolia</option>
+                  <option>ME - Montenegro</option>
+                  <option>MS - Montserrat</option>
+                  <option>MA - Morocco</option>
+                  <option>MZ - Mozambique</option>
+                  <option>MM - Myanmar</option>
+                  <option>NA - Namibia</option>
+                  <option>NR - Nauru</option>
+                  <option>NP - Nepal</option>
+                  <option>NL - Netherlands</option>
+                  <option>AN - Netherlands Antilles</option>
+                  <option>NC - New Caledonia</option>
+                  <option>NZ - New Zealand</option>
+                  <option>NI - Nicaragua</option>
+                  <option>NE - Niger</option>
+                  <option>NG - Nigeria</option>
+                  <option>NU - Niue</option>
+                  <option>MP - Northern Mariana Islands</option>
+                  <option>NO - Norway</option>
+                  <option>OM - Oman</option>
+                  <option>PK - Pakistan</option>
+                  <option>PW - Palau</option>
+                  <option>PS - Palestine</option>
+                  <option>PA - Panama</option>
+                  <option>PG - Papua New Guinea</option>
+                  <option>PY - Paraguay</option>
+                  <option>PE - Peru</option>
+                  <option>PH - Philippines</option>
+                  <option>PN - Pitcairn</option>
+                  <option>PL - Poland</option>
+                  <option>PT - Portugal</option>
+                  <option>PR - Puerto Rico</option>
+                  <option>QA - Qatar</option>
+                  <option>CG - Republic of the Congo</option>
+                  <option>RE - Reunion</option>
+                  <option>RO - Romania</option>
+                  <option>RU - Russia</option>
+                  <option>RW - Rwanda</option>
+                  <option>BL - Saint Barthelemy</option>
+                  <option>SH - Saint Helena</option>
+                  <option>MF - Saint Martin</option>
+                  <option>PM - Saint Pierre and Miquelon</option>
+                  <option>VC - Saint Vincent and the Grenadines</option>
+                  <option>WS - Samoa</option>
+                  <option>SM - San Marino</option>
+                  <option>ST - Sao Tome and Príncipe</option>
+                  <option>SA - Saudi Arabia</option>
+                  <option>SN - Senegal</option>
+                  <option>RS - Serbia</option>
+                  <option>SC - Seychelles</option>
+                  <option>SL - Sierra Leone</option>
+                  <option>SG - Singapore</option>
+                  <option>SX - Sint Maarten</option>
+                  <option>SK - Slovakia</option>
+                  <option>SI - Slovenia</option>
+                  <option>SB - Solomon Islands</option>
+                  <option>SO - Somalia</option>
+                  <option>ZA - South Africa</option>
+                  <option>KR - South Korea</option>
+                  <option>SS - South Sudan</option>
+                  <option>ES - Spain</option>
+                  <option>LK - Sri Lanka</option>
+                  <option>KN - St. Kitts and Nevis</option>
+                  <option>LC - St. Lucia</option>
+                  <option>SD - Sudan</option>
+                  <option>SR - Suriname</option>
+                  <option>SJ - Svalbard and Jan Mayen</option>
+                  <option>SZ - Swaziland</option>
+                  <option>SE - Sweden</option>
+                  <option>CH - Switzerland</option>
+                  <option>TW - Taiwan</option>
+                  <option>TJ - Tajikistan</option>
+                  <option>TZ - Tanzania</option>
+                  <option>TH - Thailand</option>
+                  <option>TG - Togo</option>
+                  <option>TK - Tokelau</option>
+                  <option>TO - Tonga</option>
+                  <option>TT - Trinidad and Tobago</option>
+                  <option>TU - Tunisia</option>
+                  <option>TR - Turkey</option>
+                  <option>TM - Turkmenistan</option>
+                  <option>TC - Turks and Caicos Islands</option>
+                  <option>TV - Tuvalu</option>
+                  <option>UG - Uganda</option>
+                  <option>UA - Ukraine</option>
+                  <option>AE - United Arab Emirates</option>
+                  <option>UY - Uruguay</option>
+                  <option>UZ - Uzbekistan</option>
+                  <option>VU - Vanuatu</option>
+                  <option>VA - Vatican</option>
+                  <option>VE - Venezuela</option>
+                  <option>VN - Vietnam</option>
+                  <option>VI - Virgin Islands (USA)</option>
+                  <option>WF - Wallis and Futuna</option>
+                  <option>EH - Western Sahara</option>
+                  <option>YE - Yemen</option>
+                  <option>ZM - Zambia</option>
+                  <option>ZW - Zimbabwe</option>
+                </select>
+              </div>
+              <div class="col select">
+                <select class="form-control">
+                  <option>-- State/Province --</option>
+                  <option>AK - Alaska</option>
+                  <option>AL - Alabama</option>
+                  <option>AR - Arkansas</option>
+                  <option>AZ - Arizona</option>
+                  <option>CA - California</option>
+                  <option>CO - Colorado</option>
+                  <option>CT - Connecticut</option>
+                  <option>DC - District Of Columbia</option>
+                  <option>DE - Delaware</option>
+                  <option>FL - Florida</option>
+                  <option>GA - Georgia</option>
+                  <option>HI - Hawaii</option>
+                  <option>IA - Iowa</option>
+                  <option>ID - Idaho</option>
+                  <option>IL - Illinois</option>
+                  <option>IN - Indiana</option>
+                  <option>KS - Kansas</option>
+                  <option>KY - Kentucky</option>
+                  <option>LA - Louisiana</option>
+                  <option>MA - Massachusetts</option>
+                  <option>MD - Maryland</option>
+                  <option>ME - Maine</option>
+                  <option>MI - Michigan</option>
+                  <option>MN - Minnesota</option>
+                  <option>MO - Missouri</option>
+                  <option>MS - Mississippi</option>
+                  <option>MT - Montana</option>
+                  <option>NC - North Carolina</option>
+                  <option>ND - North Dakota</option>
+                  <option>NE - Nebraska</option>
+                  <option>NH - New Hampshire</option>
+                  <option>NJ - New Jersey</option>
+                  <option>NM - New Mexico</option>
+                  <option>NV - Nevada</option>
+                  <option>NY - New York</option>
+                  <option>OH - Ohio</option>
+                  <option>OK - Oklahoma</option>
+                  <option>OR - Oregon</option>
+                  <option>PA - Pennsylvania</option>
+                  <option>RI - Rhode Island</option>
+                  <option>SC - South Carolina</option>
+                  <option>SD - South Dakota</option>
+                  <option>TN - Tennessee</option>
+                  <option>TX - Texas</option>
+                  <option>UT - Utah</option>
+                  <option>VA - Virginia</option>
+                  <option>VT - Vermont</option>
+                  <option>WA - Washington</option>
+                  <option>WI - Wisconsin</option>
+                  <option>WV - West Virginia</option>
+                  <option>WY - Wyoming</option>
+                  <option>AS - American Samoa</option>
+                  <option>GU - Guam</option>
+                  <option>FM - Federated States Of Micronesia</option>
+                  <option>MH - Marshall Islands</option>
+                  <option>MP - Northern Mariana Islands</option>
+                  <option>PR - Puerto Rico</option>
+                  <option>PW - Palau</option>
+                  <option>VI - Virgin Islands</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group select">
+              <select class="form-control">
+                <option>I am Interested In</option>
+                <option>IT Service Management</option>
+                <option>IT Operations Management</option>
+                <option>IT Business Management</option>
+                <option>IT Asset Management</option>
+                <option>Security Operations</option>
+                <option>Governance, Risk, and Compliance</option>
+                <option>Customer Service</option>
+                <option>HR Service Delivery</option>
+                <option>Now&reg; Platform</option>
+                <option>Government</option>
+                <option>Healthcare</option>
+                <option>Telecommunications</option>
+              </select>
+            </div>
+            <div class="form-group form-check" style="margin-bottom:0;">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I agree to the <a href>ServiceNow&reg; Demo Terms of Use</a>.</label>
+            </div>
+            <div class="form-group form-check" style="margin-bottom:0;">
+              <input type="checkbox" class="form-check-input" id="exampleCheck2">
+              <label class="form-check-label bold" for="exampleCheck2">Get ServiceNow ID</label>
+            </div>
+            <p class="small" style="margin:0 0 20px;">By submitting this form, I confirm that I have read and agree to the Privacy Statement.</p>
+            <div class="form-group">
+              <img id="captcha" src="images/captcha-default.png" alt="reCAPTCHA" />
+            </div>
+            <div class="form-group center">
+              <a class="btn submit">Let's Go</a>
+            </div>
+          </form>
+        </div>
+        <!-- end form -->
+
+      </row>
+    </div>
+    <picture class="no-click"> <!-- FOOTER -->
+      <source srcset="images/footer-desktop.png" media="(min-width: 1100px)">
+      <source srcset="images/footer-tablet.png" media="(min-width: 750px)">
+      <img src="images/footer-mobile.png" />
+    </picture>
+  </aside>
+
+  <section id="post-form-interstitial">
+    <div class="container">
+      <h1>Verbal Response Section</h1>
+      <h4>Please respond to the UserTesting prompts.</h4>
+      <h5 style="margin-top:40px">Wait to click continue until instructed.</h5>
+      <p style="margin-top:10px"><a class="btn continue">Continue</a></p>
+    </div>
+  </section>
+
+  <section id="demo-page">
+    <picture class="no-click">
+      <source srcset="images/demo-page/heading-desktop.png" media="(min-width: 992px)">
+      <source srcset="images/demo-page/heading-tablet.png" media="(min-width: 750px)">
+      <img src="images/demo-page/heading-mobile.png" />
+    </picture>
+
+    <div style="background-color:#F7F7F7;max-width:1400px;margin:0 auto;">
+      <img src="images/demo-page/video-select.png" class="no-click" style="width:560px;" alt="select video"/>
+    </div>
+    <div id="video-wrapper">
+      <picture class="no-click">
+        <source srcset="images/demo-page/player-desktop.png" media="(min-width: 992px)">
+        <source srcset="images/demo-page/player-tablet.png" media="(min-width: 750px)">
+        <img src="images/demo-page/player-mobile.png" />
+      </picture>
+      <video controls="true">
+        <source src="images/demo-page/demo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <picture class="no-click d-lg-none">
+      <source srcset="images/demo-page/list-tablet.png" media="(min-width: 750px)">
+      <img src="images/demo-page/list-mobile.png" />
+    </picture>
+    <picture class="no-click"> <!-- FOOTER -->
+      <source srcset="images/footer-desktop.png" media="(min-width: 1100px)">
+      <source srcset="images/footer-tablet.png" media="(min-width: 750px)">
+      <img src="images/footer-mobile.png" />
+    </picture>
+  </section>
+
+<script type="text/javascript" src="main.js">
+</script>
+</body>
+</html>

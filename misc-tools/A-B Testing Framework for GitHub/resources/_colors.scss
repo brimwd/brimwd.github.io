@@ -1,0 +1,59 @@
+/*** Color variables ********************/
+:root {
+  @each $var, $color in
+  /* Brand colors */
+    (gable-green, #293E40),
+    (acapulco, #81B5A1),
+    (pure-white, #FFFFFF),
+  /* Complementary colors */
+    (fountain-blue, #68A1AF),
+    (wild-blue-yonder, #8686BC),
+    (orchid, #DB8F8F),
+    (tumbleweed, #E8A679),
+    (flax, #E5D87C),
+  /* Color tones */
+    (cruise, #B0E1CE),
+    (french-pass, #A7D4DF),
+    (perano, #B1B1E4),
+    (cavern-pink, #E9BCBC),
+    (apricot, #FBD0B3),
+    (buttermilk, #FBF2B4),
+  /* Accent colors */
+    (aquamarine, #64DDAC),
+    (ocean-spray, #72D0E2),
+    (lavender, #9898E5),
+    (bittersweet, #FC726D),
+    (tan-hide, #FF924E),
+    (wattle, #D6DF38),
+  /* Gray tones */
+    (cloud, #F7F7F7),
+    (silver-sand, #C0C2C4),
+    (oslo-grey, #8A8E91),
+    (mako, #474D52),
+    (pure-black, #000000),
+  /* Web colors */
+    (powder-blue, #B8D9E2),
+    (powder-pink, #F8D1D4),
+    (powder-green, #B9D0CC),
+    (powder-yellow, #F2E5BE),
+    (powder-dark-gray, #C8C8C8),
+    (powder-light-gray, #E1E1E1)
+  {
+      #{'--' + $var}: #{$color};
+  }
+}
+
+
+/*** Text colors ********************/
+@each $color in gable-green, pure-white, pure-black {
+  .text-#{$color} {
+    color: #{'var(--' + $color + ')'};
+  }
+}
+
+/*** Background colors ********************/
+@each $color in gable-green, acapulco, pure-white, fountain-blue, wild-blue-yonder, orchid, tumbleweed, flax, cruise, french-pass, perano, cavern-pink, apricot, buttermilk, aquamarine, ocean-spray, lavender, bittersweet, tan-hide, wattle, cloud, silver-sand, oslo-grey, mako, pure-black, powder-blue, powder-pink, powder-green, powder-yellow, powder-dark-gray, powder-light-gray {
+  .background-#{'' + $color} {
+    background-color: #{'var(--' + $color + ')'};
+  }
+}

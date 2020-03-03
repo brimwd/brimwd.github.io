@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>T-Mobile Conducktor 'Tree Nav'</title>
+<style type="text/css">
+#tree {
+  background-color:black;
+  border-radius:4px 0 0 4px;
+  cursor:pointer;
+  display:inline-block;
+  height:29px;
+  margin-right:17px;
+  position:relative;
+  transition:width 300ms;
+  vertical-align:text-bottom;
+
+  width:.5em;
+  min-width:.5em;
+}
+#tree.open {
+  cursor:unset;
+}
+#tree:hover {
+  background-color:var(--brand-primary);
+  width:.65em;
+}
+#tree.open:hover {
+  background-color:black;
+  width:unset;
+}
+#tree::before {
+  content:'';
+  border:14px solid transparent;
+  border-top-width:15px;
+  border-left-color:black;
+  border-right-width:0;
+
+  position:absolute;
+  top:0;
+  right:-14px;
+}
+#tree:hover::before {
+  border-left-color:var(--brand-primary);
+}
+#tree::after {
+  color:var(--highlight);
+  cursor:pointer;
+  content:'\f105';
+  font-family:'fontawesome';
+  font-size:22px;
+  line-height:26px;
+
+  position:absolute;
+  top:1px;
+  right:-7px;
+}
+#tree ol {
+  display:block;
+  overflow:hidden;
+  transition:max-height 300ms, max-width 300ms;
+  margin:0;
+  max-width:.5em;
+  max-height:1.58em;
+  padding-left:0;
+
+  position:fixed;
+  top:20px;
+  left:55px;
+  z-index:1000;
+}
+#tree.open ol{
+  background-color:white;
+  border:1px solid black;
+  border-radius:4px;
+  max-height:100%;
+  max-width:calc(100vw - 40px);
+  width:53vw;
+}
+#tree li {
+  display:none;
+  font-weight:normal;
+  font-size:1.4rem;
+  list-style:none;
+}
+#tree.open li {
+  display:block;
+}
+#tree a {
+  color:black;
+  cursor:pointer;
+  display:block;
+  font-weight:600;
+  line-height:30px;
+}
+#tree a:hover {
+  background-color:var(--brand-primary);
+  color:var(--highlight);
+  text-decoration:none;
+}
+#tree a {
+  padding:6px 10px;
+}
+#tree li.dismiss-nav i {
+  float:right;
+  line-height: 32px;
+}
+#tree li.dismiss-nav span {
+  display:block;
+}
+@media (min-width:768px) {
+  #tree.shallow ol {
+    background-color:black;
+    border:none;
+    border-radius:4px 0 0 4px;
+    max-height:1.58em;
+    padding-left:6px;
+    padding-bottom:1px;
+    transition:max-width 300ms, padding-left 300ms;
+    width:unset;
+
+    position:absolute;
+    top:0;
+    left:0;
+  }
+  #tree.shallow ol::after {
+    content:'';
+    border:16px solid transparent;
+    border-left-color:black;
+    border-right-width:0;
+
+    position:absolute;
+    top:0;
+    right:-16px;
+  }
+  #tree.shallow.open ol {
+    max-height:32px;
+    max-width:calc(100vw - 230px);
+    overflow:visible;
+    padding-left:5px;
+  }
+  #tree.shallow.open li {
+    display:inline-block;
+    height:32px;
+    margin-right:5px;
+    overflow:visible;
+    vertical-align:top;
+  }
+  #tree.shallow a {
+    color:white;
+    border-radius:4px;
+    position:relative;
+    margin: 2px 8px;
+    padding: 3px 5px;
+    line-height:22px;
+  }
+  #tree.shallow a::before {
+    content:'•';
+    font-size:20px;
+    position:absolute;
+    top:14px;
+    left:-15px;
+    line-height:1px;
+  }
+  #tree.shallow li:first-child a::before,
+  #tree.shallow li.dismiss-nav a::before {
+    content:unset;
+  }
+  #tree.shallow .dismiss-nav {
+    font-size:16px;
+    margin-left:-6px;
+    margin-right:1px !important;
+  }
+  #tree.shallow .dismiss-nav a {
+    margin-right:0;
+    margin-left:0;
+  }
+  #tree.shallow li.dismiss-nav i {
+    float:none;
+    line-height:unset;
+    padding:unset;
+  }
+  #tree.shallow li.dismiss-nav span {
+    display:none;
+  }
+}
+</style>
+</head>
+<body>
+  <nav id="tree" class="shallow">
+    <ol>
+      <li><a>App</a></li>
+      <li><a>Environment</a></li>
+      <li><a>Deployment</a></li>
+      <li class="dismiss-nav"><a>
+        <i class="fas fa-times" aria-label="close menu"></i>
+        <span>Close Navigation</span>
+      </a></li>
+    </ol>
+  </nav>
+</body>
+</html>

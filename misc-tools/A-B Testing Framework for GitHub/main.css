@@ -1,0 +1,483 @@
+/*** Fonts ********************/
+@font-face {
+  font-family: "GilroyRegular";
+  src: url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-regular-webfont.woff2") format("woff2"), url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-semibold-webfont.woff2") format("woff2"), url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyBold";
+  src: url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-bold-webfont.woff2") format("woff2"), url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*** Typography ********************/
+* {
+  font-family: "GilroyRegular";
+}
+
+.semibold {
+  font-family: "GilroySemiBold";
+}
+
+.bold {
+  font-family: "GilroyBold";
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.medium {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.large {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.xlarge {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.footnote {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+label {
+  font-size: 0.625rem;
+  line-height: 1;
+  font-family: "GilroyBold";
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  line-height: 1;
+  letter-spacing: 0.03125rem;
+  font-family: "GilroySemiBold";
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .small {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .medium {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .large {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .xlarge {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.625rem;
+    line-height: 1;
+    font-family: "GilroyBold";
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    font-family: "GilroySemiBold";
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+  }
+
+  .small {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .medium {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .large {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .xlarge {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.75rem;
+    line-height: 1;
+    font-family: "GilroyBold";
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 1.125rem;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    font-family: "GilroySemiBold";
+  }
+}
+@media (min-width: 1700px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .small {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  .medium {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .large {
+    font-size: 1.375rem;
+    line-height: 1.7;
+  }
+
+  .xlarge {
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.75rem;
+    line-height: 1;
+    font-family: "GilroyBold";
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    font-family: "GilroySemiBold";
+  }
+}
+/*** Color variables ********************/
+:root {
+  --gable-green:#293E40;
+  --acapulco:#81B5A1;
+  --pure-white:#FFFFFF;
+  --fountain-blue:#68A1AF;
+  --wild-blue-yonder:#8686BC;
+  --orchid:#DB8F8F;
+  --tumbleweed:#E8A679;
+  --flax:#E5D87C;
+  --cruise:#B0E1CE;
+  --french-pass:#A7D4DF;
+  --perano:#B1B1E4;
+  --cavern-pink:#E9BCBC;
+  --apricot:#FBD0B3;
+  --buttermilk:#FBF2B4;
+  --aquamarine:#64DDAC;
+  --ocean-spray:#72D0E2;
+  --lavender:#9898E5;
+  --bittersweet:#FC726D;
+  --tan-hide:#FF924E;
+  --wattle:#D6DF38;
+  --cloud:#F7F7F7;
+  --silver-sand:#C0C2C4;
+  --oslo-grey:#8A8E91;
+  --mako:#474D52;
+  --pure-black:#000000;
+  --powder-blue:#B8D9E2;
+  --powder-pink:#F8D1D4;
+  --powder-green:#B9D0CC;
+  --powder-yellow:#F2E5BE;
+  --powder-dark-gray:#C8C8C8;
+  --powder-light-gray:#E1E1E1;
+}
+
+/*** Text colors ********************/
+.text-gable-green {
+  color: var(--gable-green);
+}
+
+.text-pure-white {
+  color: var(--pure-white);
+}
+
+.text-pure-black {
+  color: var(--pure-black);
+}
+
+/*** Background colors ********************/
+.background-gable-green {
+  background-color: var(--gable-green);
+}
+
+.background-acapulco {
+  background-color: var(--acapulco);
+}
+
+.background-pure-white {
+  background-color: var(--pure-white);
+}
+
+.background-fountain-blue {
+  background-color: var(--fountain-blue);
+}
+
+.background-wild-blue-yonder {
+  background-color: var(--wild-blue-yonder);
+}
+
+.background-orchid {
+  background-color: var(--orchid);
+}
+
+.background-tumbleweed {
+  background-color: var(--tumbleweed);
+}
+
+.background-flax {
+  background-color: var(--flax);
+}
+
+.background-cruise {
+  background-color: var(--cruise);
+}
+
+.background-french-pass {
+  background-color: var(--french-pass);
+}
+
+.background-perano {
+  background-color: var(--perano);
+}
+
+.background-cavern-pink {
+  background-color: var(--cavern-pink);
+}
+
+.background-apricot {
+  background-color: var(--apricot);
+}
+
+.background-buttermilk {
+  background-color: var(--buttermilk);
+}
+
+.background-aquamarine {
+  background-color: var(--aquamarine);
+}
+
+.background-ocean-spray {
+  background-color: var(--ocean-spray);
+}
+
+.background-lavender {
+  background-color: var(--lavender);
+}
+
+.background-bittersweet {
+  background-color: var(--bittersweet);
+}
+
+.background-tan-hide {
+  background-color: var(--tan-hide);
+}
+
+.background-wattle {
+  background-color: var(--wattle);
+}
+
+.background-cloud {
+  background-color: var(--cloud);
+}
+
+.background-silver-sand {
+  background-color: var(--silver-sand);
+}
+
+.background-oslo-grey {
+  background-color: var(--oslo-grey);
+}
+
+.background-mako {
+  background-color: var(--mako);
+}
+
+.background-pure-black {
+  background-color: var(--pure-black);
+}
+
+.background-powder-blue {
+  background-color: var(--powder-blue);
+}
+
+.background-powder-pink {
+  background-color: var(--powder-pink);
+}
+
+.background-powder-green {
+  background-color: var(--powder-green);
+}
+
+.background-powder-yellow {
+  background-color: var(--powder-yellow);
+}
+
+.background-powder-dark-gray {
+  background-color: var(--powder-dark-gray);
+}
+
+.background-powder-light-gray {
+  background-color: var(--powder-light-gray);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#version-picker {
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #b2bbd9;
+  margin-bottom: 15px;
+  padding: 4px 0 6px;
+}
+#version-picker a {
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 12px;
+  padding: 5px 0;
+  text-align: center;
+  width: 32px;
+}
+#version-picker a:hover {
+  border-color: #b2bbd9;
+}
+#version-picker a.active-version {
+  background-color: #eef0f6;
+}
+
+/*# sourceMappingURL=main.css.map */

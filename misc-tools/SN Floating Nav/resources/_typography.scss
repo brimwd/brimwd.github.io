@@ -1,0 +1,66 @@
+/*** Typography ********************/
+
+* {font-family: "GilroyRegular";}
+
+.semibold {font-family: "GilroySemiBold";}
+.bold {font-family: "GilroyBold";}
+.uppercase {text-transform: uppercase;}
+
+h1 {font-size: 1.75rem; line-height: 1.3;}  // 28px
+h2 {font-size: 1.375rem; line-height: 1.3;}  // 22px
+h3 {font-size: 1.25rem; line-height: 1.3;}  // 20px
+h4 {font-size: 1.125rem; line-height: 1.3;} // 18px
+h5 {font-size: 1rem; line-height: 1.3;}     // 16px
+
+.small   {font-size: 0.875rem; line-height: 1.5;}  // 14px
+.medium   {font-size: 1rem; line-height: 1.7;}     // 16px
+.large    {font-size: 1.125rem; line-height: 1.7;} // 18px
+.xlarge   {font-size: 1.125rem; line-height: 1.5;} // 18px
+.footnote {font-size: 0.875rem; line-height: 1.5;} // 14px
+label     {font-size: 0.625rem; line-height: 1; font-family: "GilroyBold"; text-transform: uppercase;} // 10px
+.eyebrow  {font-size: 0.75rem; line-height: 1; letter-spacing: 0.03125rem; font-family: "GilroySemiBold";} // 12px
+
+@media #{$breakpoint-md} {
+  h1 {font-size: 2.25rem; line-height: 1.3;}  // 36px
+  h2 {font-size: 1.75rem; line-height: 1.3;}  // 28px
+  h3 {font-size: 1.5rem; line-height: 1.3;}   // 24px
+  h4 {font-size: 1.375rem; line-height: 1.3;} // 22px
+  h5 {font-size: 1.25rem; line-height: 1.3;}  // 20px
+
+  .small  {font-size: 1rem; line-height: 1.5;} // 16px
+  .medium  {font-size: 1.125rem; line-height: 1.7;} // 18px
+  .large   {font-size: 1.25rem; line-height: 1.7;}  // 20px
+  .xlarge  {font-size: 1.125rem; line-height: 1.5;} // 18px
+  label    {font-size: 0.625rem; line-height: 1; font-family: "GilroyBold"; text-transform: uppercase;} // 10px
+  .eyebrow {font-size: 0.875rem; line-height: 1; letter-spacing: 0.03125rem; font-family: "GilroySemiBold";}  // 14px
+}
+
+@media #{$breakpoint-lg} {
+  h1 {font-size: 3rem; line-height: 1.3;}     // 48px
+  h2 {font-size: 2.25rem; line-height: 1.3;}  // 36px
+  h3 {font-size: 1.75rem; line-height: 1.3;}  // 28px
+  h4 {font-size: 1.5rem; line-height: 1.3;}   // 24px
+  h5 {font-size: 1.375rem; line-height: 1.3;} // 22px
+
+  .small  {font-size: 1rem; line-height: 1.5;} // 16px
+  .medium  {font-size: 1.125rem; line-height: 1.7;} // 18px
+  .large   {font-size: 1.25rem; line-height: 1.7;}  // 20px
+  .xlarge  {font-size: 1.5rem; line-height: 1.5;}   // 24x
+  label    {font-size: 0.75rem; line-height: 1; font-family: "GilroyBold"; text-transform: uppercase;} // 12px
+  .eyebrow {font-size: 1.125rem; line-height: 1; letter-spacing: 0.03125rem; font-family: "GilroySemiBold";}   // 18px
+}
+
+@media #{$breakpoint-xl} {
+  h1 {font-size: 4rem; line-height: 1.3;}    // 64px
+  h2 {font-size: 3rem; line-height: 1.3;}    // 48px
+  h3 {font-size: 2.25rem; line-height: 1.3;} // 36px
+  h4 {font-size: 1.75rem; line-height: 1.3;} // 28px
+  h5 {font-size: 1.5rem; line-height: 1.3;}  // 24px
+
+  .small  {font-size: 1.125rem; line-height: 1.5;}  // 18px
+  .medium  {font-size: 1.25rem; line-height: 1.7;}  // 20px
+  .large   {font-size: 1.375rem; line-height: 1.7;} // 22px
+  .xlarge  {font-size: 1.75rem; line-height: 1.5;}  // 28px
+  label    {font-size: 0.75rem; line-height: 1; font-family: "GilroyBold"; text-transform: uppercase;} // 12px
+  .eyebrow {font-size: 1.25rem; line-height: 1; letter-spacing: 0.03125rem; font-family: "GilroySemiBold";}    // 20px
+}

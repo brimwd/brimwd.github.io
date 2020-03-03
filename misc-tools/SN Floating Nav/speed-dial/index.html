@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="googlebot" content="none">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigation Prototype - S</title>
+  <link rel="stylesheet" href="../resources/bootstrap-grid.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../resources/fa/css/all.css">
+
+</head>
+<body class="text-gable-green">
+<!-- Begin html here -->
+<!-- <h1 id="prototype-name">Speed Dial</h1> -->
+
+  <div id="speedDial">
+    <ul class="links">
+      <li id="locations">
+        <a href="https://www.servicenow.com/company/locations.html" target="_blank">
+          <span class="label">Locations</span>
+          <span class="icon"><i class="fas fa-fw fa-map-signs"></i></span>
+        </a>
+      </li>
+      <li class="formTrigger" rel="contact">
+        <span class="label">Contact</span>
+        <span class="icon shift-up"><i class="fas fa-fw fa-comment-smile fa-flip-horizontal"></i></span>
+      </li>
+      <li class="formTrigger" rel="demo">
+        <span class="label">Demo</span>
+        <span class="icon"><i class="fas fa-fw fa-desktop"></i></span>
+      </li>
+    </ul>
+
+    <a id="speedDialTrigger" class="background-gable-green text-pure-white">
+      <i class="fas fa-fw fa-plus"></i>
+    </a>
+  </div>
+
+  <section id="bottom-sheet">
+    <span id="dismiss"><i class="fas fa-times"></i></span>
+
+    <!-- FORMS -->
+    <aside id="forms" class="container-fluid">
+      <!-- begin forms -->
+      <form id="contact">
+        <h3>Get in touch</h3>
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input class="form-control" type="text" id="contact-name" />
+        </div>
+        <div class="form-group">
+          <label for="contact-email">E-mail</label>
+          <input class="form-control" type="text" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input class="form-control" type="text" id="phone" />
+        </div>
+        <button type="submit" class="btn btn-info">Send Message</button>
+      </form>
+      <!--  -->
+      <form id="demo">
+        <h3>Request a demo</h3>
+        <div class="form-group">
+          <label for="demo-name">Name</label>
+          <input class="form-control" type="text" id="demo-name" />
+        </div>
+        <div class="form-group">
+          <label for="demo-email">E-mail</label>
+          <input class="form-control" type="text" id="demo-email" />
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input class="form-control" type="text" id="company" />
+        </div>
+        <button type="submit" class="btn btn-info">Request Demo</button>
+      </form>
+    </aside>
+    <!-- end forms -->
+  </section>
+
+  <div id="overlay"></div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

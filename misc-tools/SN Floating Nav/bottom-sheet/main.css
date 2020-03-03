@@ -1,0 +1,680 @@
+/*** Fonts ********************/
+@font-face {
+  font-family: "GilroyRegular";
+  src: url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-regular-webfont.woff2") format("woff2"), url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroySemiBold";
+  src: url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-semibold-webfont.woff2") format("woff2"), url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyBold";
+  src: url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-bold-webfont.woff2") format("woff2"), url("https://www.servicenow.com/etc/clientlibs/servicenow-www-pagelibs-v2/fonts/gilroy-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*** Typography ********************/
+* {
+  font-family: "GilroyRegular";
+}
+
+.semibold {
+  font-family: "GilroySemiBold";
+}
+
+.bold {
+  font-family: "GilroyBold";
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.3;
+}
+
+h2 {
+  font-size: 1.375rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.medium {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.large {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.xlarge {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.footnote {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+label {
+  font-size: 0.625rem;
+  line-height: 1;
+  font-family: "GilroyBold";
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  line-height: 1;
+  letter-spacing: 0.03125rem;
+  font-family: "GilroySemiBold";
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .small {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .medium {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .large {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .xlarge {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.625rem;
+    line-height: 1;
+    font-family: "GilroyBold";
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 0.875rem;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    font-family: "GilroySemiBold";
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.375rem;
+    line-height: 1.3;
+  }
+
+  .small {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .medium {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+
+  .large {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .xlarge {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.75rem;
+    line-height: 1;
+    font-family: "GilroyBold";
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 1.125rem;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    font-family: "GilroySemiBold";
+  }
+}
+@media (min-width: 1700px) {
+  h1 {
+    font-size: 4rem;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 2.25rem;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .small {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+
+  .medium {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .large {
+    font-size: 1.375rem;
+    line-height: 1.7;
+  }
+
+  .xlarge {
+    font-size: 1.75rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.75rem;
+    line-height: 1;
+    font-family: "GilroyBold";
+    text-transform: uppercase;
+  }
+
+  .eyebrow {
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: 0.03125rem;
+    font-family: "GilroySemiBold";
+  }
+}
+/*** Text colors ********************/
+.text-gable-green {
+  color: #293e40;
+}
+
+.text-acapulco {
+  color: #81b5a1;
+}
+
+.text-pure-white {
+  color: white;
+}
+
+.text-fountain-blue {
+  color: #68a1af;
+}
+
+.text-wild-blue-yonder {
+  color: #8686bc;
+}
+
+.text-orchid {
+  color: #db8f8f;
+}
+
+.text-tumbleweed {
+  color: #e8a679;
+}
+
+.text-flax {
+  color: #e5d87c;
+}
+
+.text-cruise {
+  color: #b0e1ce;
+}
+
+.text-french-pass {
+  color: #a7d4df;
+}
+
+.text-perano {
+  color: #b1b1e4;
+}
+
+.text-cavern-pink {
+  color: #e9bcbc;
+}
+
+.text-apricot {
+  color: #fbd0b3;
+}
+
+.text-buttermilk {
+  color: #fbf2b4;
+}
+
+.text-aquamarine {
+  color: #64ddac;
+}
+
+.text-ocean-spray {
+  color: #72d0e2;
+}
+
+.text-lavender {
+  color: #9898e5;
+}
+
+.text-bittersweet {
+  color: #fc726d;
+}
+
+.text-tan-hide {
+  color: #ff924e;
+}
+
+.text-wattle {
+  color: #d6df38;
+}
+
+.text-cloud {
+  color: #f7f7f7;
+}
+
+.text-silver-sand {
+  color: #c0c2c4;
+}
+
+.text-oslo-grey {
+  color: #8a8e91;
+}
+
+.text-mako {
+  color: #474d52;
+}
+
+.text-pure-black {
+  color: black;
+}
+
+.text-powder-blue {
+  color: #b8d9e2;
+}
+
+.text-powder-pink {
+  color: #f8d1d4;
+}
+
+.text-powder-green {
+  color: #b9d0cc;
+}
+
+.text-powder-yellow {
+  color: #f2e5be;
+}
+
+.text-powder-dark-gray {
+  color: #c8c8c8;
+}
+
+.text-powder-light-gray {
+  color: #e1e1e1;
+}
+
+/*** Background colors ********************/
+.background-gable-green {
+  background-color: #293e40;
+}
+
+.background-acapulco {
+  background-color: #81b5a1;
+}
+
+.background-pure-white {
+  background-color: white;
+}
+
+.background-fountain-blue {
+  background-color: #68a1af;
+}
+
+.background-wild-blue-yonder {
+  background-color: #8686bc;
+}
+
+.background-orchid {
+  background-color: #db8f8f;
+}
+
+.background-tumbleweed {
+  background-color: #e8a679;
+}
+
+.background-flax {
+  background-color: #e5d87c;
+}
+
+.background-cruise {
+  background-color: #b0e1ce;
+}
+
+.background-french-pass {
+  background-color: #a7d4df;
+}
+
+.background-perano {
+  background-color: #b1b1e4;
+}
+
+.background-cavern-pink {
+  background-color: #e9bcbc;
+}
+
+.background-apricot {
+  background-color: #fbd0b3;
+}
+
+.background-buttermilk {
+  background-color: #fbf2b4;
+}
+
+.background-aquamarine {
+  background-color: #64ddac;
+}
+
+.background-ocean-spray {
+  background-color: #72d0e2;
+}
+
+.background-lavender {
+  background-color: #9898e5;
+}
+
+.background-bittersweet {
+  background-color: #fc726d;
+}
+
+.background-tan-hide {
+  background-color: #ff924e;
+}
+
+.background-wattle {
+  background-color: #d6df38;
+}
+
+.background-cloud {
+  background-color: #f7f7f7;
+}
+
+.background-silver-sand {
+  background-color: #c0c2c4;
+}
+
+.background-oslo-grey {
+  background-color: #8a8e91;
+}
+
+.background-mako {
+  background-color: #474d52;
+}
+
+.background-pure-black {
+  background-color: black;
+}
+
+.background-powder-blue {
+  background-color: #b8d9e2;
+}
+
+.background-powder-pink {
+  background-color: #f8d1d4;
+}
+
+.background-powder-green {
+  background-color: #b9d0cc;
+}
+
+.background-powder-yellow {
+  background-color: #f2e5be;
+}
+
+.background-powder-dark-gray {
+  background-color: #c8c8c8;
+}
+
+.background-powder-light-gray {
+  background-color: #e1e1e1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  background-image: url(../images/mobile-prototype-bg-acapulco.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#prototype-name {
+  text-align: center;
+  margin-top: 1em;
+}
+
+#trigger {
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 17px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+#trigger:hover {
+  background-color: #458a6f;
+}
+
+#bottom-sheet {
+  background-color: white;
+  padding: 15px 0;
+  position: fixed;
+  bottom: -100vh;
+  width: 100vw;
+  z-index: 10;
+  transition: bottom 300ms;
+}
+#bottom-sheet.visible {
+  bottom: 0;
+}
+#bottom-sheet #dismiss {
+  color: white;
+  cursor: pointer;
+  display: none;
+  font-weight: bolder;
+  position: absolute;
+  top: -38px;
+  right: 15px;
+}
+#bottom-sheet #dismiss i {
+  display: inline-block;
+  font-size: 1.6em;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+#bottom-sheet.visible #dismiss {
+  display: inline-block;
+}
+#bottom-sheet #bottomSheetLinks a {
+  color: inherit;
+  text-decoration: none;
+}
+#bottom-sheet .row {
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+}
+#bottom-sheet .row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#bottom-sheet img {
+  float: left;
+  display: inline-block;
+  margin: 0 15px;
+  max-height: 60px;
+  vertical-align: middle;
+}
+#bottom-sheet p {
+  align-self: center;
+  font-size: 1.2em;
+  margin: 0;
+}
+#bottom-sheet p span {
+  display: block;
+}
+#bottom-sheet p span.description {
+  color: darkgray;
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+#forms {
+  background-color: white;
+  box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow-y: scroll;
+  transition: left 300ms;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+}
+#forms.visible {
+  box-shadow: -10px 0 10px -5px rgba(0, 0, 0, 0.1);
+  left: 0;
+}
+#forms form {
+  display: none;
+}
+#forms #dismissForm {
+  color: #17a2b8;
+  cursor: pointer;
+  display: inline-block;
+  padding: 4px 10px 4px 7px;
+  text-decoration: none;
+}
+#forms #dismissForm:hover {
+  background-color: #dee6e8;
+  color: #006b86;
+}
+#forms #dismissForm i {
+  margin-right: 10px;
+}
+
+#overlay {
+  background-color: black;
+  opacity: 0;
+  transition: opacity 300ms;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+#bottom-sheet.visible + #overlay {
+  opacity: 0.5;
+  z-index: 5;
+}
+
+/*# sourceMappingURL=main.css.map */

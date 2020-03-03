@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="googlebot" content="none">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Prototype</title>
+<link rel="stylesheet" href="resources/bootstrap-grid.css">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="tools/grid-tool/grid-tool.css">
+<script type='text/javascript' src='https://www.servicenow.com/etc.clientlibs/clientlibs/granite/jquery.min.js'></script>
+<script type="text/javascript">
+var variations = [
+  {
+    version: 'A',
+    token:'ABMCJ6ZHO5VYMZE6EEOTEPC5MRP6S'
+  },
+  {
+    version: 'B',
+    token:'ABMCJ66RVIJEFYWYEUDAS7K5MRPZA'
+  }
+];
+</script>
+</head>
+<body class="container-fluid">
+
+  <h1 class="row">Dynamic Content</h1>
+  <div id="variation-content" class="row"></div>
+
+  <h1 class="row">Persistent Content</h1>
+  <div id="shared-content" class="row">
+    <img src="http://placekitten.com/g/200/200" alt="kitten" />
+  </div>
+
+<script type="text/javascript" src="vendor-bundle.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="a-b.js"></script>
+<script type="text/javascript" src="tools/grid-tool/grid-tool.js"></script>
+</body>
+</html>

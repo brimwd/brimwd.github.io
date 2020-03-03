@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="googlebot" content="none">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Navigation Prototype - B</title>
+  <link rel="stylesheet" href="../resources/bootstrap-grid.css">
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../resources/fa/css/all.css">
+
+</head>
+<body class="text-gable-green">
+<!-- Begin html here -->
+<!-- <h1 id="prototype-name">Bottom Sheet</h1> -->
+
+  <a id="trigger" class="background-gable-green text-pure-white">
+    <i class="fas fa-plus"></i>
+  </a>
+
+  <section id="bottom-sheet">
+    <span id="dismiss"><i class="fas fa-times"></i></span>
+
+    <div id="bottomSheetLinks" class="container-fluid">
+      <a class="row" href="https://www.servicenow.com/company/locations.html" target="_blank">
+        <img src="../images/locations.png"/>
+        <p>Locations</p>
+      </a>
+      <a class="row formTrigger" rel="contact">
+        <img src="../images/contact.png"/>
+        <p>Contact</p>
+      </a>
+      <a class="row formTrigger" rel="demo">
+        <img src="../images/demo.png"/>
+        <p>Demo</p>
+      </a>
+      <!-- <a class="row promo">
+        <img src="../images/promo.png"/>
+        <p>
+          <span class="title">Healthcare security 101</span>
+          <span class="description">Get White Paper</span>
+        </p>
+      </a> -->
+    </div>
+
+    <!-- LOCATIONS -->
+    <!-- <aside id="locations" class="container-fluid">
+      <h3 id="dismissLocations"><i class="fas fa-angle-left"></i><span>Back</span></h3>
+      <ul>
+        <li>
+          <h5 class="title">Global Headquarters</h5>
+          <address>
+            <p>2225 Lawson Ln</p>
+            <p>Santa Clara, California</p>
+          </address>
+          <p class="phone"></p>
+        </li>
+      </ul>
+    </aside> -->
+
+    <!-- FORMS -->
+    <aside id="forms" class="container-fluid">
+      <h3 id="dismissForm"><i class="fas fa-angle-left"></i><span>Back</span></h3>
+      <!-- begin forms -->
+      <form id="contact" title="Contact">
+        <div class="form-group">
+          <label for="contact-name">Name</label>
+          <input class="form-control" type="text" id="contact-name" />
+        </div>
+        <div class="form-group">
+          <label for="contact-email">E-mail</label>
+          <input class="form-control" type="text" id="email" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input class="form-control" type="text" id="phone" />
+        </div>
+        <button type="submit" class="btn btn-info">Send Message</button>
+      </form>
+      <!--  -->
+      <form id="demo" title="Request a demo">
+        <div class="form-group">
+          <label for="demo-name">Name</label>
+          <input class="form-control" type="text" id="demo-name" />
+        </div>
+        <div class="form-group">
+          <label for="demo-email">E-mail</label>
+          <input class="form-control" type="text" id="demo-email" />
+        </div>
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input class="form-control" type="text" id="company" />
+        </div>
+        <button type="submit" class="btn btn-info">Request Demo</button>
+      </form>
+    </aside>
+    <!-- end forms -->
+  </section>
+
+  <div id="overlay"></div>
+
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

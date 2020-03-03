@@ -1,0 +1,95 @@
+// Brand colors
+$gable-green: rgb(41, 62, 64); // #293E40
+$acapulco: rgb(129, 181, 161); // #81B5A1
+$pure-white: rgb(255, 255, 255); // #FFFFFF
+
+// Complementary colors
+$fountain-blue: rgb(104, 161, 175); // #68A1AF
+$wild-blue-yonder: rgb(134, 134, 188); // #8686BC
+$orchid: rgb(219, 143, 143); // #DB8F8F
+$tumbleweed: rgb(232, 166, 121); // #E8A679
+$flax: rgb(229, 216, 124); // #E5D87C
+
+// Color tones
+$cruise: rgb(176, 225, 206); // #B0E1CE
+$french-pass: rgb(167, 212, 223); // #A7D4DF
+$perano: rgb(177, 177, 228); // #B1B1E4
+$cavern-pink: rgb(233, 188, 188); // #E9BCBC
+$apricot: rgb(251, 208, 179); // #FBD0B3
+$buttermilk: rgb(251, 242, 180); // #FBF2B4
+
+// Accent colors
+$aquamarine: rgb(100, 221, 172); // #64DDAC
+$ocean-spray: rgb(114, 208, 226); // #72D0E2
+$lavender: rgb(152, 152, 229); // #9898E5
+$bittersweet: rgb(252, 114, 109); // #FC726D
+$tan-hide: rgb(255, 146, 78); // #FF924E
+$wattle: rgb(214, 223, 56); // #D6DF38
+
+// Gray tones
+$cloud: rgb(247, 247, 247); // #F7F7F7
+$silver-sand: rgb(192, 194, 196); // #C0C2C4
+$oslo-grey: rgb(138, 142, 145); // #8A8E91
+$mako: rgb(71, 77, 82); // #474D52
+$pure-black: rgb(0, 0, 0); // #000000
+
+// Web colors
+$powder-blue: rgb(184, 217, 226); // #B8D9E2
+$powder-pink: rgb(248, 209, 212); // #F8D1D4
+$powder-green: rgb(185, 208, 204); // #B9D0CC
+$powder-yellow: rgb(242, 229, 190); // #F2E5BE
+$powder-dark-gray: rgb(200, 200, 200); // #C8C8C8
+$powder-light-gray: rgb(225, 225, 225); // #E1E1E1
+
+// Colors map
+$colors: (
+  "gable-green": $gable-green,
+  "acapulco": $acapulco,
+  "pure-white": $pure-white,
+  "fountain-blue": $fountain-blue,
+  "wild-blue-yonder": $wild-blue-yonder,
+  "orchid": $orchid,
+  "tumbleweed": $tumbleweed,
+  "flax": $flax,
+  "cruise": $cruise,
+  "french-pass": $french-pass,
+  "perano": $perano,
+  "cavern-pink": $cavern-pink,
+  "apricot": $apricot,
+  "buttermilk": $buttermilk,
+  "aquamarine": $aquamarine,
+  "ocean-spray": $ocean-spray,
+  "lavender": $lavender,
+  "bittersweet": $bittersweet,
+  "tan-hide": $tan-hide,
+  "wattle": $wattle,
+  "cloud": $cloud,
+  "silver-sand": $silver-sand,
+  "oslo-grey": $oslo-grey,
+  "mako": $mako,
+  "pure-black": $pure-black,
+  "powder-blue": $powder-blue,
+  "powder-pink": $powder-pink,
+  "powder-green": $powder-green,
+  "powder-yellow": $powder-yellow,
+  "powder-dark-gray": $powder-dark-gray,
+  "powder-light-gray": $powder-light-gray
+);
+
+
+/*** Text colors ********************/
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: #{$color};
+  }
+}
+
+
+/*** Background colors ********************/
+
+@each $name, $color in $colors {
+  .background-#{$name} {
+    background-color: #{$color};
+  }
+}
