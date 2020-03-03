@@ -100,12 +100,12 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #approach {display:none;}
 
 /* WORK */
-#work {}
-#work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 150ms;}
-#work h4 {margin:-20px 0 0;}
-#work p {margin:.3em 0 .6em;}
+.work {}
+.work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 150ms;}
+.work h4 {margin:-20px 0 0;}
+.work p {margin:.3em 0 .6em;}
 
-#work a {
+.work a {
   align-items:center;
   background:no-repeat center;
   background-size:100% 100%;
@@ -124,36 +124,39 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   text-align:center;
   transition:all 250ms, background-size 180ms, transform 160ms;
 }
-#work a:hover {box-shadow:0 10px 30px var(--text-med);transform:scale(1.05);}
-#work a:hover img {max-height:108px;max-width:86%;}
+.work a:hover {box-shadow:0 10px 30px var(--text-med);transform:scale(1.05);}
+.work a:hover img {max-height:108px;max-width:86%;}
+.work a[data-tags*="Presentation"]::before {opacity:.5;content:'\f685';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
 .work a[data-tags*="Incomplete"]::before {opacity:.5;content:'\f85e';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
+.work a:hover::before {opacity:1;}
 
-#work .amazon {
-  background-color:#F29D39;
-  color:white;
-}
-#work .bluetooth {
-  background:url(images/bluetooth/chevrons-blue-transp.png) repeat center;
-  background-color:#40a0fc;
-  background-size:100px 100px;
-  color:white;
-}
-#work .bluetooth:hover {
-  background-size:78px 78px;
-}
-#work .bob {
-  background:url(images/bob-books/bob-bg.jpg) no-repeat center;
-  background-size:cover;
-  color:#4f5354;
-}
-#work .bob h4 {margin-top:-10px;}
+/* AMAZON */
+a.amazon {background-color:#f29d39;color:white;}
+a.amazon + .amazon {background-color:#48A6DE;}
+/* BLUETOOTH */
+a.bluetooth {background:url(images/bluetooth/chevrons-blue-transp.png) repeat center;background-color:#40a0fc;background-size:100px 100px;color:white;}
+a.bluetooth:hover {background-size:92px 92px;}
+/* BOB */
+a.bob {background:url(images/bob-books/bob-bg.jpg) no-repeat center;background-size:108% 108%;color:#4f5354;}
+a.bob:hover {background-size:100% 100%;}
+a.bob h4 {margin-top:-10px;}
+/* DICTIONARY */
+a.dictionary {background:var(--text-faint);}
+a.dictionary h4 {margin-top:-30px;}
+a.dictionary img {max-width:88%;}
+a.dictionary:hover img {max-width:93%;}
+/* TMO */
+a.tmo {background:url(images/tmo/topography.png) repeat center;background-size:400px 400px;}
+a.tmo:hover {background-size:370px 370px;}
+a.tmo h4 {margin-top:0;}
+/* EARWAX */
+a.loveEarwax {background-color:#1b1b1b;color:white;}
+a.loveEarwax div {position:relative;}
+a.loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
+a.loveEarwax:hover img:last-child {opacity:1;}
+/* AMAZON */
+a.sux {background-color:#E0F2F1;color:#375068;}
 
-#work .loveEarwax {background-color:#1b1b1b;color:white;}
-#work .loveEarwax div {position:relative;}
-#work .loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
-#work .loveEarwax:hover img:last-child {opacity:1;}
-
-/*.unfinished::before {content:'Coming soon!';background-color:var(--text-faint-alpha);border-radius:7px 7px 0 0;display:block;padding:10px 10px;position:absolute;top:0;right:0;left:0;}*/
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
