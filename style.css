@@ -126,6 +126,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 }
 #work a:hover {box-shadow:0 10px 30px var(--text-med);transform:scale(1.05);}
 #work a:hover img {max-height:108px;max-width:86%;}
+.work a[data-tags*="Incomplete"]::before {opacity:.5;content:'\f85e';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
 
 #work .amazon {
   background-color:#F29D39;
@@ -153,7 +154,6 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #work .loveEarwax:hover img:last-child {opacity:1;}
 
 /*.unfinished::before {content:'Coming soon!';background-color:var(--text-faint-alpha);border-radius:7px 7px 0 0;display:block;padding:10px 10px;position:absolute;top:0;right:0;left:0;}*/
-.unfinished div, .unfinished img {margin-top:40px;}
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
   #work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;}
