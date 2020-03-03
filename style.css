@@ -154,6 +154,8 @@ a.loveEarwax {background-color:#1b1b1b;color:white;}
 a.loveEarwax div {position:relative;}
 a.loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
 a.loveEarwax:hover img:last-child {opacity:1;}
+/* LENDINGHOME */
+a.lending h4 {margin-top:0;}
 /* SUX */
 a.sux {background-color:#E0F2F1;color:#375068;}
 a.sux h4 {margin-top:-12px;}
