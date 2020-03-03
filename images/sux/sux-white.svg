@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="533px" height="119px" viewBox="0 0 533 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
-    <title>outline only - white</title>
-    <desc>Created with Sketch.</desc>
-    <g id="outline-only---white" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group" transform="translate(13.000000, 11.000000)">
+    <g>
+        <g transform="translate(13.000000, 11.000000)">
             <path d="M-0.746097241,46.9947521 L-4.84849494,43.2590597 L-0.746097241,42.3716398 L-0.746097241,15.6253273 L47.9174817,-2.45449929 L96.3,15.628661 L96.3,81.4649078 L47.9243091,99.4503859 L-0.746097241,81.7713998 L-0.746097241,46.9947521 Z" id="outline" stroke="#FFFFFF" stroke-width="4.6"></path>
             <polygon id="Rectangle" fill="#FFFFFF" points="48.0859828 31.3812977 93.2964729 16 95 17.0034158 95 19.1969258 50.2023496 35.3339294 49.6788954 96.2136697 48 98 46.5850751 96.2136697 45.9933106 35.3469588 1 19.1969258 1 17.0034158 2.81731287 16.4473973"></polygon>
             <polygon id="Rectangle-Copy" fill="#FFFFFF" points="49 45.5270141 81 37 49 50"></polygon>
             <polygon id="Path" fill="#FFFFFF" points="47 63 2 45 47 58.7045594"></polygon>
         </g>
-        <text id="ScheduleUX" font-family="OpenSans, Open Sans" font-size="72" font-weight="normal" fill="#FFFFFF">
+        <text font-family="OpenSans, Open Sans" font-size="72" font-weight="normal" fill="#FFFFFF">
             <tspan x="125" y="87">ScheduleUX</tspan>
         </text>
     </g>
