@@ -132,7 +132,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 
 /* AMAZON */
 a.amazon {background-color:#f29d39;color:white;}
-a.amazon + .amazon {background-color:#48a6de;}
+a.amazon + .amazon {background-color:#48a6de;background-image:radial-gradient(ellipse,#48a6de 50%,#347aad);background-size:170% 160%;background-position:90% 100%;}
 /* BLUETOOTH */
 a.bluetooth {background:url(images/bluetooth/chevrons-blue-transp.png) repeat center;background-color:#40a0fc;background-size:100px 100px;color:white;}
 a.bluetooth:hover {background-size:92px 92px;}

@@ -2,24 +2,26 @@
 <head>
 <title>Brian Donahue - Collecting User Data for Amazon</title>
 <meta property='og:image' content='/images/amazon-preview.png'/>
-<link rel="stylesheet" type="text/css" href="/case-study-page.css">
+<link rel="stylesheet" type="text/css" href="../case-study-page.css">
 <style type="text/css">
-/* AMAZON CASE STUDY */
-.case-study > header {background-color:#f90;}
-.case-study > header h1 {margin-top:4.2rem;}
-.case-study > header p {border-color:#fff;}
-.case-study h2 {color:#232f3e;border-color:#f90;}
+:root {
+--brand:#48a6de;
+--brand-dark:#347aad;
+}
+.case-study header {background-color:var(--brand);background-image:radial-gradient(ellipse,var(--brand) 50%, var(--brand-dark));background-size:170% 160%;background-position:90% 100%;color:#fff;}
+.case-study header h1 {margin-top:4.2rem;}
+.case-study header p {border-color:#fff;}
+.case-study h2 {color:var(--brand-dark);border-color:var(--brand);}
 
 @media (prefers-color-scheme:dark){
-	.case-study header {background-color:#0a2a56;}
+	.case-study header {background-color:#0a2a56;background-image:radial-gradient(ellipse,var(--brand), var(--brand-dark) 50%);color:var(--bg);}
+	.case-study header p {border-color:var(--bg);}
 	.case-study a[href] {color:#3fabff;border-bottom-color:#3fabff;}
-	.case-study h2 {color:#f90;border-color:#f90;}
+	.case-study h2 {color:var(--brand);border-color:var(--brand);}
 }
 @media (prefers-color-scheme:dark) and (min-width:850px){
 	.case-study > *:not(header) {border-color:#304c66;}
-	@media (min-width:850px) {
-		.case-study > * {box-shadow:0 3px 15px -3px rgba(0,130,252,0.6);}
-	}
+	.case-study > * {box-shadow:0 3px 15px -3px rgba(0,130,252,0.6);}
 }
 </style>
 <script class="case-study-page" type="text/javascript">
@@ -27,16 +29,16 @@
 	// This code will add a new <script> element just after the current one
 	// It is important to wrap this code in an HTML comment tag to avoid the closing script tag in the lines below to be parsed by the browser
 	if (typeof jQuery == 'undefined')
-		document.write('<script type="text/javascript" src="/js/jquery.min.js"></script>');
+		document.write('<script type="text/javascript" src="../js/jquery.min.js"></script>');
 	-->
 </script>
-<script class="case-study-page" type="text/javascript" src="/js/case-study-page.js"></script>
-<script type="text/javascript" src="/js/case-study.js"></script>
+<script class="case-study-page" type="text/javascript" src="../js/case-study-page.js"></script>
+<script type="text/javascript" src="../js/case-study.js"></script>
 </head>
 <body>
 <article class="case-study">
 <header>
-	<img src="/images/amazon-white.svg" alt="Amazon.com Logo" />
+	<img src="../images/amazon-white.svg" class="invert" alt="Amazon.com Logo" />
 	<h1>Case Study: <br />Collecting User Data</h1>
 	<p>Learning about customers in ways that build trust</p>
 	<time datetime="2017-03-14">March 14, 2017</time>
