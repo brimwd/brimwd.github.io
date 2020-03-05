@@ -141,7 +141,7 @@ a.bob {background:url(images/bob-books/bob-bg.jpg) no-repeat center;background-s
 a.bob:hover {background-size:100% 100%;}
 a.bob h4 {margin-top:-10px;}
 /* DICTIONARY */
-a.dictionary {background:var(--text-faint);}
+a.dictionary {background:#ffdc68;color:black;}
 a.dictionary h4 {margin-top:-30px;}
 a.dictionary img {max-width:88%;}
 a.dictionary:hover img {max-width:93%;}
@@ -155,7 +155,7 @@ a.loveEarwax div {position:relative;}
 a.loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
 a.loveEarwax:hover img:last-child {opacity:1;}
 /* LENDINGHOME */
-a.lending {background-color:#f7CC45;}
+a.lending {background-color:#f7CC45;color:black;}
 /* SUX */
 a.sux {background-color:#e0f2f1;color:#375068;}
 a.sux h4 {margin-top:-12px;}
@@ -225,6 +225,7 @@ a.sux h4 {margin-top:-12px;}
 }
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
+.work a {box-shadow:none;}
 }
 
 /*
