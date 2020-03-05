@@ -64,6 +64,9 @@
 	#design-dev-chart #designers::after {background-color:rgba(220,240,255,.2);}
 	#design-dev-chart #designers:hover::after, #design-dev-chart #designers:focus::after, #design-dev-chart #designers.focus::after {background-color:rgba(220,240,255,.45);}
 }
+@media (prefers-color-scheme:dark) and (min-width:850px){
+	.case-study > *:not(header) {border-color:var(--brand);}
+}
 @media (min-width:820px) {#design-dev-chart {float:right;width:390px;}}
 /* BLUETOOTH VENN DIAGARAM DATA */
 .design-dev-chart-data {list-style-type:none;padding-left:0;}
