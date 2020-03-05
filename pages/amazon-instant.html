@@ -2,42 +2,44 @@
 <head>
 <title>Brian Donahue - Amazon 'Instant Fulfillment' Case Study</title>
 <meta property='og:image' content='/images/amazon-preview.png'/>
-<link rel="stylesheet" type="text/css" href="/case-study-page.css">
+<link rel="stylesheet" type="text/css" href="../case-study-page.css">
 <style type="text/css">
-/* AMAZON CASE STUDY */
-.case-study header {background-color:#f90;color:var(--bg);}
+:root {
+--brand:#f29d39;
+--brand-dark:#f58109;
+}
+.case-study header {background-color:var(--brand);background-image:radial-gradient(ellipse,var(--brand) 50%, var(--brand-dark));background-size:170% 160%;background-position:90% 100%;color:var(--bg);}
 .case-study header h1 {margin-top:4.2rem;}
 .case-study header p {border-color:var(--bg);}
 .case-study header img {max-width:140px;}
 .case-study h2 {border-color:var(--text);color:var(--text);}
-.case-study .btn {background-color:#165390;color:var(--bg);}
+.case-study .btn {background-color:var(--brand-dark);color:var(--bg);}
 
 @media (prefers-color-scheme:dark){
-	.case-study header {background-color:#0a2a56;}
-	.case-study a {color:#3fabff;border-bottom-color:#3fabff;}
-	.case-study h2 {color:#f90;border-color:#f90;}
-	.case-study .btn {background-color:#f90;}
+	.case-study h2 {color:var(--brand);border-color:var(--brand);}
+	.case-study .btn {background-color:var(--brand);}
+	.case-study a {color:var(--brand-dark);border-bottom-color:var(--brand-dark);}
 }
-/*@media (prefers-color-scheme:dark) and (min-width:850px){
+@media (prefers-color-scheme:dark) and (min-width:850px){
+	.case-study > *:not(header) {border-color:var(--brand);}
 	.case-study > * {box-shadow:0 3px 15px -3px rgba(0,130,252,0.6);;}
-	.case-study > *:not(header) {border-color:#304c66;}
-}*/
+}
 </style>
 <script type="text/javascript">
 	<!--
 	// This code will add a new <script> element just after the current one
 	// It is important to wrap this code in an HTML comment tag to avoid the closing script tag in the lines below to be parsed by the browser
 	if (typeof jQuery == 'undefined')
-		document.write('<script type="text/javascript" src="/js/jquery.min.js"></script>');
+		document.write('<script type="text/javascript" src="../js/jquery.min.js"></script>');
 	-->
 </script>
-<script id="case-study-page" type="text/javascript" src="/js/case-study-page.js"></script>
-<script type="text/javascript" src="/js/case-study.js"></script>
+<script id="case-study-page" type="text/javascript" src="../js/case-study-page.js"></script>
+<script type="text/javascript" src="../js/case-study.js"></script>
 </head>
 <body>
 <article class="case-study presentation">
 <header>
-	<img src="/images/amazon-white.svg" alt="Amazon.com Logo" />
+	<img src="../images/amazon-white.svg" class="invert" alt="Amazon.com Logo" />
 	<h1>Case Study: <br />Amazon &lsquo;Instant Fulfillment&rsquo;</h1>
 	<p>Solving for find-ability and discoverability in Amazon&rsquo;s &ldquo;Instant Fulfillment&rdquo; Browse Taxonomy</p>
 	<time datetime="2019-10-22">October 22, 2019</time>
@@ -102,9 +104,9 @@
 <figure>
 	<h2 id="snacks">A selection of &lsquo;snacks&rsquo; from the curated product list</h2>
 	<picture class="full-width">
-		<source type="image/png" media="(prefers-color-scheme: dark)" srcset="/images/amazon-if/snacks-invert.png">
-		<source type="image/png" media="(min-width: 800px)" srcset="/images/amazon-if/snacks-1200.png">
-		<img src="/images/amazon-if/snacks-800.png" alt="A drawing snacks available through Instant Fulfillment">
+		<source type="image/png" media="(prefers-color-scheme: dark)" srcset="../images/amazon-if/snacks-invert.png">
+		<source type="image/png" media="(min-width: 800px)" srcset="../images/amazon-if/snacks-1200.png">
+		<img src="../images/amazon-if/snacks-800.png" alt="A drawing snacks available through Instant Fulfillment">
 	</picture>
 	<figcaption>None of these things are like the others&hellip;</figcaption>
 </figure>
@@ -150,10 +152,10 @@
 <figure>
 	<h2 id="finding-relationships">Finding Relationships</h2>
 	<picture class="full-width">
-		<source type="image/jpg" media="(min-width: 1400px)" srcset="/images/amazon-if/defining-categories-full.jpg">
-		<source type="image/jpg" media="(prefers-color-scheme: dark)" srcset="/images/amazon-if/defining-categories-invert.jpg">
-		<source type="image/jpg" media="(min-width: 800px)" srcset="/images/amazon-if/defining-categories-1200.jpg">
-		<img src="/images/amazon-if/defining-categories-800.jpg" alt="A whiteboard sketch of various snacks categorized into unusual categories like 'and-something' for chip-dips and 'utensils, please' for snacks that need a spoon">
+		<source type="image/jpg" media="(min-width: 1400px)" srcset="../images/amazon-if/defining-categories-full.jpg">
+		<source type="image/jpg" media="(prefers-color-scheme: dark)" srcset="../images/amazon-if/defining-categories-invert.jpg">
+		<source type="image/jpg" media="(min-width: 800px)" srcset="../images/amazon-if/defining-categories-1200.jpg">
+		<img src="../images/amazon-if/defining-categories-800.jpg" alt="A whiteboard sketch of various snacks categorized into unusual categories like 'and-something' for chip-dips and 'utensils, please' for snacks that need a spoon">
 	</picture>
 	<figcaption>
 		<p>The dream of offering products that customers could &ldquo;Grab and go&rdquo; meant that we needed to not-only offer products that conformed to that use-case, but we needed to unsure that the corresponding components were available.</p>
@@ -173,10 +175,10 @@
 <figure>
 	<h2>Understanding Context</h2>
 	<picture class="full-width">
-		<source type="image/jpg" media="(min-width: 1400px)" srcset="/images/amazon-if/understanding-context-full.jpg">
-		<source type="image/jpg" media="(prefers-color-scheme: dark)" srcset="/images/amazon-if/understanding-context-invert.jpg">
-		<source type="image/jpg" media="(min-width: 800px)" srcset="/images/amazon-if/understanding-context-1200.jpg">
-		<img src="/images/amazon-if/understanding-context-800.jpg" alt="A whiteboard exploration of product groupings">
+		<source type="image/jpg" media="(min-width: 1400px)" srcset="../images/amazon-if/understanding-context-full.jpg">
+		<source type="image/jpg" media="(prefers-color-scheme: dark)" srcset="../images/amazon-if/understanding-context-invert.jpg">
+		<source type="image/jpg" media="(min-width: 800px)" srcset="../images/amazon-if/understanding-context-1200.jpg">
+		<img src="../images/amazon-if/understanding-context-800.jpg" alt="A whiteboard exploration of product groupings">
 	</picture>
 	<figcaption>
 		<p>The biggest takeaway for me in this process was learning that taxonomies are 100% context-dependent.</p>
@@ -223,10 +225,10 @@
 <figure>
 	<h2 id="learning-from-failure">Learning From Failure</h2>
 	<picture class="full-width">
-		<source type="image/jpg" media="(min-width: 1400px)" srcset="/images/amazon-if/from-failure-full.jpg">
-		<source type="image/jpg" media="(prefers-color-scheme: dark)" srcset="/images/amazon-if/from-failure-invert.jpg">
-		<source type="image/jpg" media="(min-width: 800px)" srcset="/images/amazon-if/from-failure-1200.jpg">
-		<img src="/images/amazon-if/from-failure-800.jpg" alt="A whiteboard exploration of monohierarchy product groupings">
+		<source type="image/jpg" media="(min-width: 1400px)" srcset="../images/amazon-if/from-failure-full.jpg">
+		<source type="image/jpg" media="(prefers-color-scheme: dark)" srcset="../images/amazon-if/from-failure-invert.jpg">
+		<source type="image/jpg" media="(min-width: 800px)" srcset="../images/amazon-if/from-failure-1200.jpg">
+		<img src="../images/amazon-if/from-failure-800.jpg" alt="A whiteboard exploration of monohierarchy product groupings">
 	</picture>
 	<figcaption>
 		<p>&lsquo;Guaranteed success&rsquo; does not guarantee success, and this failure was both disappointing <em>and embarrassing</em>.</p>
@@ -265,7 +267,7 @@
 </figure>
 <section class="flex-container 2-col">
 	<div>
-		<img src="/images/amazon-if/deodorant.png" alt="A stick of Old Spice deodorant">
+		<img src="../images/amazon-if/deodorant.png" alt="A stick of Old Spice deodorant">
 	</div>
 	<div class="bg">
 		<h2>&ldquo;What is this?&rdquo;</h2>
@@ -273,7 +275,7 @@
 	</div>
 </section>
 <figure class="big-stat">
-	<img src="/images/amazon-if/shrug.png" alt="An emoji of a person shrugging">
+	<img src="../images/amazon-if/shrug.png" alt="An emoji of a person shrugging">
 	<figcaption>
 		<p>Turns out there are some problems UX can&rsquo;t solve.</p>
 	</figcaption>
