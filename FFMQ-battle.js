@@ -7,20 +7,48 @@ var enemies = [
 var Monster = {
     introduce: function () {
         window.addName( this.name );
+        this.currentImg = this.img[0];
     },
     attack: function () {
         var selectedAbility = this.abilities[ Math.rand() ];
         var target = heroes[ Math.rand() ];
-        
+
         alert(selectedAbility.name);
         target.hp = target.hp - selectedAbility.damage;
+    },
+    updateStatus: function () {
+        var hpPercentage = this.hp / this.maxHp;
+
+        switch(hpPercentage) {
+            case hpPercentage > 1 :
+                this.hp = this.maxHp;
+
+            case hpPercentage > .5 :
+                this.currentImg = this.img[0];
+                break;
+
+            case hpPercentage > .25 :
+                this.currentImg = this.img[1];
+                break;
+
+            case hpPercentage > 0 :
+                if (this.img.length > 2) {
+                    this.currentImg = this.img[2];
+                }
+                break;
+
+            default : // hpPercentage <= 0
+                this.die();
+                break;
+        }
     },
     die: function () {
         this.fadeOut();
         this.destroy();
     }
 }
-// Behemoth Boss Monster
+
+// Monster Database
 monsters.db [
 {
     _id: 1,
@@ -63,7 +91,7 @@ monsters.db [
             name:"Hydro Acid",
             damage: 10
         },
-        {   
+        {
             name: "Stab",
             damage: 12
         }
