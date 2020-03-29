@@ -148,7 +148,7 @@ a.dictionary:hover img {max-width:93%;}
 /* TMO */
 a.tmo {background:url(images/tmo/topography.png) repeat center;background-size:400px 400px;}
 a.tmo:hover {background-size:370px 370px;}
-a.tmo h4 {margin-top:0;}
+a.tmo h4 {margin-top:0;color:#2a2a2a;}
 /* EARWAX */
 a.loveEarwax {background-color:#1b1b1b;color:white;}
 a.loveEarwax div {position:relative;}
@@ -226,6 +226,7 @@ a.sux h4 {margin-top:-12px;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
 .work a {box-shadow:none;}
+.work a:hover {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6)}
 }
 
 /*
