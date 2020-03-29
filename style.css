@@ -225,7 +225,11 @@ a.sux h4 {margin-top:-12px;}
 }
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
-.work a {box-shadow:none;opacity:0.75;}
+.work a {box-shadow:none;}
+}
+
+@media (prefers-color-scheme:dark) and (min-width:375px) {
+.work a {opacity:0.75;}
 .work a:hover {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6);opacity:1;}
 }
 
