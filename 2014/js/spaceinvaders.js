@@ -601,9 +601,7 @@ PlayState.prototype.keyDown = function(game, keyCode) {
     }
 };
 
-PlayState.prototype.keyUp = function(game, keyCode) {
-
-};
+PlayState.prototype.keyUp = function(game, keyCode) {};
 
 PlayState.prototype.fireRocket = function() {
     //  If we have no last rocket time, or the last rocket time
@@ -619,9 +617,7 @@ PlayState.prototype.fireRocket = function() {
     }
 };
 
-function PauseState() {
-
-}
+function PauseState() {}
 
 PauseState.prototype.keyDown = function(game, keyCode) {
 
