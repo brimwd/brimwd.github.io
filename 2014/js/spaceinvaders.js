@@ -329,7 +329,12 @@ PlayState.prototype.enter = function(game) {
                 (game.width / 2) + ((files/2 - file) * 400 / files),
                 (game.gameBounds.top + rank * 50),
                 rank, file,
-                (rank % 2 === 0 ? 'Invader' : 'Captain')
+                (rank % 5 === 0 ? "Commander" : // invader.type
+                    (rank + 1) % 2 === 0 ? "Captain" :
+                        "Invader"),
+                (rank % 5 === 0 ? 3 : // invader.hp
+                    (rank + 1) % 2 === 0 ? 2 :
+                        1)
             ));
         }
     }
@@ -455,7 +460,9 @@ PlayState.prototype.update = function(game, dt) {
             }
         }
         if(bang) {
-            this.invaders.splice(i--, 1);
+
+            invader.hp > 1 ? invader.hp = invader.hp - 1 : this.invaders.splice(i--, 1);
+
             game.sounds.playSound('bang');
         }
     }
@@ -534,17 +541,16 @@ PlayState.prototype.draw = function(game, dt, ctx) {
 
     //  Draw invaders.
     ctx.font="48px ninebit";
-    ctx.fillStyle = '#8dcc00';
     for(var i=0; i<this.invaders.length; i++) {
         var invader = this.invaders[i];
-        if (invader.type === "Invader") {
-        	ctx.fillStyle = '#8dcc00';
-        	ctx.fillText("X", invader.x + 33, invader.y);
+
+        switch(invader.hp) {
+            case 3: ctx.fillStyle = '#93e32a'; break;
+            case 2: ctx.fillStyle = '#fceb50'; break;
+            case 1: ctx.fillStyle = '#e32a52'; break;
         }
-        else {
-        	ctx.fillStyle = '#aa4477';
-        	ctx.fillText("V", invader.x + 33, invader.y);
-        }
+
+    	ctx.fillText(invader.shape(invader.type), invader.x + 33, invader.y);
     }
 
     //  Draw bombs.
@@ -730,7 +736,7 @@ function Bomb(x, y, velocity) {
     Invader's have position, type, rank/file and that's about it.
 */
 
-function Invader(x, y, rank, file, type) {
+function Invader(x, y, rank, file, type, hp) {
     this.x = x;
     this.y = y;
     this.rank = rank;
@@ -738,6 +744,15 @@ function Invader(x, y, rank, file, type) {
     this.type = type;
     this.width = 42;
     this.height = 33;
+    this.hp = hp;
+
+    this.shape = function() {
+        switch(this.type) {
+            case "Commander" : return "M"; break;
+            case "Captain"   : return "X"; break;
+            case "Invader"   : return "V"; break;
+        }
+    };
 }
 
 /*
