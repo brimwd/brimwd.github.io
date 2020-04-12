@@ -328,7 +328,9 @@ PlayState.prototype.enter = function(game) {
             invaders.push(new Invader(
                 (game.width / 2) + ((files/2 - file) * 400 / files),
                 (game.gameBounds.top + rank * 50),
-                rank, file, 'Invader'));
+                rank, file,
+                (rank % 2 === 0 ? 'Invader' : 'Captain')
+            ));
         }
     }
     this.invaders = invaders;
@@ -531,11 +533,18 @@ PlayState.prototype.draw = function(game, dt, ctx) {
     ctx.fillText("A", this.ship.x + 22, this.ship.y);
 
     //  Draw invaders.
-    ctx.fillStyle = '#8dcc00';
     ctx.font="48px ninebit";
+    ctx.fillStyle = '#8dcc00';
     for(var i=0; i<this.invaders.length; i++) {
         var invader = this.invaders[i];
-        ctx.fillText("U", invader.x + 33, invader.y);
+        if (invader.type === "Invader") {
+        	ctx.fillStyle = '#8dcc00';
+        	ctx.fillText("X", invader.x + 33, invader.y);
+        }
+        else {
+        	ctx.fillStyle = '#aa4477';
+        	ctx.fillText("V", invader.x + 33, invader.y);
+        }
     }
 
     //  Draw bombs.
