@@ -151,7 +151,7 @@ function GameLoop(game) {
         //  Update if we have an update function. Also draw
         //  if we have a draw function.
         if(currentState.update) {
-            currentState.update(game, dt);
+            currentState.update(game, dt, ctx);
         }
         if(currentState.draw) {
             currentState.draw(game, dt, ctx);
@@ -344,7 +344,7 @@ PlayState.prototype.enter = function(game) {
     this.invaderNextVelocity = null;
 };
 
-PlayState.prototype.update = function(game, dt) {
+PlayState.prototype.update = function(game, dt, ctx) {
 
     //  If the left or right arrow keys are pressed, move
     //  the ship. Check this on ticks rather than via a keydown
@@ -640,12 +640,6 @@ PauseState.prototype.draw = function(game, dt, ctx) {
     return;
 };
 
-/*
-    Level Intro State
-
-    The Level Intro state shows a 'Level X' message and
-    a countdown for the level.
-*/
 function LevelIntroState(level) {
     this.level = level;
     this.countdownMessage = "3";
@@ -687,14 +681,6 @@ LevelIntroState.prototype.draw = function(game, dt, ctx) {
     return;
 };
 
-
-/*
-
-  Ship
-
-  The ship has a position and that's about it.
-
-*/
 function Ship(x, y) {
     this.x = x;
     this.y = y;
@@ -702,35 +688,17 @@ function Ship(x, y) {
     this.height = 23;
 }
 
-/*
-    Rocket
-
-    Fired by the ship, they've got a position, velocity and state.
-
-    */
 function Rocket(x, y, velocity) {
     this.x = x;
     this.y = y;
     this.velocity = velocity;
 }
 
-/*
-    Bomb
-
-    Dropped by invaders, they've got position, velocity.
-
-*/
 function Bomb(x, y, velocity) {
     this.x = x;
     this.y = y;
     this.velocity = velocity;
 }
-
-/*
-    Invader
-
-    Invader's have position, type, rank/file and that's about it.
-*/
 
 function Invader(x, y, rank, file, type, hp) {
     this.x = x;
@@ -769,14 +737,6 @@ function GameState(updateProc, drawProc, keyDown, keyUp, enter, leave) {
     this.leave = leave;
 }
 
-/*
-
-    Sounds
-
-    The sounds class is used to asynchronously load sounds and allow
-    them to be played.
-
-*/
 function Sounds() {
 
     //  The audio context.
