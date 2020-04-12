@@ -5,7 +5,7 @@
 
 */
 
-/*  
+/*
     Game Class
 
     The Game class represents a Space Invaders game.
@@ -85,18 +85,18 @@ Game.prototype.initialise = function(gameCanvas) {
 };
 
 Game.prototype.moveToState = function(state) {
- 
+
    //  If we are in a state, leave it.
    if(this.currentState() && this.currentState().leave) {
      this.currentState().leave(game);
      this.stateStack.pop();
    }
-   
+
    //  If there's an enter function for the new state, call it.
    if(state.enter) {
      state.enter(game);
    }
- 
+
    //  Set the current state.
    this.stateStack.pop();
    this.stateStack.push(state);
@@ -147,7 +147,7 @@ function GameLoop(game) {
 
         //  Get the drawing context.
         var ctx = this.gameCanvas.getContext("2d");
-        
+
         //  Update if we have an update function. Also draw
         //  if we have a draw function.
         if(currentState.update) {
@@ -231,12 +231,12 @@ WelcomeState.prototype.draw = function(game, dt, ctx) {
 
     ctx.font="30px ninebit";
     ctx.fillStyle = '#ffffff';
-    ctx.textBaseline="center"; 
-    ctx.textAlign="center"; 
-    ctx.fillText("Space Invaders", game.width / 2, game.height/2 - 40); 
+    ctx.textBaseline="center";
+    ctx.textAlign="center";
+    ctx.fillText("Space Invaders", game.width / 2, game.height/2 - 40);
     ctx.font="16px ninebit";
 
-    ctx.fillText("Press 'Space' to start.", game.width / 2, game.height/2); 
+    ctx.fillText("Press 'Space' to start.", game.width / 2, game.height/2);
 };
 
 WelcomeState.prototype.keyDown = function(game, keyCode) {
@@ -264,13 +264,13 @@ GameOverState.prototype.draw = function(game, dt, ctx) {
 
     ctx.font="30px ninebit";
     ctx.fillStyle = '#ffffff';
-    ctx.textBaseline="center"; 
-    ctx.textAlign="center"; 
-    ctx.fillText("Game Over!", game.width / 2, game.height/2 - 40); 
+    ctx.textBaseline="center";
+    ctx.textAlign="center";
+    ctx.fillText("Game Over!", game.width / 2, game.height/2 - 40);
     ctx.font="16px ninebit";
     ctx.fillText("You scored " + game.score + " and got to level " + game.level, game.width / 2, game.height/2);
     ctx.font="16px ninebit";
-    ctx.fillText("Press 'Space' to play again.", game.width / 2, game.height/2 + 40);   
+    ctx.fillText("Press 'Space' to play again.", game.width / 2, game.height/2 + 40);
 };
 
 GameOverState.prototype.keyDown = function(game, keyCode) {
@@ -338,7 +338,7 @@ PlayState.prototype.enter = function(game) {
 };
 
 PlayState.prototype.update = function(game, dt) {
-    
+
     //  If the left or right arrow keys are pressed, move
     //  the ship. Check this on ticks rather than via a keydown
     //  event for smooth movement, otherwise the ship would move
@@ -432,7 +432,7 @@ PlayState.prototype.update = function(game, dt) {
     if(hitBottom) {
         this.lives = 0;
     }
-    
+
     //  Check for rocket/invader collisions.
     for(i=0; i<this.invaders.length; i++) {
         var invader = this.invaders[i];
@@ -443,7 +443,7 @@ PlayState.prototype.update = function(game, dt) {
 
             if(rocket.x >= (invader.x - invader.width/2) && rocket.x <= (invader.x + invader.width/2) &&
                 rocket.y >= (invader.y - invader.height/2) && rocket.y <= (invader.y + invader.height/2)) {
-                
+
                 //  Remove the rocket, set 'bang' so we don't process
                 //  this rocket again.
                 this.rockets.splice(j--, 1);
@@ -477,7 +477,7 @@ PlayState.prototype.update = function(game, dt) {
         var chance = this.bombRate * dt;
         if(chance > Math.random()) {
             //  Fire!
-            this.bombs.push(new Bomb(invader.x, invader.y + invader.height / 2, 
+            this.bombs.push(new Bomb(invader.x, invader.y + invader.height / 2,
                 this.bombMinVelocity + Math.random()*(this.bombMaxVelocity - this.bombMinVelocity)));
         }
     }
@@ -491,13 +491,13 @@ PlayState.prototype.update = function(game, dt) {
             game.lives--;
             game.sounds.playSound('explosion');
         }
-                
+
     }
 
     //  Check for invader/ship collisions.
     for(var i=0; i<this.invaders.length; i++) {
         var invader = this.invaders[i];
-        if((invader.x + invader.width/2) > (this.ship.x - this.ship.width/2) && 
+        if((invader.x + invader.width/2) > (this.ship.x - this.ship.width/2) &&
             (invader.x - invader.width/2) < (this.ship.x + this.ship.width/2) &&
             (invader.y + invader.height/2) > (this.ship.y - this.ship.height/2) &&
             (invader.y - invader.height/2) < (this.ship.y + this.ship.height/2)) {
@@ -524,7 +524,7 @@ PlayState.prototype.draw = function(game, dt, ctx) {
 
     //  Clear the background.
     ctx.clearRect(0, 0, game.width, game.height);
-    
+
     //  Draw ship.
     ctx.fillStyle = '#D33DEF';
     ctx.font="32px ninebit";
@@ -591,10 +591,10 @@ PlayState.prototype.keyUp = function(game, keyCode) {
 };
 
 PlayState.prototype.fireRocket = function() {
-    //  If we have no last rocket time, or the last rocket time 
+    //  If we have no last rocket time, or the last rocket time
     //  is older than the max rocket rate, we can fire.
     if(this.lastRocketTime === null || ((new Date()).valueOf() - this.lastRocketTime) > (1000 / this.config.rocketMaxFireRate))
-    {   
+    {
         //  Add a rocket.
         this.rockets.push(new Rocket(this.ship.x, this.ship.y - 12, this.config.rocketVelocity));
         this.lastRocketTime = (new Date()).valueOf();
@@ -629,7 +629,7 @@ PauseState.prototype.draw = function(game, dt, ctx) {
     return;
 };
 
-/*  
+/*
     Level Intro State
 
     The Level Intro state shows a 'Level X' message and
@@ -648,12 +648,12 @@ LevelIntroState.prototype.update = function(game, dt) {
     }
     this.countdown -= dt;
 
-    if(this.countdown < 2) { 
-        this.countdownMessage = "2"; 
+    if(this.countdown < 2) {
+        this.countdownMessage = "2";
     }
-    if(this.countdown < 1) { 
-        this.countdownMessage = "1"; 
-    } 
+    if(this.countdown < 1) {
+        this.countdownMessage = "1";
+    }
     if(this.countdown <= 0) {
         //  Move to the next level, popping this state.
         game.moveToState(new PlayState(game.config, this.level));
@@ -668,17 +668,17 @@ LevelIntroState.prototype.draw = function(game, dt, ctx) {
 
     ctx.font="36px ninebit";
     ctx.fillStyle = '#ffffff';
-    ctx.textBaseline="middle"; 
-    ctx.textAlign="center"; 
+    ctx.textBaseline="middle";
+    ctx.textAlign="center";
     ctx.fillText("Level " + this.level, game.width / 2, game.height/2);
     ctx.font="24px ninebit";
-    ctx.fillText("Ready in " + this.countdownMessage, game.width / 2, game.height/2 + 36);      
+    ctx.fillText("Ready in " + this.countdownMessage, game.width / 2, game.height/2 + 36);
     return;
 };
 
 
 /*
- 
+
   Ship
 
   The ship has a position and that's about it.
@@ -714,11 +714,11 @@ function Bomb(x, y, velocity) {
     this.y = y;
     this.velocity = velocity;
 }
- 
-/*
-    Invader 
 
-    Invader's have position, type, rank/file and that's about it. 
+/*
+    Invader
+
+    Invader's have position, type, rank/file and that's about it.
 */
 
 function Invader(x, y, rank, file, type) {
