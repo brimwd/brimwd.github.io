@@ -23,7 +23,6 @@
 
 //  Creates an instance of the Game class.
 function Game() {
-
     //  Set the initial config.
     this.config = {
         bombRate: 0.05,
@@ -63,11 +62,10 @@ function Game() {
 
     //  All sounds.
     this.sounds = null;
-}
+};
 
 //  Initialis the Game with a canvas.
 Game.prototype.initialise = function(gameCanvas) {
-
     //  Set the game canvas.
     this.gameCanvas = gameCanvas;
 
@@ -85,7 +83,6 @@ Game.prototype.initialise = function(gameCanvas) {
 };
 
 Game.prototype.moveToState = function(state) {
-
    //  If we are in a state, leave it.
    if(this.currentState() && this.currentState().leave) {
      this.currentState().leave(game);
@@ -100,11 +97,10 @@ Game.prototype.moveToState = function(state) {
    //  Set the current state.
    this.stateStack.pop();
    this.stateStack.push(state);
- };
+};
 
 //  Start the Game.
 Game.prototype.start = function() {
-
     //  Move into the 'welcome' state.
     this.moveToState(new WelcomeState());
 
@@ -115,7 +111,6 @@ Game.prototype.start = function() {
     //  Start the game loop.
     var game = this;
     this.intervalId = setInterval(function () { GameLoop(game);}, 1000 / this.config.fps);
-
 };
 
 //  Returns the current state.
@@ -125,7 +120,6 @@ Game.prototype.currentState = function() {
 
 //  Mutes or unmutes the game.
 Game.prototype.mute = function(mute) {
-
     //  If we've been told to mute, mute.
     if(mute === true) {
         this.sounds.mute = true;
@@ -141,7 +135,6 @@ Game.prototype.mute = function(mute) {
 function GameLoop(game) {
     var currentState = game.currentState();
     if(currentState) {
-
         //  Delta t is the time to update/draw.
         var dt = 1 / game.config.fps;
 
@@ -157,10 +150,9 @@ function GameLoop(game) {
             currentState.draw(game, dt, ctx);
         }
     }
-}
+};
 
 Game.prototype.pushState = function(state) {
-
     //  If there's an enter function for the new state, call it.
     if(state.enter) {
         state.enter(game);
@@ -170,7 +162,6 @@ Game.prototype.pushState = function(state) {
 };
 
 Game.prototype.popState = function() {
-
     //  Leave and pop the state.
     if(this.currentState()) {
         if(this.currentState().leave) {
@@ -205,12 +196,9 @@ Game.prototype.keyUp = function(keyCode) {
     }
 };
 
-function WelcomeState() {
-
-}
+function WelcomeState() {};
 
 WelcomeState.prototype.enter = function(game) {
-
     // Create and load the sounds.
     game.sounds = new Sounds();
     game.sounds.init();
@@ -219,13 +207,9 @@ WelcomeState.prototype.enter = function(game) {
     game.sounds.loadSound('explosion', 'sounds/explosion.wav');
 };
 
-WelcomeState.prototype.update = function (game, dt) {
-
-
-};
+WelcomeState.prototype.update = function (game, dt) {};
 
 WelcomeState.prototype.draw = function(game, dt, ctx) {
-
     //  Clear the background.
     ctx.clearRect(0, 0, game.width, game.height);
 
@@ -249,16 +233,11 @@ WelcomeState.prototype.keyDown = function(game, keyCode) {
     }
 };
 
-function GameOverState() {
+function GameOverState() {};
 
-}
-
-GameOverState.prototype.update = function(game, dt) {
-
-};
+GameOverState.prototype.update = function(game, dt) {};
 
 GameOverState.prototype.draw = function(game, dt, ctx) {
-
     //  Clear the background.
     ctx.clearRect(0, 0, game.width, game.height);
 
@@ -299,10 +278,9 @@ function PlayState(config, level) {
     this.invaders = [];
     this.rockets = [];
     this.bombs = [];
-}
+};
 
 PlayState.prototype.enter = function(game) {
-
     //  Create the ship.
     this.ship = new Ship(game.width / 2, game.gameBounds.bottom);
 
@@ -345,7 +323,6 @@ PlayState.prototype.enter = function(game) {
 };
 
 PlayState.prototype.update = function(game, dt, ctx) {
-
     //  If the left or right arrow keys are pressed, move
     //  the ship. Check this on ticks rather than via a keydown
     //  event for smooth movement, otherwise the ship would move
@@ -500,7 +477,6 @@ PlayState.prototype.update = function(game, dt, ctx) {
             game.lives--;
             game.sounds.playSound('explosion');
         }
-
     }
 
     //  Check for invader/ship collisions.
@@ -530,7 +506,6 @@ PlayState.prototype.update = function(game, dt, ctx) {
 };
 
 PlayState.prototype.draw = function(game, dt, ctx) {
-
     //  Clear the background.
     ctx.clearRect(0, 0, game.width, game.height);
 
@@ -586,11 +561,9 @@ PlayState.prototype.draw = function(game, dt, ctx) {
             game.gameBounds.right - game.gameBounds.left,
             game.gameBounds.bottom - game.gameBounds.top);
     }
-
 };
 
 PlayState.prototype.keyDown = function(game, keyCode) {
-
     if(keyCode == 32) {
         //  Fire!
         this.fireRocket();
@@ -617,7 +590,7 @@ PlayState.prototype.fireRocket = function() {
     }
 };
 
-function PauseState() {}
+function PauseState() {};
 
 PauseState.prototype.keyDown = function(game, keyCode) {
 
@@ -643,10 +616,9 @@ PauseState.prototype.draw = function(game, dt, ctx) {
 function LevelIntroState(level) {
     this.level = level;
     this.countdownMessage = "3";
-}
+};
 
 LevelIntroState.prototype.update = function(game, dt) {
-
     //  Update the countdown.
     if(this.countdown === undefined) {
         this.countdown = 3; // countdown from 3 secs
@@ -663,11 +635,9 @@ LevelIntroState.prototype.update = function(game, dt) {
         //  Move to the next level, popping this state.
         game.moveToState(new PlayState(game.config, this.level));
     }
-
 };
 
 LevelIntroState.prototype.draw = function(game, dt, ctx) {
-
     //  Clear the background.
     ctx.clearRect(0, 0, game.width, game.height);
 
@@ -686,19 +656,19 @@ function Ship(x, y) {
     this.y = y;
     this.width = 27;
     this.height = 23;
-}
+};
 
 function Rocket(x, y, velocity) {
     this.x = x;
     this.y = y;
     this.velocity = velocity;
-}
+};
 
 function Bomb(x, y, velocity) {
     this.x = x;
     this.y = y;
     this.velocity = velocity;
-}
+};
 
 function Invader(x, y, rank, file, type, hp) {
     this.x = x;
@@ -717,7 +687,7 @@ function Invader(x, y, rank, file, type, hp) {
             case "Invader"   : return "V"; break;
         }
     };
-}
+};
 
 /*
     Game State
@@ -735,19 +705,17 @@ function GameState(updateProc, drawProc, keyDown, keyUp, enter, leave) {
     this.keyUp = keyUp;
     this.enter = enter;
     this.leave = leave;
-}
+};
 
 function Sounds() {
-
     //  The audio context.
     this.audioContext = null;
 
     //  The actual set of loaded sounds.
     this.sounds = {};
-}
+};
 
 Sounds.prototype.init = function() {
-
     //  Create the audio context, paying attention to webkit browsers.
     context = window.AudioContext || window.webkitAudioContext;
     this.audioContext = new context();
@@ -774,14 +742,13 @@ Sounds.prototype.loadSound = function(name, url) {
     try {
       req.send();
     } catch(e) {
-      console.log("An exception occured getting sound the sound " + name + " this might be " +
+      console.log("An exception occurred getting sound the sound " + name + " this might be " +
          "because the page is running from the file system, not a webserver.");
       console.log(e);
     }
 };
 
 Sounds.prototype.playSound = function(name) {
-
     //  If we've not got the sound, don't bother playing it.
     if(this.sounds[name] === undefined || this.sounds[name] === null || this.mute === true) {
         return;
