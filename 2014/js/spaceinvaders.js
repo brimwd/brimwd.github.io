@@ -52,6 +52,7 @@ function Game() {
     this.intervalId = 0;
     this.score = 0;
     this.level = 1;
+    this.frame = 0;
 
     //  The state stack.
     this.stateStack = [];
@@ -337,6 +338,9 @@ PlayState.prototype.update = function(game, dt, ctx) {
         this.fireRocket();
     }
 
+    //  Update frame number for alternating shapes
+    game.frame = game.frame + 1;
+
     //  Keep the ship in bounds.
     if(this.ship.x < game.gameBounds.left) {
         this.ship.x = game.gameBounds.left;
@@ -525,7 +529,7 @@ PlayState.prototype.draw = function(game, dt, ctx) {
             case 1: ctx.fillStyle = '#e32a52'; break;
         }
 
-    	ctx.fillText(invader.shape(invader.type), invader.x + 33, invader.y);
+    	ctx.fillText(invader.shape(game.frame), invader.x + 33, invader.y);
     }
 
     //  Draw bombs.
@@ -670,7 +674,7 @@ function Bomb(x, y, velocity) {
     this.velocity = velocity;
 };
 
-function Invader(x, y, rank, file, type, hp) {
+function Invader(x, y, rank, file, type, hp, frame) {
     this.x = x;
     this.y = y;
     this.rank = rank;
@@ -680,12 +684,25 @@ function Invader(x, y, rank, file, type, hp) {
     this.height = 33;
     this.hp = hp;
 
-    this.shape = function() {
+    this.shape = function(frame) {
+        let shape;
+        let updateInterval;
         switch(this.type) {
-            case "Commander" : return "M"; break;
-            case "Captain"   : return "X"; break;
-            case "Invader"   : return "V"; break;
+            case "Commander":
+                shape = "M";
+                break;
+
+            case "Captain":
+                updateInterval = 20;
+                frame % updateInterval >= updateInterval/2 ? shape = "O" : shape = "Q";
+                break;
+
+            case "Invader":
+                updateInterval = 40;
+                frame % updateInterval >= updateInterval/2 ? shape = "Y" : shape = "X";
+                break;
         }
+        return shape;
     };
 };
 
