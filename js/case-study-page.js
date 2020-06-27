@@ -1,5 +1,5 @@
 function configureSinglePage() {
-	$('head')
+	$(`head`)
 		.prepend($(`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>`))
 		.prepend($(`<link rel="stylesheet" type="text/css" href="../style.css">`))
 		.prepend($(`<link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700&display=swap" rel="stylesheet">`))
@@ -10,8 +10,6 @@ function configureSinglePage() {
 		.prepend($(`<meta name="description" content="UX, web design, & front-end development portfolio for Brian Donahue, Product Designer based in Silicon Valley, California">`))
 		.prepend($(`<meta name="keywords" content="product,product design,manager,UX,UX design,UX designer,user experience,design,designer,UI,HTML,CSS,JavaScript,Illustrator,Adobe,Photoshop,freelance,contractor,developer,front-end,front end,portfolio,graphic design,graphics,web,web development,for hire,resume,jQuery,storyboarding,prototyping,research,user research,researcher,information architecture,taxonomy">`))
 		.prepend($(`<meta name="format-detection" content="telephone=no">;`));
-
-
 
 	$(`.case-study`)
 		.prepend($(`<nav><i class="fa fa-angle-left"></i> <a href="../index.html">Back to portfolio</a></nav>`))
