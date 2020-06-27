@@ -2,7 +2,12 @@
 <html>
 <head>
 <title>T-Mobile Conducktor 'Tree Nav'</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
 <style type="text/css">
+:root {
+  --brand-primary:#e20869;
+  --highlight:#ffffff;
+}
 #tree {
   background-color:black;
   border-radius:4px 0 0 4px;
@@ -46,7 +51,7 @@
   color:var(--highlight);
   cursor:pointer;
   content:'\f105';
-  font-family:'fontawesome';
+  font-family:'Font Awesome 5 Pro';
   font-size:22px;
   line-height:26px;
 
@@ -137,6 +142,7 @@
     max-width:calc(100vw - 230px);
     overflow:visible;
     padding-left:5px;
+    width:-webkit-fill-available;
   }
   #tree.shallow.open li {
     display:inline-block;
