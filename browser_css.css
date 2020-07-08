@@ -126,3 +126,8 @@
   // links
   .feed-shared-article {background:var(--bg-faint)!important;}
 }*/
+
+
+/* NEWS SITES ******************************************/
+/* The Guardian */
+#cmpContainer {display:none;}

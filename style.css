@@ -101,7 +101,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 
 /* WORK */
 .work {}
-.work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 150ms;}
+.work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 180ms;transition-timing-function:ease-out;}
 .work h4 {margin:-20px 0 0;}
 .work p {margin:.3em 0 .6em;}
 
@@ -122,7 +122,8 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   position:relative;
   overflow:hidden;
   text-align:center;
-  transition:all 250ms, background-size 180ms, transform 160ms;
+  transition:all 250ms, background-size 180ms, transform 180ms;
+  transition-timing-function:ease-out;
 }
 .work a:hover {box-shadow:0 10px 30px var(--text-med);transform:scale(1.05);}
 .work a:hover img {max-height:108px;max-width:86%;}
@@ -148,7 +149,7 @@ a.dictionary:hover img {max-width:93%;}
 /* TMO */
 a.tmo {background:url(images/tmo/topography.png) repeat center;background-size:400px 400px;}
 a.tmo:hover {background-size:370px 370px;}
-a.tmo h4 {margin-top:0;}
+a.tmo h4 {margin-top:0;color:#2a2a2a;}
 /* EARWAX */
 a.loveEarwax {background-color:#1b1b1b;color:white;}
 a.loveEarwax div {position:relative;}
@@ -226,6 +227,11 @@ a.sux h4 {margin-top:-12px;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
 .work a {box-shadow:none;}
+}
+
+@media (prefers-color-scheme:dark) and (min-width:375px) {
+.work a {opacity:0.75;}
+.work a:hover {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6);opacity:1;}
 }
 
 /*
