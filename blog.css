@@ -1,0 +1,70 @@
+:root {
+  --text:#2a2a2a;
+  --text-med:#bbb;
+  --text-faint:#ffdc68;
+  --text-faint-alpha:#ffdc68a8;
+  --text-ultra-faint:#d7d7d7;
+  --highlight:#fffdcc;
+  --header-bg:#fffde9;
+  --bg:#fff;
+  --bg-faint:#f3f3f3;
+  --selection:#f7cb4577;
+
+  --brand:#aaa;
+  --brand-dark:#777;
+}
+::-moz-selection {background-color:var(--selection);}
+::selection {background-color:var(--selection);}
+html {width:100vw;overflow-x:hidden;}
+body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;max-width:1200px;text-rendering:optimizeLegibility;padding:0;}
+.row {padding:40px 5vw;position:relative;}
+h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:600;line-height:1.1em;margin-top:0;margin-bottom:0;}
+a {color:var(--text);text-decoration:none;}
+a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;margin-top:10px;padding:8px 14px;}
+b {font-weight:700;}
+emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','android emoji',emojisymbols,'emojione mozilla','twemoji mozilla','segoe ui symbol';font-weight:400;}
+
+img.invert {filter:invert(1) hue-rotate(180deg);}
+
+nav, footer {padding:10px;}
+footer a {border:none;vertical-align:middle;display:inline-block;}
+.fa-linkedin:hover {color:#3177B0;}
+.fa-mailbox:hover {color:#db0029;}
+.fa-sms:hover {color:#54B852;}
+@media (prefers-color-scheme:dark){
+  footer a {color:#777;}
+}
+
+/* BLOG CONTENT */
+article {padding:30px 15px 50px;position:relative;}
+.row.overflow {width:100%;overflow:auto;text-align:center;}
+@media (min-width:820px) {
+  article {max-width:800px;margin:0 auto;}
+  .row.overflow {width:1000px;overflow:visible;}
+}
+
+/* OVERFLOW CONTAINER */
+
+/* FOOTER */
+#footer {background-color:var(--bg-faint);}
+#footer h5 {font-size:1.6em;}
+#footer a {margin-right:20px;}
+#footer a:hover {text-decoration:underline;}
+
+@media (prefers-color-scheme:dark) {
+:root {
+  --text:#fff;
+  --text-med:#bbb;
+  --text-faint:#8f8e83;
+  --text-faint-alpha:#8f8e838f;
+  --text-ultra-faint:#444;
+  --highlight:#5e5a00;
+  --header-bg:#1d1d1d;
+  --bg:#000;
+  --bg-faint:#181818;
+  --selection:#fffcdb42;
+}
+b {font-size:1.15em;line-height:1em;}
+img.invert {filter:invert(1) hue-rotate(180deg);}
+.work a {box-shadow:none;}
+}
