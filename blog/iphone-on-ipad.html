@@ -3,42 +3,24 @@
 <title>Brian Donahue - Gross UX: iPhone apps on iPad</title>
 <meta property='og:image' content='/images/.png'/>
 <base href="https://brimwd.github.io/">
-<link rel="stylesheet" type="text/css" href="case-study-page.css">
-<style type="text/css">
-:root {
---brand:#aaa;
---brand-dark:#777;
-}
-.case-study header {background-color:var(--brand);background-image:radial-gradient(ellipse,var(--brand) 50%, var(--brand-dark));background-size:170% 160%;background-position:90% 100%;color:var(--bg);}
-.case-study header h1 {margin-top:4.2rem;}
-.case-study header p {border-color:var(--bg);}
-.case-study header img {max-width:140px;}
-.case-study h2 {border-color:var(--text);color:var(--text);}
-.case-study .btn {background-color:var(--brand-dark);color:var(--bg);}
 
-@media (prefers-color-scheme:dark){
-	.case-study h2 {color:var(--brand);border-color:var(--brand);}
-	.case-study .btn {background-color:var(--brand);}
-	.case-study a {color:var(--brand-dark);border-bottom-color:var(--brand-dark);}
-}
-@media (prefers-color-scheme:dark) and (min-width:850px){
-	.case-study > *:not(header) {border-color:var(--brand);}
-	.case-study > * {box-shadow:0 3px 15px -3px rgba(128,128,128,0.6);}
-}
-</style>
-<script type="text/javascript">
-	<!--
-	// This code will add a new <script> element just after the current one
-	// It is important to wrap this code in an HTML comment tag to avoid the closing script tag in the lines below to be parsed by the browser
-	if (typeof jQuery == 'undefined')
-		document.write('<script type="text/javascript" src="js/jquery.min.js"></script>');
-	-->
-</script>
-<script id="case-study-page" type="text/javascript" src="js/case-study-page.js"></script>
-<script type="text/javascript" src="js/case-study.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fontawesome/css/all.css" media="all">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="author" content="Brian Donahue">
+<meta name="description" content="UX, web design, & front-end development portfolio for Brian Donahue, Product Designer based in Silicon Valley, California">
+<meta name="keywords" content="product,product design,manager,UX,UX design,UX designer,user experience,design,designer,UI,HTML,CSS,JavaScript,Illustrator,Adobe,Photoshop,freelance,contractor,developer,front-end,front end,portfolio,graphic design,graphics,web,web development,for hire,resume,jQuery,storyboarding,prototyping,research,user research,researcher,information architecture,taxonomy">
+<meta name="format-detection" content="telephone=no">;
+
+<link rel="stylesheet" type="text/css" href="blog.css">
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
 </head>
 <body>
-<article class="case-study blog">
+<nav><i class="fa fa-angle-left"></i> <a href="index.html">Back to portfolio</a></nav>
+<article class="blog">
 	<h1>iPhone Apps Are Still Gross On iPad</h1>
 	<h2>The likely reason why and four ways Apple could improve</h2>
 
@@ -78,13 +60,13 @@
 	<p>Now I've been an Apple-apologizer for years. I've made all manner of excuses for why they're late to release some "critical features" or why they're entitled to make other seemingly bad or incongruous choices, but I just can't see the justification here.</p>
 	<p>With all of the technological progress and the fact that even the iPad Mini (with its "diminutive" resolution of 2048-by-1536) still has more than enough real-estate to render iPhone apps "sideways" so they can appear upright while using your iPad in landscape (as you would with a keyboard).</p>
 	<p>To help visualize the differences between then and now (and illustrate why an update is overdue), I've made some 'simple' graphics showing the various iPad screens relative to the original iPhone's screen (which was a 2-by-3 aspect-ratio, 320x480 rectangle, and is still the default appearance for iPhone apps on iPad).</p>
-	<section class="row">
+	<section class="row overflow">
 		<div class="col-12 col-md-6">
-			<img src="images/blog/iphone-ipad/mini.png" title="a comparison of the screen sizes of an mini iPad in and an iPhone at various scales" />
+			<img src="images/blog/iphone-ipad/mini.png" class="invert" title="a comparison of the screen sizes of an mini iPad in and an iPhone at various scales" />
 			<p class="text-center">iPad Mini</p>
 		</div>
 		<div class="col-12 col-md-6">
-			<img src="images/blog/iphone-ipad/original.png" title="a comparison of the screen sizes of an original iPad in and an original iPhone at various scales" />
+			<img src="images/blog/iphone-ipad/pro.png" class="invert" title="a comparison of the screen sizes of an pro iPad in and an pro iPhone at various scales" />
 			<p class="text-center">iPad Pro (11" & 12.9")</p>
 		</div>
 	</section>
@@ -103,15 +85,22 @@
 
 	<p>Finally, for anyone at Apple who might come across this, I have four easy options for potential solutions that there might still be time to squeeze into the <em>next</em> release of iPad OS.</p>
 
-	<img src="images/blog/iphone-ipad/Option-1.png" title="Option 1: render iPhone apps using the 'Slide Over' feature" />
-	<img src="images/blog/iphone-ipad/Option-2.png" title="Option 2: render iPhone apps in Split-View with the option to add another app for multitasking" />
-	<img src="images/blog/iphone-ipad/Option-3.png" title="Option 3: simplify upgrading iPhone apps with default iPad templates" />
-	<img src="images/blog/iphone-ipad/Option-4.png" title="Option 4: require developers to produce a landscape layout appropriate for iPad as a condition for continuing their relationship with Apple" />
+	<img src="images/blog/iphone-ipad/option-1.png" title="Option 1: render iPhone apps using the 'Slide Over' feature" />
+	<img src="images/blog/iphone-ipad/option-2.png" title="Option 2: render iPhone apps in Split-View with the option to add another app for multitasking" />
+	<img src="images/blog/iphone-ipad/option-3.png" title="Option 3: simplify upgrading iPhone apps with default iPad templates" />
+	<img src="images/blog/iphone-ipad/option-4.png" title="Option 4: require developers to produce a landscape layout appropriate for iPad as a condition for continuing their relationship with Apple" />
 
-	<p>For more design honesty and maybe some wisdom, <a href="http://brimwd.github.io" target="_blank">visit my website</a>, <a href="https://twitter.com/_bmd" target="_blank">drop me a line</a>, or <a href="https://linkedin.com/in/donahuebrian" target="_blank">offer me a job</a>.</p>
+	<p>For more design honesty and maybe some wisdom, <a href="https://brimwd.github.io" target="_blank">visit my website</a>, <a href="https://twitter.com/_bmd" target="_blank">drop me a line</a>, or <a href="https://linkedin.com/in/donahuebrian" target="_blank">offer me a job</a>.</p>
 
 	<p>Thanks for reading.</p>
 	<p>See ya' later, Cowpoke.</p>
 </article>
+<footer><p>Made by B Donahue</p>
+	<p>
+		<a href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i></a> &bullet;
+		<a href="mailto:brimwd@gmail.com"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a> &bullet;
+		<a href="sms:971-222-9892"><i class="fas fa-sms fa-2x" aria-label="email"></i></a>
+	</p>
+</footer>
 </body>
 </html>
