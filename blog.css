@@ -11,21 +11,22 @@
   --selection:#f7cb4577;
 
   --brand:#aaa;
-  --brand-dark:#777;
+  --brand-dark:#555;
 }
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
 html {width:100vw;overflow-x:hidden;}
 body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;max-width:100vw;text-rendering:optimizeLegibility;overflow-x:auto;padding:0;}
-.row {padding:40px 5vw;position:relative;}
-h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:600;line-height:1.1em;margin-top:0;margin-bottom:0;}
+.row {position:relative;}
+h1, h2, h3, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:normal;line-height:1.1em;margin-top:0;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.3em;}
+h5 {font-size:1.2em;font-weight:600;}
 a {color:var(--text);text-decoration:none;}
 a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;margin-top:10px;padding:8px 14px;}
 b {font-weight:700;}
 emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','android emoji',emojisymbols,'emojione mozilla','twemoji mozilla','segoe ui symbol';font-weight:400;}
-
 img {max-width:100%;}
-img.invert {filter:invert(1) hue-rotate(180deg);}
 
 nav, footer {padding:10px;}
 footer a {border:none;vertical-align:middle;display:inline-block;}
@@ -36,13 +37,26 @@ footer a {border:none;vertical-align:middle;display:inline-block;}
   footer a {color:#777;}
 }
 
+hr {width:80%;margin:50px auto;}
+
 /* BLOG CONTENT */
 article {padding:30px 15px 50px;position:relative;}
-.row.overflow {text-align:center;}
+.overflow {text-align:center;}
 @media (min-width:820px) {
-  article {max-width:800px;margin:0 auto;}
-  .row.overflow {width:1400px;}
+  article {max-width:768px;margin:0 auto;}
+  .overflow {width:calc(100vw - 30px);margin-left:calc(-50vw + 385px);overflow-x:auto;}
+  .overflow .row {width:1600px;margin:0 auto;}
+  .clear {clear:both;}
+  img.can-zoom {float:right;clear:right;max-width:400px;margin:0 -30px 12px 16px;transition:all .3s;}
+  img.can-zoom.zoom {max-width:100%;margin-right:0;}
 }
+b.big {font-size:1.6em;font-weight:600;color:var(--brand-dark);}
+
+/* SMS */
+blockquote.sms p {padding:5px 8px;border-radius:12px;background-color:#ababab87;width:fit-content;max-width:400px;position:relative;}
+blockquote.sms p + p {margin-top:-10px;}
+blockquote.sms p:last-child::before, blockquote.sms p:last-child::after {background-color:#ababab87;border-bottom-right-radius:100%;content:'';display:block;width:16px;height:12px;position:absolute;top:100%;left:8px;}
+blockquote.sms p:last-child::after {width:4px;background-color:var(--bg);}
 
 /* OVERFLOW CONTAINER */
 
