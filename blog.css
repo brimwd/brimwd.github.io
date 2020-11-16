@@ -28,7 +28,7 @@ b {font-weight:700;}
 emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','android emoji',emojisymbols,'emojione mozilla','twemoji mozilla','segoe ui symbol';font-weight:400;}
 img {max-width:100%;}
 
-nav, footer {padding:10px;}
+nav, footer {padding:15px 0;}
 footer a {border:none;vertical-align:middle;display:inline-block;}
 .fa-linkedin:hover {color:#3177B0;}
 .fa-mailbox:hover {color:#db0029;}
