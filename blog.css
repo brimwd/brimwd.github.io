@@ -37,7 +37,7 @@ footer a {border:none;vertical-align:middle;display:inline-block;}
   footer a {color:#777;}
 }
 
-hr {width:80%;margin:50px auto;}
+hr {width:80%;margin:50px auto;border-color:var(--text-med);}
 
 /* BLOG CONTENT */
 article {padding:30px 15px 50px;position:relative;}
@@ -78,6 +78,9 @@ blockquote.sms p:last-child::after {width:4px;background-color:var(--bg);}
   --bg:#000;
   --bg-faint:#181818;
   --selection:#fffcdb42;
+
+  --brand:#555;
+  --brand-dark:#aaa;
 }
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
