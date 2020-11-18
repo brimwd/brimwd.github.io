@@ -48,6 +48,7 @@ article {padding:30px 15px 50px;position:relative;}
   .overflow .row {width:1600px;margin:0 auto;}
   .clear {clear:both;}
   img.can-zoom {cursor:pointer;float:right;clear:right;max-width:400px;margin:0 -30px 12px 16px;transition:all .3s;}
+  img.can-zoom.narrow {max-width:200px;}
   img.can-zoom.zoom {max-width:100%!important;margin-right:0;}
   img.can-zoom.zoom + * {clear:both;}
 }
