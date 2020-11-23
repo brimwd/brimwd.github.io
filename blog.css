@@ -65,7 +65,7 @@ b.big {font-size:1.6em;font-weight:600;color:var(--text-med);}
   .overflow::after {content:'SCROLL';color:var(--text-faint);display:block;font-size:280px;font-weight:bold;letter-spacing:6vw;max-width:1600px;opacity:.4;overflow:hidden;text-align:left;position:absolute;top:2%;left:0;width:1600px;z-index:-1;transition:all .4s ease-in;}
   .overflow .row {width:1600px;margin:0 auto;}
   .overflow .col-lg-6 {-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}
-  .clear {clear:both;}
+  figure.half-width img {margin:0 auto;}
 }
 @media (min-width:1600px) {
   .overflow {cursor:default;}
