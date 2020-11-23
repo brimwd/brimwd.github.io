@@ -87,11 +87,14 @@ figcaption::after {content:'';display:block;clear:both;}
   figure {margin:3rem 0 2rem;}
   figure img {pointer-events:none;}
   .sms figcaption {position:absolute;top:50%;left:30px;right:30px;}
-  figure.sms::after {color:var(--text-med);content:'(click to show image)';display:block;text-align:center;margin-top:.4em;}
   figure.sms p {transform:scale(1.2);margin-top:1em;max-width:400px;}
-  figure:active.sms p {opacity:0;top:-15px;transition:top .15s ease-out, opacity .12s ease-in;transition-delay:0s, .05s;}
-  figure:active.sms p:nth-child(2) {transition-delay:.08s, .13s;}
-  figure:active.sms p:nth-child(3) {transition-delay:.16s, .21s;}
+
+  @media (hover: hover) {
+    figure.sms::after {color:var(--text-med);content:'(click to show image)';display:block;text-align:center;margin-top:.4em;}
+    figure:active.sms p {opacity:0;top:-15px;transition:top .15s ease-out, opacity .12s ease-in;transition-delay:0s, .05s;}
+    figure:active.sms p:nth-child(2) {transition-delay:.08s, .13s;}
+    figure:active.sms p:nth-child(3) {transition-delay:.16s, .21s;}
+  }
 
   figcaption {max-width:unset;}
   figure.half-width {float:right;margin:0 -20px 12px 25px;max-width:280px;}
