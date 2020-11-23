@@ -47,7 +47,7 @@ footer a:hover {color:gold;text-decoration:none;}
   footer a.icon {color:#777;}
 }
 
-hr {border-color:var(--text-ultra-faint);margin:50px auto;width:40%;}
+hr {border-color:var(--text-ultra-faint);clear:right;margin:50px auto;width:40%;}
 
 /* BLOG CONTENT */
 article {padding:30px 15px 50px;position:relative;}
