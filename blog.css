@@ -78,8 +78,9 @@ blockquote p:first-child::before, blockquote p:first-child::after {content:unset
 figure.sms {cursor:pointer;user-select:none;text-align:left;}
 .sms p {background-color:var(--incoming-msg);border-radius:12px;color:var(--incoming-text);margin:.4rem 0;padding:5px 8px;width:fit-content;max-width:80%;position:relative;}
 figure.sms p {box-shadow:0 0px 25px #2a2a2a61;clear:right;transition:all .6s ease-out;top:0px;}
+figure.sms p::after {background-image:radial-gradient(ellipse at bottom left, var(--bg), var(--gradient-shadow));}
 .sms p::before, .sms p::after {background-color:var(--incoming-msg);border-bottom-right-radius:100%;content:'';display:block;width:16px;height:12px;position:absolute;top:100%;left:8px;}
-.sms p::after {width:4px;background-image: radial-gradient(ellipse at bottom left, var(--bg), var(--gradient-shadow));}
+.sms p::after {background-color:var(--bg);width:4px;}
 .sms p.outgoing {background-color:var(--outgoing-msg);color:var(--outgoing-text);float:right;}
 .sms p.outgoing::before, .sms p.outgoing::after {background-color:var(--outgoing-msg);left:unset;right:8px;transform:scaleX(-1);}
 .sms p.outgoing::after {width:4px;right:7px;background-color:var(--bg);}
