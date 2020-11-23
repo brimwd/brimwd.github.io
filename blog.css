@@ -10,7 +10,7 @@
   --bg-faint:#f3f3f3;
   --selection:#f7cb4577;
 
-  --gold:#ffa600;
+  --gold:#ffd024;
 
   --outgoing-msg:#3986f7;
   --outgoing-text:#ffffff;
@@ -27,7 +27,7 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 
 .row {position:relative;}
 h1, h2, h3, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:normal;line-height:1.1em;margin-top:0;}
-h1 {color:var(--text-faint);text-shadow:1px 1px 5px var(--bg-faint), 1px 0 5px var(--bg-faint), 0px 1px 5px var(--bg-faint)}
+h1 {color:var(--gold);text-shadow:1px 1px 5px var(--bg-faint), 1px 0 5px var(--bg-faint), 0px 1px 5px var(--bg-faint)}
 h2 {font-size:1.3em;}
 h3 {font-size:1.3em;}
 h5 {font-size:1.2em;font-weight:600;}
