@@ -76,7 +76,7 @@ figure.sms {cursor:pointer;user-select:none;text-align:left;}
 .sms p {background-color:var(--incoming-msg);border-radius:20px;color:var(--incoming-text);line-height:1.2em;margin:.4rem 0;padding:10px 14px;width:fit-content;position:relative;}
 figure.sms p {box-shadow:0 0px 25px #2a2a2a61;clear:right;font-size:16px;max-width:80%;transition:top .6s ease-out;top:0px;}
 figure.sms p::after {background-image:radial-gradient(ellipse at bottom left, var(--bg), var(--gradient-shadow));}
-.sms p::before, .sms p::after {background-color:var(--incoming-msg);border-bottom-right-radius:100%;content:'';display:block;width:16px;height:12px;position:absolute;top:100%;left:8px;}
+.sms p::before, .sms p::after {background-color:var(--incoming-msg);border-bottom-right-radius:100%;content:'';display:block;width:16px;height:12px;position:absolute;top:95%;left:8px;}
 .sms p::after {background-color:var(--bg);width:4px;}
 .sms p.outgoing {background-color:var(--outgoing-msg);color:var(--outgoing-text);float:right;}
 .sms p.outgoing::before, .sms p.outgoing::after {background-color:var(--outgoing-msg);left:unset;right:8px;transform:scaleX(-1);}
@@ -87,8 +87,8 @@ figcaption::after {content:'';display:block;clear:both;}
 @media (min-width:820px) {
   figure {margin:3rem 0 2rem;}
   figure img {pointer-events:none;}
-  .sms figcaption {position:absolute;top:50%;left:30px;right:30px;}
-  figure.sms p {transform:scale(1.2);margin-top:1em;max-width:400px;}
+  .sms figcaption {position:absolute;top:43%;left:30px;right:30px;}
+  figure.sms p {transform:scale(1.1);margin-top:1em;max-width:400px;}
 
   @media (hover: hover) {
     figure.sms::after {color:var(--text-med);content:'(click to show image)';display:block;text-align:center;margin-top:.4em;}
