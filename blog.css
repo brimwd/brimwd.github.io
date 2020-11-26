@@ -72,9 +72,9 @@ figure.half-width img {display:block;margin:10px auto;max-width:100%;}
 /* SMS */
 blockquote p:first-child {margin-bottom:5px;}
 blockquote p:first-child::before, blockquote p:first-child::after {content:unset;}
-figure.sms {cursor:pointer;user-select:none;text-align:left;max-width:80%;}
+figure.sms {cursor:pointer;user-select:none;text-align:left;}
 .sms p {background-color:var(--incoming-msg);border-radius:20px;color:var(--incoming-text);line-height:1.2em;margin:.4rem 0;padding:10px 14px;width:fit-content;position:relative;}
-figure.sms p {box-shadow:0 0px 25px #2a2a2a61;clear:right;font-size:16px;transition:top .6s ease-out;top:0px;}
+figure.sms p {box-shadow:0 0px 25px #2a2a2a61;clear:right;font-size:16px;max-width:80%;transition:top .6s ease-out;top:0px;}
 figure.sms p::after {background-image:radial-gradient(ellipse at bottom left, var(--bg), var(--gradient-shadow));}
 .sms p::before, .sms p::after {background-color:var(--incoming-msg);border-bottom-right-radius:100%;content:'';display:block;width:16px;height:12px;position:absolute;top:100%;left:8px;}
 .sms p::after {background-color:var(--bg);width:4px;}
