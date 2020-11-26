@@ -21,7 +21,7 @@
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
 html {width:100vw;overflow-x:hidden;}
-body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;max-width:100vw;text-rendering:optimizeLegibility;overflow-x:auto;padding:0;}
+body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:18px;line-height:2rem;margin:0 auto;max-width:100vw;text-rendering:optimizeLegibility;overflow-x:auto;padding:0;}
 nav, footer {padding:15px 0;}
 nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:bottom;}
 
@@ -47,6 +47,7 @@ article {padding:30px 15px 50px;position:relative;}
 figure {position:relative;text-align:center;}
 figure.half-width img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
+.dropcap {font-size:73px;float:left;line-height:3.8rem;font-weight:bold;padding-right:0.6rem;}
 
 @media (min-width:820px) {
   h1 {font-size:62px;}
@@ -59,7 +60,7 @@ figure.half-width img {display:block;margin:10px auto;max-width:100%;}
 @media (min-width:820px) {
   .overflow {cursor:ew-resize;width:100vw;margin-left:calc(-50vw + 369px);overflow-x:auto;position:relative;}
   .overflow:hover::after {opacity:0;letter-spacing:18vw;}
-  .overflow::after {content:'SCROLL';color:var(--text-faint);display:block;font-size:280px;font-weight:bold;letter-spacing:6vw;max-width:1600px;opacity:.4;overflow:hidden;text-align:left;position:absolute;top:2%;left:0;width:1600px;z-index:-1;transition:all .4s ease-in;}
+  .overflow::after {content:'SCROLL';color:var(--text-faint);display:block;font-size:280px;font-weight:bold;letter-spacing:6vw;line-height:1.55em;max-width:1600px;opacity:.4;overflow:hidden;text-align:left;position:absolute;top:0;left:0;width:1600px;z-index:-1;transition:all .4s ease-in;}
   .overflow .row {width:1600px;margin:0 auto;}
   .overflow .col-lg-6 {-ms-flex: 0 0 50%;flex: 0 0 50%;max-width: 50%;}
 }
@@ -99,7 +100,7 @@ figcaption::after {content:'';display:block;clear:both;}
   figcaption {max-width:unset;}
   figure.half-width {float:right;margin:0 -20px 12px 25px;max-width:280px;}
   figure.full-width {margin:1em 0 2em;}
-  .full-width figcaption {font-size:1.4em;margin-top:0;}
+  .full-width figcaption {font-size:1.2em;margin-top:0;max-width:600px;}
 }
 
 /* FOOTER */
