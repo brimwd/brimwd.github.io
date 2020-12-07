@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,200;0,400;0,600;1,400;1,600&display=swap');
 :root {
   --text:#2a2a2a;
   --text-med:#bbb;
@@ -21,17 +22,18 @@
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
 html {width:100vw;overflow-x:hidden;}
-body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:18px;line-height:2rem;margin:0 auto;max-width:100vw;text-rendering:optimizeLegibility;overflow-x:auto;padding:0;}
+body {background-color:var(--bg);color:var(--text);font-family:'Bitter', serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:18px;line-height:2rem;margin:0 auto;max-width:100vw;text-rendering:optimizeLegibility;overflow-x:auto;padding:0;}
 nav, footer {padding:15px 0;}
 nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:bottom;}
 
 .row {position:relative;}
 h1, h2, h3, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:normal;line-height:1.1em;margin-top:0;}
-h1 {color:var(--gold);text-shadow:1px 1px 5px var(--bg-faint), 1px 0 5px var(--bg-faint), 0px 1px 5px var(--bg-faint)}
+h1 {font-weight:lighter;color:var(--gold);text-shadow:1px 1px 5px var(--bg-faint), 1px 0 5px var(--bg-faint), 0px 1px 5px var(--bg-faint)}
 h2 {font-size:1.3em;}
 h3 {font-size:1.3em;}
 h5 {font-size:1.2em;font-weight:600;}
 
+strong {font-weight:600;}
 a {color:var(--text);text-decoration:none;}
 a:hover {color:var(--gold);text-decoration:none;}
 a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;margin-top:10px;padding:8px 14px;}
@@ -45,7 +47,7 @@ hr {border-color:var(--text-ultra-faint);clear:right;margin:50px auto;width:40%;
 /* BLOG CONTENT */
 article {padding:30px 15px 50px;position:relative;}
 figure {position:relative;text-align:center;}
-figure.half-width img {display:block;margin:10px auto;max-width:100%;}
+figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
 .dropcap {font-size:73px;float:left;line-height:3.8rem;font-weight:bold;padding-right:0.6rem;}
 
@@ -99,6 +101,7 @@ figcaption::after {content:'';display:block;clear:both;}
 
   figcaption {max-width:unset;}
   figure.half-width {float:right;margin:0 -20px 12px 25px;max-width:280px;}
+  figure.float-left {float:left;margin:0 45px 12px -40px;max-width:460px;}
   figure.full-width {margin:1em 0 2em;}
   .full-width figcaption {font-size:1.2em;margin-top:0;max-width:600px;}
 }
