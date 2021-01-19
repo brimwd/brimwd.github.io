@@ -37,7 +37,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #overview h3 {color:var(--text);font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:7vh;text-transform:uppercase;}
 #overview h3 divider::before {content:',';}
 #overview h3 divider:last-of-type::after {content:'& ';color:var(--text);}
-#overview img {max-width:100%;}
+#overview img {max-width:calc(100% + 12vw);margin-left:-6vw;}
 @media screen and (min-width:375px) {
   #overview h1 {font-size:37px;line-height:inherit;}
   #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-3px;overflow-y:hidden;}
