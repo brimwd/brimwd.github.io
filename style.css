@@ -213,10 +213,8 @@ figure.sux h4 {margin-top:-12px;}
   .flex-grid.phase a.offset-3 {margin-left:calc(3 * 400px + 3 * 40px);}
   .flex-grid.phase a.offset-4 {margin-left:calc(4 * 400px + 4 * 40px);}
 }
-@media screen and (min-width:970px) {
-  .flex-grid.date a {width:calc(31%);}
-}
-
+@media screen and (min-width:970px) {.flex-grid.date a {width:calc(31%);}}
+@media screen and (min-width:1200px) {.flex-grid.phase {margin-left:calc(-50vw + 520px);width:88vw;}}
 
 /* FOOTER */
 #footer {background-color:var(--bg-faint);}
