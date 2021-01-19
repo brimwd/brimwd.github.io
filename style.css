@@ -179,7 +179,7 @@ figure.sux h4 {margin-top:-12px;}
   .work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
   .flex-grid.date .headings {display:none;}
   .flex-grid.date a {margin:2% 0;width:calc(48%);}
-  .flex-grid.other a {margin:2% 0;width:calc(48% - 30px);margin-bottom:60px;}
+  .flex-grid.other a {margin:2% 0;width:calc(48%);margin-bottom:60px;}
   /*.work img {}*/
 
   /* ALERT */
