@@ -7,8 +7,7 @@ $(document).ready(function() {
     var sortLink = $(this);
 
     // toggle string
-    $(sortLink.find('span')).removeClass('hidden');
-    $(sortLink.find('span[class="'+sortLink.data('value')+'"]')).addClass('hidden');
+    $($('#sort-by').find('span.'+sortLink.data('value'))).addClass('hidden').siblings('span').removeClass('hidden');
 
     if(sortLink.data('value') === 'phase') { // sort by date
       $(sortLink.find('i')).removeClass('fa-sort-shapes-down-alt').addClass('fa-sort-shapes-up-alt');
@@ -105,6 +104,7 @@ $(window).on('resize', function(){
 
   if (window.innerWidth < 670) {
     if ($('#sort-by').data('value') === 'phase') {
+      $($('#sort-by').find('span.date')).removeClass('hidden').siblings('span').addClass('hidden');
       $($('#sort-by').find('i')).removeClass('fa-sort-shapes-down-alt').addClass('fa-sort-shapes-up-alt');
       $('#sort-by').data('value', 'date');
       $('.alert').hide();
