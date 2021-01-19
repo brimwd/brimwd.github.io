@@ -102,19 +102,23 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #approach {display:none;}
 
 /* WORK */
-.work {padding-bottom:0;}
+.work {padding-bottom:40px;}
 .work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 180ms;transition-timing-function:ease-out;}
 .work h4 {margin:-20px 0 0;}
 .work p {margin:.3em 0 .6em;}
 
-.work .title {float:left;vertical-align:middle;}
 .work nav {text-align:right;}
 #sort-by {border:2px solid var(--text-faint);border-radius:6px;cursor:pointer;padding:6px;vertical-align:middle;}
 #sort-by:hover {border-color:var(--text-faint);}
 #sort-by * {user-select:none;}
+
+@media (max-width:669px) {
+  /* WHILE SORT-BY IS BEING DEVELOPED ON MOBILE */
+  .alert, .flex-grid .headings, #sort-by {display:none;}
+}
 @media (min-width:670px) {#sort-by {border-color:transparent;}}
 
-.flex-grid a {display:block;position:relative;width:fit-content;}
+.flex-grid a {display:block;position:relative;width:100%;margin-top:20px;}
 .flex-grid figure{
   align-items:center;
   background:no-repeat center;
@@ -176,8 +180,11 @@ figure.sux h4 {margin-top:-12px;}
 
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
+  .work {padding-bottom:0;}
+  .work .title {float:left;vertical-align:middle;}
   .work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
   .flex-grid.date .headings {display:none;}
+  .flex-grid a {width:fit-content;}
   .flex-grid.date a {margin:2% 0;width:calc(48%);}
   .flex-grid.other a {margin:2% 0;width:calc(48%);margin-bottom:60px;}
   /*.work img {}*/

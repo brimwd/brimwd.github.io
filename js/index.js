@@ -21,9 +21,8 @@ $(document).ready(function() {
     }
 
     $('.flex-grid.phase, .flex-grid.date').removeClass().addClass('flex-grid '+sortLink.data('value'));
-
-
   });
+
 
   $('a.dynamicLoad').on('click', function(event){
     // stop the link from firing
@@ -95,7 +94,7 @@ function renderPage (pageHTML) {
 
 var resize;
 
-$('body').on('resize', function(){
+$(window).on('resize', function(){
   clearTimeout(resize);
 
   resize = setTimeout(function(){
@@ -103,6 +102,15 @@ $('body').on('resize', function(){
       adjustOffset();
     }
   }, 50);
+
+  if (window.innerWidth < 670) {
+    if ($('#sort-by').data('value') === 'phase') {
+      $($('#sort-by').find('i')).removeClass('fa-sort-shapes-down-alt').addClass('fa-sort-shapes-up-alt');
+      $('#sort-by').data('value', 'date');
+      $('.alert').hide();
+      $('.flex-grid.phase').removeClass('phase').addClass('date');
+    }
+  }
 });
 
 function adjustOffset() {
