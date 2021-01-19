@@ -3,6 +3,28 @@ $(document).ready(function() {
   var targetPageLoaded;
 
 
+  $('#sort-by').on('click', function(){
+    var sortLink = $(this);
+
+    // toggle string
+    $(sortLink.find('span')).removeClass('hidden');
+    $(sortLink.find('span[class="'+sortLink.data('value')+'"]')).addClass('hidden');
+
+    if(sortLink.data('value') === 'phase') { // sort by date
+      $(sortLink.find('i')).removeClass('fa-sort-shapes-down-alt').addClass('fa-sort-shapes-up-alt');
+      sortLink.data('value', 'date');
+      $('.alert').hide();
+    } else { // sort by phase
+      $(sortLink.find('i')).removeClass('fa-sort-shapes-up-alt').addClass('fa-sort-shapes-down-alt');
+      sortLink.data('value', 'phase');
+      $('.alert').fadeIn();
+    }
+
+    $('.flex-grid.phase, .flex-grid.date').removeClass().addClass('flex-grid '+sortLink.data('value'));
+
+
+  });
+
   $('a.dynamicLoad').on('click', function(event){
     // stop the link from firing
     event.preventDefault();

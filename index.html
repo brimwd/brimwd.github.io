@@ -47,60 +47,121 @@
 		</video>
 	</section> -->
 	<section id="work" class="row work">
-		<h2>Projects</h2>
-		<div class="flex-grid">
-			<a class="tmo caseStudyLink dynamicLoad" href="pages/tmo.html" title="'T&#8209;Mobile Cloud' Case Study" data-tags="Case Study,UI Design,Systems Design">
-				<img src="images/tmo/tmo-logo.svg" alt="T-Mobile logo" />
-				<h4>Cloud service for everyone</h4>
+
+		<h2 class="title">Case Studies</h2>
+		<nav>
+			<a id="sort-by" data-value="phase">
+				<span class="date hidden">by completion date</span><span class="phase">by design phase</span><i class="fad fa-sort-shapes-down-alt" style="padding-left:5px;--fa-secondary-color:var(--gold);--fa-secondary-opacity:1.0;" aria-hidden="true"></i>
 			</a>
-			<!-- <a class="serviceNow dynamicLoad caseStudyLink" href="pages/servicenow.html" title="'ServiceNow - Floating Navigation' Case Study" data-tags="Case Study,Presentation">
-				<img src="" alt="" />
-				<div>
-					<h4>ServiceNow Floating Navigation</h4>
-					<p>So nice we did it twice</p>
-				</div>
+		</nav>
+
+		<aside class="alert">January 19, 2021 - Update: This sorting feature is new and under development</aside>
+
+		<div class="flex-grid phase">
+			<ol class="headings">
+				<li>Discovery</li>
+				<li>Research</li>
+				<li>Planning</li>
+				<li>Design</li>
+				<li>Testing</li>
+				<li>Iteration</li>
+			</ol>
+			<!-- <a class="dynamicLoad caseStudyLink col-2" href="pages/servicenow.html" title="'ServiceNow - Optimization' Case Study" data-tags="Case Study,Presentation">
+				<figure class="sn-nav">
+					<img src="" alt="" />
+					<div>
+						<h4>ServiceNow Floating Navigation</h4>
+						<p>So nice we did it twice</p>
+					</div>
+				</figure>
 			</a> -->
-			<a class="bluetooth caseStudyLink dynamicLoad" href="pages/bluetooth.html" title="'Bluetooth Design System' Case Study" data-tags="Case Study,Design System">
-				<img src="images/bluetooth/bluetooth.svg" alt="Bluetooth icon" />
-				<h4>Designing a design system</h4>
+			<!-- <a class="dynamicLoad caseStudyLink col-6" href="pages/servicenow.html" title="'ServiceNow - Partner Finder' Case Study" data-tags="Case Study,Presentation">
+				<figure class="sn-nav">
+					<img src="" alt="" />
+					<div>
+						<h4>ServiceNow Floating Navigation</h4>
+						<p>So nice we did it twice</p>
+					</div>
+				</figure>
+			</a> -->
+			<a class="caseStudyLink dynamicLoad col-6" href="pages/tmo.html" title="'T&#8209;Mobile Cloud' Case Study" data-tags="Case Study,UI Design,Systems Design">
+				<figure class="tmo">
+					<img src="images/tmo/tmo-logo.svg" alt="T-Mobile logo" />
+					<h4>Cloud service for everyone</h4>
+				</figure>
 			</a>
-			<a class="amazon caseStudyLink dynamicLoad" href="pages/amazon-instant.html" title="'Amazon - Instant Fulfillment' Case Study" data-tags="Case Study,Presentation">
-				<img src="images/amazon.svg" alt="Amazon logo" />
-				<h4>'Instant Fulfillment'</h4>
+			<!-- <a class="dynamicLoad caseStudyLink" href="pages/servicenow.html" title="'ServiceNow - Floating Navigation' Case Study" data-tags="Case Study,Presentation">
+				<figure class="serviceNow">
+					<img src="" alt="" />
+					<div>
+						<h4>ServiceNow Floating Navigation</h4>
+						<p>So nice we did it twice</p>
+					</div>
+				</figure>
+			</a> -->
+			<a class="caseStudyLink dynamicLoad col-5" href="pages/bluetooth.html" title="'Bluetooth Design System' Case Study" data-tags="Case Study,Design System">
+				<figure class="bluetooth">
+					<img src="images/bluetooth/bluetooth.svg" alt="Bluetooth icon" />
+					<h4>Designing a design system</h4>
+				</figure>
 			</a>
-			<a class="amazon caseStudyLink dynamicLoad" href="pages/amazon-millennials.html" title="'Amazon - Millennials Research' Case Study" data-tags="Case Study">
-				<img src="images/amazon.svg" alt="Amazon logo" />
-				<h4>Collecting data; Preserving trust</h4>
+			<a class="caseStudyLink dynamicLoad col-3" href="pages/amazon-instant.html" title="'Amazon - Instant Fulfillment' Case Study" data-tags="Case Study,Presentation">
+				<figure class="amazon">
+					<img src="images/amazon.svg" alt="Amazon logo" />
+					<h4>'Instant Fulfillment'</h4>
+				</figure>
 			</a>
-			<a class="sux caseStudyLink dynamicLoad" href="pages/sux.html" title="'ScheduleUX' Case Study" data-tags="Case Study,Incomplete">
-				<img src="images/sux/sux-navy-alt.svg" alt="Schedule UX" />
-				<h4>Founding a startup</h4>
+			<a class="caseStudyLink dynamicLoad col-2" href="pages/amazon-millennials.html" title="'Amazon - Millennials Research' Case Study" data-tags="Case Study">
+				<figure class="amazon instant">
+					<img src="images/amazon.svg" alt="Amazon logo" />
+					<h4>Collecting data; Preserving trust</h4>
+				</figure>
 			</a>
-			<a class="dictionary dynamicLoad caseStudyLink" href="pages/dictionary.html" title="Mac OS Dictionary plug-in">
-				<img src="images/dictionary/pm-dictionary.svg" alt="Product Management Reference Dictionary" />
-				<h4>A quick reference for tech terms</h4>
+			<!-- <a class="caseStudyLink dynamicLoad" href="pages/sux.html" title="'ScheduleUX' Case Study" data-tags="Case Study,Incomplete">
+				<figure class="sux">
+					<img src="images/sux/sux-navy-alt.svg" alt="Schedule UX" />
+					<h4>Founding a startup</h4>
+				</figure>
+			</a> -->
+			<a class="dynamicLoad caseStudyLink col-3" href="pages/dictionary.html" title="Mac OS Dictionary plug-in">
+				<figure class="dictionary">
+					<img src="images/dictionary/pm-dictionary.svg" alt="Product Management Reference Dictionary" />
+					<h4>A quick reference for tech terms</h4>
+				</figure>
 			</a>
-			<a class="lending dynamicLoad" href="pages/lendinghome.html" title="'LendingHome Strategy' Interview Deck" data-tags="Strategy,Presentation">
-				<img src="images/lendinghome/lh-logo.svg" alt="Lending Home logo" />
-				<h4>Opportunities in blind spots</h4>
+			<a class="dynamicLoad" href="pages/lendinghome.html" title="'LendingHome Strategy' Interview Deck" data-tags="Strategy,Presentation">
+				<figure class="lending">
+					<img src="images/lendinghome/lh-logo.svg" alt="Lending Home logo" />
+					<h4>Opportunities in blind spots</h4>
+				</figure>
 			</a>
-			<a class="loveEarwax dynamicLoad" href="pages/love-earwax.html" title="I love earwax Presentation" data-tags="Teaching,Presentation">
-				<div class="img-container">
-					<img src="images/earwax/earwax-bg.png" alt="I love earwax" />
-					<img src="images/earwax/earwax-bg2.png" alt="" />
-				</div>
-				<h4>An introduction to UX</h4>
+			<a class="caseStudyLink dynamicLoad col-3" href="pages/bob-books.html" title="'Bob Books' Case Study" data-tags="Case Study,Game Design">
+				<figure class="bob">
+					<img src="images/bob-books/bob-dark.svg" alt="Bob Books logo" />
+					<h4>Rewarding Learning</h4>
+				</figure>
 			</a>
-			<a class="mentoring dynamicLoad" href="pages/web-foundations.html" title="'Web Foundations' Presentation" data-tags="Teaching,Presentation">
-				<img src="images/icon-walrus.png" alt="'Walrus Model' sketch" />
-				<div>
-					<h4>"Web Foundations"</h4>
-					<p>A crash course in Systems-Design</p>
-				</div>
+		</div>
+
+		<h2 style="margin-top:20px">Teaching Product Design</h2>
+		<div class="flex-grid other">
+			<a class="dynamicLoad" href="pages/love-earwax.html" title="I love earwax Presentation" data-tags="Teaching,Presentation">
+				<figure class="loveEarwax">
+					<div class="img-container">
+						<img src="images/earwax/earwax-bg.png" alt="I love earwax" />
+						<img src="images/earwax/earwax-bg2.png" alt="" />
+					</div>
+					<h4>An introduction to UX</h4>
+				</figure>
 			</a>
-			<a class="bob caseStudyLink dynamicLoad" href="pages/bob-books.html" title="'Bob Books' Case Study" data-tags="Case Study,Game Design">
-				<img src="images/bob-books/bob-dark.svg" alt="Bob Books logo" />
-				<h4>Rewarding Learning</h4>
+			<a class="dynamicLoad" href="pages/web-foundations.html" title="'Web Foundations' Presentation" data-tags="Teaching,Presentation">
+				<figure class="mentoring">
+					<img src="images/icon-walrus.png" alt="'Walrus Model' sketch" />
+					<div>
+						<h4>"Web Foundations"</h4>
+						<p>A crash course in Systems-Design</p>
+					</div>
+				</figure>
 			</a>
 			<!-- <a class="mars" href="" title="'Mars' Illustration Series" data-tags="illustrations,scripts">
 				<img src="" alt="" />
