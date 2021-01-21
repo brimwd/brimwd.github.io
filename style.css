@@ -180,7 +180,7 @@ figure.sux h4 {margin-top:-12px;}
 
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
-  .work {padding-bottom:0;}
+  .work {overflow-x:hidden;padding-bottom:0;}
   .work .title {float:left;vertical-align:middle;}
   .work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
   .flex-grid.date .headings {display:none;}
