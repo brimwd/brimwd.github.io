@@ -220,6 +220,7 @@ figure.sux h4 {margin-top:-12px;}
   .flex-grid .headings li:last-child {width:calc(95vw - 710px);}
 }
 @media screen and (min-width:1200px) {
+  .work {overflow-x:unset;}
   .flex-grid.phase {margin-left:calc(-50vw + 520px);width:88vw;}
   .flex-grid .headings {padding-right:10vw;}
   .flex-grid .headings li:last-child {width:calc(90vw - 710px);}
