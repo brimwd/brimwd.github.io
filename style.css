@@ -124,7 +124,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   background:no-repeat center;
   background-size:100% 100%;
   border-radius:8px;
-  box-shadow:0 0 13px -4px var(--text-med);
+  box-shadow:0 0 13px -9px var(--text-med);
   display:flex;
   flex-flow:column;
   font-weight:600;
@@ -140,7 +140,8 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   transition-timing-function:ease-out;
   z-index:1;
 }
-.flex-grid a:hover figure {box-shadow:0 10px 30px var(--text-med);transform:scale(1.05);}
+.flex-grid.date figure {filter:saturate(0);}
+.flex-grid a:hover figure {box-shadow:0 10px 30px var(--text-med);filter:saturate(1);transform:scale(1.05);}
 .flex-grid a:hover img {max-height:108px;max-width:86%;}
 .flex-grid figure[data-tags*="Presentation"]::before {opacity:.5;content:'\f685';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
 .flex-grid figure[data-tags*="Incomplete"]::before {opacity:.5;content:'\f85e';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
@@ -157,10 +158,10 @@ figure.bob {background:url(images/bob-books/bob-bg.jpg) no-repeat center;backgro
 figure.bob:hover {background-size:100% 100%;}
 figure.bob h4 {margin-top:-10px;}
 /* DICTIONARY */
-figure.dictionary {background:#ffdc68;color:black;}
+figure.dictionary {background:linear-gradient(12deg, #ab4d74, #e03c3e 85%);color:white;}
 figure.dictionary h4 {margin-top:-30px;}
-figure.dictionary img {max-width:88%;}
-figure.dictionary:hover img {max-width:93%;}
+figure.dictionary img {max-width:84%;}
+a:hover figure.dictionary img {max-width:89%;}
 /* TMO */
 figure.tmo {background:url(images/tmo/topography-magenta.png) repeat center;background-size:400px 400px;}
 figure.tmo:hover {background-size:370px 370px;}
@@ -171,7 +172,7 @@ figure.loveEarwax div {position:relative;}
 figure.loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
 figure.loveEarwax:hover img:last-child {opacity:1;}
 /* LENDINGHOME */
-figure.lending {background-color:#f7CC45;color:black;}
+figure.lending {background-color:#2e5a6f;color:white;} /* gold color #f7CC45 */
 /* WEB FOUNDATIONS */
 figure.mentoring {background-color:var(--bg);}
 /* SUX */
@@ -288,8 +289,9 @@ img.invert {filter:invert(1) hue-rotate(180deg);}
 }
 
 @media (prefers-color-scheme:dark) and (min-width:375px) {
-.flex-grid a {opacity:0.75;}
-.flex-grid a:hover {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6);opacity:1;}
+.flex-grid.date a figure, .flex-grid a::after {opacity:0.75;}
+.flex-grid a:hover figure {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6);opacity:1;}
+.flex-grid a:hover::after {opacity:0.85;}
 }
 
 /*
