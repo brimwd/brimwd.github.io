@@ -127,7 +127,6 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   border-radius:8px;
   box-shadow:0 0 13px -9px var(--text-med);
   display:flex;
-  filter:saturate(0);
   flex-flow:column;
   font-weight:600;
   justify-content:space-evenly;
@@ -293,6 +292,7 @@ figure.sux h4 {margin-top:-12px;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
 .work a {box-shadow:none;}
+.flex-grid figure {filter:saturate(0);}
 }
 
 @media (prefers-color-scheme:dark) and (min-width:375px) {
