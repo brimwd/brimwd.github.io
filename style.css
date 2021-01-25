@@ -209,6 +209,7 @@ figure.sux h4 {margin-top:-12px;}
   .flex-grid.phase {display:block;overflow-x:auto;overflow-y:hidden;margin:10px calc(-5vw - 15px);overflow:auto;padding:0 calc(5vw + 15px) 60px;}
   .flex-grid.phase a:hover {box-shadow:unset;}
   .flex-grid.phase a::after {background-color:var(--text-faint-alpha);border-radius:10px;content:'';display:block;opacity:.6;position:absolute;top:7px;bottom:7px;left:0;right:0;z-index:0;}
+  .flex-grid.phase a:last-child {margin-bottom:10px;}
   .flex-grid.phase a.col-2 {width:calc(2 * 350px + 1 * 40px);} /* 40px = gutter width */
   .flex-grid.phase a.col-3 {width:calc(3 * 350px + 2 * 40px);}
   .flex-grid.phase a.col-4 {width:calc(4 * 350px + 3 * 40px);}
@@ -295,8 +296,10 @@ img.invert {filter:invert(1) hue-rotate(180deg);}
 }
 
 @media (prefers-color-scheme:dark) and (min-width:375px) {
-.flex-grid.date a figure, .flex-grid a::after {opacity:0.75;}
+.flex-grid.date a figure, .flex-grid.other a figure {opacity:0.8;}
+.flex-grid a::after {opacity:0.75;}
 .flex-grid a:hover figure {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6);opacity:1;}
+.flex-grid.phase a:hover figure {box-shadow:0 0 70px -10px rgba(155,175,255,0.8);}
 .flex-grid a:hover::after {opacity:0.85;}
 }
 
