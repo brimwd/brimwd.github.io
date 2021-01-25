@@ -10,11 +10,11 @@ $(document).ready(function() {
     $($('#sort-by').find('span.'+sortLink.data('value'))).addClass('hidden').siblings('span').removeClass('hidden');
 
     if(sortLink.data('value') === 'phase') { // sort by date
-      $(sortLink.find('i')).removeClass('fa-sort-shapes-down-alt').addClass('fa-sort-shapes-up-alt');
+      $(sortLink.find('i')).removeClass('fa-th').addClass('fa-stream');
       sortLink.data('value', 'date');
       $('.alert').hide();
     } else { // sort by phase
-      $(sortLink.find('i')).removeClass('fa-sort-shapes-up-alt').addClass('fa-sort-shapes-down-alt');
+      $(sortLink.find('i')).removeClass('fa-stream').addClass('fa-th');
       sortLink.data('value', 'phase');
       $('.alert').fadeIn();
     }
