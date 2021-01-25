@@ -12,7 +12,7 @@ function configureSinglePage() {
 		.prepend($(`<meta name="format-detection" content="telephone=no">;`));
 
 	$(`.case-study`)
-		.prepend($(`<nav><i class="fa fa-angle-left"></i> <a href="../index.html">Back to portfolio</a></nav>`))
+		.prepend($(`<nav><a href="../index.html"><i class="far fa-level-up fa-flip-horizontal" aria-hidden="true"></i>Back to portfolio<i class="far fa-level-up" aria-hidden="true"></i></a></nav>`))
 		.append(`<footer><p>Made by B Donahue</p><p><a href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i></a> &bullet; <a href="mailto:brimwd@gmail.com"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a> &bullet; <a href="sms:971-222-9892"><i class="fas fa-sms fa-2x" aria-label="email"></i></a></p></footer>`);
 
 	// handle redirect hashes

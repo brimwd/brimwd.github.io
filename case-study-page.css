@@ -6,7 +6,10 @@ body {padding:0;}
 	.case-study > nav, .case-study > footer {margin:unset;}
 }
 
-.case-study > nav {margin:20px 0 50px;}
+.case-study > nav {padding:0!important;}
+.case-study > nav a {background-color:var(--text-ultra-faint);border:none!important;display:block;padding:12px;text-align:center;transition:all 300ms;}
+.case-study > nav a:hover {background-color:var(--bg-faint);}
+.case-study > nav i {margin:0 8px;vertical-align:super;}
 .case-study > footer {margin:50px 0 20px;text-align:center;}
 /* CASE STUDY - GENERAL STYLES */
 .case-study > * {background-color:var(--bg);padding:5%;margin:0 auto;}
