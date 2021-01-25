@@ -162,9 +162,9 @@ figure.dictionary h4 {margin-top:-30px;}
 figure.dictionary img {max-width:88%;}
 figure.dictionary:hover img {max-width:93%;}
 /* TMO */
-figure.tmo {background:url(images/tmo/topography.png) repeat center;background-size:400px 400px;}
+figure.tmo {background:url(images/tmo/topography-magenta.png) repeat center;background-size:400px 400px;}
 figure.tmo:hover {background-size:370px 370px;}
-figure.tmo h4 {margin-top:0;color:#2a2a2a;}
+figure.tmo h4 {margin-top:0;color:white;}
 /* EARWAX */
 figure.loveEarwax {background-color:#1b1b1b;color:white;}
 figure.loveEarwax div {position:relative;}
