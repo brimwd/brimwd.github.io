@@ -181,6 +181,7 @@ figure.sux h4 {margin-top:-12px;}
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
   .work {overflow-x:hidden;padding-bottom:0;}
+  .work header {max-width:90vw;width:1200px;margin:0 auto;}
   .work .title {float:left;vertical-align:middle;}
   .work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
   .flex-grid.date .headings {display:none;}
@@ -217,15 +218,15 @@ figure.sux h4 {margin-top:-12px;}
 @media screen and (min-width:970px) {
   .flex-grid.date a {width:calc(31%);}
   .flex-grid .headings {padding-right:5vw;}
-  .flex-grid .headings li:last-child {width:calc(95vw - 660px);}
+  .flex-grid .headings li:last-child {width:calc(90vw - 610px);}
 }
 @media screen and (min-width:1200px) {
   .work {overflow-x:unset;padding:40px 0;}
   .work::after {content:unset;}
-  .work header {padding:0 5vw;}
+  .work header {padding:0;}
   .flex-grid.phase {margin-left:calc(-50vw + 600px);padding:0 5vw 40px;width:90vw;}
   .flex-grid .headings {padding-right:10vw;}
-  .flex-grid .headings li:last-child {width:calc(90vw - 710px);}
+  .flex-grid .headings li:last-child {width:calc(85vw - 630px);}
 }
 
 /* FOOTER */
