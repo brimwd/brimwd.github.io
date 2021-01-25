@@ -75,7 +75,7 @@ figure.big-stat {text-align:center;}
 	.gallery:hover span {opacity:0;}
 	.gallery.expand span {opacity:0;height:0;}
 	.gallery.expand span.collapse {opacity:1;left:-119px;height:auto;width:196px;}
-	.gallery.expand span.collapse:hover {color:#000;}
+	.gallery.expand span.collapse:hover {color:var(--text);}
 }
 
 @media (min-width:670px){
