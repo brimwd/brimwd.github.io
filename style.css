@@ -150,6 +150,10 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 /* AMAZON */
 figure.amazon {background-color:#f29d39;background-image:radial-gradient(ellipse,#f29d39 50%,#f58109);background-size:170% 160%;background-position:90% 100%;color:white;}
 figure.amazon.instant {background-color:#48a6de;background-image:radial-gradient(ellipse,#48a6de 50%,#347aad);}
+/* APPLE */
+figure.apple-m1 {background-color:black;color:white;}
+figure.apple-m1 img {margin-top:-20px;max-height:140px;}
+figure.apple-m1:hover img {margin-top:-20px;max-height:160px;}
 /* BLUETOOTH */
 figure.bluetooth {background:url(images/bluetooth/chevrons-blue-transp.png) repeat center;background-color:#40a0fc;background-size:100px 100px;color:white;}
 figure.bluetooth:hover {background-size:92px 92px;}
@@ -168,19 +172,22 @@ figure.tmo:hover {background-size:370px 370px;}
 figure.tmo h4 {margin-top:0;color:white;}
 /* EARWAX */
 figure.loveEarwax {background-color:#1b1b1b;color:white;}
-figure.loveEarwax div {position:relative;}
-figure.loveEarwax img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
-figure.loveEarwax:hover img:last-child {opacity:1;}
 /* LENDINGHOME */
 figure.lending {background-color:#2e5a6f;color:white;} /* gold color #f7CC45 */
 /* WEB FOUNDATIONS */
 figure.mentoring {background-color:#fff5d2;color:#2a2a2a;}
 /* SERVICENOW */
-figure.sn {background-color:#293e40;color:white;}
+figure.sn {background-color:#293e40;background-image:url(images/servicenow/random-lines.svg);background-size:120%;color:white;}
+figure.sn:hover {background-size:100%;}
 figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;}
 /* SUX */
 figure.sux {background-color:#e0f2f1;color:#375068;}
 figure.sux h4 {margin-top:-12px;}
+
+/* two-img */
+figure.two-img div {position:relative;z-index:-1;}
+figure.two-img img:last-child {opacity:0;transition:opacity 240ms;position:absolute;top:0;right:0;left:0;z-index:1;}
+figure.two-img:hover img:last-child {opacity:1;}
 
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
