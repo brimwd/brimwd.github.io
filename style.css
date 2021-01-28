@@ -302,16 +302,3 @@ img.invert {filter:invert(1) hue-rotate(180deg);}
 .flex-grid.phase a:hover figure {box-shadow:0 0 70px -10px rgba(155,175,255,0.8);}
 .flex-grid a:hover::after {opacity:0.85;}
 }
-
-/*
-
-bg-red
-#FF5D5D
-
-text-highlight
-#fff
-
-text-red
-#4B0909
-
-*/
