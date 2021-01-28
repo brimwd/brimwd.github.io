@@ -30,6 +30,16 @@ $(document).ready(function() {
     // assign vars
     targetPage = $(event.target).closest('a').attr('href');
 
+    /*if ($('.flex-grid').hasClass('phase')) {
+      // get relative position of click
+      var relativePosition = {
+        left: event.pageX - $(document).scrollLeft() - $('.flex-grid a').offset().left,
+        top : event.pageY - $(document).scrollTop() - $('.flex-grid a').offset().top
+      };
+
+      // console.log(relativePosition.left + ', ' + relativePosition.top);
+    }*/
+
     // will come back from the ajax call as TRUE if succeeded or FALSE if failed
     getPage(targetPage, $(this).attr('title'), 1);
   });
