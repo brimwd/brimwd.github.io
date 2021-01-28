@@ -154,6 +154,10 @@ figure.amazon.instant {background-color:#48a6de;background-image:radial-gradient
 figure.apple-m1 {background-color:black;color:white;}
 figure.apple-m1 img {margin-top:-20px;max-height:140px;}
 figure.apple-m1:hover img {margin-top:-20px;max-height:160px;}
+figure.iphone-ipad img {margin-top:-5px;}
+figure.iphone-ipad:hover img {margin-top:-5px;max-height:115px;}
+figure.iphone-ipad h4 {transition:all 250ms;}
+figure.iphone-ipad:hover h4 {padding-top:10px;}
 /* BLUETOOTH */
 figure.bluetooth {background:url(images/bluetooth/chevrons-blue-transp.png) repeat center;background-color:#40a0fc;background-size:110px 110px;color:white;}
 figure.bluetooth:hover {background-size:92px 92px;}
