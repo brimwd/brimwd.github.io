@@ -51,6 +51,7 @@ figure {position:relative;text-align:center;}
 figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
 .dropcap {font-size:73px;float:left;line-height:3.8rem;font-weight:bold;padding-right:0.6rem;}
+figure.full-width img {border-radius:5px;}
 
 @media (min-width:820px) {
   h1 {font-size:62px;}
