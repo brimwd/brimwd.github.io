@@ -55,7 +55,7 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 
 /* GALLERY */
 .zoom.static {margin:0 auto;max-height:70vh;display:block;border:1px solid #bbb;}
-.gallery {text-align:center;margin:15px 0 0;}
+.gallery {text-align:center;margin:15px 0 0;clear:both;}
 .gallery * {cursor:pointer;}
 .gallery img {width:30%;margin-right:3%;border:1px solid #cfcfcf;background-color:white;box-shadow:2px 3px 4px -2px rgba(0,0,0,0.2);}
 .gallery img:last-of-type {margin:0;}
@@ -140,8 +140,8 @@ picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
 }
 
 /* DEMO-PLAYER STYLES */
-a.player {border:none;cursor:pointer;}
-a.player::after {content:'\f144';display:inline-block;font-family:'Font Awesome 5 Pro';font-weight:900;margin-left:5px;}
+a.play, a.player {border:none;cursor:pointer;}
+a.play::after, a.player::after {content:'\f144';display:inline-block;font-family:'Font Awesome 5 Pro';font-weight:900;margin-left:5px;}
 #demo-player {background-color:rgba(0,0,0,0.75);cursor:pointer;display:none;padding:0;margin:0;position:fixed;top:0;right:0;bottom:0;left:0;z-index:55;}
 #demo-player .container {display:flex;flex-flow:column;height:80vh;justify-content:center;}
 #demo-player * {color:white;text-align:center;}
