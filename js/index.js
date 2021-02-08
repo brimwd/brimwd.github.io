@@ -24,9 +24,11 @@ $(document).ready(function() {
 
 
   $('a.dynamicLoad').on('click', function(event){
+    // if attempting to open in new tab with CMD key
+    if (event.metaKey) {return;}
+
     // stop the link from firing
     event.preventDefault();
-
     // assign vars
     targetPage = $(event.target).closest('a').attr('href');
 
