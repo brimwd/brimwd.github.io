@@ -232,7 +232,7 @@ figure.two-img:hover img:last-child {opacity:1;}
   .flex-grid.phase a.offset-2 {margin-left:calc(2 * 350px + 2 * 40px);}
   .flex-grid.phase a.offset-3 {margin-left:calc(3 * 350px + 3 * 40px);}
   .flex-grid.phase a.offset-4 {margin-left:calc(4 * 350px + 4 * 40px);}
-  .flex-grid.phase figure {width:320px;filter:saturate(1);margin-top:20px;position:-webkit-sticky;position:sticky;left:0;top:0;z-index:1;}
+  .flex-grid.phase figure {width:320px;margin-top:20px;position:-webkit-sticky;position:sticky;left:0;top:0;z-index:1;}
 }
 @media screen and (min-width:970px) {
   .flex-grid.date a {width:calc(31%);}
@@ -306,7 +306,6 @@ figure.two-img:hover img:last-child {opacity:1;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
 .work a {box-shadow:none;}
-.flex-grid figure {filter:saturate(0);}
 }
 
 @media (prefers-color-scheme:dark) and (min-width:375px) {
