@@ -37,10 +37,11 @@ body {padding:0;}
 
 figure.big-stat {text-align:center;}
 
+blockquote .row {display:flex;flex-flow:row;padding:10px 0 25px;}
 blockquote.big {border:unset;box-shadow:none;color:var(--secondary);text-align:center;}
 blockquote.big h3 {font-size:2.4rem;margin-bottom:12px;}
+blockquote.disclaimer {margin-right:0;margin-left:0;text-align:left;}
 blockquote.stats {font-size:1.5rem;}
-blockquote .row {display:flex;flex-flow:row;padding:10px 0 25px;}
 blockquote.stats figure {width:48%;}
 blockquote.stats strong {color:var(--secondary);font-size:3.5rem;}
 @media (min-width:670px){blockquote.stats figure {display:flex;justify-content:space-evenly;}}
@@ -117,7 +118,7 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 }
 
 /* CAN-ZOOM IMAGE */
-img.can-zoom {max-width:30%;float:right;margin:1rem 0 10px 20px;transition:max-width .5s, border .3s, margin-left .3s;cursor:zoom-in;border:1px solid white;}
+img.can-zoom {max-width:30%;float:right;clear:right;margin:1rem 0 10px 20px;transition:max-width .5s, border .3s, margin-left .3s;cursor:zoom-in;border:1px solid white;}
 img.can-zoom:hover {border-color:grey;}
 img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 img.can-zoom.zoom {width:100%;}
@@ -188,5 +189,3 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 .def, .disclaimer {display:block;padding-left:1em;border-left:3px solid var(--text-med);border-left-color:var(--brand);}
 .def.hidden {display:none;}
 .def img {max-width:100%;}
-
-.disclaimer {margin-right:0;margin-left:0;}
