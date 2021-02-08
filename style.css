@@ -141,10 +141,11 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   transition-timing-function:ease-out;
   z-index:1;
 }
-.flex-grid a:hover figure {box-shadow:0 10px 30px var(--text-med);filter:saturate(1);transform:scale(1.05);}
+.flex-grid a:hover figure {box-shadow:0 10px 30px 0 var(--text-med);transform:scale(1.05);}
 .flex-grid a:hover img {max-height:108px;max-width:86%;}
-.flex-grid figure[data-tags*="Presentation"]::before {opacity:.5;content:'\f685';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
-.flex-grid figure[data-tags*="Incomplete"]::before {opacity:.5;content:'\f85e';font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
+.flex-grid figure[data-tags]::before {opacity:.5;font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;bottom:8px;font-size:16px;transition:inherit;}
+.flex-grid figure[data-tags*="Presentation"]::before {content:'\f685';}
+.flex-grid figure[data-tags*="Incomplete"]::before {content:'\f85e';}
 .flex-grid a:hover figure::before {opacity:1;}
 
 /* AMAZON */
@@ -159,9 +160,9 @@ figure.bob:hover {background-size:100% 100%;}
 figure.bob h4 {margin-top:-10px;}
 /* DICTIONARY */
 figure.dictionary {background:linear-gradient(12deg, #ab4d74, #e03c3e 85%);color:white;}
-figure.dictionary h4 {margin-top:-30px;}
 figure.dictionary img {max-width:84%;}
-a:hover figure.dictionary img {max-width:89%;}
+figure.dictionary:hover img {max-width:89%;}
+figure.dictionary h4 {margin-top:-30px;}
 /* TMO */
 figure.tmo {background:url(images/tmo/topography-magenta.png) repeat center;background-size:460px 460px;}
 figure.tmo:hover {background-size:370px 370px;}
@@ -309,9 +310,10 @@ img.invert {filter:invert(1) hue-rotate(180deg);}
 }
 
 @media (prefers-color-scheme:dark) and (min-width:375px) {
-.flex-grid.date a figure, .flex-grid.other a figure {opacity:0.8;}
-.flex-grid a::after {opacity:0.75;}
+.flex-grid a {background-color:var(--bg);}
+.flex-grid.date figure, .flex-grid.other figure {opacity:0.8;}
 .flex-grid a:hover figure {box-shadow:0 10px 90px -10px rgba(155,175,255,0.6);opacity:1;}
 .flex-grid.phase a:hover figure {box-shadow:0 0 70px -10px rgba(155,175,255,0.8);}
-.flex-grid a:hover::after {opacity:0.85;}
+.flex-grid.phase a::after {opacity:0.75;}
+.flex-grid.phase a:hover::after {opacity:0.85;}
 }
