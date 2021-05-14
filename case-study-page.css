@@ -128,7 +128,7 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 
 /* CAN-ZOOM IMAGE */
 img.can-zoom {max-width:30%;float:right;clear:right;margin:1rem 0 10px 20px;transition:max-width .5s, border .3s, margin-left .3s;cursor:zoom-in;border:1px solid white;}
-img.can-zoom:hover {border-color:grey;}
+img.can-zoom:hover {border-color:grey;cursor:pointer!important;}
 img.zoom {max-width:100%;border-width:0;margin-left:0;cursor:zoom-out;}
 img.can-zoom.zoom {width:100%;}
 
