@@ -312,6 +312,8 @@ figure.two-img:hover img:last-child {opacity:1;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
 .work a {box-shadow:none;}
+figure.soon {background-image:url('https://fpoimg.com/400x250?bg_color=17466d&text_color=deebf2');background-size:cover;}
+figure.soon h4 {color:#deebf2;}
 }
 
 @media (prefers-color-scheme:dark) and (min-width:375px) {
