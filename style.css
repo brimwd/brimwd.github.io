@@ -181,8 +181,8 @@ figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;}
 figure.sux {background-color:#e0f2f1;color:#375068;}
 figure.sux h4 {margin-top:-12px;}
 /* COMING SOON */
-figure.soon {background-image:url('https://fpoimg.com/400x250?bg_color=deebf2&text_color=17466d');background-size:cover;}
-figure.soon h4 {margin-top:6.5em;color:#17466d;}
+figure.soon {background-image:url('https://fpoimg.com/400x250?text=coming soon&bg_color=deebf2&text_color=17466d');background-size:contain;}
+figure.soon h4 {margin-top:-6em;color:#17466d;}
 
 /* ARTICLES */
 figure.apple-m1 {background-color:black;color:white;}
@@ -312,7 +312,7 @@ figure.two-img:hover img:last-child {opacity:1;}
 b {font-size:1.15em;line-height:1em;}
 img.invert {filter:invert(1) hue-rotate(180deg);}
 .work a {box-shadow:none;}
-figure.soon {background-image:url('https://fpoimg.com/400x250?bg_color=17466d&text_color=deebf2');background-size:cover;}
+figure.soon {background-image:url('https://fpoimg.com/400x250?text=coming soon&bg_color=17466d&text_color=deebf2');background-size:cover;}
 figure.soon h4 {color:#deebf2;}
 }
 
