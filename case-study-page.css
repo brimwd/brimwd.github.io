@@ -21,7 +21,7 @@ body {padding:0;}
 .case-study header h1 {font-size:2.2rem;margin-top:4.5rem;margin-bottom:.5rem;}
 .case-study header p {border-bottom-width:1px;border-bottom-style:solid;padding-bottom:1.2rem;font-size:1.4rem;margin-top:.5rem;}
 .case-study header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
-.case-study h2 {font-size:1.8em;border-bottom-width:1px;border-bottom-style:solid;padding-bottom:1rem;margin:0 0 1rem;clear:right;}
+.case-study h2 {clear:right;font-size:1.8em;border-bottom-width:1px;border-bottom-style:solid;padding-bottom:1rem;margin:0 0 1rem;position:relative;}
 .case-study h2 ~ p:first-of-type {margin-top:2rem;}
 .case-study a[href]:not(.btn) {text-decoration:none;cursor:pointer;border-bottom-width:1px;border-bottom-style:dotted;}
 /* unused? */.case-study .persona {margin:20px 0;padding:6px 0 3px 3%;border-left:6px solid #ced6de;}
@@ -34,6 +34,10 @@ body {padding:0;}
 .case-study .highlight::after {border-bottom-color:var(--highlight);border-left-color:var(--highlight);border-left-width:1px;border-right-width:1px;right:-1px;bottom:0;}
 .case-study .highlight + .highlight {margin-top:3px;}
 .case-study section :last-child, .case-study figure :last-child {margin-bottom:0;}
+
+.image-alert {background-color:var(--bg);border:1px solid black;border-color:var(--brand);border-radius:100px;color:red;color:var(--brand);padding:4px 14px;font-size:1rem;font-weight:bold;position:relative;text-align:right;}
+.image-alert::before, .image-alert::after {content:'';background-color:inherit;border:inherit;border-radius:0 0 100% 0;border-left:none;position:absolute;bottom:-12px;height:10px;right:26px;width:2px;z-index:2;}
+.image-alert::after {z-index:1;border-top:none;right:18px;width:10px;height:11px;}
 
 figure.big-stat {text-align:center;}
 
@@ -63,7 +67,12 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 .gallery span {display:none;}
 .gallery + p {margin-top:1rem !important;}
 .gallery.expand img.focus {border-color:black;cursor:zoom-out;}
-@media (min-width:670px){.gallery img {max-width:28%;margin-right:2%;padding:8px;}}
+@media (min-width:450px){
+	.image-alert {position:absolute;bottom:-19px;right:0;}
+}
+@media (min-width:670px){
+	.gallery img {max-width:28%;margin-right:2%;padding:8px;}
+}
 @media (min-width:850px){
 	.gallery {position:relative;width:228px;height:210px;margin:33px -17px 28px 15px;float:right;transform:rotate(2.5deg);transition:all .3s;}
 	.gallery::before, .gallery::after {content:'';position:absolute;display:inline-block;z-index:10;top:65px;right:-9px;width:52px;height:15px;border:3px solid #aaa;border-radius:60px 0 0 60px;border-right-width:0;transform:rotate(16deg);box-shadow:inset 2px 2px 3px -1px rgba(0,0,0,0.4), -1px 2px 2px -1px rgba(0,0,0,0.4);transition:all .3s, rotate .45s;transform-origin:100% 50%;}
@@ -114,7 +123,7 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 	.case-study > * {box-shadow:0 3px 15px -3px rgba(0,0,0,0.4);border:1px solid transparent;margin-bottom:2rem;min-width:670px;}
 	.case-study > *:not(header)::after {content:'';display:block;clear:both;}
 	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-78px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:30;padding:0 15px;}
-	.case-study header + .overview {margin-top:-2rem;position:relative;}
+	.case-study header + .overview {margin-top:-2rem;}
 }
 
 /* CAN-ZOOM IMAGE */
