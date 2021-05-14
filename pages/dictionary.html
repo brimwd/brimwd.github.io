@@ -14,6 +14,10 @@
 <script class="case-study-page" type="text/javascript" src="../js/case-study-page.js"></script>
 <script type="text/javascript" src="../js/case-study.js"></script>
 <style>
+:root {
+	--brand:#e03c3e;
+	--brand-dark:#ac4c73;
+}
 .case-study header {background:radial-gradient(circle,#77777744 4%,#9f9f9f00 5%,#9f9f9f00 100%);background-color:var(--header-bg);background-repeat:repeat;background-size:28px 28px;}
 .case-study header img {max-width:140px;}
 .case-study header h1 {color:var(--text);margin-top:3rem;}
@@ -86,8 +90,9 @@
 	<h2>UI
 		<div class="image-alert">Click any image to zoom</div>
 	</h2>
+	<div class="gallery"><img src="../images/dictionary/dictionary-original.png" alt="Dictionary UI Original" /><img src="../images/dictionary/dictionary-improved.png" alt="Dictionary UI Improved" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 	<p>Dictionary entries have no default styling. The goal was to create entries that look good but aren't distracting.</p>
-
+	<p>One benefit of cleaning up the typography was that we realized that there was an opportunity to add linked terms to reduce redundancy and improve the "quality of life" for users.</p>
 </section>
 <section>
 	<h2>Future Development</h2>
