@@ -115,7 +115,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 
 @media (max-width:669px) {
   /* WHILE SORT-BY IS BEING DEVELOPED ON MOBILE */
-  .alert, .flex-grid .headings, #sort-by {display:none;}
+  .flex-grid .headings, #sort-by {display:none;}
 }
 @media (min-width:670px) {#sort-by {border-color:transparent;}}
 
@@ -180,6 +180,9 @@ figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;}
 /* SUX */
 figure.sux {background-color:#e0f2f1;color:#375068;}
 figure.sux h4 {margin-top:-12px;}
+/* COMING SOON */
+figure.soon {background-image:url('https://fpoimg.com/400x250?bg_color=deebf2&text_color=17466d');background-size:cover;}
+figure.soon h4 {margin-top:6.5em;color:#17466d;}
 
 /* ARTICLES */
 figure.apple-m1 {background-color:black;color:white;}
@@ -202,15 +205,16 @@ figure.two-img:hover img:last-child {opacity:1;}
   .work {overflow-x:hidden;padding-bottom:0;}
   .work header {max-width:90vw;width:1200px;margin:0 auto;}
   .work .title {float:left;vertical-align:middle;}
-  .work .flex-grid {display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
+  .work .flex-grid {clear:left;display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
   .flex-grid.date .headings {display:none;}
   .flex-grid a {width:fit-content;}
   .flex-grid.date a {margin:2% 0;width:calc(48%);}
   .flex-grid.other a {margin:2% 0;width:calc(48%);}
+  .flex-grid.gallery a {margin:2% 0;width:calc(48%);}
   /*.work img {}*/
 
   /* ALERT */
-  .alert {background-color:var(--text-faint-alpha);border-radius:8px;margin:15px 0 10px auto;padding:8px 12px;text-align:center;width:fit-content;}
+  .alert {margin:15px 0 10px 0;width:fit-content;}
   .alert :only-child {margin:0;}
   /* PHASE HEADINGS */
   .flex-grid .headings {font-size:0;list-style:none;padding:10px 0 0;width:max-content;}
@@ -237,6 +241,7 @@ figure.two-img:hover img:last-child {opacity:1;}
 }
 @media screen and (min-width:970px) {
   .flex-grid.date a {width:calc(31%);}
+  .flex-grid.gallery a {width:calc(31%);}
   .flex-grid .headings {padding-right:5vw;}
   .flex-grid .headings li:last-child {width:calc(90vw - 610px);}
 }
