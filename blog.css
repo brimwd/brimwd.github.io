@@ -53,6 +53,12 @@ figure.half-width img, figure.float-left img {display:block;margin:10px auto;max
 .dropcap {font-size:73px;float:left;line-height:3.8rem;font-weight:bold;padding-right:0.6rem;}
 figure.full-width img {border-radius:5px;}
 
+.hover-expose {background-size:contain;}
+.hover-expose img {transition:opacity .5s;}
+.hover-expose:hover img {opacity:0;}
+
+.text-left {text-align:left!important;}
+
 @media (min-width:820px) {
   h1 {font-size:62px;}
   article {max-width:768px;margin:0 auto;}
