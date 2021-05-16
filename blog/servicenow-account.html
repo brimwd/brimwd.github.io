@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="description" content="UX, web design, & front-end development portfolio for Brian Donahue, Product Designer based in Silicon Valley, California">
+<meta name="keywords" content="product,product design,manager,UX,UX design,UX designer,user experience,design,designer,UI,HTML,CSS,JavaScript,Illustrator,Adobe,Photoshop,freelance,contractor,developer,front-end,front end,portfolio,graphic design,graphics,web,web development,for hire,resume,jQuery,storyboarding,prototyping,research,user research,researcher,information architecture,taxonomy">
+<meta name="author" content="Brian Donahue">
+<meta name="format-detection" content="telephone=no">
+
+<title>Brian Donahue - Amazon Shopping Profile</title>
+<!-- <meta property='og:image' content='/images/.png'/> -->
+<base href="../">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome/css/all.css" media="all">
+<link rel="stylesheet" type="text/css" href="blog.css">
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+</head>
+<body>
+<article class="blog container-fluid"><div class="row"><div class="col-12">
+	<nav class="mb-5"><a href="index.html"><img src="favicon.ico" />Portfolio</a></nav>
+	<h1>ServiceNow Account Management</h1>
+	<h2>Consolidating UIs and improving usability</h2>
+	<!-- <p><time datetime="2020-11-25">Nov 25, 2020</time> • 7 min read</p> -->
+
+	<blockquote class="sms my-5">
+		<p>Sometimes you <i>do</i> want a company to know more about you</p>
+	</blockquote>
+
+	<p><span class="dropcap">A</span>lthough it started as a simple 'community profile' page, the ServiceNow account portal has the opportunity to integrate dozens of disparate tables of account-related and personal information into a single UI.</p>
+	<p>At the time the account portal was developed, the ServiceNow had not yet developed a Single Sign-On experience to unify the various web properties.</p>
+	<p>Now we that we have the foundational utilities in place, we have the opportunity to create a single place to manage all aspects of your relationship with ServiceNow.</p>
+
+	<hr>
+
+	<figure class="float-left">
+		<a href="images/servicenow/account/account-current-full.png" target="_blank">
+			<picture>
+				<source srcset="images/servicenow/account/account-current-350.png" media="(min-width:820px)" />
+				<img src="images/servicenow/account/account-current-cropped.png" alt="A screen-capture of the current account page" />
+			</picture>
+		</a>
+		<figcaption>
+			<p>The current account page<br />(click to expand)</p>
+		</figcaption>
+	</figure>
+
+	<p>There are many issues with the current account page, including:</p>
+	<ul>
+		<li>ServiceNow logo, navigation, header, footer, and other company information are missing</li>
+		<li>The page utilizes screen-space poorly in landscape aspect-ratios</li>
+		<li>Some information is public and cannot be removed, updated, or changed to 'private'</li>
+		<li>There's no indication of where 'public' information is displayed or used</li>
+		<li>"Display Publicly" is easy to overlook, making it unclear what the toggles do</li>
+		<li>The toggles differentiate only with color, and the 'on' state is an identical color-value to the 'off' state</li>
+		<li>There are no links to <u>manage or delete your account</u> or to relevant <u>privacy policies</u> or <u>terms of service</u></li>
+	</ul>
+
+	<hr>
+
+	<h2>Quick Wins</h2>
+
+	<p>To get this project moving quickly, I started with minimal changes to the functionality and focused on getting the page to <i>feel</i> like "ServiceNow". I also included the 'job description' fields from the registration form, improved toggles for privacy, and a 2-column layout to separate the job-description info from the user's personal information.</p>
+
+	<figure class="two-img row">
+		<div class="col-12 col-md-6">
+			<a href="images/servicenow/account/initial-proposal-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/initial-proposal-350.png" media="(min-width:820px)" />
+					<img src="images/servicenow/account/initial-proposal-cropped.png" alt="A mockup of my first proposal for UI improvements to the account page" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>My initial proposal<br />(click to expand)</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-6">
+			<a href="images/servicenow/account/initial-coded-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/initial-coded-350.png" media="(min-width:820px)" />
+					<img src="images/servicenow/account/initial-coded-cropped.png" alt="The first design update implemented" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>The coded page with updates using existing assets<br />(click to expand)</p>
+			</figcaption>
+		</div>
+	</figure>
+
+	<h2>Next Steps</h2>
+
+	<p>To plan out the larger initiatives like including the data-management and subscription-management features, I moved to a lower fidelity so stakeholders could focus on the functionality before we stared discussions about aesthetics.</p>
+	<p>I created low-fi designs for the five tabs we want to create on the Account Portal: <a href="images/servicenow/account/update/profile.png">Profile</a>, <a href="images/servicenow/account/update/events.png">Events</a>, <a href="images/servicenow/account/update/activity.png">Activity</a>, <a href="images/servicenow/account/update/communications.png">Communications</a>, and <a href="images/servicenow/account/update/security.png">Security</a>.</p>
+	<p>I've collected requirements from the respective teams to ensure that I know what data we'll be managing and where we need to integrate.</p>
+
+	<figure>
+		<video src="images/servicenow/account/security-tab-recording.mov" controls="true" autoplay="false" style="max-width:100%"></video>
+		<figcaption>
+			<p>In this video you can watch me work through an early draft of the 'Security' tab in Balsamiq.</p>
+			<p><i style="font-size:.9em">Please disregard the minor alignment errors; I created this recording by holding ⌘-shift-z to 'Redo' through all of my steps and Balsamiq doesn't really love it when you do that. <emoji>😅</emoji></i></p>
+		</figcaption>
+	</figure>
+
+	<h2>Final Mockups</h2>
+
+
+	<hr>
+
+	<h2>Project Goals</h2>
+	<ul class="checklist">
+		<li><i class="far fa-check"></i> Incorporate the ServiceNow navigation, footer, and other common components</li>
+		<li><i class="far fa-check"></i> Replace the 'public' toggles with labeled controls</li>
+		<li><i class="far fa-check"></i> Redesign the page to support landscape layouts</li>
+		<li><i class="far fa-check"></i> Add controls for other personal data that's not currently accessible</li>
+		<li><i class="far fa-check"></i> Add links to account management features like: <u>manage data</u>, <u>delete account</u>, <u>change password</u>, <u>contact preferences</u>, and <u>event preferences</u></li>
+		<li><i class="far fa-check"></i> Link to the public view of the profile and the portals where it's used</li>
+		<li><i class="far fa-check"></i> Improve the usability through information chunking and Gestalt principles</li>
+		<li><i class="far fa-check"></i> Create a scalable design that will support <u>role-based access</u>, <u>entitlements</u>, and future integrations like gamification for <u>learning</u> and <u>community engagement</u></li>
+	</ul>
+
+	<hr>
+
+	<footer class="mt-5 text-center">
+		<p>Made by B Donahue</p>
+		<p class="icons">
+			<a class="icon linkedin" href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i></a>
+			<span>&bullet;</span>
+			<a class="icon mailbox" href="mailto:brimwd@gmail.com"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a>
+			<span>&bullet;</span>
+			<a class="icon sms" href="sms:971-222-9892"><i class="fas fa-sms fa-2x" aria-label="email"></i></a>
+		</p>
+		<p><a href="index.html">Portfolio</a></p>
+	</footer>
+</div></div>
+</article>
+</body>
+</html>
