@@ -76,7 +76,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #overview .bio {letter-spacing:1px;line-height:1.9em;margin:40px 0;max-width:85vw;}
 
 #overview ul {margin-left:-11px;padding-left:0;}
-#overview li {display:inline-block;padding:0 6px;position:relative;}
+#overview li {display:inline-block;padding:0 4px;position:relative;}
 #overview li::before {content:'|';position:absolute;left:-5px;}
 #overview li:first-of-type::before {content:unset;}
 #overview a {border-radius:4px;color:#2a2a2a;display:inline-block;letter-spacing:1px;padding:2px 5px;position:relative;}
