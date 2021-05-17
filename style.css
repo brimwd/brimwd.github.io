@@ -202,7 +202,7 @@ figure.two-img:hover img:last-child {opacity:1;}
 
 .caseStudyLink img[src=""] {display:none;}
 @media screen and (min-width:670px) {
-  .work {overflow-x:hidden;padding-bottom:0;}
+  .work {overflow-x:hidden;}
   .work header {max-width:90vw;width:1200px;margin:0 auto;}
   .work .title {float:left;vertical-align:middle;}
   .work .flex-grid {clear:left;display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:10px;}
