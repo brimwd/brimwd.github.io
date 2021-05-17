@@ -27,20 +27,25 @@
 <link rel="stylesheet" type="text/css" href="style.css?">
 </head>
 <body>
-	<section id="overview" class="row">
-		<img src="drawings/self-portraits/mobile.png" alt="A drawing of Brian" />
-		<h1>Brian Donahue<i>,</i><span>product designer</span></h2>
-		<h3>UX<divider> </divider>Strategy<divider> </divider>Research</h3>
-		<div class="bio">
-			<p><b>I believe</b> that technology can change the world, but only well-designed technology will make it better. <b>I have</b> a diverse, cross-functional background; I can fill the gaps in any team, improving communication and collaboration between disciplines. <b>I value</b> empathy and teamwork: we're <em>here</em> for the user, but we need to be <em>there</em> for each other first.</p>
-		</div>
-		<ul>
-			<li><a href="https://linkedin.com/in/donahuebrian/" target="_blank">LinkedIn</a></li>
-			<li><a href="https://medium.com/@_bmd" target="_blank">Medium</a></li>
-			<li><a href="https://www.behance.net/Brimwd" target="_blank">Be&#772;hance</a></li>
-			<!-- <li><a href="https://drive.google.com/open?id=1uFFrrgaTfGwrSHpBMQwKTtGC3f-_e_JRusxAp-0W4wU" target="_blank">R&eacute;sum&eacute;</a></li> -->
-		</ul>
-	</section>
+	<header id="overview">
+		<section class="row">
+			<h1>B. Donahue<span>product designer</span></h1>
+			<h3>UX Design<divider> </divider>Strategy</h3>
+			<div class="bio">
+				<p><b>I believe</b> that technology can change the world, but only well-designed technology will make it better. <b>I have</b> a diverse, cross-functional background; I can fill the gaps in any team, improving communication and collaboration between disciplines. <b>I value</b> empathy and teamwork: we're <em>here</em> for the user, but we need to be <em>there</em> for each other first.</p>
+			</div>
+			<ul>
+				<li><a href="https://linkedin.com/in/donahuebrian/" target="_blank">LinkedIn</a></li>
+				<li><a href="https://medium.com/@_bmd" target="_blank">Medium</a></li>
+				<li><a href="https://www.behance.net/Brimwd" target="_blank">Be&#772;hance</a></li>
+				<!-- <li><a href="https://drive.google.com/open?id=1uFFrrgaTfGwrSHpBMQwKTtGC3f-_e_JRusxAp-0W4wU" target="_blank">R&eacute;sum&eacute;</a></li> -->
+			</ul>
+		</section>
+		<picture>
+			<source srcset="images/portrait-small.png" media="(min-width:675px)" >
+			<img src="images/portrait-mobile.png" alt="A photo of Brian" />
+		</picture>
+	</header>
 	<!-- <section id="approach">
 		<video width="100%" controls>
 		  <source src="approach.mp4" type="video/mp4">
@@ -49,7 +54,7 @@
 	<section id="work" class="row work">
 		<h2 class="title">Assorted UI Work</h2>
 		<p style="clear:left;">Building this section at this very moment</p>
-		<div class="gallery flex-grid">
+		<div class="flex-grid gallery">
 			<a class="caseStudyLink col-4" href="blog/servicenow-account.html" title="ServiceNow Account Portal" data-tags="UI Design">
 				<figure class="sn partner-finder">
 					<img src="images/servicenow/servicenow-logo-dark.svg" alt="ServiceNow logo" />
@@ -90,7 +95,7 @@
 		</div>
 
 		<!-- CASE STUDIES -->
-		<h2 class="title" style="margin-top:20px">Case Studies</h2>
+		<h2 class="title">Case Studies</h2>
 		<div class="flex-grid date">
 			<a class="caseStudyLink dynamicLoad col-4" href="pages/servicenow-optimization.html" title="'ServiceNow - Digital Optimization' Case Study" data-tags="Case Study">
 				<figure class="sn">
@@ -153,8 +158,8 @@
 		</div>
 
 		<!-- ARTICLES -->
-		<h2 style="margin-top:20px">Articles</h2>
-		<div class="flex-grid other">
+		<h2 class="title">Articles</h2>
+		<div class="flex-grid gallery">
 			<a href="blog/apple-m1.html" title="Apple M1? What the heck is 'ARM'?" data-tags="article">
 				<figure class="apple-m1 two-img">
 					<div class="img-container">
@@ -190,8 +195,8 @@
 			</a> -->
 		</div>
 
-		<h2 style="margin-top:20px">Mentorship Materials</h2>
-		<div class="flex-grid other">
+		<h2 class="title">Mentorship Materials</h2>
+		<div class="flex-grid gallery">
 			<a class="dynamicLoad" href="pages/love-earwax.html" title="I love earwax Presentation" data-tags="Teaching,Presentation">
 				<figure class="loveEarwax two-img">
 					<div class="img-container">
