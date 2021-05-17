@@ -14,7 +14,7 @@
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
 body {background-color:var(--bg);color:var(--text);font-family:'Raleway', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;overflow-x:hidden;width:100vw;text-rendering:optimizeLegibility;}
-h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:600;line-height:1.1em;margin-top:0;margin-bottom:0;}
+h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:700;line-height:1.1em;margin-top:0;margin-bottom:0;}
 a {color:var(--text);text-decoration:none;}
 b {font-weight:700;}
 .hidden {display:none!important;}
@@ -33,21 +33,21 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #overview section {position:relative;padding:0 5vw;margin:0;}
 #overview > picture {display:block;width:100%;}
 #overview img {display:block;max-width:100%;}
-#overview h1 {font-size:42px;letter-spacing:3px;line-height:0.8em;}
-#overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
-#overview h1 span {color:white;display:block;font-size:36px;font-weight:600;letter-spacing:2.4px;line-height:0.9;margin-top:19px;}
-#overview h3 {font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-bottom:0;text-transform:uppercase;}
+#overview h3 {font-size:1.1em;font-weight:300;letter-spacing:1.8px;margin-top:-120px;margin-bottom:110px;text-transform:uppercase;}
+#overview h1 {font-size:38px;letter-spacing:3px;line-height:0.8em;margin-top:40px;font-family: 'Lobster', cursive;}
+#overview h1 span {color:white;display:block;font-family:'Raleway';font-size:28px;font-weight:300;letter-spacing:2.4px;height:1em;line-height:0.5;margin-top:6px;margin-left:21px;overflow-y:hidden;}
 /*#overview h3 divider::before {content:',';}*/
 #overview h3 divider:last-of-type::after {content:'& ';}
 
 @media screen and (min-width:375px) {
-  #overview h1 {font-size:37px;line-height:inherit;}
-  #overview h1 span {font-size:31.1px;height:1em;line-height:0.5;margin-top:-3px;overflow-y:hidden;}
+  #overview h1 {font-size:44px;line-height:inherit;}
+  #overview h1 span {font-size:28px;margin-top:-2px;}
   #overview h3 {letter-spacing:6.5px;}
 }
 @media screen and (min-width:500px) {
-  #overview h1 {font-size:46px;}
-  #overview h1 span {font-size:39px;margin-top:-5px;}
+  #overview h1 {font-size:57px;}
+  #overview h1 span {font-size:38px;margin-left:30px;}
+  #overview h3 {margin-top:-150px;margin-bottom:150px;}
 }
 @media screen and (min-width:675px) {
   #overview {background-image:url(images/floor-small.jpg);background-position:bottom right;background-repeat:repeat-x;background-size:auto 131px;box-shadow:0 0 0 15px rgb(214 195 172 / 60%);padding:40px 0 0 5vw;}
@@ -58,20 +58,22 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   #overview {display:flex;align-items:flex-end;justify-content:center;}
   #overview::after {content:'';clear:left;display:block;}
   #overview section {padding-bottom:160px;width:100%;max-width:800px;}
-  #overview h1 {font-size:60px;letter-spacing:4px;}
-  #overview h1 i {font-style:normal;letter-spacing:0;margin-left:-4px;}
-  #overview h1 span {font-size:41.2px;font-weight:700;height:1em;line-height:0.5em;margin-top:-7px;padding-left:2px;}
-  #overview h3 {font-size:1em;font-weight:300;margin-top:-12px;padding-left:20px;}
   #overview > picture {margin:0;}
 }
 @media screen and (min-width:930px) {
-  #overview h1 span {letter-spacing:8.1px;}
+  #overview h1 {font-size:65px;margin-top:90px;letter-spacing:4px;}
+  #overview h1 span {font-size:38px;height:1em;line-height:0.5em;margin-top:-6px;padding-left:2px;}
+  #overview h3 {letter-spacing:4px;margin-top:-170px;margin-bottom:190px;}
+}
+@media screen and (min-width:1050px) {
+  #overview h1 {font-size:80px}
+  #overview h1 span {margin-left:42px;padding-left:2px;}
 }
 @media screen and (min-width:1200px) {
   #overview {padding:40px 5vw 0;}
 }
 
-#overview .bio {letter-spacing:1px;line-height:1.9em;margin:40px 0;}
+#overview .bio {letter-spacing:1px;line-height:1.9em;margin:40px 0;max-width:85vw;}
 
 #overview ul {margin-left:-11px;padding-left:0;}
 #overview li {display:inline-block;padding:0 6px;position:relative;}
@@ -116,7 +118,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   box-shadow:0 0 13px -9px var(--text-med);
   display:flex;
   flex-flow:column;
-  font-weight:600;
+  font-weight:700;
   justify-content:space-evenly;
   letter-spacing:.1px;
   padding:15px;
