@@ -90,10 +90,11 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #approach {display:none;}
 
 /* WORK */
-.work {margin-top:40px;padding-bottom:40px;}
+.work {padding-bottom:40px;}
 .work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 180ms;transition-timing-function:ease-out;}
 .work h4 {margin:-20px 0 0;}
 .work p {margin:.3em 0 .6em;}
+.work .title {margin-top:40px;}
 
 .work nav {text-align:right;}
 #sort-by {border:2px solid var(--text-faint);border-radius:6px;cursor:pointer;padding:6px;vertical-align:middle;}
