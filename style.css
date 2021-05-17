@@ -249,6 +249,7 @@ figure.two-img:hover img:last-child {opacity:1;}
   .work {overflow-x:unset;}
   .work::after {content:unset;}
   .work header {padding:0;}
+  /*needs work x-padding to be 0*/
   .flex-grid.phase {margin-left:calc(-50vw + 600px);padding:0 5vw 40px;width:90vw;}
   .flex-grid .headings {padding-right:10vw;}
   .flex-grid .headings li:last-child {width:calc(85vw - 630px);}
