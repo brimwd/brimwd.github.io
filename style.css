@@ -45,7 +45,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   #overview h3 {letter-spacing:6.5px;}
 }
 @media screen and (min-width:500px) {
-  #overview h1 {font-size:57px;}
+  #overview h1 {font-size:55px;}
   #overview h1 span {font-size:38px;margin-left:30px;}
   #overview h3 {margin-top:-150px;margin-bottom:150px;}
 }
