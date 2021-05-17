@@ -39,7 +39,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 /*#overview h3 divider::before {content:',';}*/
 #overview h3 divider:last-of-type::after {content:'& ';}
 
-@media screen and (min-width:375px) {
+@media screen and (min-width:391px) {
   #overview h3 {letter-spacing:6.5px;margin-top:-110px;}
   #overview h1 {font-size:44px;line-height:inherit;}
   #overview h1 span {font-size:28px;margin-top:-2px;}
