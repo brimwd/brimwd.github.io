@@ -51,6 +51,13 @@ hr {border-color:var(--text-ultra-faint);clear:both;margin:50px auto;width:40%;}
 /* BLOG CONTENT */
 article {padding:30px 15px 50px;position:relative;}
 figure {position:relative;text-align:center;}
+figure a {border:none;display:block;}
+@media (hover: hover) {
+  figure a {position:relative;}
+  figure a::before, figure a::after {display:flex;justify-content:center;align-content:middle;position:absolute;z-index:-1}
+  figure a:hover::before {content:'';background-color:var(--gold);opacity:.3;top:0;right:0;bottom:0;left:0;z-index:1;}
+  figure a:hover::after {content:'open \f14c';color:var(--incoming-msg);font-family:'Font Awesome 5 Pro', sans-serif;font-weight:100;font-size:1.4em;right:15px;bottom:15px;z-index:2;}
+}
 figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
 .dropcap {font-size:73px;float:left;line-height:3.8rem;font-weight:bold;padding-right:0.6rem;}
@@ -116,6 +123,11 @@ figcaption::after {content:'';display:block;clear:both;}
   figure.full-width {margin:1em 0 2em;}
   .full-width figcaption {font-size:1.2em;margin-top:0;max-width:600px;}
 }
+
+@media (min-width:992px) {figure.stretch {margin-right:-12vw;margin-left:-12vw;}}
+@media (min-width:1200px) {figure.stretch {margin-right:-18vw;margin-left:-18vw;}}
+
+
 
 /* FOOTER */
 footer {cursor:default;}
