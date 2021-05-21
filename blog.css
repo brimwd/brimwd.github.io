@@ -21,6 +21,8 @@
 }
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
+.hidden {display:none!important;}
+
 html {width:100vw;overflow-x:hidden;}
 body {background-color:var(--bg);color:var(--text);font-family:'Bitter', serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:18px;line-height:2rem;margin:0 auto;max-width:100vw;text-rendering:optimizeLegibility;overflow-x:auto;padding:0;}
 nav, footer {padding:15px 0;}
@@ -56,7 +58,7 @@ figure a {border:none;display:block;}
   figure a {position:relative;}
   figure a::before, figure a::after {display:flex;justify-content:center;align-content:middle;position:absolute;z-index:-1}
   figure a:hover::before {content:'';background-color:var(--gold);opacity:.3;top:0;right:0;bottom:0;left:0;z-index:1;}
-  figure a:hover::after {content:'open \f14c';color:var(--incoming-msg);font-family:'Font Awesome 5 Pro', sans-serif;font-weight:100;font-size:1.4em;right:15px;bottom:15px;z-index:2;}
+  figure a:hover::after {content:'open \f14c';color:#333;font-family:'Font Awesome 5 Pro', sans-serif;font-weight:100;font-size:1.4em;right:15px;bottom:15px;z-index:2;}
 }
 figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
@@ -127,8 +129,6 @@ figcaption::after {content:'';display:block;clear:both;}
 @media (min-width:992px) {figure.stretch {margin-right:-12vw;margin-left:-12vw;}}
 @media (min-width:1200px) {figure.stretch {margin-right:-18vw;margin-left:-18vw;}}
 
-
-
 /* FOOTER */
 footer {cursor:default;}
 footer .icons * {display:inline-block;margin:0 2px;vertical-align:middle;}
@@ -168,3 +168,10 @@ footer a, footer a i {cursor:pointer;}
 
   footer .icons a {color:var(--text);}
 }
+
+.toggle {border:1px solid var(--gold);border-radius:8px;display:inline-block;margin-left:.75em;}
+.toggle a {border-bottom:none;border-right:1px solid var(--gold);font-size:initial;padding:6px 8px;vertical-align:middle;}
+.toggle a:hover {background-color:var(--selection)!important;}
+.toggle a:first-child {border-radius:7px 0 0 7px;}
+.toggle a:last-child {border:none;border-radius:0 7px 7px 0;}
+.toggle a.active, .toggle a.active:hover {background-color:var(--gold)!important;color:#000!important;}

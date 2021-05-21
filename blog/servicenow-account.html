@@ -16,7 +16,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <link rel="stylesheet" href="fontawesome/css/all.css" media="all">
 <link rel="stylesheet" type="text/css" href="blog.css">
-<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
 </head>
 <body>
 <article class="blog container-fluid"><div class="row"><div class="col-12">
@@ -97,9 +98,13 @@
 
 	<hr>
 
-	<h2>Final Mockups</h2>
+	<h2 class="mb-3"><span class="d-inline-block" style="vertical-align:middle;">Final Mockups</span>
+		<div class="toggle">
+			<a class="desktop active">Desktop</a><a class="mobile">Mobile</a>
+		</div>
+	</h2>
 
-	<figure class="stretch row">
+	<figure class="stretch row" rel="desktop">
 		<div class="col-12 col-md-6 col-lg-4 col-xl">
 			<a href="images/servicenow/account/update-final/profile-full.png" target="_blank">
 				<picture>
@@ -153,6 +158,63 @@
 			</a>
 			<figcaption>
 				<p>Security tab</p>
+			</figcaption>
+		</div>
+	</figure>
+	<figure class="stretch row hidden" rel="mobile">
+		<div class="col-12 col-md-6 col-lg-4 col-xl">
+			<a href="images/servicenow/account/update-final/profile-mobile-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/update-final/profile-mobile-350.jpg" media="(min-width:820px)" />
+					<img src="images/servicenow/account/update-final/profile-mobile-cropped.jpg" alt="A mockup of the profile tab" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Profile tab (mobile)</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-6 col-lg-4 col-xl">
+			<a href="images/servicenow/account/update-final/events-mobile-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/update-final/events-mobile-350.jpg" media="(min-width:820px)" />
+					<img src="images/servicenow/account/update-final/events-mobile-cropped.jpg" alt="A mockup of the events tab" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Events tab (mobile)</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-6 col-lg-4 col-xl">
+			<a href="images/servicenow/account/update-final/activity-mobile-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/update-final/activity-mobile-350.jpg" media="(min-width:820px)" />
+					<img src="images/servicenow/account/update-final/activity-mobile-cropped.jpg" alt="A mockup of the activity tab" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Activity tab (mobile)</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-6 col-lg-4 col-xl">
+			<a href="images/servicenow/account/update-final/communications-mobile-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/update-final/communications-mobile-350.jpg" media="(min-width:820px)" />
+					<img src="images/servicenow/account/update-final/communications-mobile-cropped.jpg" alt="A mockup of the communications tab" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Communications tab (mobile)</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-6 col-lg-4 col-xl">
+			<a href="images/servicenow/account/update-final/security-mobile-full.png" target="_blank">
+				<picture>
+					<source srcset="images/servicenow/account/update-final/security-mobile-350.jpg" media="(min-width:820px)" />
+					<img src="images/servicenow/account/update-final/security-mobile-cropped.jpg" alt="A mockup of the final design for the security tab" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Security tab (mobile)</p>
 			</figcaption>
 		</div>
 	</figure>
