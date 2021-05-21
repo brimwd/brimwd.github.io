@@ -170,7 +170,7 @@ footer a, footer a i {cursor:pointer;}
 }
 
 .toggle {border:1px solid var(--gold);border-radius:8px;display:inline-block;margin-left:.75em;}
-.toggle a {border-bottom:none;border-right:1px solid var(--gold);font-size:initial;padding:6px 8px;vertical-align:middle;}
+.toggle a {border-bottom:none;border-right:1px solid var(--gold);font-size:initial;padding:6px 8px;}
 .toggle a:hover {background-color:var(--selection)!important;}
 .toggle a:first-child {border-radius:7px 0 0 7px;}
 .toggle a:last-child {border:none;border-radius:0 7px 7px 0;}
