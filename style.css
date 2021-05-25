@@ -168,7 +168,8 @@ figure.sn {background-color:#293e40;background-image:url(images/servicenow/rando
 figure.sn:hover {background-size:100%;}
 figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;}
 /* SUX */
-figure.sux {background-color:#e0f2f1;color:#375068;}
+figure.sux {background:repeat center #fff;background-image:radial-gradient(circle,#ecf5f2ff 14%,#ffffff00 15%,#ffffff00 100%);background-size:24px 24px;color:#3C5066;}
+figure.sux:hover {background-image:radial-gradient(circle,#FFE998cc 14%,#9f9f9f00 15%,#9f9f9f00 100%);background-size:16px 16px;}
 figure.sux h4 {margin-top:-12px;}
 /* COMING SOON */
 figure.soon {background-color:#deebf2;background-image:url('https://fpoimg.com/400x250?text=coming soon&bg_color=deebf2&text_color=17466d');background-size:contain;}
