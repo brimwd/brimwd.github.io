@@ -128,8 +128,14 @@ figcaption::after {content:'';display:block;clear:both;}
   .full-width figcaption {font-size:1.2em;margin-top:0;max-width:600px;}
 }
 
-@media (min-width:992px) {figure.stretch {margin-right:-12vw;margin-left:-12vw;}}
-@media (min-width:1200px) {figure.stretch {margin-right:-18vw;margin-left:-18vw;}}
+@media (min-width:992px) {
+  figure.two-img {margin-right:-5vw;margin-left:-5vw;}
+  figure.stretch {margin-right:-12vw;margin-left:-12vw;}
+}
+@media (min-width:1200px) {
+  figure.two-img {margin-right:-6vw;margin-left:-6vw;}
+  figure.stretch {margin-right:-18vw;margin-left:-18vw;}
+}
 
 /* FOOTER */
 footer {cursor:default;}
