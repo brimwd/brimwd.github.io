@@ -62,7 +62,10 @@ figure a picture, figure a img {display:inline-block;border-radius:6px;}
   figure a::before, figure a::after {display:flex;justify-content:center;align-content:middle;position:absolute;z-index:-1}
   figure a:hover {box-shadow:0 13px 20px -8px rgb(0 0 0 / 15%);transform:scale(1.02);}
   figure a:hover::before {content:'';background-color:var(--gold);border-radius:6px;opacity:.3;top:0;right:0;bottom:0;left:0;z-index:1;}
-  figure a:hover::after {content:'open \f14c';color:#333;font-family:'Font Awesome 5 Pro', sans-serif;font-weight:100;font-size:1.4em;right:15px;bottom:15px;z-index:2;}
+  figure a:hover::after {content:'open \f31d';color:#333;font-family:'Font Awesome 5 Pro', sans-serif;font-weight:100;font-size:1.4em;right:15px;bottom:15px;z-index:2;}
+}
+@media (hover: hover) and (min-width: 992px) {
+  figure .col-lg-1 a:hover::after {transform:rotate(-90deg);width:-webkit-max-content;right:-15px;bottom:50px;}
 }
 figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
