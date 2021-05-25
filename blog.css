@@ -30,7 +30,7 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 
 .row {position:relative;}
 h1, h2, h3, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:normal;line-height:1.1em;margin-top:0;}
-h1 {font-weight:lighter;color:var(--gold);text-shadow:1px 1px 5px var(--bg-faint), 1px 0 5px var(--bg-faint), 0px 1px 5px var(--bg-faint)}
+h1 {font-weight:lighter;color:var(--gold);}
 h2 {font-size:1.3em;}
 h3 {font-size:1.3em;}
 h5 {font-size:1.2em;font-weight:600;}
@@ -51,6 +51,8 @@ img {max-width:100%;}
 hr {border-color:var(--text-ultra-faint);clear:both;margin:50px auto;width:40%;}
 
 /* BLOG CONTENT */
+blockquote.slug p {background-color:#fdf0c8;color:#2a2a2a;}
+blockquote.slug p::before {background-color:#fdf0c8;}
 article {padding:30px 15px 50px;position:relative;}
 figure {position:relative;text-align:center;}
 figure a {border:none;box-shadow:0 3px 8px rgb(0 0 0 / 20%);border-radius:6px;transition:transform 200ms, box-shadow 200ms;transition-timing-function:ease-out;}
@@ -64,7 +66,7 @@ figure a picture, figure a img {display:inline-block;border-radius:6px;}
 }
 figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
-.dropcap {font-size:73px;float:left;line-height:3.8rem;font-weight:bold;padding-right:0.6rem;}
+.dropcap {color:var(--gold);float:left;font-size:62px;font-weight:lighter;line-height:0.8em;margin-top:9px;padding-right:0.6rem;}
 figure.full-width img {border-radius:5px;}
 
 .hover-expose {background-size:contain;}
