@@ -1,0 +1,352 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="description" content="UX, web design, & front-end development portfolio for Brian Donahue, Product Designer based in Silicon Valley, California">
+<meta name="keywords" content="product,product design,manager,UX,UX design,UX designer,user experience,design,designer,UI,HTML,CSS,JavaScript,Illustrator,Adobe,Photoshop,freelance,contractor,developer,front-end,front end,portfolio,graphic design,graphics,web,web development,for hire,resume,jQuery,storyboarding,prototyping,research,user research,researcher,information architecture,taxonomy">
+<meta name="author" content="Brian Donahue">
+<meta name="format-detection" content="telephone=no">
+
+<title>Brian Donahue - Scheduling with ScheduleUX</title>
+<meta property='og:image' content='../images/sux/calendar-logo.png'/>
+<base href="../">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<link rel="stylesheet" href="fontawesome/css/all.css" media="all">
+<link rel="stylesheet" type="text/css" href="blog.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+</head>
+<body>
+<article class="blog container-fluid"><div class="row"><div class="col-12">
+	<nav class="mb-5"><a href="index.html"><img src="favicon.ico" />Portfolio</a></nav>
+	<h1>Scheduling with ScheduleUX</h1>
+	<h2>Reimagining scheduling for recurring events</h2>
+	<!-- <p><time datetime="2021-06-25">June 25, 2021</time> • 7 min read</p> -->
+
+	<blockquote class="sms slug my-5">
+		<p>This project reviews improvements to the "Scheduling Utility" where researchers specify their availability.</p>
+	</blockquote>
+
+	<p><span class="dropcap">S</span>cheduleUX is a user-research platform with a focus on coordinating schedules and ensuring participant-eligibility.</p>
+
+	<p>ScheduleUX is a scheduling-service that handles screening participants and scheduling sessions for user-research. By automating the time-intensive, low-skills tasks necessary to run studies, ScheduleUX enables researchers to focus on the high-skill aspects of their work, including planning, conducting, and reviewing their research.</p>
+	<p>Automating the traditional duties of a human research-coordinator required designing a platform that could be used <strong>by</strong> any employee to schedule <strong>for</strong> any researcher, <strong>with</strong> any participant... and drawing the line between <strong>edge-case</strong> and <strong>use-case</strong> was a lot trickier than anyone on our team imagined. <emoji>🧐</emoji></p>
+	<p>Even before the pandemic, with a narrow focus of scheduling for in-person sessions in a typical "research lab" environment was tricky, and required making a lot of presumptions about our <strong>users</strong> in order to streamline the workflow.</p>
+	<p>After the pandemic hit, with <strong>researchers</strong>, <strong>coordinators</strong>, and <strong>participants</strong> joining from different locations and sometimes even from different time zones, we knew we needed to revisit our product vision.</p>
+	<p>We started by adding support for coordinating remote studies including special configurations for Zoom, Webex, Skype, Google Meet, Google Hangouts, Whereby, Slack, and Facebook Messenger.</p>
+	<p>Next we built a sophisticated admin-portal to help our internal team support customers, manage payments and subscriptions, take notes, and -<em>if necessary</em>- suspend suspicious accounts.</p>
+
+	<p>Our original application...</p>
+
+	<figure class="two-img row">
+		<div class="col-6">
+			<a href="images/sux/registration/v0/full.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v0/a-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v0/a-cropped.jpg" alt="The prototype registration page" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>The <i>alpha-prototype</i> registration page</p>
+			</figcaption>
+		</div>
+		<div class="col-6">
+			<a href="images/sux/registration/v1/full.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v1/a-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v1/a-cropped.jpg" alt="The v1 design update for the registration page" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>The registration page with v1 branding</p>
+			</figcaption>
+		</div>
+	</figure>
+
+	<hr>
+
+	<p>Over the years I've enhanced the session-selection component, the registration flow, the mobile layouts, and handling for studies with missing data. I've also created a feature for participants to add event-reminders to their calendars or to re-generate the reminders later if they need to.</p>
+
+	<h2 class="mb-3 mt-5"><span class="d-inline-block" style="vertical-align:middle;">v2 Design</span>
+		<div class="toggle">
+			<a class="overview active">Overview</a><a class="tasks">Tasks</a>
+		</div>
+	</h2>
+
+	<p>In 2018, the brand was updated to use a fresh-looking neon-green and white color scheme. The Participant-Registration page was also updated to use a sidebar for registration tasks.</p>
+
+	<figure class="stretch row" rel="overview">
+		<div class="col-12 col-md-4">
+			<a href="images/sux/registration/v2/overview.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/overview-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/overview-cropped.jpg" alt="A mockup of the registration page" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Study Overview</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4">
+			<a href="images/sux/registration/v2/success.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/success-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/success-cropped.jpg" alt="A mockup of the registration tasks" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Registration Successful</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4">
+			<a href="images/sux/registration/v2/generate-reminder.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/generate-reminder-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/generate-reminder-cropped.jpg" alt="A mockup of the participation requirements task" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Generating Reminder</p>
+			</figcaption>
+		</div>
+	</figure>
+	<figure class="stretch row hidden" rel="tasks">
+		<div class="col-6 col-md-4 col-lg-2 col-xl">
+			<a href="images/sux/registration/v2/tasks-start.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/tasks-start-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/tasks-start-cropped.jpg" alt="Registration Tasks" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Registration Tasks</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4 col-lg-2 col-xl">
+			<a href="images/sux/registration/v2/task-a.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/task-a-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/task-a-cropped.jpg" alt="Registration Eligibility" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Eligibility</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4 col-lg-2 col-xl">
+			<a href="images/sux/registration/v2/task-b1.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/task-b1-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/task-b1-cropped.jpg" alt="Select Date" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Select Date</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4 col-lg-2 col-xl">
+			<a href="images/sux/registration/v2/task-b2.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/task-b2-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/task-b2-cropped.jpg" alt="Registration Tasks" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Select Session</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4 col-lg-2 col-xl">
+			<a href="images/sux/registration/v2/task-c.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/task-c-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/task-c-cropped.jpg" alt="Registration Tasks" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Contact Info</p>
+			</figcaption>
+		</div>
+		<div class="col-6 col-md-4 col-lg-2 col-xl">
+			<a href="images/sux/registration/v2/tasks-start.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v2/tasks-start-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v2/tasks-start-cropped.jpg" alt="Registration Tasks" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Registration Complete</p>
+			</figcaption>
+		</div>
+	</figure>
+
+	<p>With the shift to remote-everything that came with the pandemic in 2020, ScheduleUX also shifted to support remote-research. The ScheduleUX now recognizes URL-formats for common video-call services including Zoom, WebEx, Google Meet, Skype, and more.</p>
+
+	<hr>
+
+	<h2>Customizing SUX</h2>
+	<p>My research has shown that brand-recognition improves a participant's willingness to register, so my 2021-enhancement refines and simplifies the design of the registration-page to enable researchers to customize the branding.</p>
+
+	<p>This update involved reworking the design to maintain necessary branding-priority (needs to be recognizable as "_____ via ScheduleUX" and not as a direct product of the researcher's company), reducing the colors, considering the opportunities to simplify the branding-interface and reuse colors. and the accessibility requirements of maintaining adequate contrast.</p>
+
+	<h2 class="mb-3 mt-5"><span class="d-inline-block" style="vertical-align:middle;">v3 Design</span>
+		<div class="toggle">
+			<a class="wireframes">Wireframes</a><a class="sux active">Update</a><a class="custom">Custom</a>
+		</div>
+	</h2>
+
+	<figure class="stretch row hidden" rel="wireframes">
+		<div class="col-5 col-md-2">
+			<a href="images/sux/registration/v3/wireframe-mobile-full.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/wireframe-mobile-150.jpg" media="(min-width:768px)" />
+					<img src="images/sux/registration/v3/wireframe-mobile-cropped.jpg" alt="A wireframe of the mobile layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Mobile</p>
+			</figcaption>
+		</div>
+		<div class="col-7 col-md-4">
+			<a href="images/sux/registration/v3/wireframe-desktop-full.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/wireframe-desktop-400.jpg" media="(min-width:768px)" />
+					<img src="images/sux/registration/v3/wireframe-desktop-cropped.jpg" alt="A wireframe of the desktop layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Desktop</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-6">
+			<a href="images/sux/registration/v3/wireframe-wide-full.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/wireframe-wide-600.jpg" media="(min-width:768px)" />
+					<img src="images/sux/registration/v3/wireframe-wide-cropped.jpg" alt="A wireframe of the wide-screen layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Ultra-Wide</p>
+			</figcaption>
+		</div>
+	</figure>
+
+	<figure class="stretch row" rel="sux">
+		<div class="col-3 col-md-2 col-lg-1 order-1">
+			<a href="images/sux/registration/v3/mobile.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/mobile-150.jpg" media="(min-width:768px)" />
+					<img src="images/sux/registration/v3/mobile-cropped.jpg" alt="Registration v3 Mobile layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Mobile</p>
+			</figcaption>
+		</div>
+		<div class="col-4 col-md-5 col-lg-2 order-2 order-md-3 order-lg-2">
+			<a href="images/sux/registration/v3/tablet.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/tablet-400.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v3/tablet-cropped.jpg" alt="Registration v3 Tablet layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Tablet</p>
+			</figcaption>
+		</div>
+		<div class="col-5 col-md-7 col-lg-3 order-3 order-md-4 order-lg-3">
+			<a href="images/sux/registration/v3/desktop.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/desktop-400.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v3/desktop-cropped.jpg" alt="Registration v3 Desktop layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Desktop</p>
+			</figcaption>
+		</div>
+		<div class="col-12 col-md-10 col-lg-6 order-md-2 order-lg-4">
+			<a href="images/sux/registration/v3/ultra-wide.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/ultra-wide-600.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v3/ultra-wide-cropped.jpg" alt="Registration v3 Ultra-Wide layout" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Ultra-Wide</p>
+			</figcaption>
+		</div>
+	</figure>
+
+	<figure class="two-img row hidden" rel="custom">
+		<div class="col-6">
+			<a href="images/sux/registration/v3/branded-google.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/branded-google-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v3/branded-google-cropped.jpg" alt="Registration v3 Google-branded" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Google-branded registration</p>
+			</figcaption>
+		</div>
+		<div class="col-6">
+			<a href="images/sux/registration/v3/branded-sephora.png" target="_blank">
+				<picture>
+					<source srcset="images/sux/registration/v3/branded-sephora-350.jpg" media="(min-width:820px)" />
+					<img src="images/sux/registration/v3/branded-sephora-cropped.jpg" alt="Registration v3 Sephora-branded" />
+				</picture>
+			</a>
+			<figcaption>
+				<p>Sephora-branded registration</p>
+			</figcaption>
+		</div>
+	</figure>
+
+	<hr>
+
+	<h2>Work Completed So Far</h2>
+	<p>Up-to-date work can be seen on <a href="https://www.figma.com/file/AGrnsYOvDFaz37kuv9e9aL/ScheduleUX?node-id=66%3A98">my team's Figma document</a>.</p>
+
+	<ul class="checklist">
+		<li><i class="far fa-check"></i> Create <a href="images/sux/registration/v3/customize-branding.png" target="_blank">a new UI for researchers to specify custom-branding</a> colors</li>
+		<li><i class="far fa-check"></i> Update the registration pages to utilize custom branding if available</li>
+		<li><i class="far fa-check"></i> Create a new user-type so that participants can register for an account</li>
+		<li><i class="far fa-check"></i> Update all registration flows to differentiate between 'Researcher' and 'Participant'</li>
+		<li><i class="far fa-check"></i> Add a new flow to collect demographic information from participants when they register</li>
+		<li><i class="far fa-check"></i> Update the Account page to allow participants to see or modify their demographic information</li>
+		<li><i class="far fa-check"></i> Add a new flow for participants to join the pool for a given study</li>
+	</ul>
+
+	<h2 class="mt-5">Next Steps: New Registration Flow</h2>
+
+	<p>Researchers have also been asking for a pool of participants they can choose from (rather than the current 'first come, first served' model) so that they'll have better control over their demographic distribution and population-sampling.</p>
+	<p>The 2021 update will include updated flows where prospective participants can register with ScheduleUX and express interest in participating. If they're selected, the participants will receive a link to come back and schedule a session.</p>
+
+	<ul class="checklist">
+		<li><i class="far fa-plus"></i> Create a new UI for participants to see which studies they're registered for</li>
+		<li><i class="far fa-plus"></i> Create a new UI for researchers to review their participant pool and select participants</li>
+		<li><i class="far fa-plus"></i> Create a new email template to invite selected participants schedule their session</li>
+		<li><i class="far fa-plus"></i> Add a new flow for selected participants schedule their session</li>
+		<li><i class="far fa-plus"></i> Add a new utility to notify returning-participants that they have not been selected yet</li>
+	</ul>
+
+	<hr>
+
+	<footer class="mt-5 text-center">
+		<p>Made by B Donahue</p>
+		<p class="icons">
+			<a class="icon linkedin" href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i></a>
+			<span>&bullet;</span>
+			<a class="icon mailbox" href="mailto:brimwd@gmail.com"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a>
+			<span>&bullet;</span>
+			<a class="icon sms" href="sms:971-222-9892"><i class="fas fa-sms fa-2x" aria-label="email"></i></a>
+		</p>
+		<p><a href="index.html">Portfolio</a></p>
+	</footer>
+</div></div>
+</article>
+</body>
+</html>
