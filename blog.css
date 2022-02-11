@@ -70,7 +70,7 @@ figure a picture, figure a img {display:inline-block;border-radius:6px;}
 figure.half-width img, figure.float-left img {display:block;margin:10px auto;max-width:100%;}
 .full-width figcaption {color:var(--incoming-text);font-size:1.25em;margin-top:0;}
 .dropcap {color:var(--gold);float:left;font-size:62px;font-weight:lighter;line-height:0.8em;margin-top:9px;padding-right:0.6rem;}
-figure.full-width img {border-radius:5px;}
+figure.full-width img {border-radius:15px;}
 
 .hover-expose {background-size:contain;}
 .hover-expose img {transition:opacity .5s;}
