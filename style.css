@@ -124,7 +124,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   position:relative;
   overflow:hidden;
   text-align:center;
-  transition:all 250ms, background-size 180ms, transform 180ms;
+  transition:all 250ms, background-size 180ms ease-out, transform 180ms;
   transition-timing-function:ease-out;
   z-index:1;
   user-select:none;
@@ -151,7 +151,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 
 .apple figure {background-color:#fafafc;background-image:radial-gradient(ellipse,#fafafc 50%,#efeff4);background-size:170% 160%;background-position:90% 100%;color:black;}
 .apple img {max-height:65px;margin-bottom:10px;position:relative;z-index:1;}
-.apple figure::before {content:'';background:url(images/apple-logo-rainbow.svg) center center no-repeat;background-size:contain;display:block;transition:all 250ms, blur 300ms;opacity:0;filter:blur(10px);width:100%;height:100%;max-height:21px;position:absolute;top:65px;right:0;left:0;z-index:0;}
+.apple figure::before {content:'';background:url(images/apple-logo-rainbow.svg) center center no-repeat;background-size:contain;display:block;transition:all 250ms;opacity:0;filter:blur(10px);width:100%;height:100%;max-height:21px;position:absolute;top:65px;right:0;left:0;z-index:0;}
 .work .apple:hover img {max-height:74px;}
 .work .apple:hover figure::before {top:36px;max-height:82px;filter:blur(20px);opacity:0.6;}
 @media (prefers-color-scheme:dark) {
@@ -191,7 +191,7 @@ figure.sn:hover {background-size:100%;}
 figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;}
 /* SUX */
 figure.sux {background:repeat center #fff;background-image:radial-gradient(circle,#ecf5f2ff 14%,#ffffff00 15%,#ffffff00 100%);background-size:24px 24px;color:#3C5066;}
-figure.sux:hover {background-image:radial-gradient(circle,#FFE998cc 14%,#9f9f9f00 15%,#9f9f9f00 100%);background-size:16px 16px;}
+figure.sux:hover {background-image:radial-gradient(circle,#caf3d2ff 6.5%,#caf3d200 6.6%,#caf3d200 100%);background-size:22px 22px;}
 figure.sux h4 {margin-top:-12px;}
 /* COMING SOON */
 figure.soon {background-color:#deebf2;background-image:url('https://fpoimg.com/400x250?text=coming soon&bg_color=deebf2&text_color=17466d');background-size:contain;}
