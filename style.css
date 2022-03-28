@@ -90,11 +90,10 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
     background-position:top center;
   }
   #overview .row::before {
-    background-color:#555d2dc9/*#c2a450*//*#1D1D1f*/;
-    background-image:url(images/bg/wormz.png);
-    background-blend-mode:overlay;
+    background-color:#00e0e2c9;
+    background-blend-mode:difference;
     border:2px solid #2b2b2b;
-    box-shadow:0 0 20px 1px #295f3a, 0 0 200px 100px #00000023;
+    box-shadow:0 0 30px 5px #5f3029, 0 0 200px 100px #00000023;
   }
   #overview .row::after {
     background-color:rgb(5 5 5 / 8%);
@@ -301,8 +300,8 @@ figure.two-img:hover img:last-child {opacity:1;}
 }
 
 #footer h5 {font-size:1.35em;}
-#footer a {margin-right:20px;}
-#footer a:hover {text-decoration:underline;}
+#footer a {border-bottom:1px dotted transparent;cursor:pointer;margin-right:20px;transition:all 140ms;}
+#footer a:hover {border-bottom: 1px dotted var(--highlight);}
 
 /* dynamicLoad */
 @media screen and (max-width:859px) {#dynamicLoad ~ * {display:none;}}
@@ -345,14 +344,14 @@ figure.two-img:hover img:last-child {opacity:1;}
   --text-faint:#8f8e83;
   --text-faint-alpha:#8f8e838f;
   --text-ultra-faint:#444;
-  --highlight:#95bc54;
+  --highlight:#ff9696;
   --bg-primary:#181818;
   --bg-primary-alpha:#18181880;
   --bg-secondary:#000;
   --selection:#fffcdb42;
 
   --highlight-text:linear-gradient(120deg, #ec9678, #b663d9);
-  --values-ribbon:llinear-gradient(60deg, #4b4d5a85, #3e425300);
+  --values-ribbon:linear-gradient(60deg, #4b4d5a85, #3e425300);
   --values-ribbon-shadow:0 0 160px 320px rgb(0 0 0 / 6%);
 }
 b {font-size:1.15em;line-height:1em;}
