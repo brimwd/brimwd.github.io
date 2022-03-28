@@ -228,6 +228,10 @@ figure.mentoring {background-color:#fff5d2;color:#2a2a2a;}
 figure.sn {background-color:#293e40;background-image:url(images/servicenow/random-lines.svg);background-size:268%;color:white;}
 figure.sn:hover {background-size:260%;}
 figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;background-blend-mode:multiply;}
+@media screen and (min-width:670px) {
+  figure.sn {background-size:118%;}
+  figure.sn:hover {background-size:108%;}
+}
 /* SUX */
 figure.sux {background:repeat center #fff;background-image:radial-gradient(circle,#ecf5f2ff 14%,#ffffff00 15%,#ffffff00 100%);background-size:24px 24px;color:#3C5066;}
 figure.sux:hover {background-image:radial-gradient(circle,#caf3d2ff 6.5%,#caf3d200 6.6%,#caf3d200 100%);background-size:22px 22px;}
