@@ -163,8 +163,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   position:relative;
   overflow:hidden;
   text-align:center;
-  transition:all 180ms;
-  transition-timing-function:ease-out;
+  transition:all 200ms ease;
   z-index:1;
   user-select:none;
   -webkit-user-select:none;
