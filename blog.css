@@ -7,7 +7,7 @@
   --text-ultra-faint:#d7d7d7;
   --highlight:#fffdcc;
   --header-bg:#fffde9;
-  --bg:#fff;
+  --bg-primary:#fff;
   --bg-faint:#f3f3f3;
   --selection:#f7cb4577;
 
@@ -104,12 +104,12 @@ blockquote p:first-child::before, blockquote p:first-child::after {content:unset
 figure.sms {cursor:pointer;user-select:none;text-align:left;}
 .sms p {background-color:var(--incoming-msg);border-radius:20px;color:var(--incoming-text);line-height:1.2em;margin:.4rem 0;padding:10px 14px;width:fit-content;position:relative;}
 figure.sms p {box-shadow:0 0px 25px #2a2a2a61;clear:right;font-size:16px;max-width:80%;transition:top .6s ease-out;top:0px;}
-figure.sms p::after {background-image:radial-gradient(ellipse at bottom left, var(--bg), var(--gradient-shadow));}
+figure.sms p::after {background-image:radial-gradient(ellipse at bottom left, var(--bg-primary), var(--gradient-shadow));}
 .sms p::before, .sms p::after {background-color:var(--incoming-msg);border-bottom-right-radius:100%;content:'';display:block;width:16px;height:12px;position:absolute;top:95%;left:8px;}
-.sms p::after {background-color:var(--bg);width:4px;}
+.sms p::after {background-color:var(--bg-primary);width:4px;}
 .sms p.outgoing {background-color:var(--outgoing-msg);color:var(--outgoing-text);float:right;}
 .sms p.outgoing::before, .sms p.outgoing::after {background-color:var(--outgoing-msg);left:unset;right:8px;transform:scaleX(-1);}
-.sms p.outgoing::after {width:4px;right:7px;background-color:var(--bg);}
+.sms p.outgoing::after {width:4px;right:7px;background-color:var(--bg-primary);}
 figcaption {max-width:500px;margin:10px auto 25px;}
 figcaption::after {content:'';display:block;clear:both;}
 
@@ -161,7 +161,7 @@ footer a, footer a i {cursor:pointer;}
   --text-ultra-faint:#444;
   --highlight:#5e5a00;
   --header-bg:#1d1d1d;
-  --bg:#000;
+  --bg-primary:#000;
   --bg-faint:#181818;
   --selection:#fffcdb42;
 
