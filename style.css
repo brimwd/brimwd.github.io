@@ -40,7 +40,6 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #overview .row::before {
   content:'';
   background-color:#7e3232;
-  background-image:url(images/bg/topography.png);
   background-image:url(images/bg/memphis-mini.png);
   background-blend-mode:overlay;
   border-radius:100%;
