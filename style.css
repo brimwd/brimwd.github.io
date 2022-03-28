@@ -175,7 +175,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 .flex-grid a[disabled]:active figure * {filter:blur(8px)contrast(0.7);opacity:.5;transition:none;}
 .flex-grid a[disabled]:active::after {align-items:center;background-color:var(--bg-primary);border-radius:8px;content:'\f30d\Alocked';cursor:not-allowed;display:flex;font-family:"Font Awesome 5 Pro", Raleway;font-size:1.2em;font-weight:100;line-height:2em;justify-content:center;padding-top:15px;opacity:.7;text-align:center;white-space:pre-wrap;position:absolute;top:0;right:0;bottom:0;left:0;z-index:10;}
 @media (prefers-color-scheme:dark) {
-  .flex-grid figure {box-shadow:unset;}
+  .flex-grid a:hover figure, .flex-grid figure {box-shadow:unset;}
   .flex-grid a[disabled]:active figure * {filter:blur(8px);}
   .flex-grid a[disabled]:active figure img {filter:blur(8px) invert(1);}
 }
@@ -226,8 +226,8 @@ figure.lending {background-color:#2e5a6f;color:white;} /* gold color #f7CC45 */
 /* WEB FOUNDATIONS */
 figure.mentoring {background-color:#fff5d2;color:#2a2a2a;}
 /* SERVICENOW */
-figure.sn {background-color:#293e40;background-image:url(images/servicenow/random-lines.svg);background-size:108%;color:white;}
-figure.sn:hover {background-size:100%;}
+figure.sn {background-color:#293e40;background-image:url(images/servicenow/random-lines.svg);background-size:268%;color:white;}
+figure.sn:hover {background-size:260%;}
 figure.sn.partner-finder {background-color:#81b5a1;color:#293e40;background-blend-mode:multiply;}
 /* SUX */
 figure.sux {background:repeat center #fff;background-image:radial-gradient(circle,#ecf5f2ff 14%,#ffffff00 15%,#ffffff00 100%);background-size:24px 24px;color:#3C5066;}
