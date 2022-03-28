@@ -34,6 +34,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   background-image:url(images/bg/halftone.png);
   font-size:calc(100% + 1vw);
   overflow:hidden;
+  padding-top:60px;
   position:relative;
 }
 #overview .row {position:relative;padding-bottom:80px;}
@@ -350,7 +351,7 @@ figure.two-img:hover img:last-child {opacity:1;}
   --bg-secondary:#000;
   --selection:#fffcdb42;
 
-  --highlight-text:linear-gradient(120deg, #ec9678, #b663d9);
+  --highlight-text:linear-gradient(120deg, #ec9678, #d96363);
   --values-ribbon:linear-gradient(60deg, #4b4d5a85, #3e425300);
   --values-ribbon-shadow:0 0 160px 320px rgb(0 0 0 / 6%);
 }
