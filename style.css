@@ -80,6 +80,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
   position:relative;
   z-index:1;
 }
+h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 #overview p {max-width:45ch;}
 #overview a {border-bottom: 1px dotted var(--highlight);}
 @media(prefers-color-scheme:dark) {
@@ -100,6 +101,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
     -webkit-backdrop-filter:blur(20px) saturate(140%);
     box-shadow:0 0 40px 12px #00000033;
   }
+  h1.my-name {color:#d15f5f;}
 }
 
 #values {font-size:calc(100% + .4vw);padding-bottom:0;}
@@ -115,10 +117,13 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
     left: calc(-550vw + 500px);
     z-index: -1;
   }
-#values h2 {background:var(--highlight-text);
+#values h2 {
+  background:var(--highlight-text);
+  font-weight:100;
   width:fit-content;
   -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;}
+  -webkit-text-fill-color:transparent;
+}
 #values p {max-width:55ch;}
 .card {border-radius:12px;margin:20px 0;}
 /*@media(min-width:1024px) {
@@ -132,12 +137,14 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 /* WORK */
 .work {padding-top:20px;}
 .work h2.title {
-  font-size:calc((100% + .4vw) * 1.5);
   background:var(--highlight-text);
+  font-size:calc((100% + .4vw) * 1.5);
+  font-weight:100;
+  margin-top:40px;
+  margin-bottom:20px;
   width:fit-content;
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
-  margin-top:40px;margin-bottom:20px;
 }
 .work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 180ms;transition-timing-function:ease-out;}
 .work h4 {margin:-20px 0 0;}
