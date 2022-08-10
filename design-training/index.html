@@ -1,597 +1,653 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
 <title>UX Training</title>
+<meta http-equiv="Cache-Control" content="max-age=86400"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="author" content="Brian Donahue">
+<meta property='og:image' content='images/preview.png'/>
+<meta name="description" content="Proven UX training curriculum for getting your start and getting ahead in tech">
+<meta name="keywords" content="UX, UX training, UX mentor, Product Management, training, Product management training, UX Design, UX Design training">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="training.js"></script>
+<script type="text/javascript" src="../js/scrollsync.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170028521-4');
+</script>
 <style>
+:root {
+  --bg: white;
+  --text: #1d1d1f;
+  --link: blue;
+}
+body {background-color:var(--bg);color:var(--text);font-family:"Open Sans", sans-serif;}
+p {margin:0;}
+a {color:var(--link);text-decoration:none;order:3;margin:0 0 .4em;}
+label {cursor:pointer;display:flex;align-items:flex-start;}
+
+input {order:2;margin:.3em .4em 0;}
+span {display:block;float:left;font-size:.8rem;font-weight:500;order:1;padding-top:.2rem;text-align:center;min-width:40px;min-height:2em;}
+input + span::before {content:' ';background-color:#43c73c;border-radius:3px;display:block;}
+input:checked + span::before {content:'Done';}
+@media(prefers-color-scheme:dark) {
+:root {
+  --bg: black;
+  --text: #fafafc;
+  --link: #0c82ff;
+}
+}
 </style>
 </head>
+<body>
 <h1>UX Training</h1>
-<h3>Strategy &amp; Thinking</h3>
-<ol>
-	<li class="title"><h3>Foundational Knowledge</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://pmdictionary.github.io/">Product Management Dictionary</a></li>
-		<li><a href="https://www.usertesting.com/blog/dont-hire-ui-ux-designer/">Why You Shouldn't Hire a UI/UX Designer | UserTesting Blog</a></li>
-		<li><a href="https://www.nngroup.com/articles/personas-jobs-be-done/">Personas vs. Jobs-to-Be-Done</a></li>
-		<li><a href="https://uxdesign.cc/ux-smells-fa971feef820">UX Smells – uxdesign.cc</a></li>
-		<li><a href="https://tubikstudio.com/visual-perception-icons-vs-copy-in-ui/">Visual Perception. Icons vs Copy in UI | Tubik Studio</a></li>
-		<li><a href="https://smashingideas.com/behavioral-archetypes-toolkit/">Behavioral Archetypes Toolkit - Smashing Ideas</a></li>
-		<li><a href="https://www.forbes.com/sites/stevedenning/2019/05/23/understanding-fake-agile/#5598018c4bbe">Understanding Fake Agile</a></li>
-		<li><a href="https://lawsofux.com/">Home | Laws of UX</a></li>
-		<li><a href="https://uxdesign.cc/the-relationship-between-design-deliverables-and-presentation-skills-56c713694446">The relationship between design deliverables and presentation skills</a></li>
-		<li><a href="https://www.fastcodesign.com/90171699/what-is-gdpr-and-why-should-designers-care">What is GDPR, and why should designers care?</a></li>
-		<li><a href="https://hbr.org/2016/09/the-elements-of-value">The 30 Elements of Consumer Value: A Hierarchy</a></li>
-		<li><a href="http://uxmyths.com/">UX Myths</a></li>
-		<li><a href="https://www.nngroup.com/articles/ux-debt/">UX Debt: How to Identify, Prioritize, and Resolve</a></li>
-		<li><a href="http://voiceandtone.com/">Welcome | Voice and Tone</a></li>
-		<li><a href="https://en.wikipedia.org/wiki/Linguistic_relativity">Linguistic relativity - Wikipedia</a></li>
-		<li><a href="https://www.darkpatterns.org/types-of-dark-pattern">Dark Patterns - Types of Dark Pattern</a></li>
-		<li><a href="https://www.fastcompany.com/90681631/how-to-spot-the-psychological-manipulation-behind-dark-design-online">Spot the psychological manipulation behind 'dark design' online</a></li>
-		<li><a href="https://medium.com/eightshapes-llc/patterns-components-2ce778cbe4e8">Patterns ≠ Components – EightShapes – Medium</a></li>
-		<li><a href="https://en.wikipedia.org/wiki/Fitts%27s_law">Fitts's law - Wikipedia</a></li>
-		<li><a href="http://tarotcardsoftech.artefactgroup.com/">The Tarot Cards Of Tech</a></li>
-		<li><a href="https://www.fastcompany.com/90319581/why-the-velvet-hammer-is-a-better-way-to-give-constructive-criticism">What is the velvet hammer and how to use it when giving bad news</a></li>
-	</ul></li>
-	<li class="title"><h3>Technique</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="http://anildash.com/2013/01/all-dashboards-should-be-feeds.html">All Dashboards Should be Feeds - Anil Dash</a></li>
-		<li><a href="http://scottjensen.design/2016/04/designing-an-alternative-to-the-hamburger-menu/">Designing an Alternative to the Hamburger Menu | Scott Jensen Design</a></li>
-		<li><a href="https://www.nngroup.com/articles/overuse-of-overlays/">Overuse of Overlays: How to Avoid Misusing Lightboxes</a></li>
-		<li><a href="https://medium.com/the-year-of-the-looking-glass/the-5-most-common-mistakes-in-design-52816ab77b3d">The 5 Most Common Mistakes in Design – The Year of the Looking Glass – Medium</a></li>
-		<li><a href="https://medium.com/ux-power-tools/50-things-you-probably-forgot-to-design-7a288b0ef914">50 Things You [Probably] Forgot To Design - UX Power Tools - Medium</a></li>
-		<li><a href="https://databox.com/website-engagement-metrics">The 14 Website Engagement Metrics Every Marketing Team Should Be Tracking | Databox Blog</a></li>
-		<li><a href="https://www.nngroup.com/articles/dashboards-preattentive/">Dashboards: Making Charts and Graphs Easier to Understand</a></li>
-		<li><a href="http://boxesandarrows.com/implementing-a-pattern-library-in-the-real-world-a-yahoo-case-study/">Implementing a Pattern Library in the Real World: A Yahoo! Case Study - Boxes and Arrows</a></li>
-		<li><a href="https://www.invisionapp.com/inside-design/5-examples-motion-design-ui/">5 phenomenal examples of motion design in UI | Inside Design Blog</a></li>
-		<li><a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc">Creating Usability with Motion: The UX in Motion Manifesto</a></li>
-		<li><a href="https://uxdesign.cc/design-better-forms-96fadca0f49c">Design Better Forms – uxdesign.cc</a></li>
-		<li><a href="https://usabilitygeek.com/">Usability Geek - Usability Geek</a></li>
-		<li><a href="https://speakerdeck.com/vladimirkoncar/physical-space-as-a-medium-for-user-experience-how-to-design-experiences-beyond-the-screen">Physical space as a medium for user experience: How to design experiences beyond the screen? - Speaker Deck</a></li>
-		<li><a href="https://medium.com/@mollyinglish/the-ninja-skill-for-ux-designers-25f314f8f76c">Whiteboarding for UX Designers</a></li>
-		<li><a href="https://spotify.design/article/how-to-lead-a-remote-design-sprint">How to Lead a Remote Design Sprint | Spotify Design</a></li>
-		<li><a href="https://www.ascendle.com/insight/blog/user-story-acceptance-criteria/">User Story Acceptance Criteria - Ascendle</a></li>
-		<li><a href="https://modus.medium.com/a-scientific-method-for-impactful-ux-prototyping-9ab6c7a1dcde">A Scientific Method for Impactful UX Prototyping - Modus</a></li>
-		<li><a href="https://medium.com/sketch-app/mastering-the-bezier-curve-in-sketch-4da8fdf0dbbb">Mastering the Bezier Curve in Sketch – .Sketch App – Medium</a></li>
-		<li><a href="https://www.smashingmagazine.com/2017/02/mobile-first-is-just-not-good-enough-meet-journey-driven-design/">Mobile First Is Just Not Good Enough: Meet Journey-Driven Design — Smashing Magazine</a></li>
-		<li><a href="https://medium.com/google-design/the-obvious-ui-is-often-the-best-ui-7a25597d79fd">The Obvious UI is Often the Best UI - Google Design - Medium</a></li>
-		<li><a href="https://uxdesign.cc/10-tricks-techniques-to-make-the-most-out-of-sketch-d12ae16d47e9">10 tricks &amp; techniques to make the most out of Sketch</a></li>
-		<li><a href="https://academy.thefutur.com/courses/enrolled/223748">The Futur - Be your best self</a></li>
-		<li><a href="https://thefutur.com/learn">The Futur - Learn Business &amp; Creative Skills</a></li>
-		<li><a href="https://thefutur.com/content/design">The Futur - Design Videos, Articles, Resources, and Courses</a></li>
-		<li><a href="https://uxplanet.org/how-version-control-changed-my-everyday-life-cc67b0009e3d">How version control changed my everyday life</a></li>
-		<li><a href="https://blog.prototypr.io/design-versioning-its-true-it-s-here-let-s-talk-and-learn-more-about-it-9fef5d7cb517">Design Versioning — It's true, it's here, let's talk and learn more about it.</a></li>
-		<li><a href="https://www.forbes.com/sites/stevedenning/2019/05/23/understanding-fake-agile/">Understanding Fake Agile</a></li>
-		<li><a href="https://uxdesign.cc/reimagining-okrs-for-designers-and-design-teams-808662633322">Reimagining OKRs for designers and design teams</a></li>
-		<li><a href="https://uxdesign.cc/designers-are-spending-too-much-time-designing-ui-variations-manually-ad665d8d5e40">Designers are spending too much time designing UI variations manually</a></li>
-		<li><a href="https://cantunsee.space">Can't Unsee - UI Design training game</a></li>
-		<li><a href="https://www.youtube.com/c/DesignCourse">'Design Course' on Youtube - simple, effective UI training</a></li>
-		<li><a href="https://www.freecodecamp.org/news/ui-ux-design-tutorial-from-zero-to-hero-with-wireframe-prototype-figma/">UI / UX Design Tutorial – From Zero to Hero with Wireframe + Prototype + Design in Figma</a></li>
-		<li><a href="https://www.figmacrashcourse.com/">Figma Crash Course</a></li>
-		<li><a href="https://www.designsystemsforfigma.com/">Design Systems For Figma</a></li>
-		<li><a href="https://university.webflow.com/courses/figma-to-webflow?video=BfsI6F9_izY">Figma to Webflow | Webflow University</a></li>
-		<li><a href="https://method.ac/">Vector Practice</a></li>
-		<li><a href="https://developer.apple.com/design/tips/">UI Design Dos and Don'ts - Apple Developer</a></li>
-		<li><a href="https://www.ventureharbour.com/landing-page-optimisation-tips/">Landing Page Optimisation: 101 Tips</a></li>
-	</ul></li>
-	<li class="title"><h3>Vocabulary</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://blog.prototypr.io/11-optical-illusions-found-in-visual-design-295e7ae211b9">11 Optical Illusions Found in Visual Design – Prototypr</a></li>
-		<li><a href="http://jjg.net/ia/visvocab/">Jesse James Garrett: Visual Vocabulary for Information Architecture</a></li>
-		<li><a href="http://growth.design/psychology/">Psychology of Design: 101 Cognitive Biases &amp; Principles That Affect Your UX</a></li>
-		<li><a href="https://uxdesign.cc/a-comprehensive-and-honest-list-of-ux-clich%C3%A9s-96e2a08fb2e9">A comprehensive (and honest) list of UX clich&eacute;s</a></li>
-	</ul></li>
-	<li class="title"><h3>Case Studies</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://consumerist.com/2011/04/18/walmart-declutters-aisles-per-customer-request-then-loses-185-billion-in-sales/">Walmart Declutters Aisles Per Customers' Request, Then Loses $1.85 Billion In Sales – Consumerist</a></li>
-		<li><a href="https://www.fastcompany.com/3002676/magical-tech-behind-paper-ipads-color-mixing-perfection">The Magical Tech Behind Paper For iPad's Color-Mixing Perfection</a></li>
-		<li><a href="https://www.fastcompany.com/90315961/visualizing-where-rich-and-poor-people-really-cross-paths-or-dont">Visualizing where rich and poor people really cross paths--or don't</a></li>
-		<li><a href="https://arstechnica.com/tech-policy/2019/10/accessibility-the-future-and-why-dominos-matters/">Accessibility, the future, and why Domino's matters | Ars Technica</a></li>
-		<li><a href="https://uxplanet.org/tinder-poll-a-ux-case-study-5c987cecc666">Tinder Polls — a UX case study. Designing a new feature for the Tinder... | by Alex Beligan | UX Planet</a></li>
-		<li><a href="https://arstechnica.com/science/2018/04/a-crummy-drop-down-menu-appeared-to-kill-dozens-of-mothers-in-texas/">A crummy drop-down menu appeared to kill dozens of mothers in Texas | Ars Technica</a></li>
-		<li><a href="https://www.nngroup.com/articles/pinball-pattern-search-behavior/">Complex Search-Results Pages Change Search Behavior: The Pinball Pattern</a></li>
-		<li><a href="https://www.psychologytoday.com/us/blog/get-psyched/201301/the-weapons-effect">The "weapons effect" | Psychology Today</a></li>
-		<li><a href="https://www.polygon.com/gaming/2012/8/21/3257122/borderlands-2-and-the-lessons-in-storytelling">'Borderlands 2' and the lessons in storytelling - Polygon</a></li>
-		<li><a href="https://www.wired.com/story/rage-2-review/">The Open World of 'Rage 2' Is More Barren Than It Should Be | WIRED</a></li>
-		<li><a href="https://www.gamedeveloper.com/design/how-i-pony-island-i-teaches-players-to-break-a-game">How Pony Island teaches players to break a game</a></li>
-		<li><a href="https://www.polygon.com/2020/1/13/21064100/vvvvvv-source-code-game-development-terry-cavanagh-release">The truth is that many games are held together by duct tape - Polygon</a></li>
-		<li><a href="https://www.theverge.com/2019/3/5/18251570/caroline-criado-perez-invisible-women-data-bias-science-gender">A journalist explains the dangerous consequences of a world built for men</a></li>
-		<li><a href="https://www.vox.com/the-highlight/2019/11/13/20959863/women-happy-chores-gender-gap">Women's happiness and the other gender gap - Vox</a></li>
-		<li><a href="https://www.newyorker.com/culture/cultural-comment/a-century-of-shrill-how-bias-in-technology-has-hurt-womens-voices">A Century of "Shrill": How Bias in Technology Has Hurt Women's Voices | The New Yorker</a></li>
-		<li><a href="https://www.wired.com/story/cashless-retail-excludes-customers-in-the-name-of-efficiency/">Cashless Stores Alienate Customers in the Name of Efficiency | WIRED</a></li>
-		<li><a href="https://www.govtech.com/fs/infrastructure/Seattle-Highway-Shutdown-Provides-Data-Sharing-Lesson.html">Seattle Highway Shutdown Provides Data Sharing Lesson</a></li>
-		<li><a href="https://www.gearboxsoftware.com/2013/07/inside-the-box-field-of-view/">Inside the Box: Field of View - Gearbox Software</a></li>
-		<li><a href="https://digitalsynopsis.com/inspiration/privileged-kids-on-a-plate-pencilsword-toby-morris/">This Brilliant Comic Strip On Rich Vs Poor Upbringing Will Humble You</a></li>
-		<li><a href="https://www.theverge.com/2019/2/19/18226852/loot-boxes-gaming-regulation-gambling-free-to-play">How loot boxes hooked gamers and left regulators spinning - The Verge</a></li>
-		<li><a href="https://blog.fontawesome.com/icon-naming-conventions/">Font Awesome - These ARE the Icons You're Looking For: Why We Updated Our Icon Naming</a></li>
-	</ul></li>
-	<li class="title"><h3>Articles</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://www.fastcodesign.com/90170255/using-the-old-mac-os-is-pure-zen">Using The Old Mac OS Is Pure Zen</a></li>
-		<li><a href="https://www.cultofmac.com/624724/apple-lisa-documentary-will-tell-the-story-of-apples-most-important-flop/">'Before Macintosh' documentary tells story of Apple's most important 'flop'</a></li>
-		<li><a href="https://www.businessinsider.com/why-netflix-replaced-its-5-star-rating-system-2017-4">Why Netflix replaced its 5-star rating system - Business Insider</a></li>
-		<li><a href="https://about.netflix.com/en/news/two-thumbs-up-even-better-recommendations">About Netflix - Double the Thumbs For Even Better Recommendations</a></li>
-		<li><a href="https://jobs.netflix.com/blog/bringing-4k-and-hdr-to-anime-with-sol-levante">Netflix: Bringing 4K to anime</a></li>
-		<li><a href="https://medium.com/google-design/making-the-case-for-accessibility-350da9e30c84">Making the Case for Accessibility - Google Design - Medium</a></li>
-		<li><a href="https://www.wired.com/story/facebook-zuckerberg-privacy-pivot/">Facebook's Pivot to Privacy Is Missing Something Crucial | WIRED</a></li>
-		<li><a href="https://www.inputmag.com/tech/amazons-alexa-everywhere-initiative-is-terrifying">Amazon's 'Alexa Everywhere' initiative is terrifying</a></li>
-		<li><a href="https://www.wired.com/story/gameplan-macos-security-tool-video-game-logic-engine/">Clever Tool Uses Apple's Videogame Logic Engine to Protect Macs | WIRED</a></li>
-		<li><a href="https://www.wired.com/story/twitter-press-event-2019/">At Twitter, It Seems No One Can Hear the Screams | WIRED</a></li>
-		<li><a href="https://www.forbes.com/sites/joemckendrick/2019/05/29/lack-of-imagination-not-technology-holds-back-superior-customer-experience/">Lack Of Imagination, Not Technology, Holds Back Superior Customer Experience</a></li>
-		<li><a href="https://keyframemagazine.org/2020/08/14/the-influence-of-anime/">The Influence of Anime – Keyframe</a></li>
-		<li><a href="https://qz.com/work/1580757/rochelle-kopps-new-manga-helps-japanese-workers-navigate-the-workplace/">Rochelle Kopp's new manga helps Japanese workers navigate the workplace — Quartz at Work</a></li>
-		<li><a href="https://nintendosoup.com/22-year-old-interview-sheds-light-about-squares-super-mario-rpg-development-challenges/">22 Year Old Interview Sheds Light About Square's Super Mario RPG Development Challenges</a></li>
-		<li><a href="https://www.fastcompany.com/90390823/the-brilliant-ui-and-ux-design-of-classic-1990s-anime">The brilliant UI and UX design of classic 1990s anime</a></li>
-		<li><a href="https://uxdesign.cc/what-ux-from-1989-can-teach-us-22476ac5703c">What UX from 1989 can teach us - UX Collective</a></li>
-		<li><a href="https://www.fastcodesign.com/90175722/3-brilliant-design-details-from-the-new-microsoft-office">3 brilliant design details from the new Microsoft Office</a></li>
-		<li><a href="https://www.zdnet.com/article/microsoft-is-annoying-windows-users-again-and-they-just-cant-take-it-anymore/">Microsoft is annoying Windows users again and they just can't take it anymore</a></li>
-		<li><a href="https://9to5mac.com/2014/08/29/seeing-through-the-illusion-understanding-apples-mastery-of-the-media/">Seeing Through the Illusion: Understanding Apple's Mastery of the Media</a></li>
-		<li><a href="https://thebaffler.com/latest/designing-the-spectacle-alioto">Designing the Spectacle | Daisy Alioto</a></li>
-		<li><a href="https://www.theatlantic.com/technology/archive/2020/12/facebook-doomsday-machine/617384/">Facebook Is a Doomsday Machine - The Atlantic</a></li>
-		<li><a href="https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/">The Rotting Internet Is a Collective Hallucination - The Atlantic</a></li>
-		<li><a href="https://alistapart.com/article/how-we-hold-our-gadgets/">How We Hold Our Gadgets – A List Apart</a></li>
-		<li><a href="https://blog.sketchapp.com/do-more-with-data-2b765e870e4f">Do more with Data: Building a Data Supplier plugin for Sketch</a></li>
-		<li><a href="https://cantina.co/rethinking-the-relationship-between-service-design-and-space-design/">Rethinking the Relationship Between Service Design and Space Design — Cantina</a></li>
-		<li><a href="https://www.fastcompany.com/90667677/where-design-can-make-the-biggest-impact-in-the-next-decade-according-to-over-30-experts">30 experts on design's biggest impact in the next decade</a></li>
-		<li><a href="https://www.archives.gov/files/presidential-libraries/events/centennials/nixon/images/exhibit/rn100-6-1-2.pdf">In the event of Moon Mission failure</a></li>
-		<li><a href="https://www.wired.com/story/ex-donkey-kong-champ-threatens-to-sue-over-record-removal/">Ex-Donkey Kong Champ Threatens to Sue Over Record Removal | WIRED</a></li>
-		<li><a href="https://www.theverge.com/2019/10/13/20905334/missed-messages-review-steam-pc-game-horror">Missed Messages is a powerful romance / horror game about communicating - The Verge</a></li>
-		<li><a href="https://www.quora.com/Why-does-Windows-require-a-restart-after-installing-updates-If-I-understand-correctly-this-could-be-avoided-if-the-Windows-development-team-made-clever-use-of-their-own-shadow-copy-technologies">Why does Windows require a restart after installing updates? If I understand correctly, this could be avoided if the Windows development team made clever use of their own 'shadow copy' technologies. - Quora</a></li>
-		<li><a href="https://arstechnica.com/tech-policy/2020/03/before-it-sued-google-for-copying-from-java-oracle-got-rich-copying-ibms-sql/">Before it sued Google for copying from Java, Oracle got rich copying IBM's SQL</a></li>
-		<li><a href="https://www.theverge.com/2016/10/24/13389592/att-time-warner-merger-breakup-bell-system-chart">Look at this goddamn chart - The Verge</a></li>
-		<li><a href="https://www.wired.com/story/startups-prepare-for-downfall/">Every Startup Needs to Prepare for Its Downfall | WIRED</a></li>
-		<li><a href="https://qz.com/1581001/the-irs-demands-backpay-on-taxes-for-panera-cares-cafes/">The IRS demands backpay on taxes for Panera Cares Caf&eacute;s — Quartz</a></li>
-		<li><a href="https://www.fastcompany.com/3039286/these-crazy-bacteria-filled-spacesuits-may-be-what-let-us-survive-on-other-planets">These Crazy Bacteria-Filled Spacesuits May Be What Let Us Survive On O</a></li>
-		<li><a href="https://www.inc.com/maria-haggerty/a-surprising-product-design-factor-that-can-increase-profitability.html">A Surprising Product Design Factor That Can Increase Profitability | Inc.com</a></li>
-		<li><a href="https://online-learning.tudelft.nl/courses/design-for-recycling-of-electronics-in-a-circular-economy/">MOOC: Design for Recycling of Electronics in a Circular Economy | TU Delft Online</a></li>
-		<li><a href="https://www.forbes.com/sites/annefield/2019/11/24/enthusiasm-for-conscious-spending-among-consumers-continues-to-slide/">Enthusiasm For Conscious Spending Among Consumers Continues To Slide</a></li>
-		<li><a href="https://en.wikipedia.org/wiki/Six_Sigma">Six Sigma - Wikipedia</a></li>
-		<li><a href="https://huffpost.com/us/entry/us_5ea3464bc5b6f9639814c009">Construction Causes Major Pollution. Here's How We Can Build Better. | HuffPost</a></li>
-		<li><a href="https://www.city-journal.org/seattle-safety-net-remains-unrealized">What Went Wrong in Seattle? | City Journal</a></li>
-		<li><a href="https://www.theguardian.com/global-development/2021/jun/03/chinas-splinternet-blockchain-state-control-of-cyberspace">China's 'splinternet' will create a state-controlled alternative cyberspace</a></li>
-		<li><a href="https://www.newyorker.com/culture/annals-of-inquiry/the-case-for-open-borders">The Case for Open Borders | The New Yorker</a></li>
-		<li><a href="https://www.fastcompany.com/90679810/the-case-for-building-cities-underground-2">The case for building underground</a></li>
-		<li><a href="https://designtaxi.com/news/400141/Creative-Names-And-Ways-8-Different-Cultures-Manage-Money-And-Savings/">Creative Names And Ways 8 Different Cultures Manage Money And Savings - DesignTAXI.com</a></li>
-		<li><a href="https://articles.uie.com/experience_rot/">Experience Rot — UX Articles by UIE</a></li>
-		<li><a href="https://arstechnica.com/gadgets/2018/10/microsofts-problem-isnt-shipping-windows-updates-its-developing-them/">Microsoft's problem isn't how often it updates Windows—it's how it develops it</a></li>
-		<li><a href="https://9to5mac.com/2018/10/24/tech-privacy/">Tech privacy – Steve Jobs nailed it back in 2010 - 9to5Mac</a></li>
-		<li><a href="https://www.theatlantic.com/technology/archive/2018/11/why-ratings-and-feedback-forms-dont-work/575455/">Why Ratings and Feedback Forms Don't Work - The Atlantic</a></li>
-		<li><a href="https://www.wired.com/story/50-years-later-we-still-dont-grasp-the-mother-of-all-demos/">50 Years Later, We Still Don't Grasp the Mother of All Demos | WIRED</a></li>
-		<li><a href="https://www.fastcompany.com/90500378/iloveyou-virus-microsoft-steven-sinofsky-book">How Microsoft fought the 'ILOVEYOU' virus 20 years ago</a></li>
-		<li><a href="https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/">How Target Figured Out A Teen Girl Was Pregnant Before Her Father Did</a></li>
-		<li><a href="https://design.google/library/user-friendly/">Lessons from the Scariest Design Disaster in American History - Library - Google Design</a></li>
-		<li><a href="https://stevesalaita.com/the-utility-of-uselessness/">The Utility of Uselessness - Steve Salaita</a></li>
-		<li><a href="https://www.theverge.com/2013/1/24/3904134/google-redesign-how-larry-page-engineered-beautiful-revolution">Redesigning Google: how Larry Page engineered a beautiful revolution</a></li>
-		<li><a href="https://www.thedrum.com/news/2022/04/19/liquid-death-ceo-why-porn-sells-water-people-entertainment-hate-ads">Liquid Death CEO On Why Porn &amp; Punk Rock Sells Water: 'People Like Entertainment, But Hate Ads' | The Drum</a></li>
-		<li><a href="https://andybudd.com/archives/2022/04/the-slow-but-inevitable-demise-of-ux-design">The Slow But Inevitable Demise of UX Design | Andy Budd</a></li>
-		<li><a href="https://devops.com/agile-scrum-is-a-failure-heres-why/">Agile/Scrum is a Failure - Here's Why - DevOps.com</a></li>
-	</ul></li>
-	<li class="title"><h3>Emotion &amp; Empathy</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://www.fastcompany.com/90395110/how-googly-eyes-solved-one-of-todays-trickiest-ux-problems">All robots should have googly eyes. Here's why</a></li>
-		<li><a href="https://www.npr.org/sections/health-shots/2013/12/30/258313116/mapping-emotions-on-the-body-love-makes-us-warm-all-over">Mapping Emotions On The Body: Love Makes Us Warm All Over</a></li>
-		<li><a href="https://www.theatlantic.com/family/archive/2019/09/im-tired-dealing-my-sisters-complaints/597202/">I'm Tired of Dealing With My Sister's Complaints - The Atlantic</a></li>
-		<li><a href="https://www.vox.com/future-perfect/2019/10/15/20913666/happiness-wellbeing-books-ai-sentiment-analysis-study">Al study analyzed millions of books to measure happiness over 200 years</a></li>
-		<li><a href="https://www.inputmag.com/culture/there-are-too-many-emoji-it-has-to-stop">There are too many emoji and it has to stop</a></li>
-		<li><a href="https://experiments.withgoogle.com/collection/digitalwellbeing">Digital Wellbeing Experiments | Experiments with Google</a></li>
-		<li><a href="https://www.inc.com/jessica-stillman/hiring-employee-archetypes-bain-report.html">There Are 6 Types of Workers. Understanding Them Can Help You Beat the Great Resignation</a></li>
-		<li><a href="https://moretothat.com/the-arc-of-the-practical-creator/">The Arc of the Practical Creator</a></li>
-		<li><a href="https://www.invisionapp.com/inside-design/oral-history-of-mailchimp-high-five/">A mini oral history of the Mailchimp high five | Inside Design Blog</a></li>
-		<li><a href="https://www.thelily.com/mother-daughter-relationships-can-be-rocky-heres-how-i-strengthened-mine/">How to strengthen a mother-daughter relationship - The Lily</a></li>
-		<li><a href="https://www.fastcompany.com/90206297/the-emotionally-intelligent-way-to-resolve-disagreements-faster">The emotionally intelligent way to resolve disagreements faster</a></li>
-		<li><a href="https://www.forbes.com/sites/rodgerdeanduncan/2018/09/28/polarized-consider-conversations-worth-having/?sh=1b0f91867927">Polarized? Consider Conversations Worth Having</a></li>
-		<li><a href="https://www.nbcnews.com/better/pop-culture/how-negotiate-anything-according-neuroscientists-ncna911046">How to negotiate anything, according to neuroscientists</a></li>
-	</ul></li>
-	<li class="title"><h3>Intuition &amp; Psychology</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://money.good.is/articles/non-threatening-leadership-strategies">9 Nonthreatening Leadership Strategies For Women | GOOD Money</a></li>
-		<li><a href="https://www.theatlantic.com/magazine/archive/2018/01/the-power-of-negativity/546560/">The Power of Negative Thinking - The Atlantic</a></li>
-		<li><a href="https://www.michaelgraves.com/designing-future-intuition-ux-physical-world/">Designing the Future of Intuition: UX in the Physical World</a></li>
-		<li><a href="https://medium.com/enterprise-design-thinking/maintain-human-centered-focus-fully-remote-world-654fba515f96">How to maintain a human-centered focus in a fully remote world</a></li>
-		<li><a href="https://www.inverse.com/article/58946-how-to-track-goals-better">Study Reveals Something Powerful About a Goal That Ends With a "0" | Inverse</a></li>
-		<li><a href="https://www.fastcompany.com/90461735/how-to-make-the-most-hated-task-at-work-suck-less">How to make the most hated task at work better</a></li>
-		<li><a href="https://www.latimes.com/science/story/2019-09-12/rats-can-play-hide-and-seek">Scientists taught these adorable rats to play hide and seek - Los Angeles Times</a></li>
-		<li><a href="https://arstechnica.com/science/2019/11/these-rats-learned-to-drive-tiny-cars-for-science/">Rats love driving tiny cars, even when they don't get treats | Ars Technica</a></li>
-		<li><a href="https://www.vox.com/future-perfect/2020/1/24/21078196/morality-ethics-culture-universal-subjective">Is morality subjective or universal? A psychology study says it's both. - Vox</a></li>
-		<li><a href="https://matthewstrom.com/writing/intuition/">Intuition vs. Data || Matthew Ström: designer &amp; developer</a></li>
-		<li><a href="https://modus.medium.com/data-driven-design-is-killing-our-instincts-d448d141653d">Data-Driven Design Is Killing Our Instincts - Modus</a></li>
-		<li><a href="http://designtimes.blogspot.com/2019/01/why-justifying-design-decisions-may-not.html">Evolution of Intelligent Design: Why Justifying Design Decisions May Not Solve the Problem</a></li>
-		<li><a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73#.kqps2m3fm">39 studies about human perception in 30 minutes | by kennedy elliott | Medium</a></li>
-		<li><a href="http://www.genderlessvoice.com/watch">Meet Q. The First Genderless Voice.</a></li>
-		<li><a href="https://mashable.com/article/the-smart-wife-sexist-ai-smart-assistants/">Making smart devices 'gender neutral' won't undo their sexism</a></li>
-		<li><a href="https://www.nngroup.com/articles/b2b-trust-from-b2c/">What B2B Designers Can Learn from B2C About Building Trust</a></li>
-		<li><a href="https://www.thenation.com/article/archive/crackdown-dissent/">The Crackdown on Dissent | The Nation</a></li>
-		<li><a href="https://www.theladders.com/career-advice/neuroscience-reveals-7-secrets-that-will-make-you-persuasive">New neuroscience reveals 7 secrets that will make you persuasive</a></li>
-		<li><a href="https://www.vox.com/policy-and-politics/2018/10/15/17979224/2018-midterm-elections-candidates-issues-health-care-immigration">2018 midterm elections: Americans can't agree what the big issues are - Vox</a></li>
-		<li><a href="https://www.vox.com/policy-and-politics/2018/10/22/17991928/hidden-tribes-more-in-common-david-brooks">"Hidden Tribes," the new report centrists are using to explain away polarization, explained</a></li>
-		<li><a href="https://www.forbes.com/sites/christinecomaford/2018/10/20/what-stress-change-and-isolation-do-to-your-brain/?sh=25b72d761940">What Stress, Change And Isolation Do To Your Brain</a></li>
-		<li><a href="https://medicalxpress.com/news/2018-10-recalling-memories-context.html">Recalling memories in context</a></li>
-	</ul></li>
-</ol>
-<h3>Blogs &amp; Books</h3>
-<ul>
-	<li><a href="https://daringfireball.net/">Daring Fireball</a></li>
-	<li><a href="https://medium.com/google-design/archive">Archive of stories published by Google Design – Medium</a></li>
-	<li><a href="https://anildash.com/">Anil Dash</a></li>
-	<li><a href="https://web.archive.org/web/20220317180650/http://ignorethecode.net/blog/">(internet archive) ignore the code</a></li>
-	<li><a href="https://www.amazon.com/Designed-Use-Create-Interfaces-Applications-ebook/dp/B01FRIOYEM/">Designed for Use: Create Usable Interfaces for Applications and the Web</a></li>
-	<li><a href="https://www.amazon.com/Inmates-Are-Running-Asylum-Products-ebook-dp-B000OZ0N62/dp/B000OZ0N62/">The Inmates Are Running the Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity (2nd Edition)</a></li>
-	<li><a href="https://www.amazon.com/Decode-Conquer-4th-Lewis-Lin/dp/B09Q8WN1KS/">Decode and Conquer, Lewis C Lin</a></li>
-	<li><a href="https://www.amazon.com/dp/B00MFPZ9UY/">About Face: The Essentials of Interaction Design</a></li>
-	<li><a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability-ebook/dp/B00HJUBRPG/">Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability</a></li>
-	<li><a href="https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/">The Design of Everyday Things: Revised and Expanded Edition</a></li>
-	<li><a href="https://machinelearning.apple.com/">Machine Learning Research at Apple</a></li>
-	<li><a href="https://www.trends.uxdesign.cc/">The State of UX in 2022</a></li>
-</ul>
-<h3>Brand &amp; Visual Design</h3>
-<ol>
-	<li class="title"><h3>Color</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://www.canva.com/colors/color-wheel/">Color wheel - color theory and calculator | Canva Colors</a></li>
-		<li><a href="https://mycolor.space/">ColorSpace - Color Palettes Generator and Color Gradient Tool</a></li>
-		<li><a href="https://leonardocolor.io/#">Leonardo</a></li>
-		<li><a href="https://coolors.co/">Coolors - The super fast color schemes generator!</a></li>
-		<li><a href="https://www.colorsandfonts.com/">Colors &amp; Fonts</a></li>
-		<li><a href="https://medium.com/nightingale/how-to-choose-the-colors-for-your-data-visualizations-50b2557fa335">How to Choose Colors for Your Data Visualizations</a></li>
-		<li><a href="https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a">How to Not Suck at Color - Modus</a></li>
-		<li><a href="https://www.google.com/design/spec/style/color.html">Material Design Palette</a></li>
-		<li><a href="https://material.io/resources/color/">Material Color Tool</a></li>
-		<li><a href="https://www.crockford.com/wrrrld/color.html">CSS Color Names</a></li>
-		<li><a href="https://flatuicolors.com/">Flat UI Colors</a></li>
-		<li><a href="https://www.flatuicolorpicker.com/">Flat UI Color Picker</a></li>
-		<li><a href="https://github.blog/2022-06-14-accelerating-github-theme-creation-with-color-tooling/">Accelerating GitHub theme creation with color tooling</a></li>
-		<li><a href="https://color.adobe.com/explore">Adobe Color</a></li>
-		<li><a href="https://colorhunt.co/">Color Hunt</a></li>
-		<li><a href="https://vanschneider.com/colors">Colors Claim</a></li>
-		<li><a href="https://colorsupplyyy.com/">Color Supply</a></li>
-		<li><a href="https://mypaintingclub.com/blog/post/39-The-Gamut-Mask-Tool">The Gamut Mask Tool</a></li>
-		<li><a href="https://huemint.com/">Huemint - AI color palette generator</a></li>
-		<li><a href="https://randomcolour.com/">Random colour</a></li>
-		<li><a href="https://albumcolors.com/">2020 - Album Colors Of The Year</a></li>
-	</ul></li>
-	<li class="title"><h3>Accessibility</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://abc.useallfive.com/">Accessible Brand Colors by Use All Five</a></li>
-		<li><a href="https://www.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser (CCA)</a></li>
-		<li><a href="https://medium.com/@NateBaldwin/accessible-color-for-design-systems-just-got-easier-40e8420a8371">Accessible color for design systems just got easier</a></li>
-		<li><a href="https://itunes.apple.com/app/contrast/id1254981365">Contrast — Color Accessibility on the Mac App Store</a></li>
-		<li><a href="https://www.w3.org/TR/WCAG21/">Web Content Accessibility Guidelines (WCAG) 2.1</a></li>
-		<li><a href="https://www.ada-compliance.com/ada-compliance/ada-toilet-stalls.html">ADA Compliance - Toilet Stalls - ADA Compliance</a></li>
-		<li><a href="https://www.w3.org/WAI/ER/tools/">Web Accessibility Evaluation Tools List</a></li>
-		<li><a href="http://wave.webaim.org/">WAVE Web Accessibility Tool</a></li>
-		<li><a href="https://www.w3.org/standards/webdesign/accessibility">Accessibility - W3C</a></li>
-	</ul></li>
-	<li class="title"><h3>Gradients &amp; Shadows</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://www.joshwcomeau.com/css/make-beautiful-gradients/">https://www.joshwcomeau.com/css/make-beautiful-gradients/</a></li>
-		<li><a href="https://www.joshwcomeau.com/css/designing-shadows/">https://www.joshwcomeau.com/css/designing-shadows/</a></li>
-		<li><a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/">https://tobiasahlin.com/blog/layered-smooth-box-shadows/</a></li>
-		<li><a href="https://shadows.brumm.af/">https://shadows.brumm.af/</a></li>
-	</ul></li>
-	<li class="title"><h3>Typography</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://practicaltypography.com/">Practical Typography</a></li>
-		<li><a href="https://www.linkedin.com/learning/the-33-laws-of-typography/introduction">Introduction: The 33 Laws of Typography</a></li>
-		<li><a href="https://type.method.ac/#">Kern Type</a></li>
-		<li><a href="https://tug.org/interviews/liang.pdf">History of typesetting hypenation</a></li>
-		<li><a href="https://designschool.canva.com/blog/typography-terms/">A Beautifully Illustrated Glossary Of Typographic Terms You Should Know – Design School</a></li>
-		<li><a href="https://font-display.glitch.me/">Font-display playground</a></li>
-		<li><a href="https://material.io/blog/google-fonts-pairing-figma">Google Material's Favorite Font Pairings</a></li>
-		<li><a href="https://material.io/design/typography/the-type-system.html">Material Design | Type system</a></li>
-    <li><a href="https://type-scale.com/">Type Scale - A Visual Calculator</a></li>
-		<li><a href="https://spencermortensen.com/articles/typographic-scale/">The typographic scale | Spencer Mortensen</a></li>
-		<li><a href="https://alistapart.com/article/emen/">The Trouble With EM 'n EN</a></li>
-		<li><a href="https://alistapart.com/article/more-meaningful-typography/">More Meaningful Typography</a></li>
-		<li><a href="https://type.method.ac/">Kern Type - Typography training game</a></li>
-		<li><a href="https://www.dafont.com/">DaFont</a></li>
-    <li><a href="https://www.identifont.com/">Identifont</a></li>
-    <li><a href="https://www.fontsquirrel.com/">Font Squirrel</a></li>
-    <li><a href="https://hplhs.org/resources.php#fonts">HPLHS - Fonts</a></li>
-    <li><a href="https://www.onlinewebfonts.com/">Free Fonts</a></li>
-    <li><a href="https://archetypeapp.com/#">Archetype, Digital Typography Design Tool by Our Own Thing, using Google web fonts</a></li>
-    <li><a href="https://developer.apple.com/fonts/">Fonts - Apple Developer</a></li>
-    <li><a href="https://www.lettering-daily.com">Lettering Daily</a></li>
-	</ul></li>
-	<li class="title"><h3>Assets</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://undraw.co/illustrations">Illustrations | unDraw</a></li>
-		<li><a href="https://monsterspost.com/free-background-generators/">TOP 15 Random Generators Of Abstract Backgrounds</a></li>
-		<li><a href="https://iradesign.io/">Free vector illustrations - ira design</a></li>
-		<li><a href="https://www.toptal.com/designers/subtlepatterns/">Subtle Patterns | Free textures for your next web project</a></li>
-		<li><a href="https://www.toptal.com/designers/sketch/amazing-illustrations-with-sketch-and-looper">Creating Amazing Illustrations in No Time with Sketch | Toptal</a></li>
-		<li><a href="https://unsplash.com/">Unsplash | High-Resolution Photos</a></li>
-		<li><a href="https://elements.envato.com/">Download Stock Photos, Fonts &amp; Templates with Envato Elements</a></li>
-		<li><a href="https://www.uigoodies.com/">UI Goodies: All the best resources for designers in one place.</a></li>
-	</ul></li>
-	<li class="title"><h3>Additional Resources</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://www.linkedin.com/learning/branding-for-designers/what-is-a-brand">What is a brand?</a></li>
-		<li><a href="https://www.nngroup.com/articles/tone-voice-users/">The Impact of Tone of Voice on Users' Brand Perception (Nielsen Norman Group UX research)</a></li>
-		<li><a href="https://www.fastcompany.com/90415992/consumers-equate-cold-with-luxury-goods-because-consumers-are-idiots">People equate "cold" with luxury goods, because people are idiots</a></li>
-		<li><a href="http://designinstruct.com/drawing-illustration/make-watercolor-and-marker-style-portraits-with-illustrator/">Make Watercolor and Marker Style Portraits with Illustrator</a></li>
-		<li><a href="https://design.google/resources/">Resources - Google Design</a></li>
-		<li><a href="https://www.ebaqdesign.com/blog/brand-strategy">How To Develop a Brand Strategy (Free Guide + Worksheets)</a></li>
-		<li><a href="https://miro.com/app/board/uXjVOTChe0g=/">Brand Strategy Workshop</a></li>
-		<li><a href="https://sitesee.co/">SiteSee - Web Design Inspiration</a></li>
-		<li><a href="https://www.creativebloq.com/features/best-google-dev-design-tools">16 of Google's best dev and design tools in 2020 | Creative Bloq</a></li>
-		<li><a href="https://realfavicongenerator.net/">Favicon Generator for all platforms: iOS, Android, PC/Mac...</a></li>
-		<li><a href="https://www.uxlibrary.org/explore/ui-design/ui-patterns-and-inspiration">UI Patterns &amp; Inspiration - UX Library</a></li>
-		<li><a href="https://www.designspiration.com/">Designspiration - Design Inspiration</a></li>
-		<li><a href="https://www.designresourc.es/">Design Resources</a></li>
-		<li><a href="https://www.ggunn.com/tools-and-resources">Tools, Gear, &amp; Apps I Use — Greg Gunn</a></li>
-		<li><a href="https://headz.design/">HEADZ - alternative to Apple memoji for your next project</a></li>
-		<li><a href="https://blog.prototypr.io/how-to-design-a-dark-theme-for-your-android-app-3daeb264637">The Ultimate Guide on Designing a Dark Theme for your Android app</a></li>
-		<li><a href="https://fivesecondtest.com/">Five Second Test</a></li>
-		<li><a href="https://uxchecklist.github.io/">UX Project Checklist</a></li>
-	</ul></li>
-	<li class="title"><h3>Examples</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://screenlane.com/">Screenlane - Web &amp; mobile UI design inspiration</a></li>
-		<li><a href="https://pagecollective.com/">Page Collective - landing page design inspiration</a></li>
-		<li><a href="https://pageflows.com/">Page Flows - user flow design inspiration</a></li>
-		<li><a href="https://worldbranddesign.com/pearlfisher-redesigns-mcdonalds-global-packaging-system/">Pearlfisher Redesigns McDonald's' Global Packaging System - World Brand Design</a></li>
-		<li><a href="https://www.brandsoftheworld.com/">Brands of the World</a></li>
-		<li><a href="https://niice.co/">Niice | Aesthetic Moodboards</a></li>
-		<li><a href="https://www.logodesignlove.com/">Logo Design Love | on logos and brand identity design</a></li>
-		<li><a href="https://www.itsnicethat.com/news/burger-king-rebrand-jkr-graphic-design-070121">The Burger King rebrand celebrates its design history and irreverent personality</a></li>
-		<li><a href="https://news.ycombinator.com/item?id=8313720">Sandwich Video: The company that makes nearly all startup videos | Hacker News</a></li>
-		<li><a href="https://sandwich.co/">Hello. We're Sandwich.</a></li>
-		<li><a href="https://designtaxi.com/news/400132/UI-Designer-Shares-His-Top-19-Bite-Sized-Design-Tips-From-Year-s-Worth-Of-Advice/">UI Designer Shares His Top 19 Bite-Sized Design Tips From Year's Worth Of Advice</a></li>
-		<li><a href="https://uxplanet.org/18-free-excellent-user-persona-templates-you-cant-miss-out-b25c9b38290e">18 Free Excellent User Persona Templates You Can't Miss Out</a></li>
-		<li><a href="https://ciechanow.ski/archives/">Random Articles</a></li>
-		<li><a href="https://mobbin.design/browse/ios/apps">Mobbin - Browse iOS Design</a></li>
-		<li><a href="https://land-book.com/">Land-book - website inspiration</a></li>
-		<li><a href="https://threed.io/">Threed.io - iPhone Mockups</a></li>
-		<li><a href="https://www.dugwood.com/clickheat/index.html">ClickHeat</a></li>
-	</ul></li>
-</ol>
-<h3>Build a Portfolio</h3>
-<ol>
-	<li class="title"><h3>Philosophy &amp; Skills</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://getyourshittogether.org/">Get Your Shit Together – What Matters Most. Because hoping for the best is not a plan.</a></li>
-		<li><a href="https://vanschneider.com/blog/portfolio-tips/the-old-case-study-is-not-working/">The portfolio case study is broken</a></li>
-		<li><a href="https://medium.com/kainosxd/how-to-quantify-the-value-of-design-c843c046b1f4">How to quantify the value of design</a></li>
-		<li><a href="https://www.usertesting.com/resources">User Research Resources from UserTesting</a></li>
-		<li><a href="https://honest-ux-design-portfolio.webflow.io/">Honest Portfolio — UX Designer</a></li>
-		<li><a href="https://www.nngroup.com/videos/ux-design-portfolio-case-study/">Creating a UX Design Portfolio Case Study (Video)</a></li>
-		<li><a href="https://dribbble.com/stories/2021/12/13/lessons-learned-designers">What's the biggest lesson you've learned as a designer? | Dribbble Design Blog</a></li>
-		<li><a href="https://www.springboard.com/learning-paths/user-experience-design">Learn User Experience (UX) Design - Free Curriculum | Springboard</a></li>
-	</ul></li>
-	<li class="title"><h3>Resources</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://dribbble.com/shots/16459398-iPhone-13-Sketch-Library">iPhone 13 Sketch Library by Max Rudberg on Dribbble</a></li>
-		<li><a href="https://www.invisionapp.com/inside-design/free-device-mockups/">23 Free Device Mockups for Phone, Laptop and Other Screen</a></li>
-		<li><a href="https://wrap.so/">Wrap — Capture &amp; Edit Beautiful Screenshots</a></li>
-		<li><a href="https://material.io/">Homepage - Material Design</a></li>
-		<li><a href="https://material.io/resources/">Resources - Material Design</a></li>
-		<li><a href="https://freebiesbug.com/">Freebies - Web Design Resources</a></li>
-		<li><a href="https://graphicburger.com/">GraphicBurger</a></li>
-		<li><a href="https://mrmockup.com/freebies/">Mr.Mockup</a></li>
-		<li><a href="https://mockups-design.com/">Mockups-Design</a></li>
-		<li><a href="https://www.mockupworld.co/all-mockups/">Mockup World</a></li>
-		<li><a href="https://www.heropatterns.com/">Heropatterns</a></li>
-		<li><a href="https://icons8.com/illustrations/styles">Free Vector Illustrations</a></li>
-		<li><a href="https://icons8.com/">icons8</a></li>
-		<li><a href="https://feathericons.com/">Feather – icons</a></li>
-		<li><a href="https://undraw.co/">unDraw - Open source illustrations</a></li>
-		<li><a href="https://www.freepixels.com/">Freepixels.com</a></li>
-		<li><a href="https://www.freepik.com/">Freepik - Free vectors and photos</a></li>
-		<li><a href="https://www.vecteezy.com/">Vecteezy</a></li>
-		<li><a href="https://magdeleine.co/">Magdeleine - Free Photos</a></li>
-		<li><a href="https://www.pexels.com/">Free stock photos · Pexels</a></li>
-		<li><a href="https://unsplash.com/">Free Images &amp; Pictures</a></li>
-		<li><a href="https://www.iconfinder.com/">Icon Finder</a></li>
-		<li><a href="https://fabrx.co/">Bootstrap 5, Sketch, Figma, Adobe XD UI Kits - Fabrx Design</a></li>
-		<li><a href="https://assetstore.unity.com/packages/tools/gui/vr-ui-kit-material-design-system-135769">VR UI Kit</a></li>
-		<li><a href="https://ivomynttinen.com/blog/ios-design-guidelines">The iOS Design Guidelines - Ivo Mynttinen</a></li>
-		<li><a href="https://www.figma.com/community/file/805195278314519508">Base Gallery - Figma</a></li>
-		<li><a href="https://figside.com/templates">Templates | Figside</a></li>
-		<li><a href="https://figmalion.com/">Figmalion – Figma newsletter and community knowledge base</a></li>
-	</ul></li>
-	<li class="title"><h3>Examples</h3></li>
-	<li class="nested"><ul class="l2">
-		<li><a href="https://www.aaronrudyk.com/">Aaron Rudyk's Portfolio</a></li>
-		<li><a href="https://www.abiconnick.co.uk/">Abi Connick | Home</a></li>
-		<li><a href="https://www.aileen.co/">Aileen Shin</a></li>
-		<li><a href="http://chelseystiefel.com/">Chelsey Stiefel | Content Designer</a></li>
-		<li><a href="https://www.crooz.media/">Chris Whalen - UX Designer in North Idaho</a></li>
-		<li><a href="https://www.christopherdavidwhite.com/index.php/en/portfolios/sculpture">Christopher White</a></li>
-		<li><a href="https://www.colleenwynn.com/">Colleen Wynn</a></li>
-		<li><a href="https://www.dnovykov.com/">Daniel Novykov — UX/Product Designer in Toronto</a></li>
-		<li><a href="https://dedouze.com/">dedouze</a></li>
-		<li><a href="https://www.devinellekurtz.com/">Devin Elle Kurtz</a></li>
-		<li><a href="https://www.domqwek.com/">Dom Qwek</a></li>
-		<li><a href="https://www.elizabethylin.com/">Elizabeth Lin: Designer &amp; Aspiring Princess!</a></li>
-		<li><a href="https://www.ggunn.com/">Greg Gunn</a></li>
-		<li><a href="https://www.glorialo.design/">Gloria Lo</a></li>
-		<li><a href="https://www.dgottwald.org/">Gottwald's Portfolio</a></li>
-		<li><a href="https://jakerainis.com/work/">Jake Rainis</a></li>
-		<li><a href="http://www.jamesjean.com/">James Jean</a></li>
-		<li><a href="https://www.jamieclarketype.com/">Jamie Clarke Type – Illustrated Lettering &amp; Typography</a></li>
-		<li><a href="https://www.jordanemoss.com/">JORDAN E. MOSS</a></li>
-		<li><a href="http://julianbauer.com/">Julian Bauer</a></li>
-		<li><a href="https://www.justinmac.com/">Justin Mac's Portfolio</a></li>
-		<li><a href="https://www.kathleenneeley.com/">Kathleen Neeley</a></li>
-		<li><a href="https://www.uidaho.edu/caa/programs/art-design/2020-bfa-exhibition/kiel-kleeburg">Kiel Kleeburg App Design</a></li>
-		<li><a href="https://www.madebykoco.com/">Koco</a></li>
-		<li><a href="https://www.ljubomirbardzic.com/">Ljubomir Bardzic - Portfolio</a></li>
-		<li><a href="https://www.lenasteinkuehler.com/">Lena Steinkühler - Digtal Film, Design and VFX Artist</a></li>
-		<li><a href="https://mahsakeyhani.com/">Mahsa Keyhani UI/UX Portfolio</a></li>
-		<li><a href="https://www.malikafavre.com/">Malika Favre</a></li>
-		<li><a href="http://bantjes.com/work/category/portfolio/">Marian Bantjes Portfolio</a></li>
-		<li><a href="http://blog.matthewstephens.com/">Matthew Stephens</a></li>
-		<li><a href="https://www.mikekus.com/">Mike Kus</a></li>
-		<li><a href="https://dribbble.com/nguyenhut">Nguyen Nhut | Dribbble</a></li>
-		<li><a href="https://www.oliviatruong.design/">Olivia Truong</a></li>
-		<li><a href="https://www.pascalstrasche.com/">Pascal Strasche – Freelance UI/UX Designer</a></li>
-		<li><a href="https://priyanka.io/">Priyanka Gupta | Product Designer in San Francisco | Portfolio</a></li>
-		<li><a href="https://www.lapa.ninja/post/rickwaalders/">Rick Waalders landing page design inspiration - Lapa Ninja</a></li>
-		<li><a href="https://www.rickwaalders.com/">Rick Waalders - I Design 3D Visuals For Websites And Apps</a></li>
-		<li><a href="https://www.scottsnyderphoto.com/">Scott Snyder Photography</a></li>
-		<li><a href="https://www.scottjwong.com/">Scott J Wong | UX Design</a></li>
-		<li><a href="https://www.sophiebritt.com/">Sophie Brittain | Design Portfolio</a></li>
-		<li><a href="https://studiomesa.co/portfolio">Studio Mesa</a></li>
-		<li><a href="https://timokuilder.com/">Timo Kuilder – Illustrator</a></li>
-		<li><a href="https://www.wenxinwendyju.com/">Wendy Ju</a></li>
-		<li><a href="https://www.wendyschorr.com/">Wendy Schorr | UX Designer</a></li>
-		<li><a href="https://willpaterson.design/projects">Will Paterson Portfolio</a></li>
-		<li><a href="https://careerfoundry.com/en/blog/ux-design/ux-portfolio-examples-inspiration/">The 9 Best UX Design Portfolio Examples (Updated For 2021)</a></li>
-		<li><a href="https://burnttoast.myportfolio.com/projects">Burnt Toast Creative</a></li>
-		<li><a href="https://cuberto.com/projects/">Cuberto</a></li>
-		<li><a href="https://www.designlad.co.uk/">Design Lad</a></li>
-		<li><a href="https://id-c.se/">I D — C</a></li>
-		<li><a href="https://mcbess.com/">mcbess</a></li>
-		<li><a href="https://ollivere.webflow.io/">Ollivere</a></li>
-		<li><a href="http://ourownthing.co.uk/">Our Own Thing, creative digital offerings from Martin Ollivere and Jamie Gilman</a></li>
-		<li><a href="https://www.pentagram.com/work">Pentagram</a></li>
-		<li><a href="https://www.playandpublic.com/">PLAY &amp; PUBLIC</a></li>
-		<li><a href="https://tayasui.com/sketches/tools.html">Tayasui Sketches</a></li>
-		<li><a href="https://toyfight.co/">ToyFight</a></li>
-		<li><a href="http://www.tsirakisdesign.com/">Tsirakis Design</a></li>
-	</ul></li>
-</ol>
-<h3>Landing a Job</h3>
-<ul>
-	<li><a href="https://medium.com/@karenxcheng/how-to-get-a-job-as-a-designer-without-going-to-design-school-bad8cdb67068">How to: designer</a></li>
-	<li><a href="https://uxdesign.cc/stop-evaluating-product-designers-like-were-visual-designers-a470cff49990">Stop evaluating Product Designers like we're Visual Designers</a></li>
-	<li><a href="https://www.core77.com/posts/104567/The-UX-of-Invisibility">The UX of Invisibility - Core77</a></li>
-	<li><a href="https://www.forbes.com/sites/ashiraprossack1/2019/01/25/cover-letter-best-practices/">How To Write A Cover Letter That Gets You A Job Interview</a></li>
-	<li><a href="https://www.designgigsforgood.org/">Design Gigs for Good</a></li>
-	<li><a href="http://aigasf.org/updated-about/">AIGA San Francisco | AIGA San Francisco</a></li>
-	<li><a href="https://uxdesign.cc/5-steps-to-master-a-whiteboard-design-challenge-6ecbe9ec38b7">5 steps to master whiteboard design challenge - UX Collective</a></li>
-	<li><a href="https://medium.com/mytake/119-user-experience-interview-questions-answers-part-1-4980e9e71418">119 User Experience Interview Questions &amp; Answers — Part 1</a></li>
-	<li><a href="https://www.fastcompany.com/90333614/why-you-should-always-ask-for-more-money">Why you should always negotiate your salary</a></li>
-	<li><a href="https://www.freecodecamp.org/news/how-not-to-bomb-your-offer-negotiation-c46bb9bc7dea/">How not to bomb your offer negotiation</a></li>
-	<li><a href="https://dribbble.com/resources/freelance-design-contract">8 Must-Haves in Your Freelance Design Contract (2021) | Dribbble</a></li>
-	<li><a href="https://www.fastcompany.com/90515800/this-little-tech-trick-will-help-you-say-no-with-respect">How to say no to your boss, meetings, and coworkers</a></li>
-	<li><a href="https://mobile.twitter.com/morganknutson/status/1049523067506966529">Now that Google+ has been shuttered, I should air my dirty laundry on how awful the project and exec team was / Twitter</a></li>
-	<li><a href="https://www.amazon.com/dp/0998120448/">The Product Manager Interview: 164 Actual Questions and Answers</a></li>
-	<li><a href="https://www.amazon.com/dp/B01N076VUY/">Amazon Product Manager Interview: A Step by Step Approach to Ace the Product Manager Interview at Amazon</a></li>
-	<li><a href="https://www.fastcompany.com/40571406/5-emotionally-intelligent-ways-to-inspire-your-team-every-single-day">5 emotionally intelligent ways to inspire your team every single day</a></li>
-	<li><a href="https://www.fastcompany.com/40586274/what-i-wish-i-knew-before-i-became-a-manager-for-the-first-time">What I wish I knew before I became a manager for the first time</a></li>
-	<li><a href="https://www.fastcompany.com/40586930/these-are-the-conversations-you-need-to-have-as-a-new-manager">These are the conversations you need to have as a new manager</a></li>
-	<li><a href="https://www.fastcompany.com/40587469/what-to-highlight-in-your-cover-letter-when-applying-for-a-remote-job">What to highlight in your cover letter when applying for a remote job</a></li>
-	<li><a href="https://designtaxi.com/news/400223/Major-Differences-Between-A-Boss-And-A-Leader-In-Side-By-Side-Illustrations/">Major Differences Between A Boss And A Leader In Side-By-Side Illustrations - DesignTAXI.com</a></li>
-	<li><a href="https://www.fastcompany.com/90227353/4-behavioral-interview-tips-and-tactics">4 behavioral interview tips and tactics</a></li>
-	<li><a href="https://www.forbes.com/sites/ashiraprossack1/2018/10/25/5-things-you-need-to-do-when-starting-a-new-job/?sh=1aa80df24dfc">5 Things You Need To Do When Starting A New Job</a></li>
-	<li><a href="https://www.forbes.com/sites/kathycaprino/2018/10/27/7-power-gaps-that-keep-professionals-from-thriving-and-leading-at-work/">7 Power Gaps That Keep Professionals From Thriving And Leading At Work</a></li>
-	<li><a href="https://www.fastcompany.com/90266233/make-sure-you-ask-these-questions-at-the-end-of-the-job-interview">The questions to ask the interviewer during the interview</a></li>
-	<li><a href="https://www.theatlantic.com/ideas/archive/2021/12/how-care-less-about-work/620902/">How to Care Less About Work - The Atlantic</a></li>
-</ul>
-<h3>Understanding Engineering</h3>
-<ul>
-	<li><a href="http://www.hotdesign.com/seybold/">Why tables for layout is stupid: problems defined, solutions offered</a></li>
-	<li><a href="https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/">Autofill: What web devs should know, but don't - Cloud Four</a></li>
-	<li><a href="https://www.formidable.com/blog/2019/design-to-dev/">How To Create an Ideal Design to Dev Workflow</a></li>
-	<li><a href="https://github.com/airbnb/javascript/">AirBnB's JavaScript Style Guide</a></li>
-	<li><a href="https://developers.google.com/web/tools/lighthouse/">Google's "Lighthouse" website evaluator</a></li>
-	<li><a href="https://trailhead.salesforce.com/en/content/learn/trails/get-started-with-web-accessibility">Get Started with Web Accessibility | Salesforce Trailhead</a></li>
-	<li><a href="https://developers.google.com/web/tools/chrome-devtools/accessibility/reference">Accessibility Reference | Tools for Web Developers | Google Developers</a></li>
-	<li><a href="http://isitresponsive.com/">Responsive Design Testing</a></li>
-	<li><a href="https://flukeout.github.io/">CSS Diner - Where we feast on CSS Selectors!</a></li>
-	<li><a href="https://codecombat.com/">CodeCombat - Coding games to learn Python and JavaScript</a></li>
-</ul>
-<h3>Reading List</h3>
-<ul>
-	<li><a href="https://ideas.ted.com/fear-is-boring-and-other-tips-for-living-a-creative-life/">Fear is boring, and other tips for living a creative life</a></li>
-	<li><a href="https://www.theatlantic.com/technology/archive/2017/02/the-singularity-in-the-toilet-stall/517551/">Why Nothing Works Anymore</a></li>
-	<li><a href="https://www.reddit.com/r/startups/comments/74pms1/my_manager_who_i_loved_recently_left_my_company_i/">My manager (who I loved) recently left my company. I summarized some of my notes from our many conversations. Here they are: I wish someone wrote this for me when I started</a></li>
-	<li><a href="https://www.wsj.com/articles/the-right-and-wrong-way-to-manage-up-at-the-office-1523366792">The Right and Wrong Way to Manage Up at the Office</a></li>
-	<li><a href="https://www.seattletimes.com/business/microsoft/i-felt-so-alone-what-women-at-microsoft-face-and-why-many-leave/">'I felt so alone': What women at Microsoft face, and why many leave</a></li>
-	<li><a href="https://www.vox.com/technology/2018/5/4/17318522/state-of-black-america-2018-national-urban-league-silicon-valley-race">State of Black America 2018 unpacks Silicon Valley's diversity problem</a></li>
-	<li><a href="https://www.fastcompany.com/40574192/4-ways-to-show-curiosity-in-job-interviews-and-why-you-need-to">4 ways to show curiosity in job interviews (and why you need to)</a></li>
-	<li><a href="https://www.fastcompany.com/40582080/5-management-lessons-that-being-a-parent-taught-me">5 management lessons that being a parent taught me</a></li>
-	<li><a href="https://designtaxi.com/news/400191/Marvel-Film-Writers-Weigh-In-On-How-DC-Could-Make-Its-Movies-More-Popular/">Marvel Film Writers Weigh In On How DC Could Make Its Movies More Popular</a></li>
-	<li><a href="https://www.wired.com/story/a-plea-for-ai-that-serves-humanity-instead-of-replacing-it/">A Plea for AI That Serves Humanity Instead of Replacing It | WIRED</a></li>
-	<li><a href="https://www.bloomberg.com/news/articles/2018-07-16/how-amy-hood-won-back-wall-street-and-helped-reboot-microsoft">How Amy Hood Won Back Wall Street and Helped Reboot Microsoft</a></li>
-	<li><a href="https://www.cnbc.com/2018/07/27/tech-careers-lessons-from-working-at-amazon-and-microsoft.html">Tech careers: Lessons for start-ups from Amazon and Microsoft</a></li>
-	<li><a href="https://www.theatlantic.com/magazine/archive/2018/09/how-to-make-friends/565742/">How to Make Friends, According to Science - The Atlantic</a></li>
-	<li><a href="https://www.fastcompany.com/90237319/how-to-solve-complex-problems-by-not-focusing-on-them">How to solve complex problems (by not focusing on them)</a></li>
-	<li><a href="https://www.theatlantic.com/family/archive/2018/09/women-workplace-confidence-gap/570772/">Why the Confidence Gap Is a Myth</a></li>
-	<li><a href="https://www.theatlantic.com/family/archive/2018/09/puberty-girls-confidence/563804/">How Puberty Kills Girls' Confidence</a></li>
-	<li><a href="https://www.theatlantic.com/entertainment/archive/2018/09/jeffrey-wright/566213/">Jeffrey Wright of HBO's 'Westworld' on His First Job</a></li>
-	<li><a href="https://www.theverge.com/2018/9/24/17882842/us-internet-broadband-map-isp-fcc-wireless-competition">How bad maps are ruining American broadband - The Verge</a></li>
-	<li><a href="https://www.forbes.com/sites/adunolaadeshola/2018/09/27/the-ugly-truth-behind-moving-to-la-for-your-dream-job-and-how-this-millennial-successfully-did-it/">The Ugly Truth Behind Moving To LA For Your Dream Job And How This Millennial Successfully Did It</a></li>
-	<li><a href="https://www.fastcompany.com/90242488/what-does-it-mean-to-live-an-authentic-life">What does it mean to live an authentic life?</a></li>
-	<li><a href="https://arstechnica.com/science/2018/10/former-tepco-ceo-offers-thoughts-on-fukushima-and-japans-energy-future/">An insider's perspective on Fukushima and everything that came after | Ars Technica</a></li>
-	<li><a href="https://www.fastcompany.com/90249188/design-will-kill-marketing-says-ikeas-former-design-chief">Ikea's Marcus Engman founds design agency Skewed Productions</a></li>
-	<li><a href="https://www.fastcompany.com/90250152/a-new-ikea-report-is-an-unsettling-look-at-life-in-the-21st-century">New Ikea report finds that people don't feel at home in their homes</a></li>
-	<li><a href="https://www.gq.com/story/science-of-sleepiness">Why Am I So Tired All the Time? | GQ</a></li>
-	<li><a href="https://www.vox.com/future-perfect/2018/11/2/18055532/vegans-vegetarian-research-uk">Why do people hate vegans so much?</a></li>
-	<li><a href="https://www.forbes.com/sites/marikosilver/2018/11/02/voting-does-not-make-democracy/">Voting Does Not Make Democracy</a></li>
-	<li><a href="https://gizmodo.com/facebook-says-it-has-independently-verified-how-much-it-1830244949">Facebook Says It Has Independently Verified How Much It Bungled Handling of Myanmar Genocide</a></li>
-	<li><a href="https://www.npr.org/sections/goatsandsoda/2018/11/13/651834661/chinas-building-spree-in-poor-nations-does-it-really-help-the-local-economy">Nighttime Satellite Images Shed Light On China's Building Spree In Developing Nations</a></li>
-	<li><a href="https://9to5mac.com/2018/11/20/jony-ive-discusses-the-importance-and-absurdity-between-leveraging-curiosity-and-the-focus-to-solve-problems/">Jony Ive discusses the importance and absurdity between leveraging 'curiosity' and the focus to 'solve problems' - 9to5Mac</a></li>
-	<li><a href="https://www.glassdoor.com/blog/gaming-applicant-tracking-systems/">Ask A Resume Writer: Do I Need to "Game" Applicant Tracking Systems to Land Interviews? - Glassdoor Blog</a></li>
-	<li><a href="https://www.theatlantic.com/family/archive/2018/11/arlie-hochschild-housework-isnt-emotional-labor/576637/">Arlie Hochschild: Housework Isn't 'Emotional Labor' - The Atlantic</a></li>
-	<li><a href="https://www.theatlantic.com/international/archive/2018/12/elegy-democratic-hong-kong-distinct-mainland-china/577570/">The Death of Democratic Hong Kong, Distinct From Mainland China - The Atlantic</a></li>
-	<li><a href="https://www.wired.com/story/mastermind-cia-disguise/">How the CIA Trains Spies to Hide in Plain Sight | WIRED</a></li>
-	<li><a href="https://www.cnet.com/tech/mobile/dating-app-coffee-meets-bagel-gets-a-new-look/">Dating app Coffee Meets Bagel lightens up - CNET</a></li>
-	<li><a href="https://www.thelily.com/whats-a-day-in-the-life-of-a-girl-look-like-in-10-countries-sign-up-for-the-lilys-girlhood-around-the-world-for-a-look/">What’s a day in the life of a girl look like in 10 countries?</a></li>
-	<li><a href="https://www.theatlantic.com/family/archive/2018/12/tinder-changed-dating/578698/">How Tinder Changed Dating for a Generation - The Atlantic</a></li>
-	<li><a href="https://www.thelily.com/10-steps-to-take-when-talking-politics-with-someone-you-disagree-with-this-holiday-season/">10 steps to take when talking politics with someone you disagree with - The Lily</a></li>
-	<li><a href="https://www.theatlantic.com/family/archive/2018/12/allowance-kids-chores-help/578848/">Tying Allowance to Chores Could Kill Kids' Motivation to Help Out - The Atlantic</a></li>
-	<li><a href="https://www.theatlantic.com/ideas/archive/2018/12/affirmative-action-about-reparations-not-diversity/578005/">Affirmative Action Is About Reparations, Not Diversity - The Atlantic</a></li>
-	<li><a href="https://arstechnica.com/gaming/2019/01/tales-of-an-aging-gamer-why-dont-i-pick-up-a-controller-as-often-as-i-used-to/">Tales of an aging gamer: Why don't I pick up a controller as often as I used to? | Ars Technica</a></li>
-	<li><a href="https://www.fastcompany.com/90288928/the-case-against-anthropomorphizing-robots">Robots don't need to have faces to communicate with humans, study find</a></li>
-	<li><a href="https://www.theatlantic.com/international/archive/2019/01/der-spiegal-fabrication-scandal-global/579889/">Der Spiegel's Fabrication Scandal Has Global Repercussions - The Atlantic</a></li>
-	<li><a href="https://www.theatlantic.com/science/archive/2019/01/plants-use-flowers-hear-buzz-animals/579964/">Plants Use Flowers to Hear the Buzz of Animals - The Atlantic</a></li>
-	<li><a href="https://www.fastcompany.com/90287138/how-to-become-a-better-conversationalist">How to become a better conversationalist</a></li>
-	<li><a href="https://www.vox.com/the-goods/2019/1/11/18175547/saba-imtiaz-marie-kondo-tidying-up-throwing-away">Why Marie Kondo's style of tidying up isn't for everyone - Vox</a></li>
-	<li><a href="https://www.forbes.com/sites/meghanmccormick/2019/01/20/want-to-build-a-global-brand-from-africa-heres-how/?sh=2fa818745bcd">Want To Build A Global Brand From Africa? Here's How.</a></li>
-	<li><a href="https://www.forbes.com/sites/maryabbajay/2019/01/20/mentoring-matters-three-essential-element-of-success/">Mentoring Matters: Three Essential Elements Of Success</a></li>
-	<li><a href="https://www.nationalgeographic.com/environment/article/carbon-capture-trees-atmosphere-climate-change">To curb climate change, we have to suck carbon from the sky. But how?</a></li>
-	<li><a href="https://www.fastcompany.com/90293734/why-the-airport-of-the-future-still-hasnt-arrived">Why are airports still so bad?</a></li>
-	<li><a href="https://www.fastcompany.com/90292670/why-its-good-for-you-to-be-wrong">Why being wrong is good</a></li>
-	<li><a href="https://www.fastcompany.com/90294800/how-do-i-become-an-inspiring-leader-be-vulnerable">Maynard Webb's advice on becoming an inspiring leader</a></li>
-	<li><a href="https://www.adweek.com/convergent-tv/how-opt-in-ads-catch-consumer-attention-and-drive-home-brand-intention/">How Opt-In Ads Catch Consumer Attention and Drive Home Brand Intention</a></li>
-	<li><a href="https://www.theatlantic.com/family/archive/2019/01/women-men-bathroom-lines-wait/580993/">Why Women Have to Wait in Longer Bathroom Lines Than Men Do - The Atlantic</a></li>
-	<li><a href="https://www.wired.com/story/tim-cook-data-broker-registry/">How Tim Cook's Data Broker Registry Might Actually Work | WIRED</a></li>
-	<li><a href="https://qz.com/1533636/the-complex-reasons-humans-are-obsessed-with-pressing-buttons/">The complex reasons humans are obsessed with pressing buttons — Quartz</a></li>
-	<li><a href="https://www.theatlantic.com/health/archive/2019/01/ugly-produce-startups-food-waste/581182/">'Ugly Produce' Subscription Boxes Have Ignited a Food War - The Atlantic</a></li>
-	<li><a href="https://9to5mac.com/2019/01/25/facebooks-friendly-fraud-scammed-children-wsj-column/">Facebook's 'Friendly Fraud' — report reveals social media knowingly scammed children as Zuckerberg publishes WSJ column - 9to5Mac</a></li>
-	<li><a href="https://www.forbes.com/sites/micahsolomon/2019/01/25/improving-customer-service-by-not-making-customers-repeat-themselves/">To Improve Customer Service, Stop Forcing Customers To Repeat Themselves</a></li>
-	<li><a href="https://www.wired.com/story/abusability-testing-ashkan-soltani/">Security Isn't Enough. Silicon Valley Needs 'Abusability' Testing | WIRED</a></li>
-	<li><a href="https://www.fastcompany.com/90295898/exactly-what-to-say-in-these-7-difficult-conversations-with-your-boss">What to say in 7 difficult conversations with your boss</a></li>
-	<li><a href="https://www.theverge.com/2019/2/1/18205506/nasa-mars-mission-spacecraft-interior-design-astronaut-behavioral-health">Better interior design might keep astronauts healthier and happier in deep space - The Verge</a></li>
-	<li><a href="https://www.forbes.com/sites/olliebarder/2019/01/21/kanetake-ebikawa-on-full-metal-panic-gundam-and-the-minimalist-elegance-of-mecha-design/">Kanetake Ebikawa On 'Full Metal Panic!', 'Gundam' And The Minimalist Elegance Of Mecha Design</a></li>
-	<li><a href="https://www.nytimes.com/2019/02/13/magazine/women-coding-computer-programming.html">The Secret History of Women in Coding</a></li>
-	<li><a href="https://techcrunch.com/2019/02/17/we-take-your-privacy-and-security-seriously/">Stop saying, 'We take your privacy and security seriously'</a></li>
-	<li><a href="https://arstechnica.com/tech-policy/2019/02/the-verge-briefly-censored-youtubers-who-mocked-its-bad-pc-building-advice/">Vox lawyers briefly censored YouTubers who mocked The Verge's bad PC build advice | Ars Technica</a></li>
-	<li><a href="https://www.theatlantic.com/newsletters/archive/2019/02/harry-potter-hardy-boys-and-narnia-books-briefing/582544/">Harry Potter, The Hardy Boys, Narnia: Books Briefing - The Atlantic</a></li>
-	<li><a href="https://www.fastcompany.com/90313220/password-mooching-bad-for-netflix-maybe-worse-for-hulu">Password mooching: Bad for Netflix, maybe worse for Hulu</a></li>
-	<li><a href="https://qz.com/1562585/the-seven-moral-rules-that-supposedly-unite-humanity/">The seven moral rules that supposedly unite humanity — Quartz</a></li>
-	<li><a href="https://www.fastcompany.com/90316183/this-big-new-innovation-could-help-fix-our-broken-recycling-system">PureCycle's new tech could help fix our recycling system</a></li>
-	<li><a href="https://techcrunch.com/2019/03/08/cookie-walls-dont-comply-with-gdpr-says-dutch-dpa/">Cookie walls don't comply with GDPR, says Dutch DPA | TechCrunch</a></li>
-	<li><a href="https://www.theverge.com/interface/2019/3/8/18255480/facebook-pivot-privacy-mark-zuckerberg-pr-stunt">Why Facebook's pivot to privacy could backfire - The Verge</a></li>
-	<li><a href="https://www.washingtonpost.com/business/economy/the-salary-trap-what-to-say-when-a-job-application-asks-how-much-pay-you-want/2019/03/08/9f61b2d8-4048-11e9-9361-301ffb5bd5e6_story.html">The salary trap: What to say when a job application asks how much pay you want - The Washington Post</a></li>
-	<li><a href="https://www.theverge.com/tldr/2019/3/5/18252150/bad-password-security-data-breach-taiwan-ji32k7au4a83-have-i-been-pwned">ji32k7au4a83 is a surprisingly bad password - The Verge</a></li>
-	<li><a href="https://gizmodo.com/why-self-checkout-is-and-has-always-been-the-worst-1833106695">Why Self-Checkout Is and Has Always Been the Worst</a></li>
-	<li><a href="https://www.fastcompany.com/90320892/this-is-what-drives-people-to-make-unethical-choices">Why people make unethical choices</a></li>
-	<li><a href="https://www.fastcompany.com/90317661/this-is-how-to-correct-someone-without-sounding-like-a-jerk">How to correct someone without sounding like a jerk</a></li>
-	<li><a href="https://www.wired.com/story/uncanny-valley-robot-voices/">The Uncanny Valley Nobody's Talking About: Eerie Robot Voices | WIRED</a></li>
-	<li><a href="https://fortune.com/longform/medical-records/">Death by a Thousand Clicks: Where Electronic Health Records Went Wrong | Fortune</a></li>
-	<li><a href="https://www.wsj.com/articles/the-art-of-being-single-11553005457">The Art of Being Single - WSJ</a></li>
-	<li><a href="https://9to5mac.com/2019/03/22/jony-ive-airpods-design-gq/">Jony Ive talks AirPods design history with GQ following second-gen debut this week - 9to5Mac</a></li>
-	<li><a href="https://www.thelily.com/i-used-makeup-as-a-shield-heres-why-and-how-i-learned-to-stop/">I used makeup as a shield. Here's why — and how I learned to stop - The Lily</a></li>
-	<li><a href="https://www.fastcompany.com/90323529/privacy-is-not-an-abstraction">Privacy's not an abstraction</a></li>
-	<li><a href="https://www.nationalgeographic.com/science/article/meet-historys-most-brilliant-female-coders">Meet history's most brilliant female coders</a></li>
-	<li><a href="https://qz.com/work/1587170/the-five-types-of-communication-problems-that-destroy-company-morale/">The 5 communication problems that destroy company morale — Quartz at Work</a></li>
-	<li><a href="https://www.theverge.com/2019/4/4/18293817/cybersecurity-hospitals-health-care-scan-simulation">Health care's huge cybersecurity problem - The Verge</a></li>
-	<li><a href="https://futurism.com/the-byte/oculus-hidden-messages-facebook-privacy">Hidden Messages Suggest That Facebook Sees User Privacy as a Joke</a></li>
-	<li><a href="https://ideas.ted.com/why-rejection-hurts-so-much-and-what-to-do-about-it/">Why rejection hurts so much — and what to do about it</a></li>
-	<li><a href="https://www.theatlantic.com/magazine/archive/2020/09/china-ai-surveillance/614197/">China's Artificial Intelligence Surveillance State Goes Global - The Atlantic</a></li>
-	<li><a href="https://hbr.org/2021/03/persuading-the-unpersuadable">Persuading the Unpersuadable</a></li>
-	<li><a href="https://www.inc.com/jennifer-johnson/understanding-customer-why-why-it-matters.html">Understanding the Customer 'Why' and Why It Matters | Inc.com</a></li>
-	<li><a href="https://www.uxpin.com/knowledge">Knowledge Wants To Be Free</a></li>
-	<li><a href="https://uxmag.com/">UX Magazine | The Community Of Over 515,000</a></li>
-	<li><a href="https://www.nngroup.com/">Nielsen Norman Group: UX Training, Consulting, &amp; Research</a></li>
-	<li><a href="https://www.uxbooth.com/">UX Booth</a></li>
-	<li><a href="https://alistapart.com/">A List Apart – For people who make websites</a></li>
-	<li><a href="https://uxmovement.com/">UX Movement - Professional User Experience Articles</a></li>
-	<li><a href="https://uxmovement.com/">UX Movement - Professional User Experience Articles</a></li>
-	<li><a href="https://jackmorgan.com/">Jack Morgan | Designer at Duolingo &amp; Google | Keynote &amp; TED Speaker</a></li>
-</ul>
+<section>
+	<h2>Strategy &amp; Thinking</h2>
+	<div>
+		<h3>Foundational Knowledge</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://pmdictionary.github.io/" target="blank">Product Management Dictionary</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.usertesting.com/blog/dont-hire-ui-ux-designer/" target="blank">Why You Shouldn't Hire a UI/UX Designer | UserTesting Blog</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/personas-jobs-be-/" target="blank">Personas vs. Jobs-to-Be-</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/ux-smells-fa971feef820" target="blank">UX Smells – uxdesign.cc</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tubikstudio.com/visual-perception-icons-vs-copy-in-ui/" target="blank">Visual Perception. Icons vs Copy in UI | Tubik Studio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://smashingideas.com/behavioral-archetypes-toolkit/" target="blank">Behavioral Archetypes Toolkit - Smashing Ideas</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/stevedenning/2019/05/23/understanding-fake-agile/#5598018c4bbe" target="blank">Understanding Fake Agile</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://lawsofux.com/" target="blank">Home | Laws of UX</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/the-relationship-between-design-deliverables-and-presentation-skills-56c713694446" target="blank">The relationship between design deliverables and presentation skills</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcodesign.com/90171699/what-is-gdpr-and-why-should-designers-care" target="blank">What is GDPR, and why should designers care?</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://hbr.org/2016/09/the-elements-of-value" target="blank">The 30 Elements of Consumer Value: A Hierarchy</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://uxmyths.com/" target="blank">UX Myths</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/ux-debt/" target="blank">UX Debt: How to Identify, Prioritize, and Resolve</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://voiceandtone.com/" target="blank">Welcome | Voice and Tone</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://en.wikipedia.org/wiki/Linguistic_relativity" target="blank">Linguistic relativity - Wikipedia</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.darkpatterns.org/types-of-dark-pattern" target="blank">Dark Patterns - Types of Dark Pattern</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90681631/how-to-spot-the-psychological-manipulation-behind-dark-design-online" target="blank">Spot the psychological manipulation behind 'dark design' online</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/eightshapes-llc/patterns-components-2ce778cbe4e8" target="blank">Patterns ≠ Components – EightShapes – Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://en.wikipedia.org/wiki/Fitts%27s_law" target="blank">Fitts's law - Wikipedia</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://tarotcardsoftech.artefactgroup.com/" target="blank">The Tarot Cards Of Tech</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90319581/why-the-velvet-hammer-is-a-better-way-to-give-constructive-criticism" target="blank">What is the velvet hammer and how to use it when giving bad news</a></label></p>
+	</div>
+
+	<div>
+		<h3>Technique</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://anildash.com/2013/01/all-dashboards-should-be-feeds.html" target="blank">All Dashboards Should be Feeds - Anil Dash</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://scottjensen.design/2016/04/designing-an-alternative-to-the-hamburger-menu/" target="blank">Designing an Alternative to the Hamburger Menu | Scott Jensen Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/overuse-of-overlays/" target="blank">Overuse of Overlays: How to Avoid Misusing Lightboxes</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/the-year-of-the-looking-glass/the-5-most-common-mistakes-in-design-52816ab77b3d" target="blank">The 5 Most Common Mistakes in Design – The Year of the Looking Glass – Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/ux-power-tools/50-things-you-probably-forgot-to-design-7a288b0ef914" target="blank">50 Things You [Probably] Forgot To Design - UX Power Tools - Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://databox.com/website-engagement-metrics" target="blank">The 14 Website Engagement Metrics Every Marketing Team Should Be Tracking | Databox Blog</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/dashboards-preattentive/" target="blank">Dashboards: Making Charts and Graphs Easier to Understand</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://boxesandarrows.com/implementing-a-pattern-library-in-the-real-world-a-yahoo-case-study/" target="blank">Implementing a Pattern Library in the Real World: A Yahoo! Case Study - Boxes and Arrows</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.invisionapp.com/inside-design/5-examples-motion-design-ui/" target="blank">5 phenomenal examples of motion design in UI | Inside Design Blog</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc" target="blank">Creating Usability with Motion: The UX in Motion Manifesto</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/design-better-forms-96fadca0f49c" target="blank">Design Better Forms – uxdesign.cc</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://usabilitygeek.com/" target="blank">Usability Geek - Usability Geek</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://speakerdeck.com/vladimirkoncar/physical-space-as-a-medium-for-user-experience-how-to-design-experiences-beyond-the-screen" target="blank">Physical space as a medium for user experience: How to design experiences beyond the screen? - Speaker Deck</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/@mollyinglish/the-ninja-skill-for-ux-designers-25f314f8f76c" target="blank">Whiteboarding for UX Designers</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://spotify.design/article/how-to-lead-a-remote-design-sprint" target="blank">How to Lead a Remote Design Sprint | Spotify Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ascendle.com/insight/blog/user-story-acceptance-criteria/" target="blank">User Story Acceptance Criteria - Ascendle</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://modus.medium.com/a-scientific-method-for-impactful-ux-prototyping-9ab6c7a1dcde" target="blank">A Scientific Method for Impactful UX Prototyping - Modus</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/sketch-app/mastering-the-bezier-curve-in-sketch-4da8fdf0dbbb" target="blank">Mastering the Bezier Curve in Sketch – .Sketch App – Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.smashingmagazine.com/2017/02/mobile-first-is-just-not-good-enough-meet-journey-driven-design/" target="blank">Mobile First Is Just Not Good Enough: Meet Journey-Driven Design — Smashing Magazine</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/google-design/the-obvious-ui-is-often-the-best-ui-7a25597d79fd" target="blank">The Obvious UI is Often the Best UI - Google Design - Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/10-tricks-techniques-to-make-the-most-out-of-sketch-d12ae16d47e9" target="blank">10 tricks &amp; techniques to make the most out of Sketch</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://academy.thefutur.com/courses/enrolled/223748" target="blank">The Futur - Be your best self</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://thefutur.com/learn" target="blank">The Futur - Learn Business &amp; Creative Skills</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://thefutur.com/content/design" target="blank">The Futur - Design Videos, Articles, Resources, and Courses</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxplanet.org/how-version-control-changed-my-everyday-life-cc67b0009e3d" target="blank">How version control changed my everyday life</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://blog.prototypr.io/design-versioning-its-true-it-s-here-let-s-talk-and-learn-more-about-it-9fef5d7cb517" target="blank">Design Versioning — It's true, it's here, let's talk and learn more about it.</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/stevedenning/2019/05/23/understanding-fake-agile/" target="blank">Understanding Fake Agile</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/reimagining-okrs-for-designers-and-design-teams-808662633322" target="blank">Reimagining OKRs for designers and design teams</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/designers-are-spending-too-much-time-designing-ui-variations-manually-ad665d8d5e40" target="blank">Designers are spending too much time designing UI variations manually</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://cantunsee.space" target="blank">Can't Unsee - UI Design training game</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.youtube.com/c/DesignCourse" target="blank">'Design Course' on Youtube - simple, effective UI training</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.freecodecamp.org/news/ui-ux-design-tutorial-from-zero-to-hero-with-wireframe-prototype-figma/" target="blank">UI / UX Design Tutorial – From Zero to Hero with Wireframe + Prototype + Design in Figma</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.figmacrashcourse.com/" target="blank">Figma Crash Course</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.designsystemsforfigma.com/" target="blank">Design Systems For Figma</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://university.webflow.com/courses/figma-to-webflow?video=BfsI6F9_izY" target="blank">Figma to Webflow | Webflow University</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://method.ac/" target="blank">Vector Practice</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://developer.apple.com/design/tips/" target="blank">UI Design Dos and Don'ts - Apple Developer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ventureharbour.com/landing-page-optimisation-tips/" target="blank">Landing Page Optimisation: 101 Tips</a></label></p>
+	</div>
+
+	<div>
+		<h3>Vocabulary</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://blog.prototypr.io/11-optical-illusions-found-in-visual-design-295e7ae211b9" target="blank">11 Optical Illusions Found in Visual Design – Prototypr</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://jjg.net/ia/visvocab/" target="blank">Jesse James Garrett: Visual Vocabulary for Information Architecture</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://growth.design/psychology/" target="blank">Psychology of Design: 101 Cognitive Biases &amp; Principles That Affect Your UX</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/a-comprehensive-and-honest-list-of-ux-clich%C3%A9s-96e2a08fb2e9" target="blank">A comprehensive (and honest) list of UX clich&eacute;s</a></label></p>
+	</div>
+
+	<div>
+		<h3>Case Studies</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://consumerist.com/2011/04/18/walmart-declutters-aisles-per-customer-request-then-loses-185-billion-in-sales/" target="blank">Walmart Declutters Aisles Per Customers' Request, Then Loses $1.85 Billion In Sales – Consumerist</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/3002676/magical-tech-behind-paper-ipads-color-mixing-perfection" target="blank">The Magical Tech Behind Paper For iPad's Color-Mixing Perfection</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90315961/visualizing-where-rich-and-poor-people-really-cross-paths-or-dont" target="blank">Visualizing where rich and poor people really cross paths--or don't</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/tech-policy/2019/10/accessibility-the-future-and-why-dominos-matters/" target="blank">Accessibility, the future, and why Domino's matters | Ars Technica</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxplanet.org/tinder-poll-a-ux-case-study-5c987cecc666" target="blank">Tinder Polls — a UX case study. Designing a new feature for the Tinder... | by Alex Beligan | UX Planet</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/science/2018/04/a-crummy-drop-down-menu-appeared-to-kill-dozens-of-mothers-in-texas/" target="blank">A crummy drop-down menu appeared to kill dozens of mothers in Texas | Ars Technica</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/pinball-pattern-search-behavior/" target="blank">Complex Search-Results Pages Change Search Behavior: The Pinball Pattern</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.psychologytoday.com/us/blog/get-psyched/201301/the-weapons-effect" target="blank">The "weapons effect" | Psychology Today</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.polygon.com/gaming/2012/8/21/3257122/borderlands-2-and-the-lessons-in-storytelling" target="blank">'Borderlands 2' and the lessons in storytelling - Polygon</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/rage-2-review/" target="blank">The Open World of 'Rage 2' Is More Barren Than It Should Be | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.gamedeveloper.com/design/how-i-pony-island-i-teaches-players-to-break-a-game" target="blank">How Pony Island teaches players to break a game</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.polygon.com/2020/1/13/21064100/vvvvvv-source-code-game-development-terry-cavanagh-release" target="blank">The truth is that many games are held together by duct tape - Polygon</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2019/3/5/18251570/caroline-criado-perez-invisible-women-data-bias-science-gender" target="blank">A journalist explains the dangerous consequences of a world built for men</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/the-highlight/2019/11/13/20959863/women-happy-chores-gender-gap" target="blank">Women's happiness and the other gender gap - Vox</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.newyorker.com/culture/cultural-comment/a-century-of-shrill-how-bias-in-technology-has-hurt-womens-voices" target="blank">A Century of "Shrill": How Bias in Technology Has Hurt Women's Voices | The New Yorker</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/cashless-retail-excludes-customers-in-the-name-of-efficiency/" target="blank">Cashless Stores Alienate Customers in the Name of Efficiency | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.govtech.com/fs/infrastructure/Seattle-Highway-Shutdown-Provides-Data-Sharing-Lesson.html" target="blank">Seattle Highway Shutdown Provides Data Sharing Lesson</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.gearboxsoftware.com/2013/07/inside-the-box-field-of-view/" target="blank">Inside the Box: Field of View - Gearbox Software</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://digitalsynopsis.com/inspiration/privileged-kids-on-a-plate-pencilsword-toby-morris/" target="blank">This Brilliant Comic Strip On Rich Vs Poor Upbringing Will Humble You</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2019/2/19/18226852/loot-boxes-gaming-regulation-gambling-free-to-play" target="blank">How loot boxes hooked gamers and left regulators spinning - The Verge</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://blog.fontawesome.com/icon-naming-conventions/" target="blank">Font Awesome - These ARE the Icons You're Looking For: Why We Updated Our Icon Naming</a></label></p>
+	</div>
+
+	<div>
+		<h3>Articles</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcodesign.com/90170255/using-the-old-mac-os-is-pure-zen" target="blank">Using The Old Mac OS Is Pure Zen</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.cultofmac.com/624724/apple-lisa-documentary-will-tell-the-story-of-apples-most-important-flop/" target="blank">'Before Macintosh' documentary tells story of Apple's most important 'flop'</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.businessinsider.com/why-netflix-replaced-its-5-star-rating-system-2017-4" target="blank">Why Netflix replaced its 5-star rating system - Business Insider</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://about.netflix.com/en/news/two-thumbs-up-even-better-recommendations" target="blank">About Netflix - Double the Thumbs For Even Better Recommendations</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://jobs.netflix.com/blog/bringing-4k-and-hdr-to-anime-with-sol-levante" target="blank">Netflix: Bringing 4K to anime</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/google-design/making-the-case-for-accessibility-350da9e30c84" target="blank">Making the Case for Accessibility - Google Design - Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/facebook-zuckerberg-privacy-pivot/" target="blank">Facebook's Pivot to Privacy Is Missing Something Crucial | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inputmag.com/tech/amazons-alexa-everywhere-initiative-is-terrifying" target="blank">Amazon's 'Alexa Everywhere' initiative is terrifying</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/gameplan-macos-security-tool-video-game-logic-engine/" target="blank">Clever Tool Uses Apple's Videogame Logic Engine to Protect Macs | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/twitter-press-event-2019/" target="blank">At Twitter, It Seems No One Can Hear the Screams | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/joemckendrick/2019/05/29/lack-of-imagination-not-technology-holds-back-superior-customer-experience/" target="blank">Lack Of Imagination, Not Technology, Holds Back Superior Customer Experience</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://keyframemagazine.org/2020/08/14/the-influence-of-anime/" target="blank">The Influence of Anime – Keyframe</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://qz.com/work/1580757/rochelle-kopps-new-manga-helps-japanese-workers-navigate-the-workplace/" target="blank">Rochelle Kopp's new manga helps Japanese workers navigate the workplace — Quartz at Work</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://nintendosoup.com/22-year-old-interview-sheds-light-about-squares-super-mario-rpg-development-challenges/" target="blank">22 Year Old Interview Sheds Light About Square's Super Mario RPG Development Challenges</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90390823/the-brilliant-ui-and-ux-design-of-classic-1990s-anime" target="blank">The brilliant UI and UX design of classic 1990s anime</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/what-ux-from-1989-can-teach-us-22476ac5703c" target="blank">What UX from 1989 can teach us - UX Collective</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcodesign.com/90175722/3-brilliant-design-details-from-the-new-microsoft-office" target="blank">3 brilliant design details from the new Microsoft Office</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.zdnet.com/article/microsoft-is-annoying-windows-users-again-and-they-just-cant-take-it-anymore/" target="blank">Microsoft is annoying Windows users again and they just can't take it anymore</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://9to5mac.com/2014/08/29/seeing-through-the-illusion-understanding-apples-mastery-of-the-media/" target="blank">Seeing Through the Illusion: Understanding Apple's Mastery of the Media</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://thebaffler.com/latest/designing-the-spectacle-alioto" target="blank">Designing the Spectacle | Daisy Alioto</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/technology/archive/2020/12/facebook-doomsday-machine/617384/" target="blank">Facebook Is a Doomsday Machine - The Atlantic</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/technology/archive/2021/06/the-internet-is-a-collective-hallucination/619320/" target="blank">The Rotting Internet Is a Collective Hallucination - The Atlantic</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://alistapart.com/article/how-we-hold-our-gadgets/" target="blank">How We Hold Our Gadgets – A List Apart</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://blog.sketchapp.com/do-more-with-data-2b765e870e4f" target="blank">Do more with Data: Building a Data Supplier plugin for Sketch</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://cantina.co/rethinking-the-relationship-between-service-design-and-space-design/" target="blank">Rethinking the Relationship Between Service Design and Space Design — Cantina</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90667677/where-design-can-make-the-biggest-impact-in-the-next-decade-according-to-over-30-experts" target="blank">30 experts on design's biggest impact in the next decade</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.archives.gov/files/presidential-libraries/events/centennials/nixon/images/exhibit/rn100-6-1-2.pdf" target="blank">In the event of Moon Mission failure</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/ex-donkey-kong-champ-threatens-to-sue-over-record-removal/" target="blank">Ex-Donkey Kong Champ Threatens to Sue Over Record Removal | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2019/10/13/20905334/missed-messages-review-steam-pc-game-horror" target="blank">Missed Messages is a powerful romance / horror game about communicating - The Verge</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.quora.com/Why-does-Windows-require-a-restart-after-installing-updates-If-I-understand-correctly-this-could-be-avoided-if-the-Windows-development-team-made-clever-use-of-their-own-shadow-copy-technologies" target="blank">Why does Windows require a restart after installing updates? If I understand correctly, this could be avoided if the Windows development team made clever use of their own 'shadow copy' technologies. - Quora</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/tech-policy/2020/03/before-it-sued-google-for-copying-from-java-oracle-got-rich-copying-ibms-sql/" target="blank">Before it sued Google for copying from Java, Oracle got rich copying IBM's SQL</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2016/10/24/13389592/att-time-warner-merger-breakup-bell-system-chart" target="blank">Look at this goddamn chart - The Verge</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/startups-prepare-for-downfall/" target="blank">Every Startup Needs to Prepare for Its Downfall | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://qz.com/1581001/the-irs-demands-backpay-on-taxes-for-panera-cares-cafes/" target="blank">The IRS demands backpay on taxes for Panera Cares Caf&eacute;s — Quartz</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/3039286/these-crazy-bacteria-filled-spacesuits-may-be-what-let-us-survive-on-other-planets" target="blank">These Crazy Bacteria-Filled Spacesuits May Be What Let Us Survive On O</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inc.com/maria-haggerty/a-surprising-product-design-factor-that-can-increase-profitability.html" target="blank">A Surprising Product Design Factor That Can Increase Profitability | Inc.com</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://online-learning.tudelft.nl/courses/design-for-recycling-of-electronics-in-a-circular-economy/" target="blank">MOOC: Design for Recycling of Electronics in a Circular Economy | TU Delft Online</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/annefield/2019/11/24/enthusiasm-for-conscious-spending-among-consumers-continues-to-slide/" target="blank">Enthusiasm For Conscious Spending Among Consumers Continues To Slide</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://en.wikipedia.org/wiki/Six_Sigma" target="blank">Six Sigma - Wikipedia</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://huffpost.com/us/entry/us_5ea3464bc5b6f9639814c009" target="blank">Construction Causes Major Pollution. Here's How We Can Build Better. | HuffPost</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.city-journal.org/seattle-safety-net-remains-unrealized" target="blank">What Went Wrong in Seattle? | City Journal</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theguardian.com/global-development/2021/jun/03/chinas-splinternet-blockchain-state-control-of-cyberspace" target="blank">China's 'splinternet' will create a state-controlled alternative cyberspace</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.newyorker.com/culture/annals-of-inquiry/the-case-for-open-borders" target="blank">The Case for Open Borders | The New Yorker</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90679810/the-case-for-building-cities-underground-2" target="blank">The case for building underground</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://designtaxi.com/news/400141/Creative-Names-And-Ways-8-Different-Cultures-Manage-Money-And-Savings/" target="blank">Creative Names And Ways 8 Different Cultures Manage Money And Savings - DesignTAXI.com</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://articles.uie.com/experience_rot/" target="blank">Experience Rot — UX Articles by UIE</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/gadgets/2018/10/microsofts-problem-isnt-shipping-windows-updates-its-developing-them/" target="blank">Microsoft's problem isn't how often it updates Windows—it's how it develops it</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://9to5mac.com/2018/10/24/tech-privacy/" target="blank">Tech privacy – Steve Jobs nailed it back in 2010 - 9to5Mac</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/technology/archive/2018/11/why-ratings-and-feedback-forms-dont-work/575455/" target="blank">Why Ratings and Feedback Forms Don't Work - The Atlantic</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/50-years-later-we-still-dont-grasp-the-mother-of-all-demos/" target="blank">50 Years Later, We Still Don't Grasp the Mother of All Demos | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90500378/iloveyou-virus-microsoft-steven-sinofsky-book" target="blank">How Microsoft fought the 'ILOVEYOU' virus 20 years ago</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/" target="blank">How Target Figured Out A Teen Girl Was Pregnant Before Her Father Did</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://design.google/library/user-friendly/" target="blank">Lessons from the Scariest Design Disaster in American History - Library - Google Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://stevesalaita.com/the-utility-of-uselessness/" target="blank">The Utility of Uselessness - Steve Salaita</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2013/1/24/3904134/google-redesign-how-larry-page-engineered-beautiful-revolution" target="blank">Redesigning Google: how Larry Page engineered a beautiful revolution</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thedrum.com/news/2022/04/19/liquid-death-ceo-why-porn-sells-water-people-entertainment-hate-ads" target="blank">Liquid Death CEO On Why Porn &amp; Punk Rock Sells Water: 'People Like Entertainment, But Hate Ads' | The Drum</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://andybudd.com/archives/2022/04/the-slow-but-inevitable-demise-of-ux-design" target="blank">The Slow But Inevitable Demise of UX Design | Andy Budd</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://devops.com/agile-scrum-is-a-failure-heres-why/" target="blank">Agile/Scrum is a Failure - Here's Why - DevOps.com</a></label></p>
+	</div>
+
+	<div>
+		<h3>Emotion &amp; Empathy</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90395110/how-googly-eyes-solved-one-of-todays-trickiest-ux-problems" target="blank">All robots should have googly eyes. Here's why</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.npr.org/sections/health-shots/2013/12/30/258313116/mapping-emotions-on-the-body-love-makes-us-warm-all-over" target="blank">Mapping Emotions On The Body: Love Makes Us Warm All Over</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2019/09/im-tired-dealing-my-sisters-complaints/597202/" target="blank">I'm Tired of Dealing With My Sister's Complaints - The Atlantic</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/future-perfect/2019/10/15/20913666/happiness-wellbeing-books-ai-sentiment-analysis-study" target="blank">Al study analyzed millions of books to measure happiness over 200 years</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inputmag.com/culture/there-are-too-many-emoji-it-has-to-stop" target="blank">There are too many emoji and it has to stop</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://experiments.withgoogle.com/collection/digitalwellbeing" target="blank">Digital Wellbeing Experiments | Experiments with Google</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inc.com/jessica-stillman/hiring-employee-archetypes-bain-report.html" target="blank">There Are 6 Types of Workers. Understanding Them Can Help You Beat the Great Resignation</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://moretothat.com/the-arc-of-the-practical-creator/" target="blank">The Arc of the Practical Creator</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.invisionapp.com/inside-design/oral-history-of-mailchimp-high-five/" target="blank">A mini oral history of the Mailchimp high five | Inside Design Blog</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thelily.com/mother-daughter-relationships-can-be-rocky-heres-how-i-strengthened-mine/" target="blank">How to strengthen a mother-daughter relationship - The Lily</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90206297/the-emotionally-intelligent-way-to-resolve-disagreements-faster" target="blank">The emotionally intelligent way to resolve disagreements faster</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/rodgerdeanduncan/2018/09/28/polarized-consider-conversations-worth-having/?sh=1b0f91867927" target="blank">Polarized? Consider Conversations Worth Having</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nbcnews.com/better/pop-culture/how-negotiate-anything-according-neuroscientists-ncna911046" target="blank">How to negotiate anything, according to neuroscientists</a></label></p>
+	</div>
+
+	<div>
+		<h3>Intuition &amp; Psychology</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://money.good.is/articles/non-threatening-leadership-strategies" target="blank">9 Nonthreatening Leadership Strategies For Women | GOOD Money</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/magazine/archive/2018/01/the-power-of-negativity/546560/" target="blank">The Power of Negative Thinking - The Atlantic</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.michaelgraves.com/designing-future-intuition-ux-physical-world/" target="blank">Designing the Future of Intuition: UX in the Physical World</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/enterprise-design-thinking/maintain-human-centered-focus-fully-remote-world-654fba515f96" target="blank">How to maintain a human-centered focus in a fully remote world</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inverse.com/article/58946-how-to-track-goals-better" target="blank">Study Reveals Something Powerful About a Goal That Ends With a "0" | Inverse</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90461735/how-to-make-the-most-hated-task-at-work-suck-less" target="blank">How to make the most hated task at work better</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.latimes.com/science/story/2019-09-12/rats-can-play-hide-and-seek" target="blank">Scientists taught these adorable rats to play hide and seek - Los Angeles Times</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/science/2019/11/these-rats-learned-to-drive-tiny-cars-for-science/" target="blank">Rats love driving tiny cars, even when they don't get treats | Ars Technica</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/future-perfect/2020/1/24/21078196/morality-ethics-culture-universal-subjective" target="blank">Is morality subjective or universal? A psychology study says it's both. - Vox</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://matthewstrom.com/writing/intuition/" target="blank">Intuition vs. Data || Matthew Ström: designer &amp; developer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://modus.medium.com/data-driven-design-is-killing-our-instincts-d448d141653d" target="blank">Data-Driven Design Is Killing Our Instincts - Modus</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://designtimes.blogspot.com/2019/01/why-justifying-design-decisions-may-not.html" target="blank">Evolution of Intelligent Design: Why Justifying Design Decisions May Not Solve the Problem</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/@kennelliott/39-studies-about-human-perception-in-30-minutes-4728f9e31a73#.kqps2m3fm" target="blank">39 studies about human perception in 30 minutes | by kennedy elliott | Medium</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://www.genderlessvoice.com/watch" target="blank">Meet Q. The First Genderless Voice.</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mashable.com/article/the-smart-wife-sexist-ai-smart-assistants/" target="blank">Making smart devices 'gender neutral' won't undo their sexism</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/b2b-trust-from-b2c/" target="blank">What B2B Designers Can Learn from B2C About Building Trust</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thenation.com/article/archive/crackdown-dissent/" target="blank">The Crackdown on Dissent | The Nation</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theladders.com/career-advice/neuroscience-reveals-7-secrets-that-will-make-you-persuasive" target="blank">New neuroscience reveals 7 secrets that will make you persuasive</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/policy-and-politics/2018/10/15/17979224/2018-midterm-elections-candidates-issues-health-care-immigration" target="blank">2018 midterm elections: Americans can't agree what the big issues are - Vox</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/policy-and-politics/2018/10/22/17991928/hidden-tribes-more-in-common-david-brooks" target="blank">"Hidden Tribes," the new report centrists are using to explain away polarization, explained</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/christinecomaford/2018/10/20/what-stress-change-and-isolation-do-to-your-brain/?sh=25b72d761940" target="blank">What Stress, Change And Isolation Do To Your Brain</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medicalxpress.com/news/2018-10-recalling-memories-context.html" target="blank">Recalling memories in context</a></label></p>
+	</div>
+</section>
+<section>
+	<h2>Blogs &amp; Books</h2>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://daringfireball.net/" target="blank">Daring Fireball</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/google-design/archive" target="blank">Archive of stories published by Google Design – Medium</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://anildash.com/" target="blank">Anil Dash</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://web.archive.org/web/20220317180650/http://ignorethecode.net/blog/" target="blank">(internet archive) ignore the code</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/Designed-Use-Create-Interfaces-Applications-ebook/dp/B01FRIOYEM/" target="blank">Designed for Use: Create Usable Interfaces for Applications and the Web</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/Inmates-Are-Running-Asylum-Products-ebook-dp-B000OZ0N62/dp/B000OZ0N62/" target="blank">The Inmates Are Running the Asylum: Why High Tech Products Drive Us Crazy and How to Restore the Sanity (2nd Edition)</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/Decode-Conquer-4th-Lewis-Lin/dp/B09Q8WN1KS/" target="blank">Decode and Conquer, Lewis C Lin</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/dp/B00MFPZ9UY/" target="blank">About Face: The Essentials of Interaction Design</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability-ebook/dp/B00HJUBRPG/" target="blank">Don't Make Me Think, Revisited: A Common Sense Approach to Web Usability</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/Design-Everyday-Things-Revised-Expanded-ebook/dp/B00E257T6C/" target="blank">The Design of Everyday Things: Revised and Expanded Edition</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://machinelearning.apple.com/" target="blank">Machine Learning Research at Apple</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.trends.uxdesign.cc/" target="blank">The State of UX in 2022</a></label></p>
+</section>
+<section>
+	<h2>Brand &amp; Visual Design</h2>
+	<div>
+		<h3>Color</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.canva.com/colors/color-wheel/" target="blank">Color wheel - color theory and calculator | Canva Colors</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mycolor.space/" target="blank">ColorSpace - Color Palettes Generator and Color Gradient Tool</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://leonardocolor.io/#" target="blank">Leonardo</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://coolors.co/" target="blank">Coolors - The super fast color schemes generator!</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.colorsandfonts.com/" target="blank">Colors &amp; Fonts</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/nightingale/how-to-choose-the-colors-for-your-data-visualizations-50b2557fa335" target="blank">How to Choose Colors for Your Data Visualizations</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://modus.medium.com/how-to-not-suck-at-color-b3980ee8084a" target="blank">How to Not Suck at Color - Modus</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.google.com/design/spec/style/color.html" target="blank">Material Design Palette</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://material.io/resources/color/" target="blank">Material Color Tool</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.crockford.com/wrrrld/color.html" target="blank">CSS Color Names</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://flatuicolors.com/" target="blank">Flat UI Colors</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.flatuicolorpicker.com/" target="blank">Flat UI Color Picker</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://github.blog/2022-06-14-accelerating-github-theme-creation-with-color-tooling/" target="blank">Accelerating GitHub theme creation with color tooling</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://color.adobe.com/explore" target="blank">Adobe Color</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://colorhunt.co/" target="blank">Color Hunt</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://vanschneider.com/colors" target="blank">Colors Claim</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://colorsupplyyy.com/" target="blank">Color Supply</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mypaintingclub.com/blog/post/39-The-Gamut-Mask-Tool" target="blank">The Gamut Mask Tool</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://huemint.com/" target="blank">Huemint - AI color palette generator</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://randomcolour.com/" target="blank">Random colour</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://albumcolors.com/" target="blank">2020 - Album Colors Of The Year</a></label></p>
+	</div>
+
+	<div>
+		<h3>Accessibility</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://abc.useallfive.com/" target="blank">Accessible Brand Colors by Use All Five</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.paciellogroup.com/resources/contrastanalyser/" target="blank">Colour Contrast Analyser (CCA)</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/@NateBaldwin/accessible-color-for-design-systems-just-got-easier-40e8420a8371" target="blank">Accessible color for design systems just got easier</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://itunes.apple.com/app/contrast/id1254981365" target="blank">Contrast — Color Accessibility on the Mac App Store</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.w3.org/TR/WCAG21/" target="blank">Web Content Accessibility Guidelines (WCAG) 2.1</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ada-compliance.com/ada-compliance/ada-toilet-stalls.html" target="blank">ADA Compliance - Toilet Stalls - ADA Compliance</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.w3.org/WAI/ER/tools/" target="blank">Web Accessibility Evaluation Tools List</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://wave.webaim.org/" target="blank">WAVE Web Accessibility Tool</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.w3.org/standards/webdesign/accessibility" target="blank">Accessibility - W3C</a></label></p>
+	</div>
+
+	<div>
+		<h3>Gradients &amp; Shadows</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.joshwcomeau.com/css/make-beautiful-gradients/" target="blank">https://www.joshwcomeau.com/css/make-beautiful-gradients/</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.joshwcomeau.com/css/designing-shadows/" target="blank">https://www.joshwcomeau.com/css/designing-shadows/</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/" target="blank">https://tobiasahlin.com/blog/layered-smooth-box-shadows/</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://shadows.brumm.af/" target="blank">https://shadows.brumm.af/</a></label></p>
+	</div>
+
+	<div>
+		<h3>Typography</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://practicaltypography.com/" target="blank">Practical Typography</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.linkedin.com/learning/the-33-laws-of-typography/introduction" target="blank">Introduction: The 33 Laws of Typography</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://type.method.ac/#" target="blank">Kern Type</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tug.org/interviews/liang.pdf" target="blank">History of typesetting hypenation</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://designschool.canva.com/blog/typography-terms/" target="blank">A Beautifully Illustrated Glossary Of Typographic Terms You Should Know – Design School</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://font-display.glitch.me/" target="blank">Font-display playground</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://material.io/blog/google-fonts-pairing-figma" target="blank">Google Material's Favorite Font Pairings</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://material.io/design/typography/the-type-system.html" target="blank">Material Design | Type system</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://type-scale.com/" target="blank">Type Scale - A Visual Calculator</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://spencermortensen.com/articles/typographic-scale/" target="blank">The typographic scale | Spencer Mortensen</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://alistapart.com/article/emen/" target="blank">The Trouble With EM 'n EN</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://alistapart.com/article/more-meaningful-typography/" target="blank">More Meaningful Typography</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://type.method.ac/" target="blank">Kern Type - Typography training game</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.dafont.com/" target="blank">DaFont</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.identifont.com/" target="blank">Identifont</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fontsquirrel.com/" target="blank">Font Squirrel</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://hplhs.org/resources.php#fonts" target="blank">HPLHS - Fonts</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.onlinewebfonts.com/" target="blank">Free Fonts</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://archetypeapp.com/#" target="blank">Archetype, Digital Typography Design Tool by Our Own Thing, using Google web fonts</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://developer.apple.com/fonts/" target="blank">Fonts - Apple Developer</a></label></p>
+	    <p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.lettering-daily.com" target="blank">Lettering Daily</a></label></p>
+	</div>
+
+	<div>
+		<h3>Assets</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://undraw.co/illustrations" target="blank">Illustrations | unDraw</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://monsterspost.com/free-background-generators/" target="blank">TOP 15 Random Generators Of Abstract Backgrounds</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://iradesign.io/" target="blank">Free vector illustrations - ira design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.toptal.com/designers/subtlepatterns/" target="blank">Subtle Patterns | Free textures for your next web project</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.toptal.com/designers/sketch/amazing-illustrations-with-sketch-and-looper" target="blank">Creating Amazing Illustrations in No Time with Sketch | Toptal</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://unsplash.com/" target="blank">Unsplash | High-Resolution Photos</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://elements.envato.com/" target="blank">Download Stock Photos, Fonts &amp; Templates with Envato Elements</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.uigoodies.com/" target="blank">UI Goodies: All the best resources for designers in one place.</a></label></p>
+	</div>
+
+	<div>
+		<h3>Additional Resources</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.linkedin.com/learning/branding-for-designers/what-is-a-brand" target="blank">What is a brand?</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/articles/tone-voice-users/" target="blank">The Impact of Tone of Voice on Users' Brand Perception (Nielsen Norman Group UX research)</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90415992/consumers-equate-cold-with-luxury-goods-because-consumers-are-idiots" target="blank">People equate "cold" with luxury goods, because people are idiots</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://designinstruct.com/drawing-illustration/make-watercolor-and-marker-style-portraits-with-illustrator/" target="blank">Make Watercolor and Marker Style Portraits with Illustrator</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://design.google/resources/" target="blank">Resources - Google Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ebaqdesign.com/blog/brand-strategy" target="blank">How To Develop a Brand Strategy (Free Guide + Worksheets)</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://miro.com/app/board/uXjVOTChe0g=/" target="blank">Brand Strategy Workshop</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://sitesee.co/" target="blank">SiteSee - Web Design Inspiration</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.creativebloq.com/features/best-google-dev-design-tools" target="blank">16 of Google's best dev and design tools in 2020 | Creative Bloq</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://realfavicongenerator.net/" target="blank">Favicon Generator for all platforms: iOS, Android, PC/Mac...</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.uxlibrary.org/explore/ui-design/ui-patterns-and-inspiration" target="blank">UI Patterns &amp; Inspiration - UX Library</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.designspiration.com/" target="blank">Designspiration - Design Inspiration</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.designresourc.es/" target="blank">Design Resources</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ggunn.com/tools-and-resources" target="blank">Tools, Gear, &amp; Apps I Use — Greg Gunn</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://headz.design/" target="blank">HEADZ - alternative to Apple memoji for your next project</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://blog.prototypr.io/how-to-design-a-dark-theme-for-your-android-app-3daeb264637" target="blank">The Ultimate Guide on Designing a Dark Theme for your Android app</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://fivesecondtest.com/" target="blank">Five Second Test</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxchecklist.github.io/" target="blank">UX Project Checklist</a></label></p>
+	</div>
+
+	<div>
+		<h3>Examples</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://screenlane.com/" target="blank">Screenlane - Web &amp; mobile UI design inspiration</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://pagecollective.com/" target="blank">Page Collective - landing page design inspiration</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://pageflows.com/" target="blank">Page Flows - user flow design inspiration</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://worldbranddesign.com/pearlfisher-redesigns-mcdonalds-global-packaging-system/" target="blank">Pearlfisher Redesigns McDonald's' Global Packaging System - World Brand Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.brandsoftheworld.com/" target="blank">Brands of the World</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://niice.co/" target="blank">Niice | Aesthetic Moodboards</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.logodesignlove.com/" target="blank">Logo Design Love | on logos and brand identity design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.itsnicethat.com/news/burger-king-rebrand-jkr-graphic-design-070121" target="blank">The Burger King rebrand celebrates its design history and irreverent personality</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://news.ycombinator.com/item?id=8313720" target="blank">Sandwich Video: The company that makes nearly all startup videos | Hacker News</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://sandwich.co/" target="blank">Hello. We're Sandwich.</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://designtaxi.com/news/400132/UI-Designer-Shares-His-Top-19-Bite-Sized-Design-Tips-From-Year-s-Worth-Of-Advice/" target="blank">UI Designer Shares His Top 19 Bite-Sized Design Tips From Year's Worth Of Advice</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxplanet.org/18-free-excellent-user-persona-templates-you-cant-miss-out-b25c9b38290e" target="blank">18 Free Excellent User Persona Templates You Can't Miss Out</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://ciechanow.ski/archives/" target="blank">Random Articles</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mobbin.design/browse/ios/apps" target="blank">Mobbin - Browse iOS Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://land-book.com/" target="blank">Land-book - website inspiration</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://threed.io/" target="blank">Threed.io - iPhone Mockups</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.dugwood.com/clickheat/index.html" target="blank">ClickHeat</a></label></p>
+	</div>
+</section>
+<section>
+<h2>Build a Portfolio</h2>
+	<div>
+		<h3>Philosophy &amp; Skills</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://getyourshittogether.org/" target="blank">Get Your Shit Together – What Matters Most. Because hoping for the best is not a plan.</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://vanschneider.com/blog/portfolio-tips/the-old-case-study-is-not-working/" target="blank">The portfolio case study is broken</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/kainosxd/how-to-quantify-the-value-of-design-c843c046b1f4" target="blank">How to quantify the value of design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.usertesting.com/resources" target="blank">User Research Resources from UserTesting</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://honest-ux-design-portfolio.webflow.io/" target="blank">Honest Portfolio — UX Designer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/videos/ux-design-portfolio-case-study/" target="blank">Creating a UX Design Portfolio Case Study (Video)</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://dribbble.com/stories/2021/12/13/lessons-learned-designers" target="blank">What's the biggest lesson you've learned as a designer? | Dribbble Design Blog</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.springboard.com/learning-paths/user-experience-design" target="blank">Learn User Experience (UX) Design - Free Curriculum | Springboard</a></label></p>
+	</div>
+
+	<div>
+		<h3>Resources</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://dribbble.com/shots/16459398-iPhone-13-Sketch-Library" target="blank">iPhone 13 Sketch Library by Max Rudberg on Dribbble</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.invisionapp.com/inside-design/free-device-mockups/" target="blank">23 Free Device Mockups for Phone, Laptop and Other Screen</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://wrap.so/" target="blank">Wrap — Capture &amp; Edit Beautiful Screenshots</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://material.io/" target="blank">Homepage - Material Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://material.io/resources/" target="blank">Resources - Material Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://freebiesbug.com/" target="blank">Freebies - Web Design Resources</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://graphicburger.com/" target="blank">GraphicBurger</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mrmockup.com/freebies/" target="blank">Mr.Mockup</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mockups-design.com/" target="blank">Mockups-Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.mockupworld.co/all-mockups/" target="blank">Mockup World</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.heropatterns.com/" target="blank">Heropatterns</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://icons8.com/illustrations/styles" target="blank">Free Vector Illustrations</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://icons8.com/" target="blank">icons8</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://feathericons.com/" target="blank">Feather – icons</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://undraw.co/" target="blank">unDraw - Open source illustrations</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.freepixels.com/" target="blank">Freepixels.com</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.freepik.com/" target="blank">Freepik - Free vectors and photos</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vecteezy.com/" target="blank">Vecteezy</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://magdeleine.co/" target="blank">Magdeleine - Free Photos</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.pexels.com/" target="blank">Free stock photos · Pexels</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://unsplash.com/" target="blank">Free Images &amp; Pictures</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.iconfinder.com/" target="blank">Icon Finder</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://fabrx.co/" target="blank">Bootstrap 5, Sketch, Figma, Adobe XD UI Kits - Fabrx Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://assetstore.unity.com/packages/tools/gui/vr-ui-kit-material-design-system-135769" target="blank">VR UI Kit</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://ivomynttinen.com/blog/ios-design-guidelines" target="blank">The iOS Design Guidelines - Ivo Mynttinen</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.figma.com/community/file/805195278314519508" target="blank">Base Gallery - Figma</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://figside.com/templates" target="blank">Templates | Figside</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://figmalion.com/" target="blank">Figmalion – Figma newsletter and community knowledge base</a></label></p>
+	</div>
+
+	<div>
+		<h3>Examples</h3>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.aaronrudyk.com/" target="blank">Aaron Rudyk's Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.abiconnick.co.uk/" target="blank">Abi Connick | Home</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.aileen.co/" target="blank">Aileen Shin</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://chelseystiefel.com/" target="blank">Chelsey Stiefel | Content Designer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.crooz.media/" target="blank">Chris Whalen - UX Designer in North Idaho</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.christopherdavidwhite.com/index.php/en/portfolios/sculpture" target="blank">Christopher White</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.colleenwynn.com/" target="blank">Colleen Wynn</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.dnovykov.com/" target="blank">Daniel Novykov — UX/Product Designer in Toronto</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://dedouze.com/" target="blank">dedouze</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.devinellekurtz.com/" target="blank">Devin Elle Kurtz</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.domqwek.com/" target="blank">Dom Qwek</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.elizabethylin.com/" target="blank">Elizabeth Lin: Designer &amp; Aspiring Princess!</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ggunn.com/" target="blank">Greg Gunn</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.glorialo.design/" target="blank">Gloria Lo</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.dgottwald.org/" target="blank">Gottwald's Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://jakerainis.com/work/" target="blank">Jake Rainis</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://www.jamesjean.com/" target="blank">James Jean</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.jamieclarketype.com/" target="blank">Jamie Clarke Type – Illustrated Lettering &amp; Typography</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.jordanemoss.com/" target="blank">JORDAN E. MOSS</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://julianbauer.com/" target="blank">Julian Bauer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.justinmac.com/" target="blank">Justin Mac's Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.kathleenneeley.com/" target="blank">Kathleen Neeley</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.uidaho.edu/caa/programs/art-design/2020-bfa-exhibition/kiel-kleeburg" target="blank">Kiel Kleeburg App Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.madebykoco.com/" target="blank">Koco</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ljubomirbardzic.com/" target="blank">Ljubomir Bardzic - Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.lenasteinkuehler.com/" target="blank">Lena Steinkühler - Digtal Film, Design and VFX Artist</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mahsakeyhani.com/" target="blank">Mahsa Keyhani UI/UX Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.malikafavre.com/" target="blank">Malika Favre</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://bantjes.com/work/category/portfolio/" target="blank">Marian Bantjes Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://blog.matthewstephens.com/" target="blank">Matthew Stephens</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.mikekus.com/" target="blank">Mike Kus</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://dribbble.com/nguyenhut" target="blank">Nguyen Nhut | Dribbble</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.oliviatruong.design/" target="blank">Olivia Truong</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.pascalstrasche.com/" target="blank">Pascal Strasche – Freelance UI/UX Designer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://priyanka.io/" target="blank">Priyanka Gupta | Product Designer in San Francisco | Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.lapa.ninja/post/rickwaalders/" target="blank">Rick Waalders landing page design inspiration - Lapa Ninja</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.rickwaalders.com/" target="blank">Rick Waalders - I Design 3D Visuals For Websites And Apps</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.scottsnyderphoto.com/" target="blank">Scott Snyder Photography</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.scottjwong.com/" target="blank">Scott J Wong | UX Design</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.sophiebritt.com/" target="blank">Sophie Brittain | Design Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://studiomesa.co/portfolio" target="blank">Studio Mesa</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://timokuilder.com/" target="blank">Timo Kuilder – Illustrator</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wenxinwendyju.com/" target="blank">Wendy Ju</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wendyschorr.com/" target="blank">Wendy Schorr | UX Designer</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://willpaterson.design/projects" target="blank">Will Paterson Portfolio</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://careerfoundry.com/en/blog/ux-design/ux-portfolio-examples-inspiration/" target="blank">The 9 Best UX Design Portfolio Examples (Updated For 2021)</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://burnttoast.myportfolio.com/projects" target="blank">Burnt Toast Creative</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://cuberto.com/projects/" target="blank">Cuberto</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.designlad.co.uk/" target="blank">Design Lad</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://id-c.se/" target="blank">I D — C</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mcbess.com/" target="blank">mcbess</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://ollivere.webflow.io/" target="blank">Ollivere</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://ourownthing.co.uk/" target="blank">Our Own Thing, creative digital offerings from Martin Ollivere and Jamie Gilman</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.pentagram.com/work" target="blank">Pentagram</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.playandpublic.com/" target="blank">PLAY &amp; PUBLIC</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tayasui.com/sketches/tools.html" target="blank">Tayasui Sketches</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://toyfight.co/" target="blank">ToyFight</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="http://www.tsirakisdesign.com/" target="blank">Tsirakis Design</a></label></p>
+	</div>
+</section>
+<section>
+	<h2>Landing a Job</h2>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/@karenxcheng/how-to-get-a-job-as-a-designer-without-going-to-design-school-bad8cdb67068" target="blank">How to: designer</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/stop-evaluating-product-designers-like-were-visual-designers-a470cff49990" target="blank">Stop evaluating Product Designers like we're Visual Designers</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.core77.com/posts/104567/The-UX-of-Invisibility" target="blank">The UX of Invisibility - Core77</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/ashiraprossack1/2019/01/25/cover-letter-best-practices/" target="blank">How To Write A Cover Letter That Gets You A Job Interview</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.designgigsforgood.org/" target="blank">Design Gigs for Good</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="http://aigasf.org/updated-about/" target="blank">AIGA San Francisco | AIGA San Francisco</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/5-steps-to-master-a-whiteboard-design-challenge-6ecbe9ec38b7" target="blank">5 steps to master whiteboard design challenge - UX Collective</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/mytake/119-user-experience-interview-questions-answers-part-1-4980e9e71418" target="blank">119 User Experience Interview Questions &amp; Answers — Part 1</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90333614/why-you-should-always-ask-for-more-money" target="blank">Why you should always negotiate your salary</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.freecodecamp.org/news/how-not-to-bomb-your-offer-negotiation-c46bb9bc7dea/" target="blank">How not to bomb your offer negotiation</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://dribbble.com/resources/freelance-design-contract" target="blank">8 Must-Haves in Your Freelance Design Contract (2021) | Dribbble</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90515800/this-little-tech-trick-will-help-you-say-no-with-respect" target="blank">How to say no to your boss, meetings, and coworkers</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://mobile.twitter.com/morganknutson/status/1049523067506966529" target="blank">Now that Google+ has been shuttered, I should air my dirty laundry on how awful the project and exec team was / Twitter</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/dp/0998120448/" target="blank">The Product Manager Interview: 164 Actual Questions and Answers</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.amazon.com/dp/B01N076VUY/" target="blank">Amazon Product Manager Interview: A Step by Step Approach to Ace the Product Manager Interview at Amazon</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/40571406/5-emotionally-intelligent-ways-to-inspire-your-team-every-single-day" target="blank">5 emotionally intelligent ways to inspire your team every single day</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/40586274/what-i-wish-i-knew-before-i-became-a-manager-for-the-first-time" target="blank">What I wish I knew before I became a manager for the first time</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/40586930/these-are-the-conversations-you-need-to-have-as-a-new-manager" target="blank">These are the conversations you need to have as a new manager</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/40587469/what-to-highlight-in-your-cover-letter-when-applying-for-a-remote-job" target="blank">What to highlight in your cover letter when applying for a remote job</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://designtaxi.com/news/400223/Major-Differences-Between-A-Boss-And-A-Leader-In-Side-By-Side-Illustrations/" target="blank">Major Differences Between A Boss And A Leader In Side-By-Side Illustrations - DesignTAXI.com</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90227353/4-behavioral-interview-tips-and-tactics" target="blank">4 behavioral interview tips and tactics</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/ashiraprossack1/2018/10/25/5-things-you-need-to-do-when-starting-a-new-job/?sh=1aa80df24dfc" target="blank">5 Things You Need To Do When Starting A New Job</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/kathycaprino/2018/10/27/7-power-gaps-that-keep-professionals-from-thriving-and-leading-at-work/" target="blank">7 Power Gaps That Keep Professionals From Thriving And Leading At Work</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90266233/make-sure-you-ask-these-questions-at-the-end-of-the-job-interview" target="blank">The questions to ask the interviewer during the interview</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/ideas/archive/2021/12/how-care-less-about-work/620902/" target="blank">How to Care Less About Work - The Atlantic</a></label></p>
+</section>
+<section>
+	<h2>Understanding Engineering</h2>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="http://www.hotdesign.com/seybold/" target="blank">Why tables for layout is stupid: problems defined, solutions offered</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/" target="blank">Autofill: What web devs should know, but don't - Cloud Four</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.formidable.com/blog/2019/design-to-dev/" target="blank">How To Create an Ideal Design to Dev Workflow</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://github.com/airbnb/javascript/" target="blank">AirBnB's JavaScript Style Guide</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://developers.google.com/web/tools/lighthouse/" target="blank">Google's "Lighthouse" website evaluator</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://trailhead.salesforce.com/en/content/learn/trails/get-started-with-web-accessibility" target="blank">Get Started with Web Accessibility | Salesforce Trailhead</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://developers.google.com/web/tools/chrome-devtools/accessibility/reference" target="blank">Accessibility Reference | Tools for Web Developers | Google Developers</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="http://isitresponsive.com/" target="blank">Responsive Design Testing</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://flukeout.github.io/" target="blank">CSS Diner - Where we feast on CSS Selectors!</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://codecombat.com/" target="blank">CodeCombat - Coding games to learn Python and JavaScript</a></label></p>
+</section>
+<section>
+	<h2>Reading List</h2>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://ideas.ted.com/fear-is-boring-and-other-tips-for-living-a-creative-life/" target="blank">Fear is boring, and other tips for living a creative life</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/technology/archive/2017/02/the-singularity-in-the-toilet-stall/517551/" target="blank">Why Nothing Works Anymore</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.reddit.com/r/startups/comments/74pms1/my_manager_who_i_loved_recently_left_my_company_i/" target="blank">My manager (who I loved) recently left my company. I summarized some of my notes from our many conversations. Here they are: I wish someone wrote this for me when I started</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wsj.com/articles/the-right-and-wrong-way-to-manage-up-at-the-office-1523366792" target="blank">The Right and Wrong Way to Manage Up at the Office</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.seattletimes.com/business/microsoft/i-felt-so-alone-what-women-at-microsoft-face-and-why-many-leave/" target="blank">'I felt so alone': What women at Microsoft face, and why many leave</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/technology/2018/5/4/17318522/state-of-black-america-2018-national-urban-league-silicon-valley-race" target="blank">State of Black America 2018 unpacks Silicon Valley's diversity problem</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/40574192/4-ways-to-show-curiosity-in-job-interviews-and-why-you-need-to" target="blank">4 ways to show curiosity in job interviews (and why you need to)</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/40582080/5-management-lessons-that-being-a-parent-taught-me" target="blank">5 management lessons that being a parent taught me</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://designtaxi.com/news/400191/Marvel-Film-Writers-Weigh-In-On-How-DC-Could-Make-Its-Movies-More-Popular/" target="blank">Marvel Film Writers Weigh In On How DC Could Make Its Movies More Popular</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/a-plea-for-ai-that-serves-humanity-instead-of-replacing-it/" target="blank">A Plea for AI That Serves Humanity Instead of Replacing It | WIRED</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.bloomberg.com/news/articles/2018-07-16/how-amy-hood-won-back-wall-street-and-helped-reboot-microsoft" target="blank">How Amy Hood Won Back Wall Street and Helped Reboot Microsoft</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.cnbc.com/2018/07/27/tech-careers-lessons-from-working-at-amazon-and-microsoft.html" target="blank">Tech careers: Lessons for start-ups from Amazon and Microsoft</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/magazine/archive/2018/09/how-to-make-friends/565742/" target="blank">How to Make Friends, According to Science - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90237319/how-to-solve-complex-problems-by-not-focusing-on-them" target="blank">How to solve complex problems (by not focusing on them)</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2018/09/women-workplace-confidence-gap/570772/" target="blank">Why the Confidence Gap Is a Myth</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2018/09/puberty-girls-confidence/563804/" target="blank">How Puberty Kills Girls' Confidence</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/entertainment/archive/2018/09/jeffrey-wright/566213/" target="blank">Jeffrey Wright of HBO's 'Westworld' on His First Job</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2018/9/24/17882842/us-internet-broadband-map-isp-fcc-wireless-competition" target="blank">How bad maps are ruining American broadband - The Verge</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/adunolaadeshola/2018/09/27/the-ugly-truth-behind-moving-to-la-for-your-dream-job-and-how-this-millennial-successfully-did-it/" target="blank">The Ugly Truth Behind Moving To LA For Your Dream Job And How This Millennial Successfully Did It</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90242488/what-does-it-mean-to-live-an-authentic-life" target="blank">What does it mean to live an authentic life?</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/science/2018/10/former-tepco-ceo-offers-thoughts-on-fukushima-and-japans-energy-future/" target="blank">An insider's perspective on Fukushima and everything that came after | Ars Technica</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90249188/design-will-kill-marketing-says-ikeas-former-design-chief" target="blank">Ikea's Marcus Engman founds design agency Skewed Productions</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90250152/a-new-ikea-report-is-an-unsettling-look-at-life-in-the-21st-century" target="blank">New Ikea report finds that people don't feel at home in their homes</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.gq.com/story/science-of-sleepiness" target="blank">Why Am I So Tired All the Time? | GQ</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/future-perfect/2018/11/2/18055532/vegans-vegetarian-research-uk" target="blank">Why do people hate vegans so much?</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/marikosilver/2018/11/02/voting-does-not-make-democracy/" target="blank">Voting Does Not Make Democracy</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://gizmodo.com/facebook-says-it-has-independently-verified-how-much-it-1830244949" target="blank">Facebook Says It Has Independently Verified How Much It Bungled Handling of Myanmar Genocide</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.npr.org/sections/goatsandsoda/2018/11/13/651834661/chinas-building-spree-in-poor-nations-does-it-really-help-the-local-economy" target="blank">Nighttime Satellite Images Shed Light On China's Building Spree In Developing Nations</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://9to5mac.com/2018/11/20/jony-ive-discusses-the-importance-and-absurdity-between-leveraging-curiosity-and-the-focus-to-solve-problems/" target="blank">Jony Ive discusses the importance and absurdity between leveraging 'curiosity' and the focus to 'solve problems' - 9to5Mac</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.glassdoor.com/blog/gaming-applicant-tracking-systems/" target="blank">Ask A Resume Writer: Do I Need to "Game" Applicant Tracking Systems to Land Interviews? - Glassdoor Blog</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2018/11/arlie-hochschild-housework-isnt-emotional-labor/576637/" target="blank">Arlie Hochschild: Housework Isn't 'Emotional Labor' - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/international/archive/2018/12/elegy-democratic-hong-kong-distinct-mainland-china/577570/" target="blank">The Death of Democratic Hong Kong, Distinct From Mainland China - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/mastermind-cia-disguise/" target="blank">How the CIA Trains Spies to Hide in Plain Sight | WIRED</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.cnet.com/tech/mobile/dating-app-coffee-meets-bagel-gets-a-new-look/" target="blank">Dating app Coffee Meets Bagel lightens up - CNET</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thelily.com/whats-a-day-in-the-life-of-a-girl-look-like-in-10-countries-sign-up-for-the-lilys-girlhood-around-the-world-for-a-look/" target="blank">What’s a day in the life of a girl look like in 10 countries?</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2018/12/tinder-changed-dating/578698/" target="blank">How Tinder Changed Dating for a Generation - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thelily.com/10-steps-to-take-when-talking-politics-with-someone-you-disagree-with-this-holiday-season/" target="blank">10 steps to take when talking politics with someone you disagree with - The Lily</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2018/12/allowance-kids-chores-help/578848/" target="blank">Tying Allowance to Chores Could Kill Kids' Motivation to Help Out - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/ideas/archive/2018/12/affirmative-action-about-reparations-not-diversity/578005/" target="blank">Affirmative Action Is About Reparations, Not Diversity - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/gaming/2019/01/tales-of-an-aging-gamer-why-dont-i-pick-up-a-controller-as-often-as-i-used-to/" target="blank">Tales of an aging gamer: Why don't I pick up a controller as often as I used to? | Ars Technica</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90288928/the-case-against-anthropomorphizing-robots" target="blank">Robots don't need to have faces to communicate with humans, study find</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/international/archive/2019/01/der-spiegal-fabrication-scandal-global/579889/" target="blank">Der Spiegel's Fabrication Scandal Has Global Repercussions - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/science/archive/2019/01/plants-use-flowers-hear-buzz-animals/579964/" target="blank">Plants Use Flowers to Hear the Buzz of Animals - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90287138/how-to-become-a-better-conversationalist" target="blank">How to become a better conversationalist</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/the-goods/2019/1/11/18175547/saba-imtiaz-marie-kondo-tidying-up-throwing-away" target="blank">Why Marie Kondo's style of tidying up isn't for everyone - Vox</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/meghanmccormick/2019/01/20/want-to-build-a-global-brand-from-africa-heres-how/?sh=2fa818745bcd" target="blank">Want To Build A Global Brand From Africa? Here's How.</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/maryabbajay/2019/01/20/mentoring-matters-three-essential-element-of-success/" target="blank">Mentoring Matters: Three Essential Elements Of Success</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nationalgeographic.com/environment/article/carbon-capture-trees-atmosphere-climate-change" target="blank">To curb climate change, we have to suck carbon from the sky. But how?</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90293734/why-the-airport-of-the-future-still-hasnt-arrived" target="blank">Why are airports still so bad?</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90292670/why-its-good-for-you-to-be-wrong" target="blank">Why being wrong is good</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90294800/how-do-i-become-an-inspiring-leader-be-vulnerable" target="blank">Maynard Webb's advice on becoming an inspiring leader</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.adweek.com/convergent-tv/how-opt-in-ads-catch-consumer-attention-and-drive-home-brand-intention/" target="blank">How Opt-In Ads Catch Consumer Attention and Drive Home Brand Intention</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/family/archive/2019/01/women-men-bathroom-lines-wait/580993/" target="blank">Why Women Have to Wait in Longer Bathroom Lines Than Men Do - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/tim-cook-data-broker-registry/" target="blank">How Tim Cook's Data Broker Registry Might Actually Work | WIRED</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://qz.com/1533636/the-complex-reasons-humans-are-obsessed-with-pressing-buttons/" target="blank">The complex reasons humans are obsessed with pressing buttons — Quartz</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/health/archive/2019/01/ugly-produce-startups-food-waste/581182/" target="blank">'Ugly Produce' Subscription Boxes Have Ignited a Food War - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://9to5mac.com/2019/01/25/facebooks-friendly-fraud-scammed-children-wsj-column/" target="blank">Facebook's 'Friendly Fraud' — report reveals social media knowingly scammed children as Zuckerberg publishes WSJ column - 9to5Mac</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/micahsolomon/2019/01/25/improving-customer-service-by-not-making-customers-repeat-themselves/" target="blank">To Improve Customer Service, Stop Forcing Customers To Repeat Themselves</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/abusability-testing-ashkan-soltani/" target="blank">Security Isn't Enough. Silicon Valley Needs 'Abusability' Testing | WIRED</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90295898/exactly-what-to-say-in-these-7-difficult-conversations-with-your-boss" target="blank">What to say in 7 difficult conversations with your boss</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2019/2/1/18205506/nasa-mars-mission-spacecraft-interior-design-astronaut-behavioral-health" target="blank">Better interior design might keep astronauts healthier and happier in deep space - The Verge</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/olliebarder/2019/01/21/kanetake-ebikawa-on-full-metal-panic-gundam-and-the-minimalist-elegance-of-mecha-design/" target="blank">Kanetake Ebikawa On 'Full Metal Panic!', 'Gundam' And The Minimalist Elegance Of Mecha Design</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nytimes.com/2019/02/13/magazine/women-coding-computer-programming.html" target="blank">The Secret History of Women in Coding</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://techcrunch.com/2019/02/17/we-take-your-privacy-and-security-seriously/" target="blank">Stop saying, 'We take your privacy and security seriously'</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://arstechnica.com/tech-policy/2019/02/the-verge-briefly-censored-youtubers-who-mocked-its-bad-pc-building-advice/" target="blank">Vox lawyers briefly censored YouTubers who mocked The Verge's bad PC build advice | Ars Technica</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/newsletters/archive/2019/02/harry-potter-hardy-boys-and-narnia-books-briefing/582544/" target="blank">Harry Potter, The Hardy Boys, Narnia: Books Briefing - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90313220/password-mooching-bad-for-netflix-maybe-worse-for-hulu" target="blank">Password mooching: Bad for Netflix, maybe worse for Hulu</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://qz.com/1562585/the-seven-moral-rules-that-supposedly-unite-humanity/" target="blank">The seven moral rules that supposedly unite humanity — Quartz</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90316183/this-big-new-innovation-could-help-fix-our-broken-recycling-system" target="blank">PureCycle's new tech could help fix our recycling system</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://techcrunch.com/2019/03/08/cookie-walls-dont-comply-with-gdpr-says-dutch-dpa/" target="blank">Cookie walls don't comply with GDPR, says Dutch DPA | TechCrunch</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/interface/2019/3/8/18255480/facebook-pivot-privacy-mark-zuckerberg-pr-stunt" target="blank">Why Facebook's pivot to privacy could backfire - The Verge</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.washingtonpost.com/business/economy/the-salary-trap-what-to-say-when-a-job-application-asks-how-much-pay-you-want/2019/03/08/9f61b2d8-4048-11e9-9361-301ffb5bd5e6_story.html" target="blank">The salary trap: What to say when a job application asks how much pay you want - The Washington Post</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/tldr/2019/3/5/18252150/bad-password-security-data-breach-taiwan-ji32k7au4a83-have-i-been-pwned" target="blank">ji32k7au4a83 is a surprisingly bad password - The Verge</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://gizmodo.com/why-self-checkout-is-and-has-always-been-the-worst-1833106695" target="blank">Why Self-Checkout Is and Has Always Been the Worst</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90320892/this-is-what-drives-people-to-make-unethical-choices" target="blank">Why people make unethical choices</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90317661/this-is-how-to-correct-someone-without-sounding-like-a-jerk" target="blank">How to correct someone without sounding like a jerk</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/uncanny-valley-robot-voices/" target="blank">The Uncanny Valley Nobody's Talking About: Eerie Robot Voices | WIRED</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://fortune.com/longform/medical-records/" target="blank">Death by a Thousand Clicks: Where Electronic Health Records Went Wrong | Fortune</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wsj.com/articles/the-art-of-being-single-11553005457" target="blank">The Art of Being Single - WSJ</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://9to5mac.com/2019/03/22/jony-ive-airpods-design-gq/" target="blank">Jony Ive talks AirPods design history with GQ following second-gen debut this week - 9to5Mac</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thelily.com/i-used-makeup-as-a-shield-heres-why-and-how-i-learned-to-stop/" target="blank">I used makeup as a shield. Here's why — and how I learned to stop - The Lily</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.fastcompany.com/90323529/privacy-is-not-an-abstraction" target="blank">Privacy's not an abstraction</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nationalgeographic.com/science/article/meet-historys-most-brilliant-female-coders" target="blank">Meet history's most brilliant female coders</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://qz.com/work/1587170/the-five-types-of-communication-problems-that-destroy-company-morale/" target="blank">The 5 communication problems that destroy company morale — Quartz at Work</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theverge.com/2019/4/4/18293817/cybersecurity-hospitals-health-care-scan-simulation" target="blank">Health care's huge cybersecurity problem - The Verge</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://futurism.com/the-byte/oculus-hidden-messages-facebook-privacy" target="blank">Hidden Messages Suggest That Facebook Sees User Privacy as a Joke</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://ideas.ted.com/why-rejection-hurts-so-much-and-what-to-do-about-it/" target="blank">Why rejection hurts so much — and what to do about it</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theatlantic.com/magazine/archive/2020/09/china-ai-surveillance/614197/" target="blank">China's Artificial Intelligence Surveillance State Goes Global - The Atlantic</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://hbr.org/2021/03/persuading-the-unpersuadable" target="blank">Persuading the Unpersuadable</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inc.com/jennifer-johnson/understanding-customer-why-why-it-matters.html" target="blank">Understanding the Customer 'Why' and Why It Matters | Inc.com</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.uxpin.com/knowledge" target="blank">Knowledge Wants To Be Free</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxmag.com/" target="blank">UX Magazine | The Community Of Over 515,000</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.nngroup.com/" target="blank">Nielsen Norman Group: UX Training, Consulting, &amp; Research</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.uxbooth.com/" target="blank">UX Booth</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://alistapart.com/" target="blank">A List Apart – For people who make websites</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxmovement.com/" target="blank">UX Movement - Professional User Experience Articles</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxmovement.com/" target="blank">UX Movement - Professional User Experience Articles</a></label></p>
+	<p><label><input type="checkbox" target="blank"><span></span> <a href="https://jackmorgan.com/" target="blank">Jack Morgan | Designer at Duolingo &amp; Google | Keynote &amp; TED Speaker</a></label></p>
+</section>
+</body>
 </html>
