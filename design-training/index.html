@@ -28,6 +28,8 @@
   --bg: white;
   --text: #1d1d1f;
   --link: blue;
+  --visited: purple;
+  --green-tag: #43c73c;
 }
 body {background-color:var(--bg);color:var(--text);font-family:"Open Sans", sans-serif;padding:20px 20px;}
 h2, h3 {margin:1.2em 0 .5em;position:sticky;top:0;background:var(--bg);z-index:10;}
@@ -35,26 +37,39 @@ h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent
 div {padding-left:8px;border-left:3px solid gray;}
 div.has-subsections {padding-top:32px;}
 p {margin:0;}
-a {color:var(--link);text-decoration:none;order:3;margin:0 0 .4em;}
+a {color:var(--link);cursor:pointer;text-decoration:none;order:3;margin:0 0 .4em;}
+a:visited {color:var(--visited);}
 label {cursor:pointer;display:flex;align-items:flex-start;}
 
 input {order:2;margin:.3em .4em 0;}
 span {display:block;float:left;font-size:.8rem;font-weight:500;order:1;padding-top:.2rem;text-align:center;min-width:40px;min-height:2em;}
-input + span::before {content:' ';background-color:#43c73c;color:#1d1d1f;border-radius:3px;display:block;}
-input:checked + span::before {content:'Done';}
+input + span::before {content:' ';background-color:#0174ff;color:white;border-radius:3px;display:block;}
+input:checked + span::before {content:'Read';}
+
+footer p {margin:.4em 0;}
+a:not([href]) {color:red;}
+footer .copy {margin-top:2em;}
+
+body:not([class="registered"]) input,
+body:not([class="registered"]) span {
+	display:none;
+}
 @media(prefers-color-scheme:dark) {
 :root {
   --bg: black;
   --text: #fafafc;
   --link: #0c82ff;
+  --visited: violet;
 }
 }
 </style>
 </head>
 <body>
-<h1>UX Training Bookmarks</h1>
-<p>Created by <a href="https://brimwd.github.io" target="_blank">Brian Donahue</a>. Last updated <time datetime="2022-08-10">August 10, 2022</time>.</p>
-<p>No reproduction in whole or part without written permission.</p>
+<header>
+	<h1>UX Training Bookmarks 🐝</h1>
+	<p>Created by <a href="https://brimwd.github.io" target="_blank">Brian Donahue</a>. Last updated <time datetime="2022-08-10">August 10, 2022</time>.</p>
+	<p>No reproduction in whole or part without written permission.</p>
+</header>
 <section>
 	<h2>Strategy &amp; Thinking</h2>
 	<div class="has-subsections">
@@ -114,14 +129,14 @@ input:checked + span::before {content:'Done';}
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/reimagining-okrs-for-designers-and-design-teams-808662633322" target="blank">Reimagining OKRs for designers and design teams</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://uxdesign.cc/designers-are-spending-too-much-time-designing-ui-variations-manually-ad665d8d5e40" target="blank">Designers are spending too much time designing UI variations manually</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://cantunsee.space" target="blank">Can't Unsee - UI Design training game</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.youtube.com/c/DesignCourse" target="blank">'Design Course' on Youtube - simple, effective UI training</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.youtube.com/c/DesignCourse" target="blank">'Design Course' on YouTube - simple, effective UI training</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.freecodecamp.org/news/ui-ux-design-tutorial-from-zero-to-hero-with-wireframe-prototype-figma/" target="blank">UI / UX Design Tutorial – From Zero to Hero with Wireframe + Prototype + Design in Figma</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.figmacrashcourse.com/" target="blank">Figma Crash Course</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.designsystemsforfigma.com/" target="blank">Design Systems For Figma</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://university.webflow.com/courses/figma-to-webflow?video=BfsI6F9_izY" target="blank">Figma to Webflow | Webflow University</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://method.ac/" target="blank">Vector Practice</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://developer.apple.com/design/tips/" target="blank">UI Design Dos and Don'ts - Apple Developer</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ventureharbour.com/landing-page-optimisation-tips/" target="blank">Landing Page Optimisation: 101 Tips</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.ventureharbour.com/landing-page-optimisation-tips/" target="blank">Landing Page Optimization: 101 Tips</a></label></p>
 	</div>
 
 	<div class="has-subsections">
@@ -167,7 +182,7 @@ input:checked + span::before {content:'Done';}
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/google-design/making-the-case-for-accessibility-350da9e30c84" target="blank">Making the Case for Accessibility - Google Design - Medium</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/facebook-zuckerberg-privacy-pivot/" target="blank">Facebook's Pivot to Privacy Is Missing Something Crucial | WIRED</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.inputmag.com/tech/amazons-alexa-everywhere-initiative-is-terrifying" target="blank">Amazon's 'Alexa Everywhere' initiative is terrifying</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/gameplan-macos-security-tool-video-game-logic-engine/" target="blank">Clever Tool Uses Apple's Videogame Logic Engine to Protect Macs | WIRED</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/gameplan-macos-security-tool-video-game-logic-engine/" target="blank">Clever Tool Uses Apple's Video Game Logic Engine to Protect Macs | WIRED</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.wired.com/story/twitter-press-event-2019/" target="blank">At Twitter, It Seems No One Can Hear the Screams | WIRED</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/joemckendrick/2019/05/29/lack-of-imagination-not-technology-holds-back-superior-customer-experience/" target="blank">Lack Of Imagination, Not Technology, Holds Back Superior Customer Experience</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://keyframemagazine.org/2020/08/14/the-influence-of-anime/" target="blank">The Influence of Anime – Keyframe</a></label></p>
@@ -257,7 +272,7 @@ input:checked + span::before {content:'Done';}
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.thenation.com/article/archive/crackdown-dissent/" target="blank">The Crackdown on Dissent | The Nation</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.theladders.com/career-advice/neuroscience-reveals-7-secrets-that-will-make-you-persuasive" target="blank">New neuroscience reveals 7 secrets that will make you persuasive</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/policy-and-politics/2018/10/15/17979224/2018-midterm-elections-candidates-issues-health-care-immigration" target="blank">2018 midterm elections: Americans can't agree what the big issues are - Vox</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/policy-and-politics/2018/10/22/17991928/hidden-tribes-more-in-common-david-brooks" target="blank">"Hidden Tribes," the new report centrists are using to explain away polarization, explained</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.vox.com/policy-and-politics/2018/10/22/17991928/hidden-tribes-more-in-common-david-brooks" target="blank">"Hidden Tribes" the new report centrists are using to explain away polarization, explained</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.forbes.com/sites/christinecomaford/2018/10/20/what-stress-change-and-isolation-do-to-your-brain/?sh=25b72d761940" target="blank">What Stress, Change And Isolation Do To Your Brain</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medicalxpress.com/news/2018-10-recalling-memories-context.html" target="blank">Recalling memories in context</a></label></p>
 	</div>
@@ -311,7 +326,7 @@ input:checked + span::before {content:'Done';}
 	<div class="has-subsections">
 		<h3>Accessibility</h3>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://abc.useallfive.com/" target="blank">Accessible Brand Colors by Use All Five</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.paciellogroup.com/resources/contrastanalyser/" target="blank">Colour Contrast Analyser (CCA)</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.paciellogroup.com/resources/contrastanalyser/" target="blank">Color Contrast Analyzer (CCA)</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://medium.com/@NateBaldwin/accessible-color-for-design-systems-just-got-easier-40e8420a8371" target="blank">Accessible color for design systems just got easier</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://itunes.apple.com/app/contrast/id1254981365" target="blank">Contrast — Color Accessibility on the Mac App Store</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.w3.org/TR/WCAG21/" target="blank">Web Content Accessibility Guidelines (WCAG) 2.1</a></label></p>
@@ -323,10 +338,10 @@ input:checked + span::before {content:'Done';}
 
 	<div class="has-subsections">
 		<h3>Gradients &amp; Shadows</h3>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.joshwcomeau.com/css/make-beautiful-gradients/" target="blank">https://www.joshwcomeau.com/css/make-beautiful-gradients/</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.joshwcomeau.com/css/designing-shadows/" target="blank">https://www.joshwcomeau.com/css/designing-shadows/</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/" target="blank">https://tobiasahlin.com/blog/layered-smooth-box-shadows/</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://shadows.brumm.af/" target="blank">https://shadows.brumm.af/</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.joshwcomeau.com/css/make-beautiful-gradients/" target="blank">Josh Comeau - beautiful gradients</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.joshwcomeau.com/css/designing-shadows/" target="blank">Josh Comeau - designing shadows</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tobiasahlin.com/blog/layered-smooth-box-shadows/" target="blank">Tobias Ahlin - smooth box shadows </a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://shadows.brumm.af/" target="blank">Brumm.af - Shadows</a></label></p>
 	</div>
 
 	<div class="has-subsections">
@@ -334,7 +349,7 @@ input:checked + span::before {content:'Done';}
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://practicaltypography.com/" target="blank">Practical Typography</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://www.linkedin.com/learning/the-33-laws-of-typography/introduction" target="blank">Introduction: The 33 Laws of Typography</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://type.method.ac/#" target="blank">Kern Type</a></label></p>
-		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tug.org/interviews/liang.pdf" target="blank">History of typesetting hypenation</a></label></p>
+		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://tug.org/interviews/liang.pdf" target="blank">History of typesetting hyphenation</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://designschool.canva.com/blog/typography-terms/" target="blank">A Beautifully Illustrated Glossary Of Typographic Terms You Should Know – Design School</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://font-display.glitch.me/" target="blank">Font-display playground</a></label></p>
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://material.io/blog/google-fonts-pairing-figma" target="blank">Google Material's Favorite Font Pairings</a></label></p>
@@ -669,5 +684,17 @@ input:checked + span::before {content:'Done';}
 		<p><label><input type="checkbox" target="blank"><span></span> <a href="https://jackmorgan.com/" target="blank">Jack Morgan | Designer at Duolingo &amp; Google | Keynote &amp; TED Speaker</a></label></p>
 	</div>
 </section>
+<footer>
+	<h2>Brian's other projects</h2>
+	<p><a href="https://pmdictionary.github.io" target="_blank">The Product Management Dictionary</a> (free)</p>
+	<p><a href="https://scheduleux.com" target="_blank">ScheduleUX</a> - UX Research Coordinator</p>
+	<p><a href="https://honor.software" target="_blank">Honor.Software</a> - UX / Design Consulting</p>
+
+	<div class="copy">
+		<p><a>Terms of Service</a></p>
+		<p><a>Privacy</a></p>
+		<p>&copy;2022 &mdash; All rights reserved.</p>
+	</div>
+</footer>
 </body>
 </html>
