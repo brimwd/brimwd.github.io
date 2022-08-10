@@ -14,6 +14,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/scrollsync.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script>
 <script>
@@ -60,15 +61,77 @@
 		</div>
 	</section>
 	<section id="work" class="row work">
-		<h2 class="title">Assorted UI Work</h2>
-		<!-- <p style="clear:left;">Building this section at this very moment</p> -->
+		<!-- CASE STUDIES -->
+		<h2 class="title">Case Studies</h2>
+		<div class="flex-grid date">
+			<a class="caseStudyLink dynamicLoad col-4" href="pages/servicenow-optimization.html" title="'ServiceNow - Digital Optimization' Case Study" data-tags="Case Study">
+				<figure class="sn">
+					<img src="images/servicenow/servicenow-logo-light.svg" alt="ServiceNow" />
+					<div>
+						<h4>Optimize Everything</h4>
+					</div>
+				</figure>
+			</a>
+			<!-- <a class="caseStudyLink dynamicLoad col-6" href="pages/servicenow-pfadmin.html" title="'ServiceNow - Partner Finder' Case Study" data-tags="Case Study">
+				<figure class="sn partner-finder">
+					<img src="images/servicenow/servicenow-logo-dark.svg" alt="ServiceNow" />
+					<div>
+						<h4>Partner Finder Suite</h4>
+					</div>
+				</figure>
+			</a> -->
+			<!-- <a class="caseStudyLink dynamicLoad col-5 offset-1" href="pages/tmo.html" title="'T&#8209;Mobile Cloud' Case Study" data-tags="Case Study,UI Design,Systems Design">
+				<figure class="tmo">
+					<img src="images/tmo/tmo-logo-white.svg" alt="T-Mobile" />
+					<h4>Cloud Infrastructure</h4>
+				</figure>
+			</a> -->
+			<a class="caseStudyLink dynamicLoad col-4 offset-1" href="pages/bluetooth.html" title="'Bluetooth Design System' Case Study" data-tags="Case Study,Design System">
+				<figure class="bluetooth">
+					<img src="images/bluetooth/bluetooth.svg" alt="Bluetooth icon" />
+					<h4>Designing a design system</h4>
+				</figure>
+			</a>
+			<a class="caseStudyLink dynamicLoad col-5" href="pages/amazon-instant.html" title="'Amazon - Instant Fulfillment' Case Study" data-tags="Case Study,Presentation">
+				<figure class="amazon">
+					<img src="images/amazon.svg" alt="Amazon" />
+					<h4>'Instant Fulfillment'</h4>
+				</figure>
+			</a>
+			<!-- <a class="caseStudyLink dynamicLoad col-4" href="pages/amazon-millennials.html" title="'Amazon - Millennials Research' Case Study" data-tags="Case Study">
+				<figure class="amazon instant">
+					<img src="images/amazon.svg" alt="Amazon" />
+					<h4>Collecting data; Preserving trust</h4>
+				</figure>
+			</a> -->
+			<!-- <a class="caseStudyLink dynamicLoad" href="pages/sux.html" title="'ScheduleUX' Case Study" data-tags="Case Study,Incomplete">
+				<figure class="sux">
+					<img src="images/sux/sux-navy-alt.svg" alt="Schedule UX" />
+					<h4>Founding a startup</h4>
+				</figure>
+			</a> -->
+			<!-- <a class="dynamicLoad col-2" href="pages/lendinghome.html" title="'LendingHome Strategy' Interview Deck" data-tags="Strategy,Presentation">
+				<figure class="lending">
+					<img src="images/lendinghome/lh-logo.svg" alt="Lending Home" />
+					<h4>Opportunities in blind spots</h4>
+				</figure>
+			</a> -->
+			<!-- <a class="caseStudyLink dynamicLoad col-3 offset-1" href="pages/bob-books.html" title="'Bob Books' Case Study" data-tags="Case Study,Game Design">
+				<figure class="bob">
+					<img src="images/bob-books/bob-dark.svg" alt="Bob Books" />
+					<h4>Rewarding Learning</h4>
+				</figure>
+			</a> -->
+		</div>
+
+		<h2 class="title">UI Work</h2>
 		<div class="flex-grid gallery">
-			<a class="caseStudyLink col-4 apple" title="Apple Design Systems" data-tags="UI Design" disabled>
+			<!-- <a class="caseStudyLink col-4 apple" title="Apple Design Systems" data-tags="UI Design" disabled>
 				<figure data-tags="Disabled">
 					<img src="images/apple-logo.svg" alt="Apple" />
 					<h4>Design Systems</h4>
 				</figure>
-			</a>
+			</a> -->
 			<a class="caseStudyLink col-4" href="blog/servicenow-account.html" title="ServiceNow Account Portal" data-tags="UI Design">
 				<figure class="sn partner-finder">
 					<img src="images/servicenow/servicenow-logo-dark.svg" alt="ServiceNow" />
@@ -107,73 +170,10 @@
 			</a> -->
 		</div>
 
-		<!-- CASE STUDIES -->
-		<h2 class="title">Case Studies</h2>
-		<div class="flex-grid date">
-			<a class="caseStudyLink dynamicLoad col-4" href="pages/servicenow-optimization.html" title="'ServiceNow - Digital Optimization' Case Study" data-tags="Case Study">
-				<figure class="sn">
-					<img src="images/servicenow/servicenow-logo-light.svg" alt="ServiceNow" />
-					<div>
-						<h4>Optimize Everything</h4>
-					</div>
-				</figure>
-			</a>
-			<!-- <a class="caseStudyLink dynamicLoad col-6" href="pages/servicenow-pfadmin.html" title="'ServiceNow - Partner Finder' Case Study" data-tags="Case Study">
-				<figure class="sn partner-finder">
-					<img src="images/servicenow/servicenow-logo-dark.svg" alt="ServiceNow" />
-					<div>
-						<h4>Partner Finder Suite</h4>
-					</div>
-				</figure>
-			</a> -->
-			<a class="caseStudyLink dynamicLoad col-5 offset-1" href="pages/tmo.html" title="'T&#8209;Mobile Cloud' Case Study" data-tags="Case Study,UI Design,Systems Design">
-				<figure class="tmo">
-					<img src="images/tmo/tmo-logo-white.svg" alt="T-Mobile" />
-					<h4>Cloud Infrastructure</h4>
-				</figure>
-			</a>
-			<a class="caseStudyLink dynamicLoad col-4 offset-1" href="pages/bluetooth.html" title="'Bluetooth Design System' Case Study" data-tags="Case Study,Design System">
-				<figure class="bluetooth">
-					<img src="images/bluetooth/bluetooth.svg" alt="Bluetooth icon" />
-					<h4>Designing a design system</h4>
-				</figure>
-			</a>
-			<a class="caseStudyLink dynamicLoad col-5" href="pages/amazon-instant.html" title="'Amazon - Instant Fulfillment' Case Study" data-tags="Case Study,Presentation">
-				<figure class="amazon">
-					<img src="images/amazon.svg" alt="Amazon" />
-					<h4>'Instant Fulfillment'</h4>
-				</figure>
-			</a>
-			<a class="caseStudyLink dynamicLoad col-4" href="pages/amazon-millennials.html" title="'Amazon - Millennials Research' Case Study" data-tags="Case Study">
-				<figure class="amazon instant">
-					<img src="images/amazon.svg" alt="Amazon" />
-					<h4>Collecting data; Preserving trust</h4>
-				</figure>
-			</a>
-			<!-- <a class="caseStudyLink dynamicLoad" href="pages/sux.html" title="'ScheduleUX' Case Study" data-tags="Case Study,Incomplete">
-				<figure class="sux">
-					<img src="images/sux/sux-navy-alt.svg" alt="Schedule UX" />
-					<h4>Founding a startup</h4>
-				</figure>
-			</a> -->
-			<!-- <a class="dynamicLoad col-2" href="pages/lendinghome.html" title="'LendingHome Strategy' Interview Deck" data-tags="Strategy,Presentation">
-				<figure class="lending">
-					<img src="images/lendinghome/lh-logo.svg" alt="Lending Home" />
-					<h4>Opportunities in blind spots</h4>
-				</figure>
-			</a> -->
-			<a class="caseStudyLink dynamicLoad col-3 offset-1" href="pages/bob-books.html" title="'Bob Books' Case Study" data-tags="Case Study,Game Design">
-				<figure class="bob">
-					<img src="images/bob-books/bob-dark.svg" alt="Bob Books" />
-					<h4>Rewarding Learning</h4>
-				</figure>
-			</a>
-		</div>
-
 		<!-- ARTICLES -->
-		<h2 class="title">Articles</h2>
+		<!-- <h2 class="title">Articles</h2> -->
 		<div class="flex-grid gallery">
-			<a href="blog/apple-m1.html" title="Apple M1? What the heck is 'ARM'?" data-tags="article">
+			<!-- <a href="blog/apple-m1.html" title="Apple M1? What the heck is 'ARM'?" data-tags="article">
 				<figure class="apple-m1 two-img">
 					<div class="img-container">
 						<img src="images/blog/thumbnails/apple-m1.png" alt="Apple M1" />
@@ -181,8 +181,8 @@
 					</div>
 					<h4>What the heck is 'ARM'?</h4>
 				</figure>
-			</a>
-			<a href="blog/iphone-on-ipad.html" title="UX Cruft: iPhone apps on iPad" data-tags="article">
+			</a> -->
+			<!-- <a href="blog/iphone-on-ipad.html" title="UX Cruft: iPhone apps on iPad" data-tags="article">
 				<figure class="iphone-ipad two-img">
 					<div class="img-container">
 						<img src="images/blog/thumbnails/ux-cruft.png" alt="UX Cruft" />
@@ -190,13 +190,13 @@
 					</div>
 					<h4>iPhone apps on iPad</h4>
 				</figure>
-			</a>
-			<a href="blog/data-intuition.html" title="On Being Data-Driven to the Exclusion of Intuition" data-tags="article">
+			</a> -->
+			<!-- <a href="blog/data-intuition.html" title="On Being Data-Driven to the Exclusion of Intuition" data-tags="article">
 				<figure class="data-intuition">
 					<img class="invert" src="images/blog/thumbnails/data-intuition.jpg" alt="Data and intuition" />
 					<h4>Why designers still matter</h4>
 				</figure>
-			</a>
+			</a> -->
 			<!-- <a href="blog/understanding-series.html" title="We Deserve Better Ads" data-tags="article">
 				<figure class="understanding-series two-img">
 					<div class="img-container">
@@ -208,9 +208,9 @@
 			</a> -->
 		</div>
 
-		<h2 class="title">Mentorship Materials</h2>
+		<!-- <h2 class="title">Mentorship Materials</h2> -->
 		<div class="flex-grid gallery">
-			<a class="dynamicLoad" href="pages/love-earwax.html" title="I love earwax Presentation" data-tags="Teaching,Presentation">
+			<!-- <a class="dynamicLoad" href="pages/love-earwax.html" title="I love earwax Presentation" data-tags="Teaching,Presentation">
 				<figure class="loveEarwax two-img">
 					<div class="img-container">
 						<img src="images/earwax/earwax-bg.png" alt="I love earwax" />
@@ -218,21 +218,21 @@
 					</div>
 					<h4>An introduction to UX</h4>
 				</figure>
-			</a>
-			<a class="dynamicLoad" href="pages/web-foundations.html" title="'Web Foundations' Presentation" data-tags="Teaching,Presentation">
+			</a> -->
+			<!-- <a class="dynamicLoad" href="pages/web-foundations.html" title="'Web Foundations' Presentation" data-tags="Teaching,Presentation">
 				<figure class="mentoring">
 					<img src="images/overflow.png" alt="'Overflow Issue' sketch" />
 					<div>
 						<h4>Introduction to Engineering</h4>
 					</div>
 				</figure>
-			</a>
-			<a class="dynamicLoad" href="pages/dictionary.html" title="Mac OS Dictionary plug-in">
+			</a> -->
+			<!-- <a class="dynamicLoad" href="pages/dictionary.html" title="Mac OS Dictionary plug-in">
 				<figure class="dictionary">
 					<img src="images/dictionary/pm-dictionary-white.svg" alt="Product Management Reference Dictionary" />
 					<h4>A quick reference for tech terms</h4>
 				</figure>
-			</a>
+			</a> -->
 			<!-- <a class="mars" href="" title="'Mars' Illustration Series" data-tags="illustrations,scripts">
 				<img src="" alt="" />
 				<div>

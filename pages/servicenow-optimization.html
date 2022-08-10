@@ -1,8 +1,9 @@
 <html>
 <head>
+<base href="../">
 <title>Brian Donahue - ServiceNow Digital Optimization</title>
 <meta property='og:image' content='/images/icon-sn-optimization'/>
-<link rel="stylesheet" type="text/css" href="../case-study-page.css">
+<link rel="stylesheet" type="text/css" href="case-study-page.css">
 <style type="text/css">
 /* SERVICENOW CASE STUDY */
 :root {
@@ -14,28 +15,20 @@
 	--primary:#2a3d40; /* gable-green */
 	--brand:#95c0b0; /* acapulco */
 }}
-.case-study header {background:url(../images/servicenow/random-lines-header-white.svg) no-repeat center;background-color:var(--primary)!important;background-size:cover;color:var(--brand);}
+.case-study header {background:url(images/servicenow/random-lines-header-white.svg) no-repeat center;background-color:var(--primary)!important;background-size:cover;color:var(--brand);}
 @media (prefers-color-scheme:dark) {.case-study header {background-image:url(../images/servicenow/random-lines-header.svg);}}
 .case-study header h1 {margin-top:2rem;}
 .case-study header img {max-width:100px;}
-.case-study h2 {color:var(--brand);border-color:var(--brand);}
+.case-study h2 {color:var(--brand);}
 .case-study header p {max-width:560px;}
 .case-study .btn {background-color:var(--brand);color:white;font-weight:600;margin-top:0;}
 
-.case-study p {line-height:1.2em;}
 .case-study u {text-decoration:none!important;display:inline-block;}
 
-@media (min-width:850px) {
-	.case-study > * {box-shadow:0 3px 15px -3px #66666690;}
-}
 @media (prefers-color-scheme:dark){
 	.case-study header {color:white;}
-	.case-study a[href] {color:var(--brand);border-bottom-color:var(--brand);}
+	.case-study a[href] {color:var(--brand);}
 	.case-study .btn {background-color:var(--brand);color:var(--primary)!important;}
-	.case-study h2 {color:var(--brand);border-color:var(--brand);}
-}
-@media (prefers-color-scheme:dark) and (min-width:850px){
-	.case-study > *:not(header) {border-color:var(--primary);}
 }
 </style>
 <script class="case-study-page" type="text/javascript">
@@ -43,11 +36,11 @@
 	// This code will add a new <script> element just after the current one
 	// It is important to wrap this code in an HTML comment tag to avoid the closing script tag in the lines below to be parsed by the browser
 	if (typeof jQuery == 'undefined')
-		document.write('<script type="text/javascript" src="../js/jquery.min.js"></script>');
+		document.write('<script type="text/javascript" src="js/jquery.min.js"></script>');
 	-->
 </script>
-<script class="case-study-page" type="text/javascript" src="../js/case-study-page.js"></script>
-<script type="text/javascript" src="../js/case-study.js"></script>
+<script class="case-study-page" type="text/javascript" src="js/case-study-page.js"></script>
+<script type="text/javascript" src="js/case-study.js"></script>
 </head>
 <body>
 <article class="case-study">
@@ -55,7 +48,7 @@
 	<picture>
 		<source media="(prefers-color-scheme:dark)" srcset="../images/servicenow/servicenow-logo-light.svg">
 		<source media="(prefers-color-scheme:light)" srcset="../images/servicenow/servicenow-logo-dark.svg">
-		<img src="../images/servicenow/servicenow-logo-white.svg" alt="ServiceNow logo" />
+		<img src="images/servicenow/servicenow-logo-white.svg" alt="ServiceNow logo" />
 	</picture>
 	<h1>ServiceNow Digital Optimization</h1>
 	<p>Improving business outcomes with UX</p>
@@ -83,18 +76,18 @@
 	<h2>Discovery
 		<div class="image-alert">Click any image to zoom</div>
 	</h2>
-	<div class="gallery"><img src="../images/servicenow/fake-analytics.svg" class="invert" alt="This is fake analytics data" /><img src="../images/servicenow/optimization-research-impressions.jpg" class="invert" alt="Impressions captured during research interviews" /><img src="../images/servicenow/the-form.png" class="invert" alt="The standard form" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+	<div class="gallery"><img src="images/servicenow/fake-analytics.svg" class="invert" alt="This is fake analytics data" /><img src="images/servicenow/optimization-research-impressions.jpg" class="invert" alt="Impressions captured during research interviews" /><img src="images/servicenow/the-form.png" class="invert" alt="The standard form" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 	<p>Through a series of interviews and usability tests I collected consistent evidence of participants feeling upset and even outraged when they were unexpectedly confronted with a form.</p>
 	<p>Like many other companies in the Enterprise space, we've embraced a strategy of "funnel traffic to forms as quickly as possible" under the misguided notion that a flat "8%" (Reminder: this is a made-up number) of traffic converted.</p>
-	<img src="../images/servicenow/fake-conversion.jpg" class="can-zoom invert" alt="This is fake conversion data" />
+	<img src="images/servicenow/fake-conversion.jpg" class="can-zoom invert" alt="This is fake conversion data" />
 	<p>Reviewing our analytics data, I can see how our strategy has backfired and instead deprives our visitors of the opportunity to "get sold on ServiceNow" before they hit what essentially amounts to a pay-wall.</p>
 	<p>Given the apparent "bottleneck" of the bounce-rate on forms, it's easy to understand why my colleagues focus their efforts on reducing friction there. The problem I uncovered through my research, however, is that by the time a user gets to a form page, they're already too upset for us to convince them of anything.</p>
 </section>
 <section>
 	<h2>Research</h2>
-	<div class="gallery"><img src="../images/servicenow/optimization-interview-1.jpg" class="invert" alt="Insights from interviews, 1 of 3" /><img src="../images/servicenow/optimization-interview-2.jpg" class="invert" alt="Insights from interviews, 2 of 3" /><img src="../images/servicenow/optimization-interview-3.jpg" class="invert" alt="Insights from interviews, 3 of 3" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
+	<div class="gallery"><img src="images/servicenow/optimization-interview-1.jpg" class="invert" alt="Insights from interviews, 1 of 3" /><img src="images/servicenow/optimization-interview-2.jpg" class="invert" alt="Insights from interviews, 2 of 3" /><img src="images/servicenow/optimization-interview-3.jpg" class="invert" alt="Insights from interviews, 3 of 3" /><span>(click to expand)</span><span class="collapse"><i class="fa fa-times"></i> collapse</span></div>
 	<p>As part of a site-assessment I conducted in tandem with a fresh round of user-interviews, I was able to document a number of pain-points for visitors to the site. In general, my hypothesis is that visitors are not filling the forms because we haven't convinced them that there's enough value on the other side to be worth the effort.</p>
-	<!-- <img src="../images/servicenow/fake-traffic.jpg" class="can-zoom invert" alt="This is fake traffic data" /> -->
+	<!-- <img src="images/servicenow/fake-traffic.jpg" class="can-zoom invert" alt="This is fake traffic data" /> -->
 	<p>In my previous research, participants also expressed a fear that some high-pressure salesperson was going to call and harass them or that they'd be stuck on an email-marketing list if they filled out the form.</p>
 	<p>For now, we can't change or shorten the form without causing a significant disruption to the sales pipeline, but we can still test my hypotheses (and potentially improve our conversion rates on forms) are with the content pages.</p>
 </section>
@@ -108,7 +101,7 @@
 </blockquote>
 <section>
 	<h2>Planning</h2>
-	<img src="../images/servicenow/new-features.png" class="can-zoom" alt="Concept for 'Top Features' content" />
+	<img src="images/servicenow/new-features.png" class="can-zoom" alt="Concept for 'Top Features' content" />
 	<p>The Optimization Team's first priorities is to explore whether visitors understand what ServiceNow does on a basic level. In the future we plan to address less-immediate issues like our anemic return-visitor traffic (which may have something to do with our lack of personalization or targeted content).</p>
 	<p>In our Qualtrics surveys, most respondents communicate that they weren't able to complete their tasks on the site, with most of the tasks having to do with information-gathering or product-discovery.</p>
 	<p>To begin determining how users understand our products (and what content interests them) we're creating a simple component to showcase top features in a clear and concise way. The test hypothesis expects that visitors who are interested in the plain English will spend more time engaging with the test content. We also project that subsequent form-conversions will increase as a result of the visitors having a better understanding of our value proposition.</p>
@@ -116,7 +109,7 @@
 </section>
 <section>
 	<h2>What's Next</h2>
-	<img src="../images/servicenow/optimization-customer-stories.jpg" class="can-zoom" alt="A proposed design highlighting a customer-success figure" />
+	<img src="images/servicenow/optimization-customer-stories.jpg" class="can-zoom" alt="A proposed design highlighting a customer-success figure" />
 	<p>Our first rounds of tests are being scoped and finalized right now. As we wait for results from these tests, additional tests will be coordinated to verify other pain-points.</p>
 	<p>The Optimization group's goal is to achieve "80% confidence" in our results so that we can create guidelines with the parameters we've identified, while still leaving room for our partner-teams to make final adjustments and perform iterative testing.</p>
 	<p>After we establish a clear sequence of tests and outcomes for a pain-point, our group will share our findings with the broader organization during regularly-scheduled Product Review meetings.</p>
@@ -129,7 +122,6 @@
 		<li class="incomplete">Compile results and share design-guidelines</li>
 		<li class="incomplete">Evolve the program</li>
 	</ol>
-	<p>It's been a thrilling journey so far, and I can't wait to find out if my hypotheses are right or if there are still more mysteries to unravel.</p>
 </section>
 </article>
 </body>

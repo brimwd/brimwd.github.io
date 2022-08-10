@@ -1,9 +1,9 @@
 function configureSinglePage() {
 	$(`head`)
 		.prepend($(`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>`))
-		.prepend($(`<link rel="stylesheet" type="text/css" href="../style.css">`))
+		.prepend($(`<link rel="stylesheet" type="text/css" href="style.css">`))
 		.prepend($(`<link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700&display=swap" rel="stylesheet">`))
-		.prepend($(`<link rel="stylesheet" href="../fontawesome/css/all.css" media="all">`))
+		.prepend($(`<link rel="stylesheet" href="fontawesome/css/all.css" media="all">`))
 		.prepend($(`<meta charset="UTF-8">`))
 		.prepend($(`<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">`))
 		.prepend($(`<meta name="author" content="Brian Donahue">`))
@@ -12,7 +12,7 @@ function configureSinglePage() {
 		.prepend($(`<meta name="format-detection" content="telephone=no">;`));
 
 	$(`.case-study`)
-		.prepend($(`<nav><a href="../index.html"><i class="far fa-level-up fa-flip-horizontal" aria-hidden="true"></i>Back to portfolio<i class="far fa-level-up" aria-hidden="true"></i></a></nav>`))
+		.prepend($(`<nav class="mb-5"><a href="index.html"><img src="favicon.ico" />Portfolio</a></nav>`))
 		.append(`<footer><p>Made by B Donahue</p><p><a href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i></a> &bullet; <a href="mailto:brimwd@gmail.com"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a> &bullet; <a href="sms:971-222-9892"><i class="fas fa-sms fa-2x" aria-label="email"></i></a></p></footer>`);
 
 	// handle redirect hashes

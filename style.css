@@ -39,16 +39,15 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #overview .row {position:relative;padding-bottom:80px;}
 #overview .row::before {
   content:'';
-  background-color:#7e3232;
-  background-image:url(images/bg/memphis-mini.png);
-  background-blend-mode:overlay;
+  background-color:#fc6463;
+  background-image:url(images/bg/memphis-light.png);
   border-radius:100%;
-  box-shadow:0 0 800px 300px #ffffff;
+  box-shadow:0 0 300px 150px #ffebe9;
   position:absolute;
-  width:120px;
-  height:120px;
+  width:150px;
+  height:150px;
   bottom:calc(15vw + 40px);
-  right:11%;
+  right:10.3%;
   z-index:0;
   /* animation */
   animation-name:solr;
@@ -59,17 +58,21 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 #overview .row::after {
   content:'';
   background-color:transparent;
-  backdrop-filter:blur(12px) saturate(140%);
-  -webkit-backdrop-filter:blur(12px) saturate(140%);
-  border:1px solid #18181808;
+  background-image: radial-gradient(#ffd7d7, #fde9e1 19%, #f8ecdf 70%, #a49a2e69);
+  background-size: 600px 600px;
+  background-position: -50px 542px;
+  backdrop-filter: brightness(1.15) contrast(0.95);
+  -webkit-backdrop-filter: brightness(1.15) contrast(0.95);
+  border: 2px solid #ed807c9c;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
   border-radius:100%;
   position:absolute;
-  top: calc(-30vw + 150px);
-  right:calc(30vw - 100px);
-  width: 80vw;
-  height: 80vw;
-  min-width:600px;
-  min-height:600px;
+  bottom:calc(15vw + 40px);
+  right:11%;
+  width:200px;
+  height:200px;
   z-index:0;
 }
 @keyframes solr {
@@ -82,6 +85,7 @@ emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','andr
 }
 h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 #overview p {max-width:45ch;}
+#overview p:last-child {padding-bottom: calc(120px - 15vw);}
 #overview a {border-bottom: 1px dotted var(--highlight);}
 @media(prefers-color-scheme:dark) {
   #overview {
@@ -90,18 +94,18 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
     background-position:top center;
   }
   #overview .row::before {
-    background-color:#00e0e2c9;
-    background-blend-mode:difference;
-    border:2px solid #2b2b2b;
+    background-color:#ee5756;
+    background-image:url(images/bg/memphis-dark.png);
+    border:.5px solid #2b2b2b;
     box-shadow:0 0 30px 5px #5f3029, 0 0 200px 100px #00000023;
   }
   #overview .row::after {
-    background-color:rgba(5, 5, 5, 0.08);
-    backdrop-filter:blur(20px) saturate(140%);
-    -webkit-backdrop-filter:blur(20px) saturate(140%);
-    box-shadow:0 0 40px 12px #00000033;
+    background-color: #0a0a0a;
+    background-image: radial-gradient(circle farthest-corner at 72% 75%, #0a0a0a 0%, #2b2b2b82 100%);
+    border-color: #8b3c3a;
+    box-shadow: 0 0 40px 12px #00000033;
   }
-  h1.my-name {color:#d15f5f;}
+  h1.my-name {color:#fb716a;}
 }
 
 #values {font-size:calc(100% + .4vw);padding-bottom:0;}
@@ -151,7 +155,7 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 .work p {margin:.3em 0 .6em;}
 
 .flex-grid {display:flex;flex-flow:wrap;justify-content:space-between;}
-.flex-grid a {position:relative;margin:10px 0;width:47%;}
+.flex-grid a {position:relative;margin:10px 0;width:100%;}
 .flex-grid a[disabled] figure {backdrop-filter:blur(12px) saturate(150%);-webkit-backdrop-filter:blur(12px) saturate(150%);opacity:0.8;}
 
 .flex-grid figure {

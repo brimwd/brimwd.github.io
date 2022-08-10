@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Brian Donahue, Product Designer</title>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="max-age=86400"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<meta name="author" content="Brian Donahue">
+<meta property='og:image' content='images/preview.png'/>
+<meta name="format-detection" content="telephone=no">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/scrollsync.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','UA-170028521-4');</script>
+<!-- <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css"> -->
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+  :root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  body {animation: body 1s linear;}
+  header, section {min-height:60vh;width:90vw;padding:20vh 5vw;display:flex;flex-flow:column;align-items:center;justify-content:center;color:initial;}
+  p {max-width:65ch;font-size:1.6rem;}
+  @keyframes body {
+    0% {
+      background-color: rgb(139, 201, 228);
+      color: rgb(139, 201, 228);
+    }
+    100% {
+      background-color: rgb(19, 48, 97);
+      color: rgb(19, 48, 97);
+    }
+  }
+</style>
+<script type="text/javascript">
+var offsetStart = 0;
+var offsetEnd = 0;
+
+window.addEventListener('scroll', () => {
+  document.documentElement.style.setProperty('--scroll', ( window.pageYOffset - offsetStart ) / ( document.body.offsetHeight - offsetStart - offsetEnd - window.innerHeight ));
+}, false);
+</script>
+</head>
+<body>
+  <header>
+    <h1>Hi there,</h1>
+    <p>My name's Brian Donahue, but most people just call me 'B'. I like sci-fi and animation, I love puns, and I'm not above the occasional RickRoll.</p>
+    <p>I work for Apple as a UX designer &mdash; My team and I craft a design-system to Apple build better applications for the web.</p>
+  </header>
+  <section>
+    <p>I'm passionate about economic-empowerment and uplifting people. I try to do my part by mentoring and training others to work in tech. Most of my "mentees" come from blue-collar jobs and non-tech roles. Over the course of about six months, I can teach them communication skills, terminology, methodology, and the relevant psychology to work as UX Designers, Product Managers, and Front-End Engineers.</p>
+    <p>I've trained more than two-dozen people from zero-knowledge to landing-their-first-job, and dozens more in cross-functional training and skills-development programs that I've evangelized and organized in previous roles.</p>
+    <p>Wherever I can, I want to support, uplift, and empower people with knowledge, skills, and confidence. So many people in the work have something to contribute; I want more tech-outsiders to have the opportunity to bring their unique perspectives, and I'm trying to "be the change I want to see in the world".</p>
+  </section>
+  <section>
+    <p>Since 2017, I've also been working on a web-app to streamline moderated user-research. Sourcing and qualifying participants takes a lot of time, but my service, ScheduleUX, enables researchers (and designers conducting their own research) to spend more time "doing, preparing, and reviewing" and less time negotiating, emailing, and reminding people to show up.</p>
+  </section>
+  <section>
+    <p>Thanks for reading my intro; let's get down to why you're here. There's a good chance that I've applied for a role on your team.</p>
+    <p>I hope I get the chance to interview with you, but we all know that there's more to succeeding in a job than how well you can recite design principles under pressure.</p>
+    <p>If you want to get to know the real me, feel free to send me an email or a text. I'd love to chat about the project you're working on, whatever I'm working on, or even just the latest great-thing on TV.</p>
+    <p>I hope we can</p>
+  </section>
+</body>
+</html>
