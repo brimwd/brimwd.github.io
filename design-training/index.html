@@ -32,6 +32,9 @@
   --green-tag: #43c73c;
 }
 body {background-color:var(--bg);color:var(--text);font-family:"Open Sans", sans-serif;padding:20px 20px;}
+@media(max-width:640px) {
+body {padding:20px 10px;}
+}
 h2, h3 {margin:1.2em 0 .5em;position:sticky;top:0;background:var(--bg);z-index:10;}
 h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1em;top:32px;z-index:5;}
 div {padding-left:8px;border-left:3px solid gray;}
