@@ -35,19 +35,25 @@ body {background-color:var(--bg);color:var(--text);font-family:"Open Sans", sans
 @media(max-width:640px) {
 body {padding:20px 10px;}
 }
+header {margin-bottom:3em;}
+header h1 {margin:.5em 0;}
+header p {margin:0;}
+header p:first-of-type {margin-bottom:1.5em;}
+
 h2, h3 {margin:1.2em 0 .5em;position:sticky;top:0;background:var(--bg);z-index:10;}
-h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1.2em;margin-bottom:.2em;top:32px;z-index:5;}
+h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1.2em;margin-bottom:.4em;top:32px;z-index:5;}
 div {padding-left:8px;border-left:3px solid gray;}
 div.has-subsections {padding-top:22px;}
-div.has-subsections p:last-of-type {padding-bottom:22px;}
+div.has-subsections p:last-of-type {padding-bottom:22px;margin-bottom:0;}
 div.has-subsections:last-of-type p:last-of-type {padding-bottom:0;}
-p {margin:0;}
+p {margin:0.2em 0;max-width:80ch;}
 a {color:var(--link);cursor:pointer;text-decoration:none;order:3;margin:0 0 .4em;}
+a:hover {text-decoration:underline;}
 a:visited {color:var(--visited);}
-label {cursor:pointer;display:flex;align-items:flex-start;}
+label {display:flex;align-items:flex-start;}
 
-input {order:2;margin:.3em .4em 0;}
-span {display:block;float:left;font-size:.8rem;font-weight:500;order:1;padding-top:.2rem;text-align:center;min-width:40px;min-height:2em;}
+input {cursor:pointer;order:2;margin:.3em .4em 0;}
+span {cursor:pointer;display:block;float:left;font-size:.8rem;font-weight:500;order:1;padding-top:.2rem;text-align:center;min-width:40px;min-height:2em;}
 input + span::before {content:' ';background-color:#0174ff;color:white;border-radius:3px;display:block;}
 input:checked + span::before {content:'Read';}
 
@@ -72,8 +78,9 @@ body:not([class="registered"]) span {
 <body>
 <header>
 	<h1>UX Training Bookmarks 🐝</h1>
-	<p>Created by <a href="https://brimwd.github.io" target="_blank">Brian Donahue</a>. Last updated <time datetime="2022-08-10">August 10, 2022</time>.</p>
-	<p>No reproduction in whole or part without written permission.</p>
+	<p>This collection contains the articles I found most-valuable on my journey into UX. Leaning heavily on the material here, I've also taught dozens of others the necessary skills and perspectives to land their first jobs in tech: most as UX Designers or Product Managers.</p>
+	<p>Good luck to you, friend. Share knowledge freely.</p>
+	<p>Curated by <a href="https://brimwd.github.io" target="_blank">Brian Donahue</a>. Last updated <time datetime="2022-08-10">August 10, 2022</time>.</p>
 </header>
 <section>
 	<h2>Strategy &amp; Thinking</h2>
@@ -696,8 +703,8 @@ body:not([class="registered"]) span {
 	<p><a href="https://honor.software" target="_blank">Honor.Software</a> - UX / Design Consulting</p>
 
 	<div class="copy">
-		<p><a href="/tos.html" target="_blank">Terms of Service</a></p>
-		<p><a href="/privacy.html" target="_blank">Privacy</a></p>
+		<p><a href="tos.html" target="_blank">Terms of Service</a></p>
+		<p><a href="privacy.html" target="_blank">Privacy</a></p>
 		<p>Honor.Software&copy;2022 &mdash; All rights reserved.</p>
 	</div>
 </footer>
