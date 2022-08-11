@@ -36,9 +36,11 @@ body {background-color:var(--bg);color:var(--text);font-family:"Open Sans", sans
 body {padding:20px 10px;}
 }
 h2, h3 {margin:1.2em 0 .5em;position:sticky;top:0;background:var(--bg);z-index:10;}
-h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1em;top:32px;z-index:5;}
+h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1.2em;margin-bottom:.2em;top:32px;z-index:5;}
 div {padding-left:8px;border-left:3px solid gray;}
-div.has-subsections {padding-top:32px;}
+div.has-subsections {padding-top:22px;}
+div.has-subsections p:last-of-type {padding-bottom:22px;}
+div.has-subsections:last-of-type p:last-of-type {padding-bottom:0;}
 p {margin:0;}
 a {color:var(--link);cursor:pointer;text-decoration:none;order:3;margin:0 0 .4em;}
 a:visited {color:var(--visited);}
@@ -694,9 +696,9 @@ body:not([class="registered"]) span {
 	<p><a href="https://honor.software" target="_blank">Honor.Software</a> - UX / Design Consulting</p>
 
 	<div class="copy">
-		<p><a>Terms of Service</a></p>
-		<p><a>Privacy</a></p>
-		<p>&copy;2022 &mdash; All rights reserved.</p>
+		<p><a href="/tos.html">Terms of Service</a></p>
+		<p><a href="/privacy.html">Privacy</a></p>
+		<p>Honor.Software&copy;2022 &mdash; All rights reserved.</p>
 	</div>
 </footer>
 </body>
