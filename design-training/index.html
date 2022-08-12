@@ -9,8 +9,11 @@
 <meta property='og:image' content='images/preview.png'/>
 <meta name="description" content="Proven UX training curriculum for getting your start and getting ahead in tech">
 <meta name="keywords" content="UX, UX training, UX mentor, Product Management, training, Product management training, UX Design, UX Design training">
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-TxKWSXbsweFt0o2WqfkfJRRNVaPdzXJ/YLqgStggBVRREXkwU7OKz+xXtqOU4u8+" crossorigin="anonymous">
+
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="training.js"></script>
 <script type="text/javascript" src="../js/scrollsync.js"></script>
@@ -40,9 +43,9 @@ header h1 {margin:.5em 0;}
 header p {margin:0;}
 header p:first-of-type {margin-bottom:1.5em;}
 
-h2, h3 {margin:1.2em 0 .5em;position:sticky;top:0;background:var(--bg);z-index:10;}
-h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1.2em;margin-bottom:.4em;top:32px;z-index:5;}
-div {padding-left:8px;border-left:3px solid gray;}
+h2, section h3 {margin:1.2em 0 .5em;position:sticky;top:0;background:var(--bg);z-index:10;}
+section h3 {background:transparent linear-gradient(to bottom, var(--bg) 80%, transparent);margin-top:-1.2em;margin-bottom:.4em;top:32px;z-index:5;}
+section div {padding-left:8px;border-left:3px solid gray;}
 div.has-subsections {padding-top:22px;}
 div.has-subsections p:last-of-type {padding-bottom:22px;margin-bottom:0;}
 div.has-subsections:last-of-type p:last-of-type {padding-bottom:0;}
@@ -62,9 +65,49 @@ a:not([href]) {color:red;}
 footer .copy {margin-top:2em;}
 
 body:not([class="registered"]) input,
-body:not([class="registered"]) span {
+body:not([class="registered"]) span,
+body:not([class="registered"]) #sign-out {
 	display:none;
 }
+body.registered #auth {display:none;}
+
+/* REGISTRATION MODAL */
+body.reg-unavailable nav {display:none;}
+body:has(:dialog), body.dialog {overflow:hidden;}
+#modal-container.hidden {display:none;}
+
+#modal-container {display:flex;align-items:center;justify-content:center;position:fixed;inset:0;width:100vw;height:100vh;z-index:50;}
+#modal-container::before {position:absolute;inset:0;z-index:-1;background-color:var(--text);backdrop-filter:blur(10px);opacity:.3;}
+
+#reg-modal {all:initial;display:flex;flex-flow:row;font:inherit;gap:32px;background-color:var(--bg);border:1px solid #ffffff40;border-radius:20px;box-shadow:0 0 0 1px var(--bg);color:var(--text);margin:0;padding:0 32px;max-width:900px;width:90vw;max-height:60vh;box-sizing:border-box;}
+#reg-modal aside {display:inline-flex;flex-flow:column;align-items:center;justify-content:center;text-align:center;width:80%;flex-grow:1;padding:40px 0;}
+#reg-modal h3 {margin:.6em 0 1.3em;font-size:1.5em;}
+#reg-modal .icon {display:block;font-size:80px;font-style:normal;font-weight:200;}
+
+#reg-modal div {padding:40px 3px;max-height:416px;overflow-y:auto;}
+#reg-modal nav {display:flex;flex-flow:row;margin-bottom:1.5em;gap:4px;}
+#reg-modal button {border:none;border-radius:4px;cursor:pointer;display:block;padding:14px;text-align:center;}
+#sign-in, #join {width:50%;background-color:var(--bg);color:var(--text);}
+#sign-in:hover, #join:hover {color:var(--link);background-color:#8883;}
+#sign-in.active, #join.active {background-color:var(--link);color:white;}
+
+*:focus {outline:none;box-shadow:0 0 0 3px var(--link);}
+button#register {display:block;margin:1.5em 0 1rem;width:100%;}
+
+#reg-modal label {color:#888;margin:8px 0 4px;}
+#reg-modal input {background-color:var(--bg);border:1px solid var(--text);border-radius:4px;color:var(--text);display:block;font-size:1em;margin:0 0 4px;padding:6px 4px;width:100%;box-sizing:border-box;}
+#reg-modal input:focus {border-color:#8888;}
+
+#reg-modal .disclaimer {font-size:.9em;color:#888;margin:.4rem 0 0;}
+
+@media(max-height:700px) {
+	#reg-modal {max-height:90vh;}
+
+@media(max-width:640px) {
+	#reg-modal {flex-flow:column;inset:5vw;max-width:90vw;width:90vw;overflow:auto;}
+	#reg-modal div {max-height:unset;}
+}
+
 @media(prefers-color-scheme:dark) {
 :root {
   --bg: black;
@@ -75,7 +118,8 @@ body:not([class="registered"]) span {
 }
 </style>
 </head>
-<body>
+<body class="reg-unavailable">
+<nav><a id="auth" tabindex>Sign In</a><a id="sign-out" tabindex>Sign Out</a></nav>
 <header>
 	<h1>UX Training Bookmarks 🐝</h1>
 	<p>This collection contains the articles I found most-valuable on my journey into UX. Leaning heavily on the material here, I've also taught dozens of others the necessary skills and perspectives to land their first jobs in tech: most as UX Designers or Product Managers.</p>
@@ -708,5 +752,25 @@ body:not([class="registered"]) span {
 		<p>Honor.Software&copy;2022 &mdash; All rights reserved.</p>
 	</div>
 </footer>
+
+<div id="modal-container" class="hidden"><dialog id="reg-modal">
+	<aside>
+		<h3>Sign in or join to save your progress</h3>
+		<p class="icon">🐝</p>
+	</aside>
+	<div>
+		<nav>
+			<button class="active" id="sign-in">Sign In</button>
+			<button id="join">Join (free)</button>
+		</nav>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" />
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" />
+		<button id="register">Sign In</button>
+		<p class="disclaimer">I will never sell your email or use it for marketing.</p>
+		<p class="disclaimer">Accounts are handled by <a href="https://scheduleux.com" target="_blank">ScheduleUX</a>, and are subject to the <a href="https://www.scheduleux.com/terms" target="_blank">Terms of Service</a> and <a href="https://www.scheduleux.com/privacy" target="_blank">Privacy Policy</a> of both sites.</p>
+	</div>
+</dialog></div>
 </body>
 </html>
