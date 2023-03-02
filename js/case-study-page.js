@@ -6,8 +6,8 @@ function configureSinglePage() {
 		.prepend($(`<link rel="stylesheet" href="fontawesome/css/all.css" media="all">`))
 		.prepend($(`<meta charset="UTF-8">`))
 		.prepend($(`<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">`))
-		.prepend($(`<meta name="author" content="Brian Donahue">`))
-		.prepend($(`<meta name="description" content="UX, web design, & front-end development portfolio for Brian Donahue, Product Designer based in Silicon Valley, California">`))
+		.prepend($(`<meta name="author" content="Leo Donahue">`))
+		.prepend($(`<meta name="description" content="UX, web design, & front-end development portfolio for Leo Donahue, Product Designer based in Silicon Valley, California">`))
 		.prepend($(`<meta name="keywords" content="product,product design,manager,UX,UX design,UX designer,user experience,design,designer,UI,HTML,CSS,JavaScript,Illustrator,Adobe,Photoshop,freelance,contractor,developer,front-end,front end,portfolio,graphic design,graphics,web,web development,for hire,resume,jQuery,storyboarding,prototyping,research,user research,researcher,information architecture,taxonomy">`))
 		.prepend($(`<meta name="format-detection" content="telephone=no">;`));
 
