@@ -9,6 +9,7 @@
   --bg-primary:#fffefa;
   --bg-primary-alpha:#ffffff80;
   --bg-secondary:#ffffff;
+  --bg-tertiary:#f6f6f4;
   --selection:#f7cb4577;
   --gold:#fadc7a;
 
@@ -28,6 +29,17 @@ html {width:100vw;overflow-x:hidden;}
 .row p {max-width:65ch;}
 body a.btn {border:none;border-radius:6px;font-weight:bold;display:inline-block;margin-top:10px;padding:8px 14px;}
 emoji {font-family:'apple color emoji','segoe ui emoji','noto color emoji','android emoji',emojisymbols,'emojione mozilla','twemoji mozilla','segoe ui symbol';font-weight:400;}
+
+h2.title {
+  background:var(--highlight-text);
+  font-size:32px;
+  font-weight:100;
+  margin-top:40px;
+  margin-bottom:20px;
+  width:fit-content;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
 
 /* OVERVIEW */
 #overview {
@@ -107,49 +119,79 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
   }
   h1.my-name {color:#fb716a;}
 }
-
-#values {font-size:calc(100% + .4vw);padding-bottom:0;}
-#values::after {
-    content:'';
-    background-image: var(--values-ribbon);
-    box-shadow: var(--values-ribbon-shadow);
-    transform: rotate(290deg);
-    position: absolute;
-    width: 900vw;
-    height: 140%;
-    top: calc(390vw - 300px);
-    left: calc(-550vw + 500px);
-    z-index: -1;
-  }
-#values h2 {
-  background:var(--highlight-text);
+#overview h2 {
+  font-size:32px;
   font-weight:100;
-  width:fit-content;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  margin-top:48px;
 }
-#values p {max-width:55ch;}
-.card {border-radius:12px;margin:20px 0;}
-/*@media(min-width:1024px) {
-  .cards {border:none;display:flex;justify-content:space-between;margin:10px 0 0;padding:0}
-  .card {max-width:25%;padding:12px 30px;}
-}*/
+#overview p.experience {
+  font-size:17px;
+  max-width:60vw;
+  width:70%;
+}
+#overview p.experience span {
+  -webkit-backdrop-filter:blur(5px);
+  backdrop-filter:blur(5px);
+  display:inline-block;
+  border:1px solid var(--text-faint-alpha);
+  border-radius:20px;
+  margin-bottom:.5em;
+  padding:2px 8px;
+}
 
-/* APPROACH */
-#approach {display:none;}
+/* Subhead */
+#subhead .flex-container {
+  display:flex;
+  flex-flow:column;
+  padding:40px 0;
+}
+#subhead .flex-container div {
+  padding:0 5vw 40px;
+}
+#subhead .flex-container div:last-child {
+  background-image:linear-gradient(113deg, transparent 60.91%, #18181880 60.91%);
+  background-color:var(--bg-tertiary);
+  padding:40px 5vw 40px;
+}
+#subhead .flex-container .title {margin-top:20px;}
+#subhead ul {padding-left:1.3em;}
+#subhead li {margin-bottom:.7em;}
+@media screen and (min-width:900px) {
+  #subhead {
+    background-image:linear-gradient(113deg, transparent 83.91%, #18181880 83.91%), linear-gradient(to right, var(--bg-primary) 60%, var(--bg-tertiary) 40%);
+  }
+  #subhead .flex-container {
+    flex-flow:row;
+    padding:40px 5vw;
+  }
+  #subhead .flex-container div {
+    padding:0 5% 0 0;
+    width:65%;
+  }
+  #subhead .flex-container div:last-child {
+    background:unset;
+    padding:0 0 0 10%;
+    width:35%;
+  }
+  #subhead .flex-container .title {margin-top:40px;}
+  #subhead ul {padding-left:0;}
+}
+@media screen and (min-width:1200px) {
+  #subhead {
+    background-image:linear-gradient(113deg, transparent 63.91%, #18181880 63.91%), linear-gradient(to right, var(--bg-primary) 50%, var(--bg-tertiary) 50%);
+  }
+  #subhead .flex-container div {
+    padding-right:6%;
+    width:50%;
+  }
+  #subhead .flex-container div:last-child {
+    padding-left:8%;
+    width:50%;
+  }
+}
 
 /* WORK */
 .work {padding-top:20px;}
-.work h2.title {
-  background:var(--highlight-text);
-  font-size:calc((100% + .4vw) * 1.5);
-  font-weight:100;
-  margin-top:40px;
-  margin-bottom:20px;
-  width:fit-content;
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-}
 .work img {margin:0 auto;display:block;max-height:100px;max-width:80%;transition:all 180ms;transition-timing-function:ease-out;}
 .work h4 {margin:-20px 0 0;}
 .work p {margin:.3em 0 .6em;}
@@ -363,6 +405,7 @@ figure.two-img:hover img:last-child {opacity:1;}
   --bg-primary:#181818;
   --bg-primary-alpha:#18181880;
   --bg-secondary:#000;
+  --bg-tertiary:#202020;
   --selection:#fffcdb42;
 
   --highlight-text:linear-gradient(120deg, #ec9678, #d96363);
