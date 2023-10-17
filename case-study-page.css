@@ -8,7 +8,7 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 /* CASE STUDY - GENERAL STYLES */
 .case-study section {padding:0 15px;}
 .case-study > * {background-color:var(--bg-primary);margin:0 auto;}
-.case-study > :last-child {margin-bottom:0;}
+.case-study > :last-child {padding-bottom:60px;}
 .case-study header {position:relative;padding:50px 15px 30px;}
 .case-study header > * {position:relative;z-index:10;}
 .case-study header img {max-width:140px;}
@@ -158,7 +158,7 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 
 
 /* DISMISS CASE STUDY */
-#dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;top:8px;z-index:50;}
+#dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;z-index:50;}
 #dismiss.bottom, #dismiss:hover {border-radius:0;padding:4px 6px;width:calc(100% - 12px);right:0;bottom:0;}
 #dismiss:hover {cursor:pointer;}
 @media (prefers-color-scheme:dark){#dismiss {background-color:var(--text);color:var(--bg-primary);}}
@@ -170,7 +170,7 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 #dismiss.bottom span, #dismiss:hover span {width:100%;opacity:1;}
 
 @media (min-width:860px){
-	#dismiss {right:calc(50vw - 405px - 24px);}
+	#dismiss {right:calc(50vw - 405px - 24px);top:8px;bottom:unset;}
 	#dismiss:hover {border-radius:14px;width:798px;right:calc(50vw - 405px);}
 	#dismiss:hover::after {content:'';width:64px;position:absolute;top:0;right:-24px;bottom:0;}
 }
