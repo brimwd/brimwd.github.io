@@ -2,7 +2,7 @@ $(document).ready(function() {
   var targetPage;
   var targetPageLoaded;
 
-
+/*
   $('#sort-by').on('click', function(){
     var sortLink = $(this);
 
@@ -20,7 +20,7 @@ $(document).ready(function() {
     }
 
     $('.flex-grid.phase, .flex-grid.date').removeClass().addClass('flex-grid '+sortLink.data('value'));
-  });
+  });*/
 
 
   $('a.dynamicLoad').on('click', function(event){
