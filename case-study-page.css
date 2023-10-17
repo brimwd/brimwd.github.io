@@ -78,7 +78,7 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 	.case-study header {padding:50px 5vw 10px;}
 	.case-study header br {display:none;}
 	.case-study section, .case-study blockquote {padding:0 5vw;}
-	.case-study h2 {font-size:calc(2.5em + 4vw);margin-top:1em;}
+	.case-study h2 {font-size:2.5em;margin-top:0;padding-top:1.6em;}
 	.gallery img {max-width:28%;margin-right:2%;padding:8px;}
 }
 @media (min-width:810px){
@@ -89,8 +89,11 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 	.case-study {border:none;}
 	.case-study > * {margin-bottom:2rem;}
 	.case-study > *:not(header)::after {content:'';display:block;clear:both;}
-	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-78px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:30;padding:0 15px;}
+	.case-study header {border-radius:20px 20px 0 0;}
+	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-74px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:-1;padding:0 15px 6px;}
 	.case-study header + .overview {margin-top:-2rem;}
+
+	.case-study section:last-of-type {border-radius:0 0 20px 20px;padding-bottom:40px;}
 
 	.gallery {position:relative;width:228px;height:210px;margin:33px -17px 28px 15px;float:right;transform:rotate(2.5deg);transition:all .3s;}
 	.gallery::before, .gallery::after {content:'';position:absolute;display:inline-block;z-index:10;top:65px;right:-9px;width:52px;height:15px;border:3px solid #aaa;border-radius:60px 0 0 60px;border-right-width:0;transform:rotate(16deg);transition:all .3s, rotate .45s;transform-origin:100% 50%;}
@@ -156,7 +159,7 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 
 
 /* DISMISS CASE STUDY */
-#dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;bottom:8px;z-index:50;}
+#dismiss {background-color:#144567;border-radius:60px;color:white;display:inline-flex;font-weight:bold;justify-content:center;text-align:center;transition:all 250ms;width:48px;height:48px;position:fixed;right:8px;top:8px;z-index:50;}
 #dismiss.bottom, #dismiss:hover {border-radius:0;padding:4px 6px;width:calc(100% - 12px);right:0;bottom:0;}
 #dismiss:hover {cursor:pointer;}
 @media (prefers-color-scheme:dark){#dismiss {background-color:var(--text);color:var(--bg-primary);}}
