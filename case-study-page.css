@@ -17,7 +17,7 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 .case-study header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
 .case-study h2 {font-size:10vw;font-weight:100;margin-top:1.5em;position:relative;}
 .case-study h2 ~ p:first-of-type {margin-top:2rem;}
-.case-study p {font-size:calc(1em + .7vw);line-height:1.4em;max-width:55ch;}
+.case-study p {font-size:17px;line-height:1.8em;}
 .case-study section a {text-decoration:none;cursor:pointer;border-bottom-width:1px;border-bottom-style:dotted;}
 .case-study .btn {border:none;}
 /* unused? */.case-study .persona {margin:20px 0;padding:6px 0 3px 3%;border-left:6px solid #ced6de;}
@@ -86,14 +86,13 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 	.case-study > nav a {border-radius:0 0 8px 8px;}
 }
 @media (min-width:850px){
-	.case-study {border:none;}
-	.case-study > * {margin-bottom:2rem;}
+	.case-study {border:none;max-width:900px}
 	.case-study > *:not(header)::after {content:'';display:block;clear:both;}
 	.case-study header {border-radius:20px 20px 0 0;}
 	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-74px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:-1;padding:0 15px 6px;}
 	.case-study header + .overview {margin-top:-2rem;}
 
-	.case-study section:last-of-type {border-radius:0 0 20px 20px;padding-bottom:40px;}
+	.case-study section:last-of-type {border-radius:0 0 20px 20px;padding-bottom:80px;}
 
 	.gallery {position:relative;width:228px;height:210px;margin:33px -17px 28px 15px;float:right;transform:rotate(2.5deg);transition:all .3s;}
 	.gallery::before, .gallery::after {content:'';position:absolute;display:inline-block;z-index:10;top:65px;right:-9px;width:52px;height:15px;border:3px solid #aaa;border-radius:60px 0 0 60px;border-right-width:0;transform:rotate(16deg);transition:all .3s, rotate .45s;transform-origin:100% 50%;}
@@ -172,7 +171,7 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 
 @media (min-width:860px){
 	#dismiss {right:calc(50vw - 405px - 24px);}
-	#dismiss:hover {width:798px;right:calc(50vw - 405px);}
+	#dismiss:hover {border-radius:14px;width:798px;right:calc(50vw - 405px);}
 	#dismiss:hover::after {content:'';width:64px;position:absolute;top:0;right:-24px;bottom:0;}
 
 	.presentation + #dismiss, .incomplete + #dismiss {position:relative;bottom:56px;right:calc(-1 * (50vw + 405px - 24px));}
