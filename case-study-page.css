@@ -8,7 +8,7 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 /* CASE STUDY - GENERAL STYLES */
 .case-study section {padding:0 15px;}
 .case-study > * {background-color:var(--bg-primary);margin:0 auto;}
-.case-study > :last-child {padding-bottom:60px;}
+.case-study > :last-child {padding-bottom:50px;}
 .case-study header {position:relative;padding:50px 15px 30px;}
 .case-study header > * {position:relative;z-index:10;}
 .case-study header img {max-width:140px;}
@@ -77,8 +77,8 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 	.case-study > nav, .case-study > footer {margin:unset;}
 	.case-study header {padding:50px 5vw 10px;}
 	.case-study header br {display:none;}
-	.case-study section, .case-study blockquote {padding:0 5vw;}
-	.case-study h2 {font-size:2.5em;margin-top:0;padding-top:1.6em;}
+	.case-study section, .case-study blockquote {padding:1px 5vw;}
+	.case-study h2 {font-size:2.5em;margin-top:0;padding-top:1em;}
 	.gallery img {max-width:28%;margin-right:2%;padding:8px;}
 }
 @media (min-width:810px){
@@ -90,7 +90,6 @@ ol.steps li.incomplete::after {content:'\f0c8';}
 	.case-study > *:not(header)::after {content:'';display:block;clear:both;}
 	.case-study header {border-radius:20px 20px 0 0;}
 	.case-study header::after {content:"Case Study";color:#796c07;position:absolute;top:85px;left:-74px;line-height:2rem;font-size:1.1rem;background-color:#ffe838;transform:rotate(-90deg);z-index:-1;padding:0 15px 6px;}
-	.case-study header + .overview {margin-top:-2rem;}
 
 	.case-study section:last-of-type {border-radius:0 0 20px 20px;padding-bottom:80px;}
 
