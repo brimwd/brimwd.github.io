@@ -225,14 +225,14 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 .flex-grid a:hover img {max-height:108px;max-width:86%;}
 .flex-grid a[disabled]:hover figure {box-shadow:none;cursor:not-allowed;transform:scale(1);transition:all 120ms;}
 .flex-grid a[disabled]:active figure * {filter:blur(8px)contrast(0.7);opacity:.5;transition:none;}
-.flex-grid a[disabled]:active::after {align-items:center;background-color:var(--bg-primary);border-radius:8px;content:'\f30d\Alocked';cursor:not-allowed;display:flex;font-family:"Font Awesome 5 Pro", Raleway;font-size:1.2em;font-weight:100;line-height:2em;justify-content:center;padding-top:15px;opacity:.7;text-align:center;white-space:pre-wrap;position:absolute;top:0;right:0;bottom:0;left:0;z-index:10;}
+.flex-grid a[disabled]:active::after {align-items:center;background-color:var(--bg-primary);border-radius:8px;content:'\f30d\Alocked';cursor:not-allowed;display:flex;font-family:"Font Awesome 6 Pro", Raleway;font-size:1.2em;font-weight:100;line-height:2em;justify-content:center;padding-top:15px;opacity:.7;text-align:center;white-space:pre-wrap;position:absolute;top:0;right:0;bottom:0;left:0;z-index:10;}
 @media (prefers-color-scheme:dark) {
   .flex-grid a:hover figure, .flex-grid figure {box-shadow:unset;}
   .flex-grid a[disabled]:active figure * {filter:blur(8px);}
   .flex-grid a[disabled]:active figure img {filter:blur(8px) invert(1);}
 }
 
-.flex-grid figure[data-tags]::before {opacity:.5;font-family:"Font Awesome 5 Pro";font-weight:400;position:absolute;right:8px;top:8px;font-size:16px;transition:inherit;}
+.flex-grid figure[data-tags]::before {opacity:.5;font-family:"Font Awesome 6 Pro";font-weight:400;position:absolute;right:8px;top:8px;font-size:16px;transition:inherit;}
 .flex-grid figure[data-tags*="Presentation"]::before {content:'\f685';}
 .flex-grid figure[data-tags*="Incomplete"]::before {content:'\f85e';}
 .flex-grid figure[data-tags*="Disabled"]::before {content:'\f30d';font-weight:900;opacity:0.15;}

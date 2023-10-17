@@ -3,7 +3,7 @@ function configureSinglePage() {
 		.prepend($(`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>`))
 		.prepend($(`<link rel="stylesheet" type="text/css" href="style.css">`))
 		.prepend($(`<link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700&display=swap" rel="stylesheet">`))
-		.prepend($(`<link rel="stylesheet" href="fontawesome/css/all.css" media="all">`))
+		.prepend($(`<script src="https://kit.fontawesome.com/fe72761270.js" crossorigin="anonymous"></script>`))
 		.prepend($(`<meta charset="UTF-8">`))
 		.prepend($(`<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">`))
 		.prepend($(`<meta name="author" content="Leo Donahue">`))
