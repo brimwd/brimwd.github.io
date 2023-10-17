@@ -173,9 +173,6 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 	#dismiss {right:calc(50vw - 405px - 24px);}
 	#dismiss:hover {border-radius:14px;width:798px;right:calc(50vw - 405px);}
 	#dismiss:hover::after {content:'';width:64px;position:absolute;top:0;right:-24px;bottom:0;}
-
-	.presentation + #dismiss, .incomplete + #dismiss {position:relative;bottom:56px;right:calc(-1 * (50vw + 405px - 24px));}
-	.presentation + #dismiss:hover, .incomplete + #dismiss:hover {right:calc(-1 * (50vw - 405px));}
 }
 /* INCOMPLETE STYLES */
 .incomplete header::after {content:'Coming soon!';left:-88px;}
