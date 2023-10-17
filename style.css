@@ -105,7 +105,7 @@ h2.title {
   z-index:1;
 }
 h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
-#overview p {max-width:45ch;}
+#overview p {font-size:22px;line-height:1.6;max-width:65ch;}
 #overview p:last-child {padding-bottom: calc(120px - 15vw);}
 #overview a {border-bottom: 1px dotted var(--highlight);}
 @media(prefers-color-scheme:dark) {
@@ -156,8 +156,8 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
   padding:24px 5vw 40px;
 }
 #subhead .flex-container .title {margin-top:20px;}
-#subhead ul {padding-left:1.3em;}
-#subhead li {margin-bottom:.7em;}
+#subhead h3 {margin:2em 0 .5em;}
+#subhead h3 ~ p {margin:.8em 0;}
 @media screen and (min-width:900px) {
   #subhead {
     background-image:linear-gradient(113deg, transparent 83.91%, #18181880 83.91%), linear-gradient(to right, var(--bg-primary) 60%, var(--bg-tertiary) 40%);
@@ -176,7 +176,6 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
     width:35%;
   }
   #subhead .flex-container .title {margin-top:40px;}
-  #subhead ul {padding-left:0;}
 }
 @media screen and (min-width:1200px) {
   #subhead {
