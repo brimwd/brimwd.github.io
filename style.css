@@ -40,6 +40,15 @@ h2.title {
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
 }
+.token {
+  -webkit-backdrop-filter:blur(5px);
+  backdrop-filter:blur(5px);
+  display:inline-block;
+  border:1px solid var(--text-faint-alpha);
+  border-radius:20px;
+  margin-bottom:.5em;
+  padding:2px 8px 2px 9px;
+}
 
 /* OVERVIEW */
 #overview {
@@ -129,15 +138,6 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
   max-width:60vw;
   width:70%;
 }
-#overview p.experience span {
-  -webkit-backdrop-filter:blur(5px);
-  backdrop-filter:blur(5px);
-  display:inline-block;
-  border:1px solid var(--text-faint-alpha);
-  border-radius:20px;
-  margin-bottom:.5em;
-  padding:2px 8px 2px 9px;
-}
 
 /* Subhead */
 #subhead .flex-container {
@@ -146,12 +146,14 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
   padding:40px 0;
 }
 #subhead .flex-container div {
+  line-height:1.8;
   padding:0 5vw 40px;
 }
 #subhead .flex-container div:last-child {
+  line-height:initial;
   background-image:linear-gradient(113deg, transparent 60.91%, #18181880 60.91%);
   background-color:var(--bg-tertiary);
-  padding:40px 5vw 40px;
+  padding:24px 5vw 40px;
 }
 #subhead .flex-container .title {margin-top:20px;}
 #subhead ul {padding-left:1.3em;}
