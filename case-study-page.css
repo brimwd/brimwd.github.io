@@ -177,7 +177,7 @@ a.play::after, a.player::after {content:'\f144';display:inline-block;font-family
 .incomplete header::after {content:'Coming soon!';left:-88px;}
 
 /* PRESENTATION STYLES */
-.presentation header::after {content:'Presentation';left:-82px;}
+.presentation header::after {content:'Presentation';left:-73px;}
 .presentation slideCount {color:var(--text-med);display:inline-block;margin-left:10px;}
 .presentation slideCount::before {content:'(';}
 .presentation slideCount::after {content:' slides)';}
