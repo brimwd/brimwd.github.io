@@ -13,7 +13,7 @@ function configureSinglePage() {
 
 	$(`.case-study`)
 		.prepend($(`<nav class="mb-5"><a href="index.html"><img src="favicon.ico" />Portfolio</a></nav>`))
-		.append(`<footer><p>Made by Leo Donahue</p><p><a href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fa-brands fa-linkedin fa-2x" aria-label="linkedin"></i></a> &bullet; <a href="mailto:brimwd@gmail.com"><i class="fa-duotone fa-mailbox fa-2x" aria-label="email"></i></a> &bullet; <a href="sms:971-222-9892"><i class="fa-solid fa-sms fa-2x" aria-label="email"></i></a></p></footer>`);
+		.append(`<footer><p>Made by Leo Donahue</p><p><a href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fa-brands fa-linkedin fa-2x" aria-label="linkedin"></i></a> &bullet; <a href="mailto:brimwd@gmail.com"><i class="fa-solid fa-mailbox fa-2x" aria-label="email"></i></a> &bullet; <a href="sms:971-222-9892"><i class="fa-solid fa-sms fa-2x" aria-label="email"></i></a></p></footer>`);
 
 	// handle redirect hashes
 	switch(location.hash) {
