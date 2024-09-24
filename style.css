@@ -6,10 +6,11 @@
   --text-faint-alpha:#ffdc68a8;
   --text-ultra-faint:#d7d7d7;
   --highlight:#c70700;
-  --bg-primary:#fffefa;
-  --bg-primary-alpha:#ffffff80;
-  --bg-secondary:#ffffff;
-  --bg-tertiary:#f6f6f4;
+  --bg1:#fffefa;
+  --bg1-alpha:#ffffff80;
+  --bg2:#ffffff;
+  --bg3:#f6f6f4;
+  --bg4:#f1f1f1;
   --selection:#f7cb4577;
   --gold:#fadc7a;
 
@@ -18,7 +19,7 @@
 }
 ::-moz-selection {background-color:var(--selection);}
 ::selection {background-color:var(--selection);}
-body {background-color:var(--bg-primary);color:var(--text);font-family:'Open Sans', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;overflow:hidden;width:100vw;text-rendering:optimizeLegibility;}
+body {background-color:var(--bg1);color:var(--text);font-family:'Open Sans', sans-serif;font-variant-ligatures:common-ligatures;font-weight:300;font-size:17px;margin:0 auto;overflow:hidden;width:100vw;text-rendering:optimizeLegibility;}
 h1, h2, h5 {font-variant-ligatures:discretionary-ligatures;font-weight:700;line-height:1.1em;margin-top:0;margin-bottom:0;}
 a {color:var(--text);text-decoration:none;}
 b {font-weight:700;}
@@ -151,8 +152,8 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 }
 #subhead .flex-container div:last-child {
   line-height:initial;
-  background-image:linear-gradient(113deg, transparent 60.91%, #18181880 60.91%);
-  background-color:var(--bg-tertiary);
+  background-image:linear-gradient(113deg, transparent 60.91%, var(--bg4) 60.91%);
+  background-color:var(--bg3);
   padding:24px 5vw 40px;
 }
 #subhead .flex-container .title {margin-top:20px;}
@@ -160,7 +161,7 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 #subhead h3 ~ p {margin:.8em 0;}
 @media screen and (min-width:900px) {
   #subhead {
-    background-image:linear-gradient(113deg, transparent 83.91%, #18181880 83.91%), linear-gradient(to right, var(--bg-primary) 60%, var(--bg-tertiary) 40%);
+    background-image:linear-gradient(113deg, transparent 83.91%, var(--bg4) 83.91%), linear-gradient(to right, var(--bg1) 60%, var(--bg3) 40%);
   }
   #subhead .flex-container {
     flex-flow:row;
@@ -179,7 +180,7 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 }
 @media screen and (min-width:1200px) {
   #subhead {
-    background-image:linear-gradient(113deg, transparent 63.91%, #18181880 63.91%), linear-gradient(to right, var(--bg-primary) 50%, var(--bg-tertiary) 50%);
+    background-image:linear-gradient(113deg, transparent 63.91%, var(--bg4) 63.91%), linear-gradient(to right, var(--bg1) 50%, var(--bg3) 50%);
   }
   #subhead .flex-container div {
     padding-right:6%;
@@ -226,7 +227,7 @@ h1.my-name {color:#eb5654;font-size:1.6em;font-weight:100;}
 .flex-grid a:hover img {max-height:108px;max-width:86%;}
 .flex-grid a[disabled]:hover figure {box-shadow:none;cursor:not-allowed;transform:scale(1);transition:all 120ms;}
 .flex-grid a[disabled]:active figure * {filter:blur(8px)contrast(0.7);opacity:.5;transition:none;}
-.flex-grid a[disabled]:active::after {align-items:center;background-color:var(--bg-primary);border-radius:8px;content:'\f30d\Alocked';cursor:not-allowed;display:flex;font-family:"Font Awesome 6 Pro", Raleway;font-size:1.2em;font-weight:100;line-height:2em;justify-content:center;padding-top:15px;opacity:.7;text-align:center;white-space:pre-wrap;position:absolute;top:0;right:0;bottom:0;left:0;z-index:10;}
+.flex-grid a[disabled]:active::after {align-items:center;background-color:var(--bg1);border-radius:8px;content:'\f30d\Alocked';cursor:not-allowed;display:flex;font-family:"Font Awesome 6 Pro", Raleway;font-size:1.2em;font-weight:100;line-height:2em;justify-content:center;padding-top:15px;opacity:.7;text-align:center;white-space:pre-wrap;position:absolute;top:0;right:0;bottom:0;left:0;z-index:10;}
 @media (prefers-color-scheme:dark) {
   .flex-grid a:hover figure, .flex-grid figure {box-shadow:unset;}
   .flex-grid a[disabled]:active figure * {filter:blur(8px);}
@@ -298,12 +299,12 @@ figure.soon h4 {margin-top:-6em;color:#17466d;}
 figure.apple-m1 {background-color:black;color:white;}
 figure.apple-m1 img {margin-top:-20px;max-height:140px;}
 figure.apple-m1:hover img {margin-top:-20px;max-height:160px;}
-figure.iphone-ipad {background-color:var(--bg-secondary);}
+figure.iphone-ipad {background-color:var(--bg2);}
 figure.iphone-ipad img {margin-top:-5px;}
 figure.iphone-ipad:hover img {margin-top:-5px;max-height:115px;}
 figure.iphone-ipad h4 {transition:all 250ms;}
 figure.iphone-ipad:hover h4 {padding-top:10px;}
-figure.data-intuition {background-color:var(--bg-secondary);}
+figure.data-intuition {background-color:var(--bg2);}
 figure.data-intuition img {max-height:110px;position:relative;z-index:-1;}
 figure.data-intuition:hover img {margin-top:-10px;max-height:130px;}
 /* two-img */
@@ -346,7 +347,7 @@ figure.two-img:hover img:last-child {opacity:1;}
 }
 
 /* FOOTER */
-#footer {font-size:calc(100% + .2vw);/*background-color:var(--bg-primary-alpha);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);*/}
+#footer {font-size:calc(100% + .2vw);/*background-color:var(--bg1-alpha);backdrop-filter:blur(40px) saturate(180%);-webkit-backdrop-filter:blur(40px) saturate(180%);*/}
 @media screen and (min-width:1200px) {
 #footer {border-radius:30px;margin-bottom:40px;}
 }
@@ -365,7 +366,7 @@ figure.two-img:hover img:last-child {opacity:1;}
     z-index:10;
   }
   #dynamicLoad {
-    background-color:var(--bg-primary-alpha);
+    background-color:var(--bg1-alpha);
     box-shadow:0 0 140px -25px rgba(0,0,0,.6);
     max-height:calc(100vh - 100px);
     overflow-y:auto;
@@ -387,10 +388,11 @@ figure.two-img:hover img:last-child {opacity:1;}
   --text-faint-alpha:#8f8e838f;
   --text-ultra-faint:#444;
   --highlight:#ff9696;
-  --bg-primary:#181818;
-  --bg-primary-alpha:#18181880;
-  --bg-secondary:#000;
-  --bg-tertiary:#202020;
+  --bg1:#181818;
+  --bg1-alpha:#18181880;
+  --bg2:#000;
+  --bg3:#202020;
+  --bg4:#1d1d1d;
   --selection:#fffcdb42;
 
   --highlight-text:linear-gradient(120deg, #ec9678, #d96363);
