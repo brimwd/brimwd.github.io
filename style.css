@@ -374,6 +374,9 @@ figure.two-img:hover img:last-child {opacity:1;}
     position:fixed;
     inset:0;
     z-index:10;
+    transition:all .3s;
+    backdrop-filter: blur(10px) saturate(0.5) brightness(0.6);
+    -webkit-backdrop-filter: blur(10px) saturate(0.5) brightness(0.6);
   }
 }
 @media screen and (min-width:1200px) {
