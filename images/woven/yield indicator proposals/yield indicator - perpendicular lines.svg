@@ -1,0 +1,68 @@
+<svg width="1030" height="1360" viewBox="0 0 1030 1360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_370_428)">
+<rect width="1030" height="1360" fill="#919195"/>
+<rect x="-381" width="656" height="1360" fill="#C0C2C8"/>
+<mask id="path-2-inside-1_370_428" fill="white">
+<path d="M0 926H155C221.274 926 275 979.726 275 1046V1360H0V926Z"/>
+</mask>
+<path d="M0 926H155C221.274 926 275 979.726 275 1046V1360H0V926Z" fill="#3D3D40"/>
+<path d="M0 872H155C251.098 872 329 949.902 329 1046H221C221 1009.55 191.451 980 155 980H0V872ZM275 1360H0H275ZM0 1360V926V1360ZM155 872C251.098 872 329 949.902 329 1046V1360H221V1046C221 1009.55 191.451 980 155 980V872Z" fill="#C0C2C8" mask="url(#path-2-inside-1_370_428)"/>
+<mask id="path-4-inside-2_370_428" fill="white">
+<path d="M0 0H275V117C275 183.274 221.274 237 155 237H0V0Z"/>
+</mask>
+<path d="M0 0H275V117C275 183.274 221.274 237 155 237H0V0Z" fill="#3D3D40"/>
+<path d="M0 0H275H0ZM329 117C329 213.098 251.098 291 155 291H0V183H155C191.451 183 221 153.451 221 117H329ZM0 237V0V237ZM329 0V117C329 213.098 251.098 291 155 291V183C191.451 183 221 153.451 221 117V0H329Z" fill="#C0C2C8" mask="url(#path-4-inside-2_370_428)"/>
+<rect width="656" height="1360" transform="matrix(-1 0 0 1 1411 0)" fill="#C0C2C8"/>
+<mask id="path-7-inside-3_370_428" fill="white">
+<path d="M1030 1360H755V1046C755 979.726 808.726 926 875 926H1030V1360Z"/>
+</mask>
+<path d="M1030 1360H755V1046C755 979.726 808.726 926 875 926H1030V1360Z" fill="#3D3D40"/>
+<path d="M1030 1360H755H1030ZM701 1046C701 949.902 778.902 872 875 872H1030V980H875C838.549 980 809 1009.55 809 1046H701ZM1030 926V1360V926ZM701 1360V1046C701 949.902 778.902 872 875 872V980C838.549 980 809 1009.55 809 1046V1360H701Z" fill="#C0C2C8" mask="url(#path-7-inside-3_370_428)"/>
+<mask id="path-9-inside-4_370_428" fill="white">
+<path d="M755 0L1030 0V237H875C808.726 237 755 183.274 755 117V0Z"/>
+</mask>
+<path d="M755 0L1030 0V237H875C808.726 237 755 183.274 755 117V0Z" fill="#3D3D40"/>
+<path d="M755 0L1030 0L755 0ZM1030 291H875C778.902 291 701 213.098 701 117H809C809 153.451 838.549 183 875 183H1030V291ZM875 291C778.902 291 701 213.098 701 117V0L809 0V117C809 153.451 838.549 183 875 183V291ZM1030 0V237V0Z" fill="#C0C2C8" mask="url(#path-9-inside-4_370_428)"/>
+<line x1="513.55" y1="926" x2="513.55" y2="1376" stroke="white" stroke-width="4"/>
+<rect x="275" y="926" width="236.55" height="14" fill="white"/>
+<line x1="514" y1="237" x2="514" y2="-213" stroke="white" stroke-width="4"/>
+<rect x="755" y="237" width="239" height="14" transform="rotate(180 755 237)" fill="white"/>
+<rect x="705" y="926" width="50" height="434" fill="#2B579A"/>
+<rect x="325" y="237" width="50" height="237" transform="rotate(-180 325 237)" fill="#2B579A"/>
+<rect x="-2" y="2" width="376" height="1648" transform="matrix(-1 0 0 1 701 -88)" stroke="white" stroke-width="4"/>
+<rect x="275" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 275 881.581)" fill="white"/>
+<rect x="320.752" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 320.752 881.581)" fill="white"/>
+<rect x="366.505" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 366.505 881.581)" fill="white"/>
+<rect x="412.258" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 412.258 881.581)" fill="white"/>
+<rect x="458.011" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 458.011 881.581)" fill="white"/>
+<rect x="503.562" y="881.581" width="600.581" height="22.8763" rx="2" transform="rotate(-90 503.562 881.581)" fill="white"/>
+<rect x="549.314" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 549.314 881.581)" fill="white"/>
+<rect x="595.066" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 595.066 881.581)" fill="white"/>
+<rect x="640.82" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 640.82 881.581)" fill="white"/>
+<rect x="686.572" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 686.572 881.581)" fill="white"/>
+<rect x="732.324" y="881.581" width="600.581" height="22.6756" rx="2" transform="rotate(-90 732.324 881.581)" fill="white"/>
+<rect x="275" y="940" width="50" height="420" fill="#2B579A"/>
+<path d="M296.748 962.541L295.477 962.031L296.504 958.255L299.68 956.266L301.391 956.061L302.515 956.521L303.248 957.337L304.226 959.633L307.5 961.419L306.914 962.541L303.883 961.419L302.515 960.347L301.782 963.612L303.883 966.929V973H302.271L302.026 967.949L299.876 965.194L298.165 968.715L295.917 972.847L294.5 971.98L296.357 968.153L297.726 962.796L299.338 959.021L297.872 959.429L296.748 962.541Z" fill="white"/>
+<ellipse cx="302.613" cy="954.531" rx="1.46617" ry="1.53061" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M289 968L285.5 963L289 958V960.402H291.5V965.598H289V968Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M312 968L315.5 963L312 958V960.402H309.5V965.598H312V968Z" fill="white"/>
+<rect x="283" y="982" width="34" height="6" fill="white"/>
+<rect x="288" y="995" width="24" height="6" fill="white"/>
+<rect x="293" y="1008" width="14" height="6" fill="white"/>
+<rect x="297" y="1021" width="6" height="6" fill="white"/>
+<rect x="755" y="223" width="50" height="223" transform="rotate(-180 755 223)" fill="#2B579A"/>
+<path d="M732.752 200.459L734.023 200.969L732.996 204.745L729.82 206.734L728.109 206.939L726.985 206.479L726.252 205.663L725.274 203.367L722 201.581L722.586 200.459L725.617 201.581L726.985 202.653L727.718 199.388L725.617 196.071L725.617 190L727.229 190L727.474 195.051L729.624 197.806L731.335 194.286L733.583 190.153L735 191.02L733.143 194.847L731.774 200.204L730.162 203.979L731.628 203.571L732.752 200.459Z" fill="white"/>
+<ellipse cx="726.887" cy="208.469" rx="1.46617" ry="1.53061" transform="rotate(-180 726.887 208.469)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M740.5 195L744 200L740.5 205L740.5 202.598L738 202.598L738 197.402L740.5 197.402L740.5 195Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M717.5 195L714 200L717.5 205L717.5 202.598L720 202.598L720 197.402L717.5 197.402L717.5 195Z" fill="white"/>
+<rect x="747" y="181" width="34" height="6" transform="rotate(-180 747 181)" fill="white"/>
+<rect x="742" y="168" width="24" height="6" transform="rotate(-180 742 168)" fill="white"/>
+<rect x="737" y="155" width="14" height="6" transform="rotate(-180 737 155)" fill="white"/>
+<rect x="733" y="142" width="6" height="6" transform="rotate(-180 733 142)" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_370_428">
+<rect width="1030" height="1360" fill="white"/>
+</clipPath>
+</defs>
+</svg>
