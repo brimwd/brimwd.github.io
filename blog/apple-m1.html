@@ -7,7 +7,7 @@
 <meta name="author" content="Leo Donahue">
 <meta name="format-detection" content="telephone=no">
 
-<title>Leo Donahue - Apple M1? What the heck is 'ARM'?</title>
+<title>B Donahue ("Leo") - Apple M1? What the heck is 'ARM'?</title>
 <!-- <meta property='og:image' content='/images/.png'/> -->
 <base href="../">
 
@@ -21,17 +21,17 @@
 <body>
 <article class="blog container-fluid"><div class="row"><div class="col-12">
 	<nav class="mb-5"><a href="index.html"><img src="favicon.ico" />Portfolio</a></nav>
-	<h1>Apple M1? What the heck is 'ARM'?</h1>
+	<h1>Apple M1? What the heck is &#8216;ARM&#8217;?</h1>
 	<h2>A mostly-complete, arguably-accurate, (and totally not-boring) illustrated guide to modern computer processors</h2>
 	<!-- <p><time datetime="2020-11-29">Nov 29, 2020</time> • 6 min read</p> -->
 
-	<p>First off, computer processors (aka "CPUs" or "Central Processing Units" if you wanna talk like a character in Star Trek) have largely been the unsung heroes of computer advances. When it comes to year-over-year processor-improvements, you have two main aspects:</p>
+	<p><span class="dropcap">F</span>irst off, computer processors (aka &#8220;CPUs&#8221; or &#8220;Central Processing Units&#8221; if you wanna talk like a character in Star Trek) have largely been the unsung heroes of computer advances. When it comes to year-over-year processor-improvements, you have two main aspects:</p>
 	<ol>
-		<li>"transistors" (the bits that do all the 'thinking') get smaller and more-numerous as the manufacturing technology gets better, and</li>
+		<li>&#8220;transistors&#8221; (the bits that do all the &#8216;thinking&#8217;) get smaller and more-numerous as the manufacturing technology gets better, and</li>
 		<li>the various other pieces get shuffled around to distribute heat / energy better</li>
 	</ol>
 
-	<p>The hardware is basically the same from chip to chip — it's just a question of how big your <b>transistors</b> are, how many <b>transistors</b> you have, and how all of the other pieces are arranged. In short:</p>
+	<p>The hardware is basically the same from chip to chip — it&#8217;s just a question of how big your <b>transistors</b> are, how many <b>transistors</b> you have, and how all of the other pieces are arranged. In short:</p>
 
 	<blockquote class="sms slug">
 		<p>More transistors = more brainpower</p>
@@ -40,14 +40,14 @@
 
 	<hr>
 
-	<p>Many articles I've seen are quick to point out "This isn't the first time Apple has changed <b>Architecture</b>", but they don't really explain what that means... If you'll forgive the analogy, <b>Imagine changing your car from gasoline to diesel</b>:</p>
+	<p>Many articles I&#8217;ve seen are quick to point out &#8220;This isn&#8217;t the first time Apple has changed <b>Architecture</b>&#8221;, but they don&#8217;t really explain what that means... If you&#8217;ll forgive the analogy, <b>Imagine changing your car from gasoline to diesel</b>:</p>
 
 	<blockquote>
-		<p>Both are "liquid fuels", and both "combust" in the engine block, and the end result is the same — through some magic, the wheels turn.</p>
-		<p>Still, you can't go to the regular gas pumps anymore and your 'remaining distance' estimate (if you have a fancy car with a computer) doesn't have a clue how far you can go.</p>
+		<p>Both are &#8220;liquid fuels&#8221;, and both &#8220;combust&#8221; in the engine block, and the end result is the same — through some magic, the wheels turn.</p>
+		<p>Still, you can&#8217;t go to the regular gas pumps anymore and your &#8216;remaining distance&#8217; estimate (if you have a fancy car with a computer) doesn&#8217;t have a clue how far you can go.</p>
 	</blockquote>
 
-	<p>Changing the <b>Architecture</b> in your processor is similar in many ways, because while there aren't any explosions (hopefully), the software ('fuel') runs with certain expectations about what the environment is like:</p>
+	<p>Changing the <b>Architecture</b> in your processor is similar in many ways, because while there aren&#8217;t any explosions (hopefully), the software (&#8216;fuel&#8217;) runs with certain expectations about what the environment is like:</p>
 
 	<blockquote>
 		<p>A gasoline burns fast at low-pressure (and the engine uses spark plugs); diesel burn slowly at high pressure (without spark plugs).</p>
@@ -55,75 +55,75 @@
 
 	<hr>
 
-	<p>When Apple changed <b>Architecture</b> the last time around, they built a special program called "Rosetta" to help ease the transition. When a program asks for a certain feature that the new processors don't have, <b>Rosetta</b> would intercept the request and would "fake" the answer.</p>
-	<p>Back in the early-90s, Apple was using a CPU from Motorola called the "68000 series" <emoji>🤷‍♂️</emoji>, but in 1994, the <b>PowerPC Architecture</b> (aka 'PPC') was introduced and Apple jumped ship.</p>
+	<p>When Apple changed <b>Architecture</b> the last time around, they built a special program called &#8220;Rosetta&#8221; to help ease the transition. When a program asks for a certain feature that the new processors don&#8217;t have, <b>Rosetta</b> would intercept the request and would &#8220;fake&#8221; the answer.</p>
+	<p>Back in the early-90s, Apple was using a CPU from Motorola called the &#8216;68000 series&#8217; <emoji>🤷‍♂️</emoji>, but in 1994, the <b>PowerPC Architecture</b> (aka &#8216;PPC&#8217;) was introduced and Apple jumped ship.</p>
 
 	<figure class="float-left">
-		<img src="images/blog/apple-m1/party.png" class="invert" title="A cartoon drawing of CPUs at a party under a banner that says 'ex-partners club'. Motorola 68000 says to x86 'You didn't think it would last forever, did you?'; PPC cheers 'Join the party!'" />
+		<img src="images/blog/apple-m1/party.png" class="invert" title="A cartoon drawing of CPUs at a party under a banner that says 'ex-partners club'. Motorola 68000 says to x86 'You didn&#8217;t think it would last forever, did you?'; PPC cheers 'Join the party!'" />
 		<figcaption>
 			<p>Give it another decade or so and the club is sure to have another member</p>
 		</figcaption>
 	</figure>
 
-	<p>Eleven years later (in 2005), Apple realized that the limitations of the <b>PowerPC Architecture</b> weren't worth the benefits and they made the hard choice to pivot their entire platform to use Intel's "<b>x86</b>" <b>Architecture</b> instead. Now in the 2000s there were a lot more Mac users than there were in the '90s, so Apple created the <b>Rosetta</b> program to ease the transition for anyone buying a new Mac.</p>
+	<p>Eleven years later (in 2005), Apple realized that the limitations of the <b>PowerPC Architecture</b> weren&#8217;t worth the benefits and they made the hard choice to pivot their entire platform to use Intel&#8217;s &#8216;<b>x86</b>&#8217; <b>Architecture</b> instead. Now in the 2000s there were a lot more Mac users than there were in the &#8217;90s, so Apple created the <b>Rosetta</b> program to ease the transition for anyone buying a new Mac.</p>
 	<p>Fast-forward fifteen years to today (in 2020), and...</p>
 
 	<blockquote>
-		<p>Apple realized that the limitations of the <b>Intel x86 Architecture</b> weren't worth the benefits and they made the hard choice to pivot their entire platform to use <b>their own custom chip on the 'ARM'  Architecture</b> instead.</p>
+		<p>Apple realized that the limitations of the <b>Intel x86 Architecture</b> weren&#8217;t worth the benefits and they made the hard choice to pivot their entire platform to use <b>their own custom chip on the &#8216;ARM&#8217;  Architecture</b> instead.</p>
 	</blockquote>
 
-	<p>Apple has been designing their own chips for years to use in iPhones, iPads, and watches, so I feel confident that their new <b>Apple 'M1' ARM</b> chips will be real workhorses. They've also updated their <b>Rosetta</b> program (now 'Rosetta 2') to do exactly the same thing it did before, except this time it helps the <b>ARM</b> version of MacOS run applications for the old <b>Intel x86 Architecture</b>.</p>
+	<p>Apple has been designing their own chips for years to use in iPhones, iPads, and watches, so I feel confident that their new <b>Apple &#8216;M1&#8217; ARM</b> chips will be real workhorses. They&#8217;ve also updated their <b>Rosetta</b> program (now &#8216;Rosetta 2&#8217;) to do exactly the same thing it did before, except this time it helps the <b>ARM</b> version of MacOS run applications for the old <b>Intel x86 Architecture</b>.</p>
 
 	<hr>
 
-	<p>Now you know what they're doing, but why make the switch? And how can Apple's M1 chips be 3x faster than comparable "Intel-type" (<b>x86</b>) chips? If you can forgive another analogy: <b>A processor's architecture is a lot like a house</b>...</p>
+	<p>Now you know what they&#8217;re doing, but why make the switch? And how can Apple&#8217;s M1 chips be 3x faster than comparable "Intel-type" (<b>x86</b>) chips? If you can forgive another analogy: <b>A processor&#8217;s architecture is a lot like a house</b>...</p>
 
 	<blockquote>
-		<p>Imagine you have a ranch-style one-floor house with a big yard. You can add a pool, you can add a garage and a guest suite, you can build a rooftop deck, and if you're really careful, you might be able to add a second floor or even a 3rd floor. Try adding a basement, though, and the whole house falls apart. Same, if you want to convert your yard to a launchpad for rocket ships, the city is going to come shut you down because you're not zoned for that.</p>
+		<p>Imagine you have a ranch-style one-floor house with a big yard. You can add a pool, you can add a garage and a guest suite, you can build a rooftop deck, and if you&#8217;re really careful, you might be able to add a second floor or even a 3rd floor. Try adding a basement, though, and the whole house falls apart. Same, if you want to convert your yard to a launchpad for rocket ships, the city is going to come shut you down because you&#8217;re not zoned for that.</p>
 	</blockquote>
 
 	<figure class="float-left">
-		<img src="images/blog/apple-m1/basic-house.png" class="invert" title="A cartoon-sketch of a simple, one-floor, 'ranch-style' house. There's a fence behind and a 2-tiered roof. The number is 'x86'" />
+		<img src="images/blog/apple-m1/basic-house.png" class="invert" title="A cartoon-sketch of a simple, one-floor, 'ranch-style' house. There&#8217;s a fence behind and a 2-tiered roof. The number is 'x86'" />
 	</figure>
 
-	<p>There's a certain point where an <b>Architecture</b> has hit its limits.. you might even remember back in ~2009 when everybody was trying to get "<em>4GB of RAM</em>" (computer memory), but "<em>Windows only supports 3GB</em>"... that wasn't actually Microsoft or Windows' fault. That was actually the limits of the <b>x86 Architecture</b>. When <b>x86</b> was introduced in 1978, "4GB of RAM" was inconceivable, and when <b>x86</b> was later-updated (in 1985), it was still inconceivable.</p>
+	<p>There&#8217;s a certain point where an <b>Architecture</b> has hit its limits.. you might even remember back in ~2009 when everybody was trying to get &#8220;<em>4GB of RAM</em>&#8221; (computer memory), but &#8220;<em>Windows only supports 3GB</em>&#8221;... that wasn&#8217;t actually Microsoft or Windows&#8217; fault. That was actually the limits of the <b>x86 Architecture</b>. When <b>x86</b> was introduced in 1978, &#8220;4GB of RAM&#82121; was inconceivable, and when <b>x86</b> was later-updated (in 1985), it was still inconceivable.</p>
 
 	<figure class="float-left">
 		<img src="images/blog/apple-m1/planning-x86.png" class="invert" title="A cartoon of chip-designers in the 1970s discussing the need for 'at least 128KB of memory' in the next design." />
 		<figcaption>
-			<p>I wasn't around for the conversation, but I imagine it went something like this...</p>
+			<p>I wasn&#8217;t around for the conversation, but I imagine it went something like this...</p>
 		</figcaption>
 	</figure>
 
 	<p>For decades, all of our computers were running on <em><b>the best-laid plans of engineers in the 70s...</b></em></p>
-	<p>In 2003 the <b>x86 Architecture</b> was updated from the "<b>32-bit</b>" computing of the 1980s to a more powerful "<b>64-bit</b>" way of doing things.</p>
-	<p>On the surface, it just looked like an update "to allow for more than 3GB of RAM", although technically it does a lot more than that. (More about memory in the footnote)</p>
-	<p>Finally, let's return to our analogy about upgrading your house...</p>
+	<p>In 2003 the <b>x86 Architecture</b> was updated from the &#8220;<b>32-bit</b>&#8221; computing of the 1980s to a more powerful &#8220;<b>64-bit</b>&#8221; way of doing things.</p>
+	<p>On the surface, it just looked like an update &#8220;to allow for more than 3GB of RAM&#8221;, although technically it does a lot more than that. (More about memory in the footnote)</p>
+	<p>Finally, let&#8217;s return to our analogy about upgrading your house...</p>
 
 	<blockquote>
-		<p>Once you've maximized every square inch of your plot, there's nothing else you can add without taking something out, and your house is such a hulking behemoth that it takes an hour to find the bathroom.</p>
+		<p>Once you&#8217;ve maximized every square inch of your plot, there&#8217;s nothing else you can add without taking something out, and your house is such a hulking behemoth that it takes an hour to find the bathroom.</p>
 	</blockquote>
 
 	<figure class="float-left">
 		<img src="images/blog/apple-m1/permit-denied.png" class="invert" title="A sketch of the same house with a second floor added and a pool. An outline of a rocket in the backyard says 'PERMIT DENIED'" />
 	</figure>
 
-	<p>When you reach that point in your <b>Architecture</b> fantasy where you can't go any further, you can <em>cling desperately to what you have because it's "home"</em> <strong>or</strong> you can <em>take the best things that you learned</em> from <b>x86</b> and move to <b>ARM</b> to start fresh - this time with plans for a basement AND a rocket-ship.</p>
-	<p>I don't know about you, but I think Apple's transition to <b>ARM</b> will go just fine... <em>and I can't wait for Microsoft to work up the courage to make the switch, too.</em></p>
+	<p>When you reach that point in your <b>Architecture</b> fantasy where you can&#8217;t go any further, you can <em>cling desperately to what you have because it&#8217;s &#8220;home&#8221;</em> <strong>or</strong> you can <em>take the best things that you learned</em> from <b>x86</b> and move to <b>ARM</b> to start fresh - this time with plans for a basement AND a rocket-ship.</p>
+	<p>I don&#8217;t know about you, but I think Apple&#8217;s transition to <b>ARM</b> will go just fine... <em>and I can&#8217;t wait for Microsoft to work up the courage to make the switch, too.</em></p>
 
 	<hr>
 
 	<p><b class="big">Footnote about how memory works</b></p>
-	<p>If you're wondering "why was there ever a 'memory-limit' on Windows in the first place?", it's because (one more analogy!) "RAM" memory is a little like a phone book...</p>
+	<p>If you&#8217;re wondering &#8220;why was there ever a &#8216;memory-limit&#8217; on Windows in the first place?&#8221;, it&#8217;s because (one more analogy!) &#8220;RAM&#8221; memory is a little like a phone book...</p>
 
 	<blockquote>
-		<p>Imagine your phone placed a call as soon as you dialed a single digit; there'd only be enough numbers for 10 people. (0, 1, 2, and so on until you reach the highest number, 9)</p>
+		<p>Imagine your phone placed a call as soon as you dialed a single digit; there&#8217;d only be enough numbers for 10 people. (0, 1, 2, and so on until you reach the highest number, 9)</p>
 		<p>If you have 2 digits available, then you can call up to 100 people. (00, 01, etc until you reach 99)</p>
-		<p>If you have 3 digits, you can call 1000 people... you see where I'm going.</p>
+		<p>If you have 3 digits, you can call 1000 people... you see where I&#8217;m going.</p>
 	</blockquote>
 
-	<p>The <b>32-bit</b> processor <b>Architectures</b> of the '80s could "dial" 2<sup>32</sup> numbers and get the memory stored there (which ends up being about 3.2 gigabytes at the high-end). By increasing the computing capacity with <b>64-bit Architectures</b>, processors can now "dial" 2<sup>64</sup> numbers to access a whopping <strong>16.8 exabytes</strong> of memory. <em>That's 16.8 billion gigabytes!</em></p>
-	<p><em>Suffice it to say that we probably won't have to increase our computing bits for the sake of "maximum addressable memory" anytime soon.</em></p>
+	<p>The <b>32-bit</b> processor <b>Architectures</b> of the &#8217;80s could &#8220;dial&#8221; 2<sup>32</sup> numbers and get the memory stored there (which ends up being about 3.2 gigabytes at the high-end). By increasing the computing capacity with <b>64-bit Architectures</b>, processors can now &#8220;dial&#8221; 2<sup>64</sup> numbers to access a whopping <strong>16.8 exabytes</strong> of memory. <em>That&#8217;s 16.8 billion gigabytes!</em></p>
+	<p><em>Suffice it to say that we probably won&#8217;t have to increase our computing bits for the sake of &#8220;maximum addressable memory&#8221; anytime soon.</em></p>
 	<p>When Windows and (<em>with more pomp and circumstance</em>) MacOS were updated to operate on the 64-bit version of <b>x86</b>, that was also an <b>Architecture</b> change, but because the 64-bit version of <b>x86</b> was built with the same core design as the 32-bit version, the <b>Architecture</b> was automatically backwards-compatible for old <b>x86</b> software.</p>
 	<p>That meant that old programs could still run (<em>including, unfortunately, old viruses and malware</em>), but it also meant that we were stuck with old mistakes and issues from the 32-bit version of the <b>x86 Architecture</b>, too.</p>
 
@@ -139,7 +139,7 @@
 
 	<hr>
 
-	<p><strong>Thanks for reading.</strong> For more design honesty and maybe some wisdom, <a href="https://brimwd.github.io">visit my portfolio</a>, <a href="https://twitter.com/_bmd" target="_blank">drop me a line</a>, or <a href="mailto:brimwd@gmail.com">offer me a job</a>.</p>
+	<p><strong>Thanks for reading.</strong> For more design honesty and maybe some wisdom, <a href="https://brimwd.github.io">visit my portfolio</a>, or <a href="mailto:hello@brownjuice.co">offer me a job</a>.</p>
 
 	<p>See ya' later, Cowpoke.</p>
 	<footer class="mt-5 text-center">
@@ -147,9 +147,9 @@
 		<p class="icons">
 			<a class="icon" href="https://linkedin.com/in/donahuebrian" target="_blank"><i class="fab fa-linkedin fa-2x" aria-label="linkedin"></i></a>
 			<span>&bullet;</span>
-			<a class="icon" href="mailto:brimwd@gmail.com"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a>
+			<a class="icon" href="mailto:hello@brownjuice.co"><i class="fad fa-mailbox fa-2x" aria-label="email"></i></a>
 			<span>&bullet;</span>
-			<a class="icon" href="sms:971-222-9892"><i class="fas fa-sms fa-2x" aria-label="email"></i></a>
+			<a class="icon" href="sms:408-256-2334"><i class="fas fa-sms fa-2x" aria-label="sms"></i></a>
 		</p>
 		<p><a href="index.html">Portfolio</a></p>
 	</footer>
