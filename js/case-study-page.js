@@ -1,6 +1,6 @@
 function configureSinglePage() {
 	$(`head`)
-		.prepend($(`<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-170028521-4');</script>`))
+		.prepend($(`<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL67DCGTZ7"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-DL67DCGTZ7');</script>`))
 		.prepend($(`<link rel="stylesheet" type="text/css" href="style.css">`))
 		.prepend($(`<link href="https://fonts.googleapis.com/css?family=Raleway:300,600,700&display=swap" rel="stylesheet">`))
 		.prepend($(`<script src="https://kit.fontawesome.com/fe72761270.js" crossorigin="anonymous"></script>`))
