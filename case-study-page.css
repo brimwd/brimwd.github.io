@@ -135,12 +135,13 @@ img.can-zoom.zoom {width:100%;}
 .fa-sms:hover {color:#54B852;}
 
 figure {margin:0;}
-picture.full-width source, picture.full-width img {width:100%;margin:0 auto;}
+picture.full-width source, picture.full-width img, img.full-width {width:100%;margin:0 auto;}
 
 @media (prefers-color-scheme:dark){
 	.case-study > footer a {color:#777!important;}
-	picture.full-width {opacity:.8;}
-	picture.full-width:hover, picture.full-width:active, picture.full-width:focus {opacity:1;}
+	picture.full-width, img.full-width {opacity:.8;}
+	picture.full-width:hover, picture.full-width:active, picture.full-width:focus,
+	img.full-width:hover, img.full-width:active, img.full-width:focus {opacity:1;}
 }
 
 /* DEMO-PLAYER STYLES */

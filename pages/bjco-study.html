@@ -11,7 +11,7 @@
 }
 @media (prefers-color-scheme:dark){}
 
-.case-study header {background-color:var(--brand);background-image:url("../images/bjco/logo-header.png");background-size:78px 78px;color:black;}
+.case-study header {background-color:var(--brand);color:black;}
 .case-study h2 {color:black;}
 .case-study a[href]:not(.btn) {border-bottom-color:var(--link);color:var(--link);}
 
@@ -37,8 +37,8 @@ $(document).ready(function() {
 <body>
 <article class="case-study">
 <header>
-  <img src="../images/bluetooth/bluetooth.svg" alt="Bluetooth Logo" />
-  <h1>Brown Juice Co's "Design Externship"</h1>
+  <img src="../images/bjco/logo-header.png" alt="Bluetooth Logo" />
+  <h1>"Design Externship"</h1>
   <p>Transforming curated content into an interactive learning experience</p>
   <time datetime="2025-02-21">February 21, 2025</time>
 </header>
@@ -100,26 +100,26 @@ $(document).ready(function() {
 <section>
   <h2>UI Concepts</h2>
   <p>What started as a fun design exercise quickly gained momentum. We sketched layouts and refined the structure. Coming up with these wireframes helped us have a cohesive language and helped us imagine what it would be like to use the service.</p>
-  <img src="../images/bjco/wireframes.jpg" class="can-expand invert" alt="design wireframes" />
+  <img src="../images/bjco/wireframes.jpg" class="can-zoom invert" alt="design wireframes" />
   <p>We considered user flows, ways to encourage engagement, and how to make the learning experience as seamless as possible.</p>
   <p>Next we took notes on the data we would need. We wanted to track the author, title, source, and url... etc.</p>
-  <img src="../images/bjco/data.jpg" class="can-expand invert" alt="rough notes on data that the app needs and how the data will be used" />
+  <img src="../images/bjco/data.jpg" class="can-zoom invert" alt="rough notes on data that the app needs and how the data will be used" />
   <p>Since we knew we were wanted to load the list of all articles, it was important to have a really light-weight bit of data containing all of the links.</p>
-  <img src="../images/bjco/midfi.jpg" class="can-expand invert" alt="'mid-fi' design mockups" />
+  <img src="../images/bjco/midfi.jpg" class="can-zoom invert" alt="'mid-fi' design mockups" />
   <p>There are hundreds of links, so it would be too much to load the data for all of the articles at the same time. Instead, we decided to separate out all of the &#8220;article data&#8221; (the summary, key points, etc) and then just load it when the user clicks on the corresponding link.</p>
   <p>It&#8217;s really valuable to think about flows and to consider what data you need on each page. The engineers will make the final call about what&#8217;s best for the system, but if you can explain your ideas and reasoning, that can help them design a system that works even better.</p>
   <p>As the designs came together, the work became more fun and thrilling. Pretty quickly we were exploring design variations and trying to develop the brand.</p>
-  <img src="../images/bjco/colors.jpg" class="full invert" alt="color variations of the previous mockups" />
+  <img src="../images/bjco/colors.jpg" class="full-width invert" alt="color variations of the previous mockups" />
 </section>
 <blockquote>
   <p>While this product started as a fun design exercise, the project quickly gathered momentum, and soon we were excited-enough to develop it. That&#8217;s a good lesson in design: &#8220;Even if an idea is great, a lot of times people have to literally see it (or see design mock-ups) before they can imagine it and get excited about it&#8221;. That even applies to experienced designers like me.</p>
 </blockquote>
 <section>
   <h2>Finding Issues</h2>
-  <img src="../images/bjco/baddata.jpg" class="can-expand invert" alt="design wireframes" />
+  <img src="../images/bjco/baddata.jpg" class="can-zoom invert" alt="design wireframes" />
   <p>Through prototyping and testing, we refined the experience further. We made adjustments to the structure, improved readability, and looked for areas where the UI might end up getting cluttered or unwieldy.</p>
   <p>By bringing screenshots of chaotic-looking websites into our design (an example of &#8220;bad data&#8221; for our use case), we realized that some of our ideas involving putting toolbars over the content wouldn't work.</p>
-  <img src="../images/bjco/simplify.jpg" class="can-expand invert" alt="design wireframes" />
+  <img src="../images/bjco/simplify.jpg" class="can-zoom invert" alt="design wireframes" />
   <p>As we became more-confident in the design, we also worked to align our language and streamline our color palette.</p>
 </section>
 <blockquote>
@@ -127,9 +127,9 @@ $(document).ready(function() {
 </blockquote>
 <section>
   <h2>Expanding Scope</h2>
-  <img src="../images/bjco/pageslist.jpg" class="can-expand invert" alt="a list of supporting pages we might need" />
+  <img src="../images/bjco/pageslist.jpg" class="can-zoom invert" alt="a list of supporting pages we might need" />
   <p>A nice UI is great, but without the supporting pages (sign-up, privacy, error pages, etc), it&#8217;s not really a complete product. We created a list of the pages we thought we might need and tried to fit them into a mock-up navigation.</p>
-  <img src="../images/bjco/expandscope.jpg" class="can-expand invert" alt="a list of features and data we would need to add a 'jobs board'" />
+  <img src="../images/bjco/expandscope.jpg" class="can-zoom invert" alt="a list of features and data we would need to add a 'jobs board'" />
   <p>We also thought of ways we could naturally flow the UX into a &#8220;jobs board&#8221; so people studying could also see job openings and think about (or brush up on) articles that might be related.</p>
   <p>A jobs board is a whole product in its own right, but it&#8217;s <em>feels</em> related because (<em>as far as we can tell</em>) most people who are studying are either trying to land a job or advance their career.</p>
   <p>That was still the perfect time to start thinking of other features, because it&#8217;s still fast to discuss, explore, and decide the direction before the product goes to engineering.</p>
@@ -141,28 +141,28 @@ $(document).ready(function() {
   <p>Here you can see a quick test I did where I edited the code for <a href="https://brownjuice.co" target="_blank">Brown Juice Co&#8217;s homepage</a> and replaced the header with an <code>iFrame</code>.</p>
   <p>Once I added the <code>iFrame</code>, I was able to style it a bit with <code>CSS</code> and I learned that you can invert the contents of an <code>iFrame</code> with CSS styles.</p>
   <p>&#8220;Prototyping&#8221; sounds like a big, daunting concept, but sometimes a &#8220;prototype&#8221; is as simple as just editing a few lines of code in your browser&#8217;s &#8216;developer tools&#8217;.</p>
-  <img src="../images/bjco/prototype.jpg" class="full invert" alt="a screenshot of a webpage with an iFrame injected into the page. The iFrame's colors are inverted." />
+  <img src="../images/bjco/prototype.jpg" class="full-width invert" alt="a screenshot of a webpage with an iFrame injected into the page. The iFrame's colors are inverted." />
   <p>Once I knew I could invert the articles, then it also became useful to know the site&#8217;s &#8216;color scheme&#8217; (at least in terms of light vs dark) so that we can invert it to match the user&#8217;s preferences.</p>
 </section>
 <section>
   <h2>Responsive Design</h2>
-  <img src="../images/bjco/mobile.jpg" class="full invert" alt="design mockups for mobile" />
+  <img src="../images/bjco/mobile.jpg" class="full-width invert" alt="design mockups for mobile" />
   <p>When designing for the web, it's critical to consideration how the UI will look on other screen sizes and aspect ratios.</p>
-  <img src="../images/bjco/tablet.jpg" class="full invert" alt="design mockups for tablet" />
+  <img src="../images/bjco/tablet.jpg" class="full-width invert" alt="design mockups for tablet" />
   <p>We knew what we wanted our 'desktop' layout to look like, so we next started exploring how the UI should work on 'mobile'.</p>
 </section>
 <section>
   <h2>Bringing It To Life</h2>
   <p>Once we felt confident in our design, I was able to developed a basic &#8216;MVP&#8217; (minimum viable product) from our notes with just a few days of work.</p>
   <p><b>We launched our MVP on February 20, 2025.</b></p>
-  <img src="../images/bjco/tablet.jpg" class="full invert" alt="design wireframes" />
+  <img src="../images/bjco/tablet.jpg" class="full-width invert" alt="design wireframes" />
   <p>Now that the MVP is live, we can start aiming for the "minimum lovable product"</p>
-  <img src="../images/misc/minimum-lovable-product.png" class="full invert" alt="design wireframes" />
+  <img src="../images/misc/minimum-lovable-product.png" class="full-width invert" alt="design wireframes" />
   <p>From here, most teams would start adding new <strong>big</strong> features to make the application solve new problems. We want a product that people will love, though, so we'll instead focus on improving the features we have.</p>
   <p>The idea is "one main function that works well" rather than "10 major functions that all work poorly and inconsistently".</p>
-  <img src="../images/bjco/supportingpages.jpg" class="full invert" alt="design wireframes" />
+  <img src="../images/bjco/supportingpages.jpg" class="full-width invert" alt="design wireframes" />
   <p>For today, that means adding the missing supporting pages and some "quality of life" improvements. One feature that didn't make the cut for the MVP is making it so that the site can load directly to a selected article when someone shares a link. We're hoping that "word of mouth" marketing will help people find this resource, so making it easy to share specific links feels like a high priority -- even higher than allowing people to "create accounts" (which I think most product teams assume will be a default MVP feature).</p>
-  <img src="../images/bjco/refine.jpg" class="can-expand invert" alt="design wireframes" />
+  <img src="../images/bjco/refine.jpg" class="can-zoom invert" alt="design wireframes" />
   <p>We're also working to improve some of the layout and small functions like designing the UI for users to "report issues", refresh the article, and share directly to social media.</p>
 </section>
 <section>
