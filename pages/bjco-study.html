@@ -1,0 +1,176 @@
+<html>
+<head>
+<title>B Donahue ("Leo") - Creating Brown Juice Co's "Design Externship"</title>
+<meta property='og:image' content='/images/bjco/design-externship.png'/>
+<link rel="stylesheet" type="text/css" href="../case-study-page.css">
+<style type="text/css">
+/* BLUETOOTH CASE STUDY */
+:root{
+  --brand:#ffdc68;
+  --link:#ffdc68;
+}
+@media (prefers-color-scheme:dark){}
+
+.case-study header {background-color:var(--brand);background-image:url("../images/bjco/logo-header.png");background-size:78px 78px;color:black;}
+.case-study h2 {color:black;}
+.case-study a[href]:not(.btn) {border-bottom-color:var(--link);color:var(--link);}
+
+.case-study .play.btn {background-color:var(--brand);color:black;margin-right:10px;}
+.case-study .btn {background-color:var(--text-ultra-faint);margin-top:0;}
+</style>
+<script class="case-study-page" type="text/javascript">
+  <!--
+  // This code will add a new <script> element just after the current one
+  // It is important to wrap this code in an HTML comment tag to avoid the closing script tag in the lines below to be parsed by the browser
+  if (typeof jQuery == 'undefined')
+    document.write('<script type="text/javascript" src="../js/jquery.min.js"></script>');
+  -->
+</script>
+<script class="case-study-page" type="text/javascript" src="../js/case-study-page.js"></script>
+<script type="text/javascript" src="../js/case-study.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  /* any events or js functions */
+});
+</script>
+</head>
+<body>
+<article class="case-study">
+<header>
+  <img src="../images/bluetooth/bluetooth.svg" alt="Bluetooth Logo" />
+  <h1>Brown Juice Co's "Design Externship"</h1>
+  <p>Transforming curated content into an interactive learning experience</p>
+  <time datetime="2025-02-21">February 21, 2025</time>
+</header>
+<section class="overview">
+  <h2>Overview</h2>
+  <p><strong>Role:</strong> Designer, Engineer, Manager</p>
+  <p><strong>Task:</strong> Turn a curated list of design articles into an interactive online learning experience</p>
+  <p>For over a decade, I immersed myself in daily study, bookmarking the most insightful design articles I encountered. These articles covered a wide range of topics—from psychology to color theory to design philosophy. After I landed my first design job, I began mentoring aspiring designers and these bookmarks were an essential teaching resource.</p>
+  <blockquote>
+    <p>A wonderful manager I had at Amazon told me &#8220;the only difference between a junior, a mid-level, and a senior designer is &#8216;how many answers they have in their back pocket&#8217;.&#8221;</p>
+    <p>Over time, designers get faster at creating designs, they get better at using their tools, but the real difference is not in how well you think, but in how many examples you can &#8220;point to&#8221;. The more you know, the more mistakes you can avoid. Your advice becomes better through wisdom and experience.</p>
+    <p>One shortcut you can take in your career is to be proactive in your learning: don&#8217;t wait for lessons to come to you on the job; study, learn, make it your passion to know everything you can that&#8217;s even remotely-related to your work. You never know when it will come in handy.</p>
+  </blockquote>
+  <p>I spent hours each week guiding my mentees&mdash;helping them build skills, develop portfolios, and break into the industry.</p>
+  <p>As my career grew, I had less time for one-on-one mentorship, but I still wanted to support aspiring designers and make learning more accessible.</p>
+  <p>I had seen that the designers who were most successful were also the most proactive in their learning and work, so I compiled my bookmarks into a simple webpage, categorizing them by topic and structuring them in a logical order for self-paced learning. That way, anybody who had the drive to learn could do it with a curriculum of proven-materials. Free knowledge for anyone who had the motivation to come and claim it.</p>
+  <p>The page has taken on a life of its own, having reached hundreds of learners. The one piece of feedback I consistently receive is <em>&#8220;You should turn this into a course (with progress tracking, quizzes, etc.) — you could even sell it!&#8221;</em></p>
+  <p>The goal for me has always been to share knowledge freely and help people uplift themselves... Also I don&#8217;t own any of the content, so I might be in a bit of a &#8220;legal gray area&#8221; in terms of &#8220;selling&#8221; it.</p>
+  <p>Fast forward to today: I own a marketing company, and I am training designers again - this time for my own team. After sharing the bookmarks with my newest designer, I saw an opportunity to turn that user request (&#8220;create a course!&#8221;) into design challenge. I invited my new designer to collaborate on the design, giving us the chance to experiment with the design in a no-pressure environment.</p>
+  <p>Here's how it went...</p>
+</section>
+
+<blockquote>
+  <p>&#8220;It was an exciting UX problem&mdash;how do you create an engaging course from hundreds of text-based articles while keeping it structured and user-friendly?&#8221;</p>
+</blockquote>
+
+<section>
+  <h2>Problem &amp; Goal Statements</h2>
+  <p>Based on feedback I&#8217;ve received over the years, as well as my own ideas about issues and opportunities, I compiled a list of Problems and Goals.</p>
+  <p class="list-header">Problems with the original list:</p>
+  <ul>
+    <li><b>Users often read the list out of order</b><br />It&#8217;s not necessary to go in order, but it becomes harder to keep track of which articles you&#8217;ve read.</li>
+    <li><b>There&#8217;s no obvious way to &#8220;report issues&#8221; if a link is broken</b><br />Occasionally people will email me, but mostly the problems go unresolved.</li>
+    <li><b>The articles are sometimes written by &#8220;false&#8221; experts</b><br />There&#8217;s still something to learn from reading the articles, but without context, it&#8217;s easy for students to become confused by the mixed messages.</li>
+    <li><b>A lot of the articles may seem &#8220;irrelevant&#8221; based on the title</b><br />If students don&#8217;t feel like an article is relevant to them, they&#8217;re unlikely to read it.</li>
+    <li><b>Most articles don&#8217;t support &#8216;dark mode&#8217; or other accessibility features</b><br />Students using &#8216;dark mode&#8217; on their computer will be constantly switching between dark backgrounds and light backgrounds depending on whether or not the publishers support &#8220;dark mode&#8221; or other accessibility features around typography or colors.</li>
+    <li><b>There&#8217;s nowhere to take notes or provide feedback</b><br />Students often want to take notes and keep them with the source. Likewise, if article is great (or terrible), there&#8217;s no way to provide that feedback.</li>
+    <li><b>Offering the links doesn&#8217;t fully replace mentorship</b><br />In addition to the insights I offered, I also helped my students write their r&eacute;sum&eacute;s, prepare for interviews, apply for jobs, etc.</li>
+    <li><b>The design of the page is too simple</b><br />Because the page didn&#8217;t look &#8220;designed&#8221; (in the sense of having a nice layout, background-colors, nice typography, graphics and icons, etc), some people didn&#8217;t value it as a resource, because it didn&#8217;t <em>look like</em> something valuable.</li>
+  </ul>
+  <p class="list-header">Goals:</p>
+  <ul>
+    <li><span class="highlight">Keep the service free</span>: There's lots of free and paid learning content on the web, so if we can't compete on "quality" (in this case, in terms of brand recognition), then we have to compete on price</li>
+    <li><span class="highlight">Give context to the links</span> with summaries and key-points for each article</li>
+    <li><span class="highlight">Make it easy to &#8220;flag&#8221; broken links</span> so that I can find and fix them more quickly</li>
+    <li><span class="highlight">Offer backups of the articles</span> in case the publisher takes the content down</li>
+    <li><span class="highlight">Keep operational costs to a minimum</span>: If we're not charging for the service, then we need to figure out how to offer it as inexpensively as possible</li>
+    <li><span class="highlight">Improve the layout and experience on &#8220;smart phones&#8221; and other small-screen devices</span></li>
+    <li>Add basic &#8220;quality of life&#8221; features to help students keep track which articles they&#8217;ve read, or find articles they want to come back to</li>
+    <li>Add accessibility features to respect &#8220;dark mode&#8221; settings and improve readability where possible</li>
+    <li>Separate out links to tools or other online courses so that they&#8217;re easy to find and don&#8217;t get lost among the articles</li>
+    <li>Reduce our reliance on opening new tabs for each article</li>
+    <li>Implement some &#8220;gamification&#8221; features to help students stay motivated and encourage them to work through all of the content</li>
+    <li>Add quizzes or other tools to help students review what they&#8217;ve learned or quickly return to articles they need to review</li>
+    <li>Find ways to monetize that don&#8217;t require &#8220;gate-keeping&#8221; the content behind a subscription fee or paywall</li>
+    <li>Leave the door open to expand into features and tools that can help students land jobs</li>
+  </ul>
+</section>
+<section>
+  <h2>UI Concepts</h2>
+  <p>What started as a fun design exercise quickly gained momentum. We sketched layouts and refined the structure. Coming up with these wireframes helped us have a cohesive language and helped us imagine what it would be like to use the service.</p>
+  <img src="../images/bjco/wireframes.jpg" class="can-expand invert" alt="design wireframes" />
+  <p>We considered user flows, ways to encourage engagement, and how to make the learning experience as seamless as possible.</p>
+  <p>Next we took notes on the data we would need. We wanted to track the author, title, source, and url... etc.</p>
+  <img src="../images/bjco/data.jpg" class="can-expand invert" alt="rough notes on data that the app needs and how the data will be used" />
+  <p>Since we knew we were wanted to load the list of all articles, it was important to have a really light-weight bit of data containing all of the links.</p>
+  <img src="../images/bjco/midfi.jpg" class="can-expand invert" alt="'mid-fi' design mockups" />
+  <p>There are hundreds of links, so it would be too much to load the data for all of the articles at the same time. Instead, we decided to separate out all of the &#8220;article data&#8221; (the summary, key points, etc) and then just load it when the user clicks on the corresponding link.</p>
+  <p>It&#8217;s really valuable to think about flows and to consider what data you need on each page. The engineers will make the final call about what&#8217;s best for the system, but if you can explain your ideas and reasoning, that can help them design a system that works even better.</p>
+  <p>As the designs came together, the work became more fun and thrilling. Pretty quickly we were exploring design variations and trying to develop the brand.</p>
+  <img src="../images/bjco/colors.jpg" class="full invert" alt="color variations of the previous mockups" />
+</section>
+<blockquote>
+  <p>While this product started as a fun design exercise, the project quickly gathered momentum, and soon we were excited-enough to develop it. That&#8217;s a good lesson in design: &#8220;Even if an idea is great, a lot of times people have to literally see it (or see design mock-ups) before they can imagine it and get excited about it&#8221;. That even applies to experienced designers like me.</p>
+</blockquote>
+<section>
+  <h2>Finding Issues</h2>
+  <img src="../images/bjco/baddata.jpg" class="can-expand invert" alt="design wireframes" />
+  <p>Through prototyping and testing, we refined the experience further. We made adjustments to the structure, improved readability, and looked for areas where the UI might end up getting cluttered or unwieldy.</p>
+  <p>By bringing screenshots of chaotic-looking websites into our design (an example of &#8220;bad data&#8221; for our use case), we realized that some of our ideas involving putting toolbars over the content wouldn't work.</p>
+  <img src="../images/bjco/simplify.jpg" class="can-expand invert" alt="design wireframes" />
+  <p>As we became more-confident in the design, we also worked to align our language and streamline our color palette.</p>
+</section>
+<blockquote>
+  <p>As the design started taking shape, we came up with more ideas for how to take the product further. In my experience, these <emoji>✨</emoji><strong>ideas</strong><emoji>✨</emoji> are some of the most valuable things you can contribute as a designer. It doesn&#8217;t matter if they ever get built; write them down, make concepts and share them &mdash; who knows what you&#8217;ll inspire.</p>
+</blockquote>
+<section>
+  <h2>Expanding Scope</h2>
+  <img src="../images/bjco/pageslist.jpg" class="can-expand invert" alt="a list of supporting pages we might need" />
+  <p>A nice UI is great, but without the supporting pages (sign-up, privacy, error pages, etc), it&#8217;s not really a complete product. We created a list of the pages we thought we might need and tried to fit them into a mock-up navigation.</p>
+  <img src="../images/bjco/expandscope.jpg" class="can-expand invert" alt="a list of features and data we would need to add a 'jobs board'" />
+  <p>We also thought of ways we could naturally flow the UX into a &#8220;jobs board&#8221; so people studying could also see job openings and think about (or brush up on) articles that might be related.</p>
+  <p>A jobs board is a whole product in its own right, but it&#8217;s <em>feels</em> related because (<em>as far as we can tell</em>) most people who are studying are either trying to land a job or advance their career.</p>
+  <p>That was still the perfect time to start thinking of other features, because it&#8217;s still fast to discuss, explore, and decide the direction before the product goes to engineering.</p>
+</section>
+<section>
+  <h2>Prototyping</h2>
+  <p>Because we knew we wanted to load the articles on the same page, there&#8217;s only a few ways to do that on the web. The main way is called an <code>iFrame</code>.</p>
+  <p>I think it&#8217;s immensely valuable to have web-dev skills as a designer, because you can test out ideas and prototype things that your engineering team might not have the time to research or experiment with.</p>
+  <p>Here you can see a quick test I did where I edited the code for <a href="https://brownjuice.co" target="_blank">Brown Juice Co&#8217;s homepage</a> and replaced the header with an <code>iFrame</code>.</p>
+  <p>Once I added the <code>iFrame</code>, I was able to style it a bit with <code>CSS</code> and I learned that you can invert the contents of an <code>iFrame</code> with CSS styles.</p>
+  <p>&#8220;Prototyping&#8221; sounds like a big, daunting concept, but sometimes a &#8220;prototype&#8221; is as simple as just editing a few lines of code in your browser&#8217;s &#8216;developer tools&#8217;.</p>
+  <img src="../images/bjco/prototype.jpg" class="full invert" alt="a screenshot of a webpage with an iFrame injected into the page. The iFrame's colors are inverted." />
+  <p>Once I knew I could invert the articles, then it also became useful to know the site&#8217;s &#8216;color scheme&#8217; (at least in terms of light vs dark) so that we can invert it to match the user&#8217;s preferences.</p>
+</section>
+<section>
+  <h2>Responsive Design</h2>
+  <img src="../images/bjco/mobile.jpg" class="full invert" alt="design mockups for mobile" />
+  <p>When designing for the web, it's critical to consideration how the UI will look on other screen sizes and aspect ratios.</p>
+  <img src="../images/bjco/tablet.jpg" class="full invert" alt="design mockups for tablet" />
+  <p>We knew what we wanted our 'desktop' layout to look like, so we next started exploring how the UI should work on 'mobile'.</p>
+</section>
+<section>
+  <h2>Bringing It To Life</h2>
+  <p>Once we felt confident in our design, I was able to developed a basic &#8216;MVP&#8217; (minimum viable product) from our notes with just a few days of work.</p>
+  <p><b>We launched our MVP on February 20, 2025.</b></p>
+  <img src="../images/bjco/tablet.jpg" class="full invert" alt="design wireframes" />
+  <p>Now that the MVP is live, we can start aiming for the "minimum lovable product"</p>
+  <img src="../images/misc/minimum-lovable-product.png" class="full invert" alt="design wireframes" />
+  <p>From here, most teams would start adding new <strong>big</strong> features to make the application solve new problems. We want a product that people will love, though, so we'll instead focus on improving the features we have.</p>
+  <p>The idea is "one main function that works well" rather than "10 major functions that all work poorly and inconsistently".</p>
+  <img src="../images/bjco/supportingpages.jpg" class="full invert" alt="design wireframes" />
+  <p>For today, that means adding the missing supporting pages and some "quality of life" improvements. One feature that didn't make the cut for the MVP is making it so that the site can load directly to a selected article when someone shares a link. We're hoping that "word of mouth" marketing will help people find this resource, so making it easy to share specific links feels like a high priority -- even higher than allowing people to "create accounts" (which I think most product teams assume will be a default MVP feature).</p>
+  <img src="../images/bjco/refine.jpg" class="can-expand invert" alt="design wireframes" />
+  <p>We're also working to improve some of the layout and small functions like designing the UI for users to "report issues", refresh the article, and share directly to social media.</p>
+</section>
+<section>
+  <h2>Conclusion</h2>
+  <p>Want to grow your skills or learn something new?</p>
+  <p>Check out our app, it's free! <emoji>🥳</emoji></p>
+  <p><a href="https://brownjuice.co/study/">Design Externship</a></p>
+</section>
+</article>
+</body>
+</html>
