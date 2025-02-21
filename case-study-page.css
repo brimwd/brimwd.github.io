@@ -17,7 +17,7 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 .case-study header time {font-size:1.2rem;display:block;margin-bottom:1.2rem;}
 .case-study h2 {font-size:10vw;font-weight:100;margin-top:1.5em;position:relative;}
 .case-study h2 ~ p:first-of-type {margin-top:2rem;}
-.case-study p {font-size:17px;line-height:1.8em;}
+.case-study p {font-size:17px;line-height:1.5em;}
 .case-study section a {text-decoration:none;cursor:pointer;border-bottom-width:1px;border-bottom-style:dotted;}
 .case-study .btn {border:none;}
 /* unused? */.case-study .persona {margin:20px 0;padding:6px 0 3px 3%;border-left:6px solid #ced6de;}
@@ -25,9 +25,6 @@ nav a img {display:inline-block;max-width:34px;margin-right:6px;vertical-align:b
 .case-study .list-header {margin:0;font-weight:bold;}
 .case-study ul, .case-study ol {margin-top:0;}
 .case-study .highlight {background-color:var(--highlight);background-clip:padding-box;-webkit-box-decoration-break:clone;box-decoration-break:clone;width:fit-content;position:relative;padding-right:5px;padding-left:3px;}
-.case-study .highlight::before, .case-study .highlight::after {position:absolute;content:'';border:12px solid transparent;}
-.case-study .highlight::before {border-top-color:var(--highlight);border-right-color:var(--highlight);border-left-width:1px;border-right-width:1px;left:-2px;}
-.case-study .highlight::after {border-bottom-color:var(--highlight);border-left-color:var(--highlight);border-left-width:1px;border-right-width:1px;right:-1px;bottom:0;}
 .case-study .highlight + .highlight {margin-top:3px;}
 .case-study section :last-child, .case-study figure :last-child {margin-bottom:0;}
 

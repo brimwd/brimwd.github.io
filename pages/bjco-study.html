@@ -12,11 +12,13 @@
 @media (prefers-color-scheme:dark){}
 
 .case-study header {background-color:var(--brand);color:black;}
-.case-study h2 {color:black;}
+.case-study h2 {color:var(--text);}
 .case-study a[href]:not(.btn) {border-bottom-color:var(--link);color:var(--link);}
 
 .case-study .play.btn {background-color:var(--brand);color:black;margin-right:10px;}
 .case-study .btn {background-color:var(--text-ultra-faint);margin-top:0;}
+
+.case-study blockquote {padding: 0 0 0 20px!important;margin: 0;border-left: 3px solid var(--brand);}
 </style>
 <script class="case-study-page" type="text/javascript">
   <!--
@@ -47,11 +49,17 @@ $(document).ready(function() {
   <p><strong>Role:</strong> Designer, Engineer, Manager</p>
   <p><strong>Task:</strong> Turn a curated list of design articles into an interactive online learning experience</p>
   <p>For over a decade, I immersed myself in daily study, bookmarking the most insightful design articles I encountered. These articles covered a wide range of topics—from psychology to color theory to design philosophy. After I landed my first design job, I began mentoring aspiring designers and these bookmarks were an essential teaching resource.</p>
+</section>
+
+<section>
   <blockquote>
     <p>A wonderful manager I had at Amazon told me &#8220;the only difference between a junior, a mid-level, and a senior designer is &#8216;how many answers they have in their back pocket&#8217;.&#8221;</p>
     <p>Over time, designers get faster at creating designs, they get better at using their tools, but the real difference is not in how well you think, but in how many examples you can &#8220;point to&#8221;. The more you know, the more mistakes you can avoid. Your advice becomes better through wisdom and experience.</p>
     <p>One shortcut you can take in your career is to be proactive in your learning: don&#8217;t wait for lessons to come to you on the job; study, learn, make it your passion to know everything you can that&#8217;s even remotely-related to your work. You never know when it will come in handy.</p>
   </blockquote>
+</section>
+
+<section>
   <p>I spent hours each week guiding my mentees&mdash;helping them build skills, develop portfolios, and break into the industry.</p>
   <p>As my career grew, I had less time for one-on-one mentorship, but I still wanted to support aspiring designers and make learning more accessible.</p>
   <p>I had seen that the designers who were most successful were also the most proactive in their learning and work, so I compiled my bookmarks into a simple webpage, categorizing them by topic and structuring them in a logical order for self-paced learning. That way, anybody who had the drive to learn could do it with a curriculum of proven-materials. Free knowledge for anyone who had the motivation to come and claim it.</p>
@@ -61,9 +69,11 @@ $(document).ready(function() {
   <p>Here's how it went...</p>
 </section>
 
+<section>
 <blockquote>
   <p>&#8220;It was an exciting UX problem&mdash;how do you create an engaging course from hundreds of text-based articles while keeping it structured and user-friendly?&#8221;</p>
 </blockquote>
+</section>
 
 <section>
   <h2>Problem &amp; Goal Statements</h2>
@@ -97,6 +107,7 @@ $(document).ready(function() {
     <li>Leave the door open to expand into features and tools that can help students land jobs</li>
   </ul>
 </section>
+
 <section>
   <h2>UI Concepts</h2>
   <p>What started as a fun design exercise quickly gained momentum. We sketched layouts and refined the structure. Coming up with these wireframes helped us have a cohesive language and helped us imagine what it would be like to use the service.</p>
@@ -111,9 +122,13 @@ $(document).ready(function() {
   <p>As the designs came together, the work became more fun and thrilling. Pretty quickly we were exploring design variations and trying to develop the brand.</p>
   <img src="../images/bjco/colors.jpg" class="full-width invert" alt="color variations of the previous mockups" />
 </section>
+
+<section>
 <blockquote>
   <p>While this product started as a fun design exercise, the project quickly gathered momentum, and soon we were excited-enough to develop it. That&#8217;s a good lesson in design: &#8220;Even if an idea is great, a lot of times people have to literally see it (or see design mock-ups) before they can imagine it and get excited about it&#8221;. That even applies to experienced designers like me.</p>
 </blockquote>
+</section>
+
 <section>
   <h2>Finding Issues</h2>
   <img src="../images/bjco/baddata.jpg" class="can-zoom invert" alt="design wireframes" />
@@ -122,9 +137,13 @@ $(document).ready(function() {
   <img src="../images/bjco/simplify.jpg" class="can-zoom invert" alt="design wireframes" />
   <p>As we became more-confident in the design, we also worked to align our language and streamline our color palette.</p>
 </section>
+
+<section>
 <blockquote>
   <p>As the design started taking shape, we came up with more ideas for how to take the product further. In my experience, these <emoji>✨</emoji><strong>ideas</strong><emoji>✨</emoji> are some of the most valuable things you can contribute as a designer. It doesn&#8217;t matter if they ever get built; write them down, make concepts and share them &mdash; who knows what you&#8217;ll inspire.</p>
 </blockquote>
+</section>
+
 <section>
   <h2>Expanding Scope</h2>
   <img src="../images/bjco/pageslist.jpg" class="can-zoom invert" alt="a list of supporting pages we might need" />
@@ -134,6 +153,7 @@ $(document).ready(function() {
   <p>A jobs board is a whole product in its own right, but it&#8217;s <em>feels</em> related because (<em>as far as we can tell</em>) most people who are studying are either trying to land a job or advance their career.</p>
   <p>That was still the perfect time to start thinking of other features, because it&#8217;s still fast to discuss, explore, and decide the direction before the product goes to engineering.</p>
 </section>
+
 <section>
   <h2>Prototyping</h2>
   <p>Because we knew we wanted to load the articles on the same page, there&#8217;s only a few ways to do that on the web. The main way is called an <code>iFrame</code>.</p>
@@ -144,6 +164,7 @@ $(document).ready(function() {
   <img src="../images/bjco/prototype.jpg" class="full-width invert" alt="a screenshot of a webpage with an iFrame injected into the page. The iFrame's colors are inverted." />
   <p>Once I knew I could invert the articles, then it also became useful to know the site&#8217;s &#8216;color scheme&#8217; (at least in terms of light vs dark) so that we can invert it to match the user&#8217;s preferences.</p>
 </section>
+
 <section>
   <h2>Responsive Design</h2>
   <img src="../images/bjco/mobile.jpg" class="full-width invert" alt="design mockups for mobile" />
@@ -151,6 +172,7 @@ $(document).ready(function() {
   <img src="../images/bjco/tablet.jpg" class="full-width invert" alt="design mockups for tablet" />
   <p>We knew what we wanted our 'desktop' layout to look like, so we next started exploring how the UI should work on 'mobile'.</p>
 </section>
+
 <section>
   <h2>Bringing It To Life</h2>
   <p>Once we felt confident in our design, I was able to developed a basic &#8216;MVP&#8217; (minimum viable product) from our notes with just a few days of work.</p>
@@ -165,6 +187,7 @@ $(document).ready(function() {
   <img src="../images/bjco/refine.jpg" class="can-zoom invert" alt="design wireframes" />
   <p>We're also working to improve some of the layout and small functions like designing the UI for users to "report issues", refresh the article, and share directly to social media.</p>
 </section>
+
 <section>
   <h2>Conclusion</h2>
   <p>Want to grow your skills or learn something new?</p>
