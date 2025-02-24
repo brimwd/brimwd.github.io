@@ -20,11 +20,7 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170028521-4"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-170028521-4');
+  window.location.replace("https://brownjuice.co/training/?redirect=true");
 </script>
 <style>
 :root {
@@ -751,24 +747,5 @@ button#register {display:block;margin:1.5em 0 1rem;width:100%;}
 		<p>&copy;2023 &mdash; All rights reserved.</p>
 	</div>
 </footer>
-
-<div id="modal-container" class="hidden"><dialog id="reg-modal">
-	<aside>
-		<h3>Sign in or join to save your progress</h3>
-		<p class="icon">🐝</p>
-	</aside>
-	<div>
-		<nav>
-			<button class="active" id="sign-in">Sign In</button>
-			<button id="join">Join (free)</button>
-		</nav>
-		<label for="email">Email</label>
-		<input type="email" name="email" id="email" />
-		<label for="password">Password</label>
-		<input type="password" name="password" id="password" />
-		<button id="register">Sign In</button>
-		<p class="disclaimer">I will never sell your email or use it for marketing.</p>
-	</div>
-</dialog></div>
 </body>
 </html>
